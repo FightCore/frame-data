@@ -1,0 +1,47 @@
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+
+namespace FightCore.Api.Controllers
+{
+    [Route("moves")]
+    [ApiController]
+    public class MovesController : ControllerBase
+    {
+        /// <summary>
+        /// Gets a move based on the provided <paramref name="id"/>.
+        /// </summary>
+        /// <param name="id">The id of the move to get.</param>
+        /// <response code="200">The move was found and returned.</response>
+        /// <response code="404">The move was not found.</response>
+        [HttpGet("{id:int}")]
+        public async Task<IActionResult> GetMove(int id)
+        {
+            return Ok();
+        }
+
+        /// <summary>
+        /// Gets all moves for the specified character.
+        /// </summary>
+        /// <param name="characterId">The id of the character.</param>
+        /// <response code="200">The character was found and returned.</response>
+        /// <response code="404">The character was not found.</response>
+        [HttpGet("/characters/{characterId:int}/moves")]
+        public async Task<IActionResult> GetCharacterMoves(int characterId)
+        {
+            return Ok();
+        }
+
+        /// <summary>
+        /// Gets a specific moves for the specified character.
+        /// </summary>
+        /// <param name="characterId">The id of the character.</param>
+        /// <param name="moveId">The id of the move.</param>
+        /// <response code="200">The character and move was found and returned.</response>
+        /// <response code="404">The character or move was not found.</response>
+        [HttpGet("/characters/{characterId:int}/moves/{moveId:int}")]
+        public async Task<IActionResult> GetCharacterMoves(int characterId, int moveId)
+        {
+            return Ok();
+        }
+    }
+}
