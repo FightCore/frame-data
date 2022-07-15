@@ -1,5 +1,7 @@
 using System.Reflection;
 using FightCore.Api.Configuration;
+using FightCore.FrameData;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -22,7 +24,12 @@ builder.Services.AddSwaggerGen(options =>
     options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
 });
 
-builder.Services.AddEntityFrameworkSqlServer();
+builder.Services.AddDbContext<FrameDataContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+});
+
+builder.Services.AddScoped<DbContext>(provider => provider.GetRequiredService<FrameDataContext>());
 
 builder.Services
     .AddServices()

@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using FightCore.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FightCore.Api.Controllers
@@ -7,6 +7,13 @@ namespace FightCore.Api.Controllers
     [ApiController]
     public class MovesController : ControllerBase
     {
+        private readonly IMoveService _moveService;
+
+        public MovesController(IMoveService moveService)
+        {
+            _moveService = moveService;
+        }
+
         /// <summary>
         /// Gets a move based on the provided <paramref name="id"/>.
         /// </summary>
@@ -16,7 +23,14 @@ namespace FightCore.Api.Controllers
         [HttpGet("{id:int}")]
         public async Task<IActionResult> GetMove(int id)
         {
-            return Ok();
+            var move = await _moveService.GetById(id);
+
+            if (move == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(move);
         }
 
         /// <summary>
@@ -28,7 +42,14 @@ namespace FightCore.Api.Controllers
         [HttpGet("/characters/{characterId:int}/moves")]
         public async Task<IActionResult> GetCharacterMoves(int characterId)
         {
-            return Ok();
+            var moves = await _moveService.GetMovesByCharacter(characterId);
+
+            if (!moves.Any())
+            {
+                return NotFound();
+            }
+
+            return Ok(moves);
         }
 
         /// <summary>
@@ -41,7 +62,14 @@ namespace FightCore.Api.Controllers
         [HttpGet("/characters/{characterId:int}/moves/{moveId:int}")]
         public async Task<IActionResult> GetCharacterMoves(int characterId, int moveId)
         {
-            return Ok();
+            var move = await _moveService.GetMoveByCharacter(moveId, characterId);
+
+            if (move == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(move);
         }
     }
 }

@@ -1,5 +1,4 @@
 ﻿using FightCore.Services;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FightCore.Api.Controllers
@@ -10,14 +9,19 @@ namespace FightCore.Api.Controllers
     {
         private readonly ICharacterService _characterService;
 
+        public CharacterController(ICharacterService characterService)
+        {
+            _characterService = characterService;
+        }
+
         /// <summary>
         /// Gets all characters.
         /// </summary>
         /// <response code="200">Returns all characters.</response>
         [HttpGet]
-        public IActionResult Get()
+        public async Task<IActionResult> Get()
         {
-            return Ok();
+            return Ok(await _characterService.GetAll());
         }
 
         /// <summary>

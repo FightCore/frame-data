@@ -1,13 +1,9 @@
-﻿using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using FightCore.Models.Base;
 
 namespace FightCore.Models
 {
-    public class Move
+    public class Move : BaseEntity
     {
-        [Key]
-        public long Id { get; set; }
-
         public string Name { get; set; }
 
         public string NormalizedName { get; set; }

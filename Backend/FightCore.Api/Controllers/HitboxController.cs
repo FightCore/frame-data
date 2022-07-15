@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using FightCore.Services;
+using Microsoft.AspNetCore.Mvc;
 
 namespace FightCore.Api.Controllers
 {
@@ -6,6 +7,13 @@ namespace FightCore.Api.Controllers
     [ApiController]
     public class HitboxController : ControllerBase
     {
+        private readonly IHitboxService _hitboxService;
+
+        public HitboxController(IHitboxService hitboxService)
+        {
+            _hitboxService = hitboxService;
+        }
+
         /// <summary>
         /// Gets a specific hitbox based on its id.
         /// </summary>
@@ -15,7 +23,14 @@ namespace FightCore.Api.Controllers
         [HttpGet("{id:int}")]
         public async Task<IActionResult> Get(int id)
         {
-            return Ok();
+            var hitbox = await _hitboxService.GetById(id);
+
+            if (hitbox == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(hitbox);
         }
 
         /// <summary>
@@ -27,7 +42,14 @@ namespace FightCore.Api.Controllers
         [HttpGet("/moves/{moveId:int}/hitboxes")]
         public async Task<IActionResult> GetHitboxesForMove(int moveId)
         {
-            return Ok();
+            var hitboxes = await _hitboxService.GetHitboxesByMove(moveId);
+
+            if (!hitboxes.Any())
+            {
+                return NotFound();
+            }
+
+            return Ok(hitboxes);
         }
     }
 }

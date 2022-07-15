@@ -6,7 +6,7 @@ namespace FightCore.Repositories.Base
     public interface IBaseRepository<TModel>
         where TModel : BaseEntity
     {
-        Task<TModel> GetById(long id);
+        Task<TModel?> GetById(long id);
 
         Task<List<TModel>> GetByIds(ICollection<long> ids);
 
@@ -23,7 +23,7 @@ namespace FightCore.Repositories.Base
             _dbSet = context.Set<TModel>();
         }
 
-        public virtual Task<TModel> GetById(long id)
+        public virtual Task<TModel?> GetById(long id)
         {
             return Queryable.FirstOrDefaultAsync(model => model.Id == id);
         }

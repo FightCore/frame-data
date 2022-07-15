@@ -1,12 +1,9 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using FightCore.Models.Base;
 
 namespace FightCore.Models
 {
-    public class Hitbox
+    public class Hitbox : BaseEntity
     {
-        [Key]
-        public long Id { get; set; }
-
         public string Name { get; set; }
 
         public long Damage { get; set; }
@@ -29,5 +26,9 @@ namespace FightCore.Models
         public int HitlagDefender { get; set; }
 
         public int Shieldstun { get; set; }
+
+        public Move Move { get; set; }
+
+        public long MoveId { get; set; }
     }
 }
