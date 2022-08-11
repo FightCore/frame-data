@@ -1,37 +1,10 @@
-.display {
-  width: 40vw;
-  height: 50vh;
-  margin: 10vw
-}
-
-section {
-  display: table;
-}
-
-.example-label {
-  display: table-cell;
-  font-size: 14px;
-  margin-left: 8px;
-  min-width: 120px;
-}
-
-.example-button-row {
-  display: table-cell;
-  width: 490px;
-}
-
-.example-button-row .mat-button-base {
-  margin: 8px 8px 8px 0;
-}
-
-.example-flex-container {
+.main-container {
+  min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
-.example-button-container {
-  display: flex;
-  justify-content: center;
-  width: 120px;
+.height-spacer {
+  flex-grow: 1;
 }
