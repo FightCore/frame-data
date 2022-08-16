@@ -1,0 +1,14 @@
+<table class="w-full table-auto">
+  <thead>
+    <tr>
+      <th class="text-left">Name</th>
+      <th class="text-right">Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let statistic of statistics">
+      <td class="font-medium">{{ statistic.name }}</td>
+      <td class="text-right">{{ statistic.value }}</td>
+    </tr>
+  </tbody>
+</table>

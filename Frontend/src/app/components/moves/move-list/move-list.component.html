@@ -1,0 +1,13 @@
+<div *ngFor="let type of moveTypes">
+  <mat-toolbar color="primary" [id]="'category-' + type.value">
+    <h2 class="w-full text-center">{{ type.name }}</h2>
+  </mat-toolbar>
+  <div class="grid grid-cols-4 gap-2">
+    <div *ngFor="let move of getMovesForType(type.value)">
+      <app-move-card
+        [move]="move"
+        [characterName]="characterName"
+      ></app-move-card>
+    </div>
+  </div>
+</div>

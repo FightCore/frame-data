@@ -1,0 +1,22 @@
+<!-- <div *ngFor="let attribute of attributes">
+  <div *ngIf="attribute.value" [class.important]="attribute.important">
+    {{ attribute.name }}:
+    <div class="float-end">{{ attribute.value }}</div>
+    <hr />
+  </div>
+</div> -->
+
+<table class="w-full table-auto">
+  <thead>
+    <tr>
+      <th class="text-left">Name</th>
+      <th class="text-right">Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let attribute of attributes">
+      <td class="font-medium">{{ attribute.name }}</td>
+      <td class="text-right">{{ attribute.value }}</td>
+    </tr>
+  </tbody>
+</table>

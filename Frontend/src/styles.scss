@@ -1,9 +1,8 @@
-
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
-@use '@angular/material' as mat;
+@use "@angular/material" as mat;
 // Plus imports for other components in your app.
-@use 'fightcore-pelette.scss' as fc;
+@use "fightcore-pelette.scss" as fc;
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
 // Be sure that you only ever include this mixin once!
@@ -20,24 +19,37 @@ $FightCore-warn: mat.define-palette(mat.$red-palette);
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
-$FightCore-theme: mat.define-light-theme((
-  color: (
-    primary: $FightCore-primary,
-    accent: $FightCore-accent,
-    warn: $FightCore-warn,
+$FightCore-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $FightCore-primary,
+      accent: $FightCore-accent,
+      warn: $FightCore-warn,
+    ),
   )
-));
+);
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 @include mat.all-component-themes($FightCore-theme);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+@import "ag-grid-community/styles/ag-grid.css"; // Core grid CSS, always needed
+@import "ag-grid-community/styles/ag-theme-alpine.css"; // Optional theme CSS
+@import "ag-grid-community/styles/ag-theme-material.css"; // Optional theme CSS
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
 body {
   height: 100%;

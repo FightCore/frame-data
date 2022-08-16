@@ -1,0 +1,37 @@
+<div *ngIf="!character; else characterData">Loading</div>
+<ng-template #characterData>
+  <mat-toolbar class="mb-5 mt-2" color="primary">
+    <mat-toolbar-row>
+      <p class="w-full text-center text-3xl">{{ character!.name }}</p>
+    </mat-toolbar-row>
+    <mat-toolbar-row>
+      <div class="w-full toolbar-buttons">
+        <button
+          mat-button
+          class="text-xl"
+          *ngFor="let category of moveTypes"
+          (click)="navigateToCategory(category.value)"
+        >
+          {{ category.name }}
+        </button>
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <mat-toolbar color="primary">
+    <h2 class="w-full text-center">Attributes</h2>
+  </mat-toolbar>
+
+  <app-character-statistics-table
+    [character]="character!.characterStatistics"
+  ></app-character-statistics-table>
+
+  <mat-toolbar color="primary">
+    <h2 class="w-full text-center">Moves Table</h2>
+  </mat-toolbar>
+  <app-moves-table [moves]="character!.moves"></app-moves-table>
+
+  <app-move-list
+    [moves]="character?.moves"
+    [characterName]="character?.normalizedName"
+  ></app-move-list>
+</ng-template>

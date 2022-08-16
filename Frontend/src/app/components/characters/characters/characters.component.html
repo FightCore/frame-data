@@ -1,0 +1,11 @@
+<app-character-quick-picker
+  *ngIf="characters"
+  [characters]="characters"
+></app-character-quick-picker>
+
+<div class="grid grid-cols-5 gap-2">
+  <app-character-preview-card
+    *ngFor="let character of characters"
+    [character]="character"
+  ></app-character-preview-card>
+</div>

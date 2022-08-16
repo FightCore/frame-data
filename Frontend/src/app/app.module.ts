@@ -9,13 +9,37 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { SharedModule } from './modules/shared-module/shared.module';
 import { MenubarComponent } from './components/layout/menubar/menubar.component';
 import { FooterComponent } from './components/layout/footer/footer.component';
+import { MoveCardComponent } from './components/moves/move-card/move-card.component';
+import { CharacterPreviewCardComponent } from './components/characters/character-preview-card/character-preview-card.component';
+import { CharacterStatisticsComponent } from './components/characters/character-statistics/character-statistics.component';
+import { CharactersComponent } from './components/characters/characters/characters.component';
+import { CharacterComponent } from './components/characters/character/character.component';
+import { MoveListComponent } from './components/moves/move-list/move-list.component';
+import { MovesTableComponent } from './components/moves/moves-table/moves-table.component';
+import { CharacterStatisticsTableComponent } from './components/characters/character-statistics-table/character-statistics-table.component';
+import { MoveAttributesListComponent } from './components/moves/move-attributes-list/move-attributes-list.component';
+import { CharacterQuickPickerComponent } from './components/characters/character-quick-picker/character-quick-picker.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
 
 @NgModule({
-  declarations: [AppComponent, MenubarComponent, FooterComponent],
+  declarations: [
+    AppComponent,
+    MenubarComponent,
+    FooterComponent,
+    MoveCardComponent,
+    CharacterPreviewCardComponent,
+    CharacterStatisticsComponent,
+    CharactersComponent,
+    CharacterComponent,
+    MoveListComponent,
+    MovesTableComponent,
+    CharacterStatisticsTableComponent,
+    MoveAttributesListComponent,
+    CharacterQuickPickerComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

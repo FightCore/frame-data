@@ -1,0 +1,17 @@
+<mat-card *ngIf="characters" class="mb-3">
+  <mat-card-header>
+    <mat-card-title class="title">{{
+      "Characters.QuickCharacterSelector" | translate
+    }}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="character-stock-icon" *ngFor="let character of characters">
+      <img
+        class="cursor-pointer inline"
+        [src]="'assets/images/stocks/' + character!.normalizedName + '.png'"
+        (click)="viewCharacter(character)"
+        [alt]="character.name"
+      />
+    </div>
+  </mat-card-content>
+</mat-card>

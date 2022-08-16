@@ -1,0 +1,22 @@
+<mat-card>
+  <mat-card-header>
+    <div mat-card-avatar>
+      <img
+        class="fit-image-height"
+        alt="character profile shot"
+        [src]="'assets/images/stocks/' + character!.normalizedName + '.png'"
+      />
+    </div>
+    <mat-card-title>{{ character!.name }}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <app-character-statistics
+      [frameDataCharacter]="character"
+    ></app-character-statistics>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button (click)="onClickViewCharacter()" color="primary">
+      View
+    </button>
+  </mat-card-actions>
+</mat-card>

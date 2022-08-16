@@ -1,0 +1,39 @@
+<mat-card class="h-full mat-elevation-z2">
+  <div class="main-container">
+    <div>
+      <mat-card-header>
+        <mat-card-title class="title">{{ move?.name }}</mat-card-title>
+        <mat-card-subtitle>{{ move?.normalizedName }}</mat-card-subtitle>
+      </mat-card-header>
+      <img
+        (click)="openMove()"
+        mat-card-image
+        class="frame-data-image"
+        [src]="
+          'https://i.fightcore.gg/melee/moves/' +
+          characterName +
+          '/' +
+          move?.normalizedName +
+          '.gif'
+        "
+        onerror="this.src='https://i.fightcore.gg/melee/moves/notfound.jpg';"
+        [alt]="move?.normalizedName + '-gif'"
+      />
+      <mat-card-content>
+        <app-move-attributes-list [move]="move"></app-move-attributes-list>
+        <mat-divider></mat-divider>
+        <div *ngIf="move?.notes">
+          Notes:
+          <div>{{ move?.notes }}</div>
+          <hr />
+        </div>
+        <a [href]="move?.source">Source</a>
+      </mat-card-content>
+    </div>
+    <mat-card-actions>
+      <button mat-raised-button color="primary" (click)="openMove()">
+        View
+      </button>
+    </mat-card-actions>
+  </div>
+</mat-card>
