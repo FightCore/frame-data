@@ -12,15 +12,24 @@ export class CharacterStatisticsComponent implements OnInit {
   ngOnInit(): void {
     const stats = this.frameDataCharacter!.characterStatistics;
     this.statistics = [
-      { name: 'Weight', value: stats.weight },
-      { name: 'Gravity', value: stats.gravity },
-      { name: 'Walk speed', value: stats.walkSpeed },
-      { name: 'Run speed', value: stats.runSpeed },
-      { name: 'Wavedash length rank', value: stats.waveDashLengthRank },
-      { name: 'PLA Intangibility frames', value: stats.plaIntangibilityFrames },
-      { name: 'Jump squat', value: stats.jumpSquat },
-      { name: 'Can wall jump', value: stats.canWallJump ? 'Yes' : 'No' },
-      { name: 'Notes', value: stats.notes },
+      { name: 'Characters.Attributes.Weight', value: stats.weight },
+      { name: 'Characters.Attributes.Gravity', value: stats.gravity },
+      { name: 'Characters.Attributes.WalkSpeed', value: stats.walkSpeed },
+      { name: 'Characters.Attributes.RunSpeed', value: stats.runSpeed },
+      {
+        name: 'Characters.Attributes.WavedashLengthRank',
+        value: stats.waveDashLengthRank,
+      },
+      {
+        name: 'Characters.Attributes.PLAIntangibilityFrames',
+        value: stats.plaIntangibilityFrames,
+      },
+      { name: 'Characters.Attributes.JumpSquat', value: stats.jumpSquat },
+      {
+        name: 'Characters.Attributes.CanWallJump',
+        value: stats.canWallJump ? 'Yes' : 'No',
+      },
+      { name: 'Characters.Attributes.Notes', value: stats.notes },
     ].filter((stat) => stat.value !== (null || undefined) && stat.value !== '');
   }
 

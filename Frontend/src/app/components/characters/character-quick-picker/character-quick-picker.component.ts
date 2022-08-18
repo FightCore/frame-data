@@ -8,12 +8,10 @@ import { FrameDataCharacter } from 'src/app/models/framedata-character';
   templateUrl: './character-quick-picker.component.html',
   styleUrls: ['./character-quick-picker.component.scss'],
 })
-export class CharacterQuickPickerComponent implements OnInit {
+export class CharacterQuickPickerComponent {
   // TODO: Rework to Store.
   @Input() characters?: FrameDataCharacter[];
   constructor(private router: Router) {}
-
-  ngOnInit(): void {}
 
   viewCharacter(character: FrameDataCharacter): void {
     this.router.navigate([

@@ -1,0 +1,40 @@
+{
+  "Common": {
+    "View": "View",
+    "Loading": "Loading"
+  },
+  "Characters": {
+    "QuickCharacterSelector": "Quick Character Selector",
+    "Attributes": {
+      "Attributes": "Attributes",
+      "Weight": "Weight",
+      "Gravity": "Gravity",
+      "WalkSpeed": "Walk Speed",
+      "RunSpeed": "Run Speed",
+      "WavedashLengthRank": "Wavedash Length Rank",
+      "PLAIntangibilityFrames": "PLA Intangibility Frames",
+      "JumpSquat": "Jump Squat",
+      "CanWallJump": "Can Wall Jump",
+      "Name": "Name",
+      "Value": "Value",
+      "Notes": "Notes"
+    },
+    "MovesTable": "Moves Table"
+  },
+  "MenuBar": {
+    "Characters": "Characters",
+    "Moves": "Moves",
+    "CompareTool": "Compare Tool"
+  },
+  "Moves": {
+    "Categories": {
+      "GroundedAttacks": "Grounded Attacks",
+      "TiltAttacks": "Tilt Attacks",
+      "AerialAttacks": "Aerial Attacks",
+      "SpecialAttacks": "Special Attacks",
+      "Throws": "Throws",
+      "Dodges": "Dodges",
+      "Unknown": "Unknown"
+    }
+  }
+}

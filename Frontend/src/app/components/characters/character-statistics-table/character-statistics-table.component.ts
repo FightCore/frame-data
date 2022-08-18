@@ -1,6 +1,7 @@
 import { Component, Input, OnInit, ViewChild } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { AgGridAngular } from 'ag-grid-angular';
-import { ColDef } from 'ag-grid-community';
+import { ColDef, HeaderValueGetterParams } from 'ag-grid-community';
 import { CharacterStatistics } from 'src/app/models/character-statistics';
 
 @Component({
@@ -11,23 +12,33 @@ import { CharacterStatistics } from 'src/app/models/character-statistics';
 export class CharacterStatisticsTableComponent implements OnInit {
   @ViewChild(AgGridAngular) agGrid!: AgGridAngular;
   @Input() character?: CharacterStatistics;
-
   defaultColumnDefinition: ColDef = {
     wrapHeaderText: true,
     autoHeaderHeight: true,
+    headerValueGetter: (value: HeaderValueGetterParams) =>
+      this.translateService.instant(value.colDef.headerName as string),
   };
   colDefs: ColDef[] = [
-    { headerName: 'Weight', field: 'weight' },
-    { headerName: 'Gravity', field: 'gravity' },
-    { headerName: 'Walk speed', field: 'walkSpeed' },
-    { headerName: 'Run speed', field: 'runSpeed' },
-    { headerName: 'Wavedash length rank', field: 'waveDashLengthRank' },
-    { headerName: 'PLA Intangibility frames', field: 'plaIntangibilityFrames' },
-    { headerName: 'Jump squat', field: 'jumpSquat' },
-    { headerName: 'Can wall jump', field: 'canWallJump' }, // ? 'Yes' : 'No' },
-    { headerName: 'Notes', field: 'notes' },
+    { headerName: 'Characters.Attributes.Weight', field: 'weight' },
+    {
+      headerName: 'Characters.Attributes.Gravity',
+      field: 'gravity',
+    },
+    { headerName: 'Characters.Attributes.WalkSpeed', field: 'walkSpeed' },
+    { headerName: 'Characters.Attributes.RunSpeed', field: 'runSpeed' },
+    {
+      headerName: 'Characters.Attributes.WavedashLengthRank',
+      field: 'waveDashLengthRank',
+    },
+    { headerName: 'Characters.Attributes.JumpSquat', field: 'jumpSquat' },
+    { headerName: 'Characters.Attributes.CanWallJump', field: 'canWallJump' }, // ? 'Yes' : 'No' },
+    { headerName: 'Characters.Attributes.Notes', field: 'notes' },
   ];
-  constructor() {}
+  constructor(private translateService: TranslateService) {
+    this.translateService.onLangChange.subscribe(() => {
+      this.agGrid?.api.refreshHeader();
+    });
+  }
 
   onGridReady() {
     this.agGrid.api.sizeColumnsToFit();

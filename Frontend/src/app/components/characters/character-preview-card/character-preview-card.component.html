@@ -3,7 +3,7 @@
     <div mat-card-avatar>
       <img
         class="fit-image-height"
-        alt="character profile shot"
+        [alt]="character!.name"
         [src]="'assets/images/stocks/' + character!.normalizedName + '.png'"
       />
     </div>
@@ -16,7 +16,7 @@
   </mat-card-content>
   <mat-card-actions>
     <button mat-raised-button (click)="onClickViewCharacter()" color="primary">
-      View
+      {{ "Common.View" | translate }}
     </button>
   </mat-card-actions>
 </mat-card>

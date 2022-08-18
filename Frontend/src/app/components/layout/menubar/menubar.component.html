@@ -7,11 +7,13 @@
     />
 
     <span class="cursor-pointer ml-5" [routerLink]="'characters'">
-      Characters
+      {{ "MenuBar.Characters" | translate }}
     </span>
-    <span class="cursor-pointer ml-5" [routerLink]="'characters'">Moves</span>
-    <span class="cursor-pointer ml-5" [routerLink]="'characters'"
-      >Compare tool</span
-    >
+    <span class="cursor-pointer ml-5" [routerLink]="'characters'">
+      {{ "MenuBar.Moves" | translate }}
+    </span>
+    <span class="cursor-pointer ml-5" [routerLink]="'characters'">
+      {{ "MenuBar.CompareTool" | translate }}
+    </span>
   </mat-toolbar-row>
 </mat-toolbar>

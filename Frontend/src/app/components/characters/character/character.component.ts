@@ -13,13 +13,13 @@ export class CharacterComponent implements OnInit {
   character?: FrameDataCharacter;
 
   moveTypes = [
-    { name: 'Grounded attacks', value: MoveType.grounded },
-    { name: 'Tilt attacks', value: MoveType.tilt },
-    { name: 'Aerial attacks', value: MoveType.air },
-    { name: 'Special attacks', value: MoveType.special },
-    { name: 'Throws', value: MoveType.throw },
-    { name: 'Dodges', value: MoveType.dodge },
-    { name: 'Unknown', value: MoveType.unknown },
+    { name: 'Moves.Categories.GroundedAttacks', value: MoveType.grounded },
+    { name: 'Moves.Categories.TiltAttacks', value: MoveType.tilt },
+    { name: 'Moves.Categories.AerialAttacks', value: MoveType.air },
+    { name: 'Moves.Categories.SpecialAttacks', value: MoveType.special },
+    { name: 'Moves.Categories.Throws', value: MoveType.throw },
+    { name: 'Moves.Categories.Dodges', value: MoveType.dodge },
+    { name: 'Moves.Categories.Unknown', value: MoveType.unknown },
   ];
   constructor(
     private frameDataService: FrameDataService,
