@@ -19,4 +19,5 @@ export interface Move {
   notes?: string;
   source?: string;
   character?: FrameDataCharacter;
+  characterId?: number;
 }

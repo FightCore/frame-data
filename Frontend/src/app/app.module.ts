@@ -23,6 +23,10 @@ import { MoveComponent } from './components/moves/move/move.component';
 import { MoveAttributesTableComponent } from './components/moves/move-attributes-table/move-attributes-table.component';
 import { HitboxesTableComponent } from './components/hitboxes/hitboxes-table/hitboxes-table.component';
 import { MoveGifComponent } from './components/moves/move-gif/move-gif.component';
+import { StoreModule } from '@ngrx/store';
+import { frameDataReducer } from './store/frame-data/frame-data.reducers';
+import { FrameDataEffects } from './store/frame-data/frame-data.effects';
+import { EffectsModule } from '@ngrx/effects';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -61,6 +65,8 @@ export function createTranslateLoader(http: HttpClient) {
       },
       defaultLanguage: 'en',
     }),
+    StoreModule.forRoot({ frameData: frameDataReducer }),
+    EffectsModule.forRoot([FrameDataEffects]),
     SharedModule,
   ],
   providers: [],

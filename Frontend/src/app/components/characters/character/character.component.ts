@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { select, Store } from '@ngrx/store';
 import { FrameDataCharacter } from 'src/app/models/framedata-character';
 import { MoveType } from 'src/app/models/move-type';
 import { FrameDataService } from 'src/app/services/frame-data.service';
+import { selectCharacter } from 'src/app/store/frame-data/frame-data.selectors';
 
 @Component({
   selector: 'app-character',
@@ -21,10 +23,7 @@ export class CharacterComponent implements OnInit {
     { name: 'Moves.Categories.Dodges', value: MoveType.dodge },
     { name: 'Moves.Categories.Unknown', value: MoveType.unknown },
   ];
-  constructor(
-    private frameDataService: FrameDataService,
-    private activatedRoute: ActivatedRoute
-  ) {}
+  constructor(private store: Store, private activatedRoute: ActivatedRoute) {}
 
   ngOnInit(): void {
     const characterId =
@@ -32,8 +31,9 @@ export class CharacterComponent implements OnInit {
     if (!characterId) {
       return;
     }
-    this.frameDataService
-      .getFrameDataForCharacter(parseFloat(characterId))
+
+    this.store
+      .pipe(select(selectCharacter({ characterId: parseFloat(characterId) })))
       .subscribe((character) => {
         this.character = character;
       });

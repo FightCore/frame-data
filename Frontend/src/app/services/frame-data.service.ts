@@ -31,7 +31,7 @@ export class FrameDataService {
     );
   }
 
-  getMoves(moveId: number): Observable<FrameDataCharacter[]> {
+  getMoves(moveId?: number): Observable<FrameDataCharacter[]> {
     return this.httpClient.get<FrameDataCharacter[]>(
       `${environment.baseUrl}/framedata/moves`
     );

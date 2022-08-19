@@ -3,7 +3,8 @@ import { TranslateService } from '@ngx-translate/core';
 import { tap } from 'rxjs';
 import { FrameDataCharacter } from './models/framedata-character';
 import { FrameDataService } from './services/frame-data.service';
-
+import { Store } from '@ngrx/store';
+import * as FrameDataActions from 'src/app/store/frame-data/frame-data.actions';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -12,12 +13,15 @@ import { FrameDataService } from './services/frame-data.service';
 export class AppComponent implements OnInit {
   title = 'FightCore';
 
-  constructor(translateService: TranslateService) {
+  constructor(translateService: TranslateService, store: Store) {
     // this language will be used as a fallback when a translation isn't found in the current language
     translateService.setDefaultLang('en');
 
     // the lang to use, if the lang isn't available, it will use the current loader to get them
     translateService.use('en');
+
+    store.dispatch(FrameDataActions.loadCharacters());
   }
+
   ngOnInit(): void {}
 }
