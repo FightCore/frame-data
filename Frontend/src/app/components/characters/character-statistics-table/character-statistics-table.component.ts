@@ -3,20 +3,19 @@ import { TranslateService } from '@ngx-translate/core';
 import { AgGridAngular } from 'ag-grid-angular';
 import { ColDef, HeaderValueGetterParams } from 'ag-grid-community';
 import { CharacterStatistics } from 'src/app/models/character-statistics';
+import { TranslatedAgGridTableComponent } from '../../helpers/translated-ag-grid-table';
 
 @Component({
   selector: 'app-character-statistics-table',
   templateUrl: './character-statistics-table.component.html',
   styleUrls: ['./character-statistics-table.component.scss'],
 })
-export class CharacterStatisticsTableComponent implements OnInit {
-  @ViewChild(AgGridAngular) agGrid!: AgGridAngular;
+export class CharacterStatisticsTableComponent extends TranslatedAgGridTableComponent {
   @Input() character?: CharacterStatistics;
   defaultColumnDefinition: ColDef = {
     wrapHeaderText: true,
     autoHeaderHeight: true,
-    headerValueGetter: (value: HeaderValueGetterParams) =>
-      this.translateService.instant(value.colDef.headerName as string),
+    headerValueGetter: (value) => this.translateHeaderName(value),
   };
   colDefs: ColDef[] = [
     { headerName: 'Characters.Attributes.Weight', field: 'weight' },
@@ -34,14 +33,11 @@ export class CharacterStatisticsTableComponent implements OnInit {
     { headerName: 'Characters.Attributes.CanWallJump', field: 'canWallJump' }, // ? 'Yes' : 'No' },
     { headerName: 'Characters.Attributes.Notes', field: 'notes' },
   ];
-  constructor(private translateService: TranslateService) {
-    this.translateService.onLangChange.subscribe(() => {
-      this.agGrid?.api.refreshHeader();
-    });
+  constructor(translateService: TranslateService) {
+    super(translateService);
   }
 
   onGridReady() {
-    this.agGrid.api.sizeColumnsToFit();
+    this.agGrid?.api.sizeColumnsToFit();
   }
-  ngOnInit(): void {}
 }

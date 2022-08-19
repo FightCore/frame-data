@@ -1,81 +1,87 @@
-import { Component, Input, OnInit, ViewChild } from '@angular/core';
-import { AgGridAngular } from 'ag-grid-angular';
+import { Component, Input } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { ColDef, ColGroupDef } from 'ag-grid-community';
 import { Move } from 'src/app/models/move';
+import { TranslatedAgGridTableComponent } from '../../helpers/translated-ag-grid-table';
 
 @Component({
   selector: 'app-moves-table',
   templateUrl: './moves-table.component.html',
   styleUrls: ['./moves-table.component.scss'],
 })
-export class MovesTableComponent implements OnInit {
-  @ViewChild(AgGridAngular) agGrid!: AgGridAngular;
+export class MovesTableComponent extends TranslatedAgGridTableComponent {
   @Input() moves?: Move[];
-  colDef?: (ColDef | ColGroupDef)[];
+  colDef: (ColDef | ColGroupDef)[] = [
+    { headerName: 'Moves.Attributes.Name', field: 'name', pinned: 'left' },
+    {
+      headerName: 'Moves.Attributes.Frames',
+      headerValueGetter: (value) => this.translateHeaderName(value),
+      children: [
+        { headerName: 'Moves.Attributes.Start', field: 'start' },
+        { headerName: 'Moves.Attributes.End', field: 'end' },
+        { headerName: 'Moves.Attributes.IASA', field: 'iasa' },
+        {
+          headerName: 'Moves.Attributes.TotalFrames',
+          field: 'totalFrames',
+        },
+      ],
+    },
+    {
+      headerName: 'Moves.Attributes.LandLag',
+      headerValueGetter: (value) => this.translateHeaderName(value),
+      children: [
+        {
+          headerName: 'Moves.Attributes.LandLag',
+          field: 'landLag',
+        },
+        {
+          headerName: 'Moves.Attributes.LCanceledLandLag',
+          field: 'lCanceledLandLang',
+        },
+      ],
+    },
+    {
+      headerName: 'Moves.Attributes.AutoCancel',
+      headerValueGetter: (value) => this.translateHeaderName(value),
+      children: [
+        {
+          headerName: 'Moves.Attributes.AutoCancelBefore',
+          field: 'autoCancelBefore',
+        },
+        {
+          headerName: 'Moves.Attributes.AutoCancelAfter',
+          field: 'autoCancelAfter',
+        },
+      ],
+    },
+    {
+      headerName: 'Moves.Attributes.Etc',
+      headerValueGetter: (value) => this.translateHeaderName(value),
+      children: [
+        {
+          headerName: 'Moves.Attributes.DatabaseName',
+          field: 'normalizedName',
+        },
+        { headerName: 'Common.Notes', field: 'notes' },
+        {
+          headerName: 'Common.Source',
+          field: 'source',
+        },
+      ],
+    },
+  ];
   defaultColumnDefinitions?: ColDef = {
     sortable: true,
     filter: true,
     autoHeaderHeight: true,
     wrapHeaderText: true,
+    headerValueGetter: (value) => this.translateHeaderName(value),
   };
-  constructor() {
-    this.colDef = [
-      { headerName: 'Name', field: 'name', pinned: 'left' },
-      {
-        headerName: 'Frames',
-        children: [
-          { headerName: 'Start', field: 'start' },
-          { headerName: 'End', field: 'end' },
-          { headerName: 'IASA', field: 'iasa' },
-          {
-            headerName: 'Total Frames',
-            field: 'totalFrames',
-          },
-        ],
-      },
-      {
-        headerName: 'Land Lag',
-        children: [
-          {
-            headerName: 'Land lag',
-            field: 'landLag',
-          },
-          {
-            headerName: 'L-Canceled Land lag',
-            field: 'lCanceledLandLang',
-          },
-        ],
-      },
-      {
-        headerName: 'Auto cancel',
-        children: [
-          {
-            headerName: 'Auto cancel before',
-            field: 'autoCancelBefore',
-          },
-          {
-            headerName: 'Auto cancel after',
-            field: 'autoCancelAfter',
-          },
-        ],
-      },
-      {
-        headerName: 'Etc',
-        children: [
-          { headerName: 'Technical Name', field: 'normalizedName' },
-          { headerName: 'Notes', field: 'notes' },
-          {
-            headerName: 'Source',
-            field: 'source',
-          },
-        ],
-      },
-    ];
+  constructor(translateService: TranslateService) {
+    super(translateService);
   }
 
   onGridReady(): void {
-    this.agGrid.columnApi.autoSizeAllColumns();
+    this.agGrid?.columnApi.autoSizeAllColumns();
   }
-
-  ngOnInit(): void {}
 }

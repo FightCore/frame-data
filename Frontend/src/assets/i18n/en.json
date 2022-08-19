@@ -1,7 +1,9 @@
 {
   "Common": {
     "View": "View",
-    "Loading": "Loading"
+    "Loading": "Loading",
+    "Notes": "Notes",
+    "Source": "Source"
   },
   "Characters": {
     "QuickCharacterSelector": "Quick Character Selector",
@@ -35,6 +37,22 @@
       "Throws": "Throws",
       "Dodges": "Dodges",
       "Unknown": "Unknown"
+    },
+    "Attributes": {
+      "Name": "Name",
+      "Value": "Value",
+      "Start": "Start",
+      "End": "End",
+      "TotalFrames": "Total Frames",
+      "IASA": "IASA",
+      "LandLag": "Land lag",
+      "LCanceledLandLag": "L-Canceled Land Lag",
+      "AutoCancelBefore": "Auto Cancel Before",
+      "AutoCancelAfter": "Auto Cancel After",
+      "Frames": "Frames",
+      "AutoCancel": "Auto Cancel",
+      "Etc": "Etc",
+      "DatabaseName": "Database Name"
     }
   }
 }

@@ -23,16 +23,16 @@
         <app-move-attributes-list [move]="move"></app-move-attributes-list>
         <mat-divider></mat-divider>
         <div *ngIf="move?.notes">
-          Notes:
+          {{ "Common.Notes" | translate }}
           <div>{{ move?.notes }}</div>
           <hr />
         </div>
-        <a [href]="move?.source">Source</a>
+        <a [href]="move?.source">{{ "Common.Source" | translate }}</a>
       </mat-card-content>
     </div>
     <mat-card-actions>
       <button mat-raised-button color="primary" (click)="openMove()">
-        View
+        {{ "Common.View" | translate }}
       </button>
     </mat-card-actions>
   </div>

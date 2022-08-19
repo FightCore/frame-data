@@ -21,14 +21,14 @@ export class MoveAttributesListComponent implements OnInit {
     }
 
     this.attributes = [
-      { name: 'Start', value: this.move.start, important: true },
-      { name: 'End', value: this.move.end, important: true },
-      { name: 'Total Frames', value: this.move.totalFrames, important: true },
-      { name: 'IASA', value: this.move.iasa },
-      { name: 'Land lag', value: this.move.landLag },
-      { name: 'L-Canceled Land lag', value: this.move.lCanceledLandLang },
-      { name: 'Auto cancel before', value: this.move.autoCancelBefore },
-      { name: 'Auto cancel after', value: this.move.autoCancelAfter },
+      { name: 'Moves.Attributes.Start', value: this.move.start, important: true },
+      { name: 'Moves.Attributes.End', value: this.move.end, important: true },
+      { name: 'Moves.Attributes.TotalFrames', value: this.move.totalFrames, important: true },
+      { name: 'Moves.Attributes.IASA', value: this.move.iasa },
+      { name: 'Moves.Attributes.LandLag', value: this.move.landLag },
+      { name: 'Moves.Attributes.LCanceledLandLag', value: this.move.lCanceledLandLang },
+      { name: 'Moves.Attributes.AutoCancelBefore', value: this.move.autoCancelBefore },
+      { name: 'Moves.Attributes.AutoCancelAfter', value: this.move.autoCancelAfter },
     ].filter((attribute) => attribute.value);
   }
 }
