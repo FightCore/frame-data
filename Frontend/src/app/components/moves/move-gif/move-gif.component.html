@@ -1,0 +1,41 @@
+<div class="gif-content">
+  <img
+    #moveImage
+    class="w-full"
+    [src]="
+      'https://i.fightcore.gg/melee/moves/' +
+      characterName +
+      '/' +
+      move!.normalizedName +
+      '.gif'
+    "
+    width="100%"
+    onerror="this.src='https://i.fightcore.gg/melee/moves/notfound.jpg';"
+    [alt]="move!.normalizedName + '-gif'"
+  />
+</div>
+
+<div class="inline">
+  <button
+    mat-icon-button
+    [disabled]="superGif?.isPlaying()"
+    (click)="previousFrame()"
+  >
+    <mat-icon>skip_previous</mat-icon>
+  </button>
+  <button mat-icon-button (click)="pauseGif()">
+    <mat-icon>{{ superGif?.isPlaying() ? "stop" : "play_arrow" }}</mat-icon>
+  </button>
+  <button
+    mat-icon-button
+    [disabled]="superGif?.isPlaying()"
+    (click)="nextFrame()"
+  >
+    <mat-icon>skip_next</mat-icon>
+  </button>
+</div>
+<p class="inline" *ngIf="superGif">
+  {{
+    "Hitboxes.FrameInGIF" | translate: { frame: superGif?.getCurrentFrame() }
+  }}
+</p>

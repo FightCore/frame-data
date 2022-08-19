@@ -3,6 +3,7 @@ import { Hitbox } from './hitbox';
 import { MoveType } from './move-type';
 
 export interface Move {
+  id: number;
   hitboxes: Hitbox[];
   name: string;
   normalizedName: string;

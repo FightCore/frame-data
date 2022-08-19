@@ -19,6 +19,10 @@ import { MovesTableComponent } from './components/moves/moves-table/moves-table.
 import { CharacterStatisticsTableComponent } from './components/characters/character-statistics-table/character-statistics-table.component';
 import { MoveAttributesListComponent } from './components/moves/move-attributes-list/move-attributes-list.component';
 import { CharacterQuickPickerComponent } from './components/characters/character-quick-picker/character-quick-picker.component';
+import { MoveComponent } from './components/moves/move/move.component';
+import { MoveAttributesTableComponent } from './components/moves/move-attributes-table/move-attributes-table.component';
+import { HitboxesTableComponent } from './components/hitboxes/hitboxes-table/hitboxes-table.component';
+import { MoveGifComponent } from './components/moves/move-gif/move-gif.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -39,6 +43,10 @@ export function createTranslateLoader(http: HttpClient) {
     CharacterStatisticsTableComponent,
     MoveAttributesListComponent,
     CharacterQuickPickerComponent,
+    MoveComponent,
+    MoveAttributesTableComponent,
+    HitboxesTableComponent,
+    MoveGifComponent,
   ],
   imports: [
     BrowserModule,

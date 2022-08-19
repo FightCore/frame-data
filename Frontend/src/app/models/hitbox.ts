@@ -6,4 +6,7 @@ export interface Hitbox {
   setKnockback: number;
   baseKnockback: number;
   effect: string;
+  hitlagAttacker: number;
+  hitlagDefender: number;
+  shieldstun: number;
 }

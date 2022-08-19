@@ -29,6 +29,7 @@
     "CompareTool": "Compare Tool"
   },
   "Moves": {
+    "NameTitle": "{{ characterName }} - {{ moveName }}",
     "Categories": {
       "GroundedAttacks": "Grounded Attacks",
       "TiltAttacks": "Tilt Attacks",
@@ -38,7 +39,9 @@
       "Dodges": "Dodges",
       "Unknown": "Unknown"
     },
+    "Hitboxes": "Hitboxes",
     "Attributes": {
+      "Attributes": "Attributes",
       "Name": "Name",
       "Value": "Value",
       "Start": "Start",
@@ -53,6 +56,21 @@
       "AutoCancel": "Auto Cancel",
       "Etc": "Etc",
       "DatabaseName": "Database Name"
+    }
+  },
+  "Hitboxes": {
+    "FrameInGIF": "Frame in GIF (not in the move): {{ frame }}",
+    "Attributes": {
+      "Name": "Name",
+      "Damage": "Damage",
+      "Angle": "Angle",
+      "KnockbackGrowth": "Knockback Growth",
+      "SetKnockback": "Set Knockback",
+      "BaseKnockback": "Base Knockback",
+      "Effect": "Effect",
+      "HitlagAttacker": "Hitlag Attacker",
+      "HitlagDefender": "Hitlag Defender",
+      "ShieldStun": "Shieldstun"
     }
   }
 }

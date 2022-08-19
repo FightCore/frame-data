@@ -29,10 +29,40 @@ $FightCore-theme: mat.define-light-theme(
   )
 );
 
+@mixin background-theme($theme) {
+  // Extract the palettes you need from the theme definition.
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+
+  .background-color-primary {
+    background-color: mat.get-color-from-palette($primary);
+  }
+
+  .background-color-accent {
+    background-color: mat.get-color-from-palette($accent);
+  }
+  .avatar-accent {
+    .avatar-content {
+        background-color: mat.get-color-from-palette($accent) !important;
+    }
+  }
+  .color-primary {
+    color: mat.get-color-from-palette($primary);
+  }
+
+  .color-accent {
+    color: mat.get-color-from-palette($accent);
+  }
+}
+
+
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 @include mat.all-component-themes($FightCore-theme);
+@include background-theme($FightCore-theme);
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -49,8 +79,6 @@ body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
-}
-
-body {
+  background-color: #eeeeee;
   height: 100%;
 }

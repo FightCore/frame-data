@@ -10,6 +10,7 @@ import { MoveType } from 'src/app/models/move-type';
 export class MoveListComponent {
   @Input() moves?: Move[];
   @Input() characterName?: string;
+  @Input() characterId?: number;
 
   moveTypes = [
     { name: 'Moves.Categories.GroundedAttacks', value: MoveType.grounded },

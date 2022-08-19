@@ -1,0 +1,38 @@
+<div *ngIf="!move; else moveDisplay">Loading...</div>
+
+<ng-template #moveDisplay>
+  <mat-toolbar color="primary">
+    <h2 class="w-full text-center">
+      {{
+        "Moves.NameTitle"
+          | translate: { characterName: character!.name, moveName: move!.name }
+      }}
+    </h2>
+  </mat-toolbar>
+  <div class="grid grid-cols-2">
+    <app-move-gif
+      [move]="move"
+      [characterName]="character!.normalizedName"
+    ></app-move-gif>
+    <div class="pl-3">
+      <h3>{{ "Common.Notes" | translate }}</h3>
+      <p>{{ move!.notes ?? ("Common.NoNotes" | translate) }}</p>
+      <h3>{{ "Common.Source" | translate }}</h3>
+      <p>{{ move!.source ?? ("Common.NoSource" | translate) }}</p>
+    </div>
+  </div>
+
+  <mat-toolbar color="primary">
+    <h2 class="w-full text-center">
+      {{ "Moves.Attributes.Attributes" | translate }}
+    </h2>
+  </mat-toolbar>
+  <app-move-attributes-table [move]="move"></app-move-attributes-table>
+
+  <mat-toolbar color="primary">
+    <h2 class="w-full text-center">
+      {{ "Moves.Hitboxes" | translate }}
+    </h2>
+  </mat-toolbar>
+  <app-hitboxes-table [hitboxes]="move!.hitboxes"></app-hitboxes-table>
+</ng-template>

@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import slugify from 'slugify';
 import { Move } from 'src/app/models/move';
 
 @Component({
@@ -9,6 +11,15 @@ import { Move } from 'src/app/models/move';
 export class MoveCardComponent {
   @Input() move?: Move;
   @Input() characterName?: string;
+  @Input() characterId?: number;
 
-  openMove(): void {}
+  constructor(private router: Router) {}
+
+  openMove(): void {
+    this.router.navigate([
+      `characters/${this.characterId!}/${slugify(this.characterName!)}/moves/${
+        this.move!.id
+      }/${slugify(this.move!.name)}`,
+    ]);
+  }
 }
