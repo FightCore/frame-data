@@ -42,4 +42,16 @@ export class HitboxesTableComponent extends TranslatedAgGridTableComponent {
   onGridReady(): void {
     this.agGrid?.api.sizeColumnsToFit();
   }
+
+  getValueForHitboxProperty(hitbox: Hitbox, value: string | undefined): string | number {
+    if (!value || !hitbox) {
+      return '';
+    }
+
+    type ObjectKey = keyof typeof hitbox;
+
+    const key = value as ObjectKey;
+
+    return hitbox[key];
+  }
 }

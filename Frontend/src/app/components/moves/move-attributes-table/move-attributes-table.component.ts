@@ -40,4 +40,22 @@ export class MoveAttributesTableComponent extends TranslatedAgGridTableComponent
   onGridReady(): void {
     this.agGrid?.api.sizeColumnsToFit();
   }
+
+  getValueForMoveProperty(value: string | undefined): string | number | undefined {
+    if (!value || !this.move) {
+      return '';
+    }
+
+    type ObjectKey = keyof typeof this.move;
+
+    const key = value as ObjectKey;
+
+    const returnValue = this.move[key];
+    const returnValueType = typeof returnValue;
+    if (returnValueType === 'string' || returnValueType === 'number' || returnValueType === 'undefined') {
+      return returnValue as string | number | undefined;
+    }
+
+    return '';
+  }
 }

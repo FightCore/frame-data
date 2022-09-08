@@ -21,6 +21,9 @@ export const selectCharacter = (props: { characterId: number }) =>
     )
   );
 
+export const selectMoves = () =>
+  createSelector(selectCharactersState, (state: FrameDataState) => state.moves);
+
 export const selectMove = (props: { characterId: number; moveId: number }) =>
   createSelector(selectCharactersState, (state: FrameDataState) =>
     state.moves.find(

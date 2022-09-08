@@ -2,14 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { FrameDataCharacter } from 'src/app/models/framedata-character';
 import { Move } from 'src/app/models/move';
-import { FrameDataService } from 'src/app/services/frame-data.service';
 import { select, Store } from '@ngrx/store';
-import {
-  selectCharacter,
-  selectMove,
-} from 'src/app/store/frame-data/frame-data.selectors';
-import { filter, pipe } from 'rxjs';
-import { loadCharacters } from 'src/app/store/frame-data/frame-data.actions';
+import { selectMove } from 'src/app/store/frame-data/frame-data.selectors';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-move',
@@ -20,14 +15,12 @@ export class MoveComponent implements OnInit {
   character?: FrameDataCharacter;
   move?: Move;
 
-  constructor(private store: Store, private activatedRoute: ActivatedRoute) {}
+  constructor(private store: Store, private activatedRoute: ActivatedRoute, private meta: Meta, private title: Title) {}
   ngOnInit(): void {
-    const characterId =
-      this.activatedRoute.snapshot.paramMap.get('characterId');
+    const characterId = this.activatedRoute.snapshot.paramMap.get('characterId');
     const moveId = this.activatedRoute.snapshot.paramMap.get('moveId');
 
     if (!characterId || !moveId) {
-      console.log('Bad ids');
       return;
     }
     this.store
@@ -40,15 +33,13 @@ export class MoveComponent implements OnInit {
         )
       )
       .subscribe((move) => {
-        console.log('Move', move);
         this.move = move;
-      });
+        this.character = move?.character;
 
-    this.store
-      .pipe(select(selectCharacter({ characterId: parseFloat(characterId) })))
-      .subscribe((character) => {
-        console.log('Char', character);
-        this.character = character;
+        if (!move || !this.character) {
+          return;
+        }
+        this.title.setTitle(`${this.character.name} - ${move.name} - FightCore`);
       });
   }
 }

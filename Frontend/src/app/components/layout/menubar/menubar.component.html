@@ -1,19 +1,20 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row>
-    <img
-      class="logo"
-      src="assets/images/Fightcore_Wordmark_white.svg"
-      alt="FightCore"
-    />
-
-    <span class="cursor-pointer ml-5" [routerLink]="'characters'">
-      {{ "MenuBar.Characters" | translate }}
-    </span>
-    <span class="cursor-pointer ml-5" [routerLink]="'characters'">
-      {{ "MenuBar.Moves" | translate }}
-    </span>
-    <span class="cursor-pointer ml-5" [routerLink]="'characters'">
-      {{ "MenuBar.CompareTool" | translate }}
-    </span>
+    <img class="logo" [src]="environment.siteUrl + '/assets/images/Fightcore_Wordmark_white.svg'" alt="FightCore" />
   </mat-toolbar-row>
 </mat-toolbar>
+<div class="p-3 nav-buttons-container">
+  <button mat-button class="cursor-pointer w-full" [routerLink]="'characters'">
+    <mat-icon>person</mat-icon>{{ 'MenuBar.Characters' | translate }}
+  </button>
+  <button mat-button class="cursor-pointer w-full" [routerLink]="'moves'">
+    <mat-icon>dashboard</mat-icon>{{ 'MenuBar.Moves' | translate }}
+  </button>
+  <button mat-button class="cursor-pointer w-full" [routerLink]="'compare-tool'">
+    <mat-chip-list class="inline">
+      <mat-icon>compare_arrows</mat-icon>
+      {{ 'MenuBar.CompareTool' | translate }}
+      <mat-chip class="inline" selected="true" color="accent">WIP</mat-chip>
+    </mat-chip-list>
+  </button>
+</div>

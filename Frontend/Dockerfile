@@ -1,0 +1,19 @@
+### Stage: 1 ###
+FROM node:16-alpine as Build
+WORKDIR /app
+COPY ./package.json ./package-lock.json /app/
+RUN npm install
+COPY . /app
+#This will create dist/ and dist-server/ folders in docker
+RUN npm run build:ssr
+
+### Stage: 2 ###
+FROM node:16-alpine
+WORKDIR /app
+COPY --from=Build /app/package.json /app
+COPY --from=Build /app/dist /app/dist
+COPY --from=Build /app/dist/FightCore/server /app/dist-server
+
+EXPOSE 4000
+
+CMD ["npm", "run", "serve:ssr"]

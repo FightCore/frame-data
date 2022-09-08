@@ -19,17 +19,17 @@ export const frameDataReducer = createReducer(
   on(FrameDataActions.loadedCharacters, (_state, { characters }) => {
     const moves = [];
     const mappedMoves = characters.map((character) => {
-      return { moves: character.moves, characterId: character.fightCoreId };
+      return { moves: character.moves, character: character };
     });
     for (const movesArray of mappedMoves) {
       for (const move of movesArray.moves) {
         moves.push({
           ...move,
-          characterId: movesArray.characterId,
+          character: movesArray.character,
+          characterId: movesArray.character.fightCoreId,
         });
       }
     }
-    console.log(moves);
     return { characters: [...characters], moves: [...moves] };
   })
 );

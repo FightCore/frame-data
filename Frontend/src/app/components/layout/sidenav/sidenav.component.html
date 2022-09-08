@@ -1,0 +1,21 @@
+<mat-toolbar *ngIf="mobileQuery.matches" color="primary" class="example-toolbar">
+  <button mat-icon-button (click)="drawer.toggle()"><mat-icon>menu</mat-icon></button>
+  <img class="logo" src="assets/images/Fightcore_Wordmark_white.svg" alt="FightCore" />
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav
+    class="sidenav"
+    [fixedInViewport]="true"
+    #drawer
+    [mode]="mobileQuery.matches ? 'over' : 'side'"
+    [opened]="!mobileQuery.matches"
+  >
+    <app-menubar></app-menubar>
+    <app-character-quick-picker></app-character-quick-picker>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <ng-content></ng-content>
+    <app-footer></app-footer>
+  </mat-sidenav-content>
+</mat-sidenav-container>

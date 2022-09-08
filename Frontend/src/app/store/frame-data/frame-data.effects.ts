@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
+import { makeStateKey, StateKey, TransferState } from '@angular/platform-browser';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
-import { catchError, EMPTY, map, mergeMap, tap } from 'rxjs';
+import { map, mergeMap, of, tap } from 'rxjs';
+import { FrameDataCharacter } from 'src/app/models/framedata-character';
 import { FrameDataService } from 'src/app/services/frame-data.service';
 import * as FrameDataActions from './frame-data.actions';
 
@@ -8,21 +10,22 @@ import * as FrameDataActions from './frame-data.actions';
 export class FrameDataEffects {
   constructor(
     private actions$: Actions,
-    private frameDataService: FrameDataService
+    private frameDataService: FrameDataService,
+    private transferState: TransferState
   ) {}
-
+  stateKey: StateKey<FrameDataCharacter[]> = makeStateKey<FrameDataCharacter[]>('moves');
   loadFrameData$ = createEffect(() =>
     this.actions$.pipe(
       ofType(FrameDataActions.loadCharacters),
-      mergeMap(() =>
-        this.frameDataService.getMoves().pipe(
-          tap(() => console.log('Characters load called.')),
-          map((characters) => {
-            console.log('Characters', characters);
-            return FrameDataActions.loadedCharacters(characters);
-          })
-        )
-      )
+      mergeMap(() => {
+        if (this.transferState.hasKey(this.stateKey)) {
+          return of(FrameDataActions.loadedCharacters(this.transferState.get(this.stateKey, [])));
+        }
+        return this.frameDataService.getMoves().pipe(
+          tap((characters) => this.transferState.set(this.stateKey, characters)),
+          map((characters) => FrameDataActions.loadedCharacters(characters))
+        );
+      })
     )
   );
 }

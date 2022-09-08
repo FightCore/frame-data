@@ -38,6 +38,18 @@ export class CharacterStatisticsTableComponent extends TranslatedAgGridTableComp
   }
 
   onGridReady() {
-    this.agGrid?.api.sizeColumnsToFit();
+    this.agGrid?.columnApi.autoSizeAllColumns();
+  }
+
+  getValueForCharacterProperty(value: string | undefined): string | number | boolean {
+    if (!value || !this.character) {
+      return '';
+    }
+
+    type ObjectKey = keyof typeof this.character;
+
+    const key = value as ObjectKey;
+
+    return this.character[key];
   }
 }

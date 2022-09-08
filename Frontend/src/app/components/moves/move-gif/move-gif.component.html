@@ -35,7 +35,5 @@
   </button>
 </div>
 <p class="inline" *ngIf="superGif">
-  {{
-    "Hitboxes.FrameInGIF" | translate: { frame: superGif?.getCurrentFrame() }
-  }}
+  {{ "Hitboxes.FrameInGIF" | translate: { frame: superGif.getCurrentFrame() } }}
 </p>

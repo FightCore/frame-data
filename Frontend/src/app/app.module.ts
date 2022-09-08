@@ -27,9 +27,13 @@ import { StoreModule } from '@ngrx/store';
 import { frameDataReducer } from './store/frame-data/frame-data.reducers';
 import { FrameDataEffects } from './store/frame-data/frame-data.effects';
 import { EffectsModule } from '@ngrx/effects';
+import { MovesComponent } from './components/moves/moves/moves.component';
+import { CompareToolComponent } from './components/moves/compare-tool/compare-tool.component';
+import { SidenavComponent } from './components/layout/sidenav/sidenav.component';
+import { environment } from 'src/environments/environment';
 
 export function createTranslateLoader(http: HttpClient) {
-  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+  return new TranslateHttpLoader(http, environment.siteUrl + '/assets/i18n/', '.json');
 }
 
 @NgModule({
@@ -51,9 +55,12 @@ export function createTranslateLoader(http: HttpClient) {
     MoveAttributesTableComponent,
     HitboxesTableComponent,
     MoveGifComponent,
+    MovesComponent,
+    CompareToolComponent,
+    SidenavComponent,
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,

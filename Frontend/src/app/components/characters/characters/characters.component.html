@@ -1,11 +1,12 @@
-<app-character-quick-picker
-  *ngIf="characters"
-  [characters]="characters"
-></app-character-quick-picker>
+<mat-toolbar color="primary">
+  <p class="w-full text-center text-3xl">{{ 'Characters.Characters' | translate }}</p>
+</mat-toolbar>
 
-<div class="grid grid-cols-5 gap-2">
-  <app-character-preview-card
-    *ngFor="let character of characters"
-    [character]="character"
-  ></app-character-preview-card>
+<div class="p-3">
+  <div class="grid grid-cols-1 lg:grid-cols-5 gap-2">
+    <app-character-preview-card
+      *ngFor="let character of characters"
+      [character]="character"
+    ></app-character-preview-card>
+  </div>
 </div>

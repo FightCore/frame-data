@@ -5,6 +5,7 @@
 export const environment = {
   production: false,
   baseUrl: 'https://api.fightcore.gg',
+  siteUrl: 'http://localhost:4200',
 };
 
 /*

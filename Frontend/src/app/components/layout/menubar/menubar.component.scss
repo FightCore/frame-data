@@ -1,3 +1,11 @@
 .logo {
   width: 15vw;
 }
+.nav-buttons-container {
+  button {
+    text-align: left;
+  }
+}
+mat-chip {
+  padding: 4px 9px !important;
+}

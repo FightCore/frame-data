@@ -1,76 +1,80 @@
 {
-  "Common": {
-    "View": "View",
-    "Loading": "Loading",
-    "Notes": "Notes",
-    "Source": "Source"
-  },
   "Characters": {
-    "QuickCharacterSelector": "Quick Character Selector",
     "Attributes": {
       "Attributes": "Attributes",
-      "Weight": "Weight",
-      "Gravity": "Gravity",
-      "WalkSpeed": "Walk Speed",
-      "RunSpeed": "Run Speed",
-      "WavedashLengthRank": "Wavedash Length Rank",
-      "PLAIntangibilityFrames": "PLA Intangibility Frames",
-      "JumpSquat": "Jump Squat",
       "CanWallJump": "Can Wall Jump",
+      "Gravity": "Gravity",
+      "JumpSquat": "Jump Squat",
       "Name": "Name",
+      "Notes": "Notes",
+      "PLAIntangibilityFrames": "PLA Intangibility Frames",
+      "RunSpeed": "Run Speed",
       "Value": "Value",
-      "Notes": "Notes"
+      "WalkSpeed": "Walk Speed",
+      "WavedashLengthRank": "Wavedash Length Rank",
+      "Weight": "Weight"
     },
-    "MovesTable": "Moves Table"
-  },
-  "MenuBar": {
     "Characters": "Characters",
     "Moves": "Moves",
-    "CompareTool": "Compare Tool"
+    "MovesTable": "Moves Table",
+    "QuickCharacterSelector": "Quick Character Selector"
   },
-  "Moves": {
-    "NameTitle": "{{ characterName }} - {{ moveName }}",
-    "Categories": {
-      "GroundedAttacks": "Grounded Attacks",
-      "TiltAttacks": "Tilt Attacks",
-      "AerialAttacks": "Aerial Attacks",
-      "SpecialAttacks": "Special Attacks",
-      "Throws": "Throws",
-      "Dodges": "Dodges",
-      "Unknown": "Unknown"
-    },
-    "Hitboxes": "Hitboxes",
-    "Attributes": {
-      "Attributes": "Attributes",
-      "Name": "Name",
-      "Value": "Value",
-      "Start": "Start",
-      "End": "End",
-      "TotalFrames": "Total Frames",
-      "IASA": "IASA",
-      "LandLag": "Land lag",
-      "LCanceledLandLag": "L-Canceled Land Lag",
-      "AutoCancelBefore": "Auto Cancel Before",
-      "AutoCancelAfter": "Auto Cancel After",
-      "Frames": "Frames",
-      "AutoCancel": "Auto Cancel",
-      "Etc": "Etc",
-      "DatabaseName": "Database Name"
-    }
+  "Common": {
+    "Loading": "Loading",
+    "Notes": "Notes",
+    "Source": "Source",
+    "View": "View"
   },
   "Hitboxes": {
-    "FrameInGIF": "Frame in GIF (not in the move): {{ frame }}",
     "Attributes": {
-      "Name": "Name",
-      "Damage": "Damage",
       "Angle": "Angle",
-      "KnockbackGrowth": "Knockback Growth",
-      "SetKnockback": "Set Knockback",
       "BaseKnockback": "Base Knockback",
+      "Damage": "Damage",
       "Effect": "Effect",
       "HitlagAttacker": "Hitlag Attacker",
       "HitlagDefender": "Hitlag Defender",
+      "KnockbackGrowth": "Knockback Growth",
+      "Name": "Name",
+      "SetKnockback": "Set Knockback",
       "ShieldStun": "Shieldstun"
-    }
+    },
+    "FrameInGIF": "Frame in GIF (not in the move): {{ frame }}"
+  },
+  "MenuBar": {
+    "Characters": "Characters",
+    "CompareTool": "Compare Tool",
+    "Moves": "Moves"
+  },
+  "Moves": {
+    "Attributes": {
+      "Attributes": "Attributes",
+      "AutoCancel": "Auto Cancel",
+      "AutoCancelAfter": "Auto Cancel After",
+      "AutoCancelBefore": "Auto Cancel Before",
+      "Character": "Character",
+      "DatabaseName": "Database Name",
+      "End": "End",
+      "Etc": "Etc",
+      "Frames": "Frames",
+      "IASA": "IASA",
+      "LandLag": "Land lag",
+      "LCanceledLandLag": "L-Canceled Land Lag",
+      "Move": "Move",
+      "Name": "Name",
+      "Start": "Start",
+      "TotalFrames": "Total Frames",
+      "Value": "Value"
+    },
+    "Categories": {
+      "AerialAttacks": "Aerial Attacks",
+      "Dodges": "Dodges",
+      "GroundedAttacks": "Grounded Attacks",
+      "SpecialAttacks": "Special Attacks",
+      "Throws": "Throws",
+      "TiltAttacks": "Tilt Attacks",
+      "Unknown": "Unknown"
+    },
+    "Hitboxes": "Hitboxes",
+    "NameTitle": "{{ characterName }} - {{ moveName }}"
   }
 }
