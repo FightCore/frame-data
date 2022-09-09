@@ -1,7 +1,7 @@
 import { Component, Input, OnInit, ViewChild } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { AgGridAngular } from 'ag-grid-angular';
-import { ColDef, HeaderValueGetterParams } from 'ag-grid-community';
+import { AgGridAngular } from '@ag-grid-community/angular';
+import { ColDef, HeaderValueGetterParams } from '@ag-grid-community/core';
 import { CharacterStatistics } from 'src/app/models/character-statistics';
 import { TranslatedAgGridTableComponent } from '../../helpers/translated-ag-grid-table';
 

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { select, Store } from '@ngrx/store';
 import { TranslateService } from '@ngx-translate/core';
-import { ColDef, ColGroupDef } from 'ag-grid-community';
+import { ColDef, ColGroupDef } from '@ag-grid-community/core';
 import { map } from 'rxjs';
 import { Move } from 'src/app/models/move';
 import { selectMoves } from 'src/app/store/frame-data/frame-data.selectors';

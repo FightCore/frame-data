@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { ColDef } from 'ag-grid-community';
+import { ColDef } from '@ag-grid-community/core';
 import { Move } from 'src/app/models/move';
 import { TranslatedAgGridTableComponent } from '../../helpers/translated-ag-grid-table';
 

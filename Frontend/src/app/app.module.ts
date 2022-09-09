@@ -31,6 +31,10 @@ import { MovesComponent } from './components/moves/moves/moves.component';
 import { CompareToolComponent } from './components/moves/compare-tool/compare-tool.component';
 import { SidenavComponent } from './components/layout/sidenav/sidenav.component';
 import { environment } from 'src/environments/environment';
+import { ModuleRegistry } from '@ag-grid-community/core';
+import { ClientSideRowModelModule } from '@ag-grid-community/client-side-row-model';
+
+ModuleRegistry.registerModules([ClientSideRowModelModule]);
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, environment.siteUrl + '/assets/i18n/', '.json');

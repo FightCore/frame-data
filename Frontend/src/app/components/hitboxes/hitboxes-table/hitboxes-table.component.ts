@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { ColDef } from 'ag-grid-community';
+import { ColDef } from '@ag-grid-community/core';
 import { Hitbox } from 'src/app/models/hitbox';
 import { TranslatedAgGridTableComponent } from '../../helpers/translated-ag-grid-table';
 

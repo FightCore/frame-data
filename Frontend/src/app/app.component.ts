@@ -4,7 +4,7 @@ import { Store } from '@ngrx/store';
 import * as FrameDataActions from 'src/app/store/frame-data/frame-data.actions';
 import { Meta } from '@angular/platform-browser';
 import { MetaTagService } from './services/meta-tag.service';
-import { NavigationEnd, NavigationStart, Router } from '@angular/router';
+import { NavigationStart, Router } from '@angular/router';
 import { filter } from 'rxjs';
 @Component({
   selector: 'app-root',
@@ -42,10 +42,10 @@ export class AppComponent {
         { name: 'twitter:description', content: 'FightCore is the frame data website for Super Smash Bros. Melee' },
         { name: 'twitter:site', content: 'https://fightcore.gg' },
         { name: 'twitter:author', content: '@BortTheBeaver' },
-        { name: 'og:title', content: 'FightCore' },
-        { name: 'og:description', content: 'FightCore is the frame data website for Super Smash Bros. Melee' },
-        { name: 'og:url', content: 'https://fightcore.gg' },
-        { name: 'og:type', content: 'website' },
+        { property: 'og:title', content: 'FightCore' },
+        { property: 'og:description', content: 'FightCore is the frame data website for Super Smash Bros. Melee' },
+        { property: 'og:url', content: 'https://fightcore.gg' },
+        { property: 'og:type', content: 'website' },
         { name: 'theme-color', content: '#96153a' },
       ]);
     });

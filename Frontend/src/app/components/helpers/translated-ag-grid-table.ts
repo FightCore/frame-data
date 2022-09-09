@@ -1,7 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { AgGridAngular } from 'ag-grid-angular';
-import { HeaderValueGetterParams } from 'ag-grid-community';
+import { HeaderValueGetterParams } from '@ag-grid-community/core';
+import { AgGridAngular } from '@ag-grid-community/angular';
 
 @Component({
   template: '',
