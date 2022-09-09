@@ -1,0 +1,16 @@
+<mat-toolbar color="primary">
+  <h2 class="w-full text-center">
+    {{ 'Characters.CompareCharacters' | translate }}
+  </h2>
+</mat-toolbar>
+
+<div *ngIf="characters && characters.length > 0" class="p-2">
+  <div class="grid grid-cols-1 lg:grid-cols-4 gap-1">
+    <app-compare-characters-stat-table
+      *ngFor="let stat of stats"
+      [characters]="characters"
+      [stat]="stat.key"
+      [statTranslationKey]="stat.translation"
+    ></app-compare-characters-stat-table>
+  </div>
+</div>

@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { select, Store } from '@ngrx/store';
+import { updateTheme } from 'src/app/store/user-settings/user-settings.actions';
+import { isDarkMode } from 'src/app/store/user-settings/user-settings.selectors';
 import { environment } from 'src/environments/environment';
 
 @Component({
@@ -8,7 +11,6 @@ import { environment } from 'src/environments/environment';
 })
 export class MenubarComponent implements OnInit {
   environment = environment;
-  constructor() {}
 
   ngOnInit(): void {}
 }

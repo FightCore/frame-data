@@ -33,6 +33,10 @@ import { SidenavComponent } from './components/layout/sidenav/sidenav.component'
 import { environment } from 'src/environments/environment';
 import { ModuleRegistry } from '@ag-grid-community/core';
 import { ClientSideRowModelModule } from '@ag-grid-community/client-side-row-model';
+import { CompareCharactersComponent } from './components/compare/compare-characters/compare-characters.component';
+import { CompareCharactersStatTableComponent } from './components/compare/compare-characters-stat-table/compare-characters-stat-table.component';
+import { userSettingsReducer } from './store/user-settings/user-settings.reducers';
+import { UserSettingsEffects } from './store/user-settings/user-settings.effects';
 
 ModuleRegistry.registerModules([ClientSideRowModelModule]);
 
@@ -62,6 +66,8 @@ export function createTranslateLoader(http: HttpClient) {
     MovesComponent,
     CompareToolComponent,
     SidenavComponent,
+    CompareCharactersComponent,
+    CompareCharactersStatTableComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
@@ -76,8 +82,8 @@ export function createTranslateLoader(http: HttpClient) {
       },
       defaultLanguage: 'en',
     }),
-    StoreModule.forRoot({ frameData: frameDataReducer }),
-    EffectsModule.forRoot([FrameDataEffects]),
+    StoreModule.forRoot({ frameData: frameDataReducer, userSettings: userSettingsReducer }),
+    EffectsModule.forRoot([FrameDataEffects, UserSettingsEffects]),
     SharedModule,
   ],
   providers: [],

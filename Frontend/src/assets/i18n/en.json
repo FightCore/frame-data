@@ -14,6 +14,8 @@
       "WavedashLengthRank": "Wavedash Length Rank",
       "Weight": "Weight"
     },
+    "Character": "Character",
+    "CompareCharacters": "Compare Characters",
     "Characters": "Characters",
     "Moves": "Moves",
     "MovesTable": "Moves Table",
@@ -43,8 +45,9 @@
   },
   "MenuBar": {
     "Characters": "Characters",
-    "CompareTool": "Compare Tool",
-    "Moves": "Moves"
+    "CompareCharacters": "Compare Characters",
+    "Moves": "Moves",
+    "SwitchTheme": "Switch theme"
   },
   "Moves": {
     "Attributes": {

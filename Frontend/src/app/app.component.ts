@@ -1,26 +1,44 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, OnInit, PLATFORM_ID, Renderer2, RendererFactory2 } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { Store } from '@ngrx/store';
+import { select, Store } from '@ngrx/store';
 import * as FrameDataActions from 'src/app/store/frame-data/frame-data.actions';
 import { Meta } from '@angular/platform-browser';
 import { MetaTagService } from './services/meta-tag.service';
 import { NavigationStart, Router } from '@angular/router';
 import { filter } from 'rxjs';
+import { isPlatformBrowser } from '@angular/common';
+import { loadSettings } from './store/user-settings/user-settings.actions';
+import { isDarkMode } from './store/user-settings/user-settings.selectors';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
+  private renderer?: Renderer2;
   title = 'FightCore';
+  useDarkTheme = false;
 
   constructor(
+    rendererFactory: RendererFactory2,
+    @Inject(PLATFORM_ID) platformId: string,
     translateService: TranslateService,
     store: Store,
     private meta: Meta,
     private metaTagService: MetaTagService,
     private router: Router
   ) {
+    if (isPlatformBrowser(platformId)) {
+      this.renderer = rendererFactory.createRenderer(null, null);
+      store.dispatch(loadSettings());
+      store.pipe(select(isDarkMode())).subscribe((isDarkMode) => {
+        if (isDarkMode) {
+          this.renderer!.addClass(document.body, 'dark-theme');
+        } else {
+          this.renderer!.removeClass(document.body, 'dark-theme');
+        }
+      });
+    }
     // this language will be used as a fallback when a translation isn't found in the current language
     translateService.setDefaultLang('en');
 

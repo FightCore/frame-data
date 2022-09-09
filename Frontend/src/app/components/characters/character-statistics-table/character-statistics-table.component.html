@@ -1,7 +1,9 @@
 <ag-grid-angular
   *ngIf="character"
   style="width: 100%; height: 100px"
-  class="hidden md:block ag-theme-alpine"
+  class="hidden md:block"
+  [class.ag-theme-alpine]="!useDarkMode"
+  [class.ag-theme-alpine-dark]="useDarkMode"
   [columnDefs]="colDefs"
   [rowData]="[character]"
   [defaultColDef]="defaultColumnDefinition"

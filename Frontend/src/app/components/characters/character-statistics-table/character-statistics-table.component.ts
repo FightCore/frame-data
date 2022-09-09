@@ -1,9 +1,10 @@
-import { Component, Input, OnInit, ViewChild } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { AgGridAngular } from '@ag-grid-community/angular';
-import { ColDef, HeaderValueGetterParams } from '@ag-grid-community/core';
+import { ColDef } from '@ag-grid-community/core';
 import { CharacterStatistics } from 'src/app/models/character-statistics';
 import { TranslatedAgGridTableComponent } from '../../helpers/translated-ag-grid-table';
+import { select, Store } from '@ngrx/store';
+import { isDarkMode } from 'src/app/store/user-settings/user-settings.selectors';
 
 @Component({
   selector: 'app-character-statistics-table',
@@ -12,6 +13,7 @@ import { TranslatedAgGridTableComponent } from '../../helpers/translated-ag-grid
 })
 export class CharacterStatisticsTableComponent extends TranslatedAgGridTableComponent {
   @Input() character?: CharacterStatistics;
+  useDarkMode: boolean = false;
   defaultColumnDefinition: ColDef = {
     wrapHeaderText: true,
     autoHeaderHeight: true,
@@ -33,12 +35,16 @@ export class CharacterStatisticsTableComponent extends TranslatedAgGridTableComp
     { headerName: 'Characters.Attributes.CanWallJump', field: 'canWallJump' }, // ? 'Yes' : 'No' },
     { headerName: 'Characters.Attributes.Notes', field: 'notes' },
   ];
-  constructor(translateService: TranslateService) {
+  constructor(translateService: TranslateService, private store: Store) {
     super(translateService);
+
+    this.store.pipe(select(isDarkMode())).subscribe((useDarkMode) => {
+      this.useDarkMode = useDarkMode;
+    });
   }
 
   onGridReady() {
-    this.agGrid?.columnApi.autoSizeAllColumns();
+    this.agGrid?.api.sizeColumnsToFit();
   }
 
   getValueForCharacterProperty(value: string | undefined): string | number | boolean {

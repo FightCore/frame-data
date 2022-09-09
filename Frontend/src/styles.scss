@@ -19,7 +19,17 @@ $FightCore-warn: mat.define-palette(mat.$red-palette);
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
-$FightCore-theme: mat.define-light-theme(
+$FightCore-light-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $FightCore-primary,
+      accent: $FightCore-accent,
+      warn: $FightCore-warn,
+    ),
+  )
+);
+
+$FightCore-dark-theme: mat.define-dark-theme(
   (
     color: (
       primary: $FightCore-primary,
@@ -59,8 +69,13 @@ $FightCore-theme: mat.define-light-theme(
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
-@include mat.all-component-themes($FightCore-theme);
-@include background-theme($FightCore-theme);
+@include mat.all-component-themes($FightCore-light-theme);
+@include background-theme($FightCore-light-theme);
+
+.dark-theme {
+  @include mat.all-component-themes($FightCore-dark-theme);
+  @include background-theme($FightCore-dark-theme);
+}
 
 
 @tailwind base;
@@ -69,6 +84,7 @@ $FightCore-theme: mat.define-light-theme(
 
 @import "./node_modules/@ag-grid-community/core/dist/styles/ag-grid.scss";
 @import "./node_modules/@ag-grid-community/core/dist/styles/ag-theme-alpine/sass/ag-theme-alpine.scss";
+@import "./node_modules/@ag-grid-community/core/dist/styles/ag-theme-alpine-dark/sass/ag-theme-alpine-dark.scss";
 /* You can add global styles to this file, and also import other style files */
 
 html,
@@ -81,3 +97,9 @@ body {
   background-color: #eeeeee;
   height: 100%;
 }
+
+
+  body.dark-theme {
+    background-color: #303030;
+  }
+

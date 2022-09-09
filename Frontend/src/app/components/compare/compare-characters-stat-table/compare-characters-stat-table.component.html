@@ -1,0 +1,20 @@
+<h2>{{ statTranslationKey | translate }}</h2>
+
+<table matSort>
+  <tr>
+    <th mat-sort-header="character"></th>
+    <th mat-sort-header="stat"></th>
+  </tr>
+
+  <tr *ngFor="let characterMovePair of values | keyvalue">
+    <td>
+      <img
+        class="cursor-pointer inline character-icon"
+        [src]="environment.siteUrl + '/assets/images/stocks/' + characterMovePair.key!.normalizedName + '.png'"
+        [alt]="characterMovePair.key.name"
+      />
+      {{ characterMovePair.key.name }}
+    </td>
+    <td>{{ characterMovePair.value }}</td>
+  </tr>
+</table>

@@ -3,6 +3,8 @@ import { TranslateService } from '@ngx-translate/core';
 import { ColDef } from '@ag-grid-community/core';
 import { Move } from 'src/app/models/move';
 import { TranslatedAgGridTableComponent } from '../../helpers/translated-ag-grid-table';
+import { select, Store } from '@ngrx/store';
+import { isDarkMode } from 'src/app/store/user-settings/user-settings.selectors';
 
 @Component({
   selector: 'app-move-attributes-table',
@@ -33,8 +35,14 @@ export class MoveAttributesTableComponent extends TranslatedAgGridTableComponent
   defaultColDef: ColDef = {
     headerValueGetter: (value) => this.translateHeaderName(value),
   };
-  constructor(translateService: TranslateService) {
+  useDarkMode = false;
+
+  constructor(translateService: TranslateService, private store: Store) {
     super(translateService);
+
+    this.store.pipe(select(isDarkMode())).subscribe((useDarkMode) => {
+      this.useDarkMode = useDarkMode;
+    });
   }
 
   onGridReady(): void {

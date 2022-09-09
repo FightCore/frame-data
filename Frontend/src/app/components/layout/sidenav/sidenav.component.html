@@ -12,6 +12,11 @@
     [opened]="!mobileQuery.matches"
   >
     <app-menubar></app-menubar>
+    <mat-divider></mat-divider>
+    <button mat-button (click)="onClickToggleTheme()">
+      <mat-icon>{{ useDarkMode ? 'light_mode' : 'dark_mode' }}</mat-icon>
+      {{ 'MenuBar.SwitchTheme' | translate }}
+    </button>
     <app-character-quick-picker></app-character-quick-picker>
   </mat-sidenav>
   <mat-sidenav-content>

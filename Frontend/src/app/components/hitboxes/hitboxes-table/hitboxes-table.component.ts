@@ -3,6 +3,8 @@ import { TranslateService } from '@ngx-translate/core';
 import { ColDef } from '@ag-grid-community/core';
 import { Hitbox } from 'src/app/models/hitbox';
 import { TranslatedAgGridTableComponent } from '../../helpers/translated-ag-grid-table';
+import { select, Store } from '@ngrx/store';
+import { isDarkMode } from 'src/app/store/user-settings/user-settings.selectors';
 
 @Component({
   selector: 'app-hitboxes-table',
@@ -11,6 +13,7 @@ import { TranslatedAgGridTableComponent } from '../../helpers/translated-ag-grid
 })
 export class HitboxesTableComponent extends TranslatedAgGridTableComponent {
   @Input() hitboxes?: Hitbox[];
+  useDarkMode = false;
   colDef: ColDef[] = [
     { headerName: 'Hitboxes.Attributes.Name', field: 'name', pinned: 'left' },
     { headerName: 'Hitboxes.Attributes.Damage', field: 'damage' },
@@ -35,8 +38,12 @@ export class HitboxesTableComponent extends TranslatedAgGridTableComponent {
   defaultColDef: ColDef = {
     headerValueGetter: (value) => this.translateHeaderName(value),
   };
-  constructor(translateService: TranslateService) {
+  constructor(translateService: TranslateService, private store: Store) {
     super(translateService);
+
+    this.store.pipe(select(isDarkMode())).subscribe((useDarkMode) => {
+      this.useDarkMode = useDarkMode;
+    });
   }
 
   onGridReady(): void {

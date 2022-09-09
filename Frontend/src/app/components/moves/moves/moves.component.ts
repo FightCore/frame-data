@@ -7,6 +7,7 @@ import { map } from 'rxjs';
 import { Move } from 'src/app/models/move';
 import { selectMoves } from 'src/app/store/frame-data/frame-data.selectors';
 import { TranslatedAgGridTableComponent } from '../../helpers/translated-ag-grid-table';
+import { isDarkMode } from 'src/app/store/user-settings/user-settings.selectors';
 
 @Component({
   selector: 'app-moves',
@@ -94,8 +95,14 @@ export class MovesComponent extends TranslatedAgGridTableComponent implements On
     resizable: true,
     headerValueGetter: (value) => this.translateHeaderName(value),
   };
+
+  useDarkMode = false;
   constructor(translateService: TranslateService, private store: Store, private title: Title) {
     super(translateService);
+
+    this.store.pipe(select(isDarkMode())).subscribe((useDarkMode) => {
+      this.useDarkMode = useDarkMode;
+    });
   }
 
   ngOnInit(): void {
