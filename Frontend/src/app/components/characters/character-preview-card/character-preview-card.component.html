@@ -13,8 +13,8 @@
     <app-character-statistics [frameDataCharacter]="character"></app-character-statistics>
   </mat-card-content>
   <mat-card-actions>
-    <button mat-raised-button (click)="onClickViewCharacter()" color="primary" class="w-full">
+    <a mat-raised-button [routerLink]="viewCharacterUrl()" color="primary" class="w-full">
       {{ 'Common.View' | translate }}
-    </button>
+    </a>
   </mat-card-actions>
 </mat-card>

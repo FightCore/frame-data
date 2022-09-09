@@ -4,17 +4,17 @@
   </mat-toolbar-row>
 </mat-toolbar>
 <div class="p-3 nav-buttons-container">
-  <button mat-button class="cursor-pointer w-full" [routerLink]="'characters'">
+  <a mat-button class="cursor-pointer w-full" [routerLink]="'characters'">
     <mat-icon>person</mat-icon>{{ 'MenuBar.Characters' | translate }}
-  </button>
-  <button mat-button class="cursor-pointer w-full" [routerLink]="'moves'">
+  </a>
+  <a mat-button class="cursor-pointer w-full" [routerLink]="'moves'">
     <mat-icon>dashboard</mat-icon>{{ 'MenuBar.Moves' | translate }}
-  </button>
-  <button mat-button class="cursor-pointer w-full" [routerLink]="'compare-tool'">
+  </a>
+  <a mat-button class="cursor-pointer w-full" [routerLink]="'compare-tool'">
     <mat-chip-list class="inline">
       <mat-icon>compare_arrows</mat-icon>
       {{ 'MenuBar.CompareTool' | translate }}
       <mat-chip class="inline" selected="true" color="accent">WIP</mat-chip>
     </mat-chip-list>
-  </button>
+  </a>
 </div>

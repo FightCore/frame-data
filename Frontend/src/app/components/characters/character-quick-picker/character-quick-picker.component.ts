@@ -38,7 +38,7 @@ export class CharacterQuickPickerComponent implements OnInit {
     return characterOne.name > characterTwo.name ? 1 : -1;
   }
 
-  viewCharacter(character: FrameDataCharacter): void {
-    this.router.navigate([`characters`, character.fightCoreId, slugify(character.name)]);
+  viewCharacterUrl(character: FrameDataCharacter): string {
+    return `/characters/${character.fightCoreId}/${slugify(character.name)}`;
   }
 }

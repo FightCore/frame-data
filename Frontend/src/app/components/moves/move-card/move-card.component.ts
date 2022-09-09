@@ -13,13 +13,11 @@ export class MoveCardComponent {
   @Input() characterName?: string;
   @Input() characterId?: number;
 
-  constructor(private router: Router) {}
+  constructor() {}
 
-  openMove(): void {
-    this.router.navigate([
-      `characters/${this.characterId!}/${slugify(this.characterName!)}/moves/${
-        this.move!.id
-      }/${slugify(this.move!.name)}`,
-    ]);
+  moveUrl(): string {
+    return `/characters/${this.characterId!}/${slugify(this.characterName!)}/moves/${this.move!.id}/${slugify(
+      this.move!.name
+    )}`;
   }
 }

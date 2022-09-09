@@ -5,35 +5,30 @@
         <mat-card-title class="title">{{ move?.name }}</mat-card-title>
         <mat-card-subtitle>{{ move?.normalizedName }}</mat-card-subtitle>
       </mat-card-header>
-      <img
-        (click)="openMove()"
-        mat-card-image
-        class="frame-data-image"
-        [src]="
-          'https://i.fightcore.gg/melee/moves/' +
-          characterName +
-          '/' +
-          move?.normalizedName +
-          '.gif'
-        "
-        onerror="this.src='https://i.fightcore.gg/melee/moves/notfound.jpg';"
-        [alt]="move?.normalizedName + '-gif'"
-      />
+      <a [routerLink]="moveUrl()">
+        <img
+          mat-card-image
+          class="frame-data-image"
+          [src]="'https://i.fightcore.gg/melee/moves/' + characterName + '/' + move?.normalizedName + '.gif'"
+          onerror="this.src='https://i.fightcore.gg/melee/moves/notfound.jpg';"
+          [alt]="move?.normalizedName + '-gif'"
+        />
+      </a>
       <mat-card-content>
         <app-move-attributes-list [move]="move"></app-move-attributes-list>
         <mat-divider></mat-divider>
         <div *ngIf="move?.notes">
-          {{ "Common.Notes" | translate }}
+          {{ 'Common.Notes' | translate }}
           <div>{{ move?.notes }}</div>
           <hr />
         </div>
-        <a [href]="move?.source">{{ "Common.Source" | translate }}</a>
+        <a [href]="move?.source">{{ 'Common.Source' | translate }}</a>
       </mat-card-content>
     </div>
     <mat-card-actions>
-      <button mat-raised-button color="primary" (click)="openMove()">
-        {{ "Common.View" | translate }}
-      </button>
+      <a mat-raised-button color="primary" [routerLink]="moveUrl()">
+        {{ 'Common.View' | translate }}
+      </a>
     </mat-card-actions>
   </div>
 </mat-card>

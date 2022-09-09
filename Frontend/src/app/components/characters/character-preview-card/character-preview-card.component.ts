@@ -12,9 +12,9 @@ import { environment } from 'src/environments/environment';
 export class CharacterPreviewCardComponent {
   @Input() character?: FrameDataCharacter;
   environment = environment;
-  constructor(private router: Router) {}
+  constructor() {}
 
-  onClickViewCharacter(): void {
-    this.router.navigate([`/characters/${this.character?.fightCoreId}/${slugify(this.character!.name)}`]);
+  viewCharacterUrl(): string {
+    return `/characters/${this.character?.fightCoreId}/${slugify(this.character!.name)}`;
   }
 }
