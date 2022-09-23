@@ -6,13 +6,16 @@
         <mat-card-subtitle>{{ move?.normalizedName }}</mat-card-subtitle>
       </mat-card-header>
       <a [routerLink]="moveUrl()">
-        <img
+        <video
+          type="video/webm"
           mat-card-image
           class="frame-data-image"
-          [src]="'https://i.fightcore.gg/melee/moves/' + characterName + '/' + move?.normalizedName + '.gif'"
-          onerror="this.src='https://i.fightcore.gg/melee/moves/notfound.jpg';"
-          [alt]="move?.normalizedName + '-gif'"
-        />
+          [src]="'https://i.fightcore.gg/melee/moves/' + characterName + '/' + move?.normalizedName + '.webm'"
+          playsinline
+          autoplay
+          muted
+          loop
+        ></video>
       </a>
       <mat-card-content>
         <app-move-attributes-list [move]="move"></app-move-attributes-list>
