@@ -73,7 +73,7 @@ $FightCore-dark-theme: mat.define-dark-theme(
 @include background-theme($FightCore-light-theme);
 
 .dark-theme {
-  @include mat.all-component-themes($FightCore-dark-theme);
+  @include mat.all-component-colors($FightCore-dark-theme);
   @include background-theme($FightCore-dark-theme);
 }
 
@@ -97,9 +97,7 @@ body {
   background-color: #eeeeee;
   height: 100%;
 }
-
-
-  body.dark-theme {
-    background-color: #303030;
-  }
+body.dark-theme {
+  background-color: #303030;
+}
 

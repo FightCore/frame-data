@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+import { Component, Inject, Input, OnInit, PLATFORM_ID } from '@angular/core';
 import { Router } from '@angular/router';
 import slugify from 'slugify';
 import { Move } from 'src/app/models/move';
@@ -12,8 +13,6 @@ export class MoveCardComponent {
   @Input() move?: Move;
   @Input() characterName?: string;
   @Input() characterId?: number;
-
-  constructor() {}
 
   moveUrl(): string {
     return `/characters/${this.characterId!}/${slugify(this.characterName!)}/moves/${this.move!.id}/${slugify(

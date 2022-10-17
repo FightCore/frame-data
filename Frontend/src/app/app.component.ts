@@ -30,7 +30,6 @@ export class AppComponent {
   ) {
     if (isPlatformBrowser(platformId)) {
       this.renderer = rendererFactory.createRenderer(null, null);
-      store.dispatch(loadSettings());
       store.pipe(select(isDarkMode())).subscribe((isDarkMode) => {
         if (isDarkMode) {
           this.renderer!.addClass(document.body, 'dark-theme');
@@ -39,6 +38,7 @@ export class AppComponent {
         }
       });
     }
+    store.dispatch(loadSettings());
     // this language will be used as a fallback when a translation isn't found in the current language
     translateService.setDefaultLang('en');
 

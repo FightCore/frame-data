@@ -1,31 +1,27 @@
-<mat-card class="h-full mat-elevation-z2">
+<mat-card *ngIf="move" class="h-full mat-elevation-z2">
   <div class="main-container">
     <div>
       <mat-card-header>
-        <mat-card-title class="title">{{ move?.name }}</mat-card-title>
-        <mat-card-subtitle>{{ move?.normalizedName }}</mat-card-subtitle>
+        <mat-card-title class="title">{{ move.name }}</mat-card-title>
+        <mat-card-subtitle>{{ move.normalizedName }}</mat-card-subtitle>
       </mat-card-header>
       <a [routerLink]="moveUrl()">
-        <video
-          type="video/webm"
-          mat-card-image
-          class="frame-data-image"
-          [src]="'https://i.fightcore.gg/melee/moves/' + characterName + '/' + move?.normalizedName + '.webm'"
-          playsinline
-          autoplay
-          muted
-          loop
-        ></video>
+        <video appVideoAutoplayMuted mat-card-image class="frame-data-image" muted playsinline autoplay loop>
+          <source
+            type="video/webm"
+            [src]="'https://i.fightcore.gg/melee/moves/' + characterName + '/' + move.normalizedName + '.webm'"
+          />
+        </video>
       </a>
       <mat-card-content>
         <app-move-attributes-list [move]="move"></app-move-attributes-list>
         <mat-divider></mat-divider>
-        <div *ngIf="move?.notes">
+        <div *ngIf="move.notes">
           {{ 'Common.Notes' | translate }}
-          <div>{{ move?.notes }}</div>
+          <div>{{ move.notes }}</div>
           <hr />
         </div>
-        <a [href]="move?.source">{{ 'Common.Source' | translate }}</a>
+        <a [href]="move.source">{{ 'Common.Source' | translate }}</a>
       </mat-card-content>
     </div>
     <mat-card-actions>

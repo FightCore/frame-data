@@ -5,16 +5,12 @@
 </mat-toolbar>
 <div class="p-3 nav-buttons-container">
   <a mat-button class="cursor-pointer w-full" [routerLink]="'characters'">
-    <mat-icon>person</mat-icon>{{ 'MenuBar.Characters' | translate }}
+    <mat-icon>person</mat-icon> {{ 'MenuBar.Characters' | translate }}
   </a>
   <a mat-button class="cursor-pointer w-full" [routerLink]="'moves'">
-    <mat-icon>dashboard</mat-icon>{{ 'MenuBar.Moves' | translate }}
+    <mat-icon>dashboard</mat-icon> {{ 'MenuBar.Moves' | translate }}
   </a>
   <a mat-button class="cursor-pointer w-full" [routerLink]="'compare-tool'">
-    <mat-chip-list class="inline">
-      <mat-icon>compare_arrows</mat-icon>
-      {{ 'MenuBar.CompareCharacters' | translate }}
-      <mat-chip class="inline" selected="true" color="accent">WIP</mat-chip>
-    </mat-chip-list>
+    <mat-icon>compare_arrows</mat-icon> {{ 'MenuBar.CompareCharacters' | translate }}
   </a>
 </div>

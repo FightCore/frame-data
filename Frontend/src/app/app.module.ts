@@ -37,6 +37,8 @@ import { CompareCharactersComponent } from './components/compare/compare-charact
 import { CompareCharactersStatTableComponent } from './components/compare/compare-characters-stat-table/compare-characters-stat-table.component';
 import { userSettingsReducer } from './store/user-settings/user-settings.reducers';
 import { UserSettingsEffects } from './store/user-settings/user-settings.effects';
+import { VideoAutoplayMutedDirective } from './directives/video-autoplay-muted.directive';
+import { OnlyClientSideDirective } from './directives/only-client-side.directive';
 
 ModuleRegistry.registerModules([ClientSideRowModelModule]);
 
@@ -68,6 +70,8 @@ export function createTranslateLoader(http: HttpClient) {
     SidenavComponent,
     CompareCharactersComponent,
     CompareCharactersStatTableComponent,
+    VideoAutoplayMutedDirective,
+    OnlyClientSideDirective,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

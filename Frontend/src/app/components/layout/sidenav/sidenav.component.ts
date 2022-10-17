@@ -1,5 +1,6 @@
 import { MediaMatcher } from '@angular/cdk/layout';
-import { ChangeDetectorRef, Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+import { ChangeDetectorRef, Component, Inject, OnDestroy, OnInit, PLATFORM_ID, ViewChild } from '@angular/core';
 import { MatSidenav } from '@angular/material/sidenav';
 import { NavigationEnd, NavigationStart, Router } from '@angular/router';
 import { select, Store } from '@ngrx/store';
@@ -14,14 +15,22 @@ import { isDarkMode } from 'src/app/store/user-settings/user-settings.selectors'
 })
 export class SidenavComponent implements OnDestroy {
   @ViewChild('drawer') sidenav?: MatSidenav;
-  mobileQuery: MediaQueryList;
+  mobileQuery?: MediaQueryList;
   useDarkMode = false;
-  private _mobileQueryListener: () => void;
+  private _mobileQueryListener?: () => void;
 
-  constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher, router: Router, private store: Store) {
-    this.mobileQuery = media.matchMedia('(max-width: 600px)');
-    this._mobileQueryListener = () => changeDetectorRef.detectChanges();
-    this.mobileQuery.addListener(this._mobileQueryListener);
+  constructor(
+    @Inject(PLATFORM_ID) platformId: string,
+    changeDetectorRef: ChangeDetectorRef,
+    media: MediaMatcher,
+    router: Router,
+    private store: Store
+  ) {
+    if (isPlatformBrowser(platformId)) {
+      this.mobileQuery = media.matchMedia('(max-width: 600px)');
+      this._mobileQueryListener = () => changeDetectorRef.detectChanges();
+      this.mobileQuery.addListener(this._mobileQueryListener);
+    }
 
     router.events.pipe(filter((event) => event instanceof NavigationStart)).subscribe(() => {
       if (!this.sidenav || this.sidenav.mode !== 'over') {
@@ -37,7 +46,7 @@ export class SidenavComponent implements OnDestroy {
   }
 
   ngOnDestroy(): void {
-    this.mobileQuery.removeListener(this._mobileQueryListener);
+    this.mobileQuery?.removeListener(this._mobileQueryListener!);
   }
 
   onClickToggleTheme(): void {

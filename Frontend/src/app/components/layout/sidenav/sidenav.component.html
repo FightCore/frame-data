@@ -1,4 +1,4 @@
-<mat-toolbar *ngIf="mobileQuery.matches" color="primary" class="example-toolbar">
+<mat-toolbar *ngIf="mobileQuery && mobileQuery.matches" color="primary">
   <button mat-icon-button (click)="drawer.toggle()"><mat-icon>menu</mat-icon></button>
   <img class="logo" src="assets/images/Fightcore_Wordmark_white.svg" alt="FightCore" />
 </mat-toolbar>
@@ -8,8 +8,8 @@
     class="sidenav"
     [fixedInViewport]="true"
     #drawer
-    [mode]="mobileQuery.matches ? 'over' : 'side'"
-    [opened]="!mobileQuery.matches"
+    [mode]="!mobileQuery || mobileQuery.matches ? 'over' : 'side'"
+    [opened]="!mobileQuery || !mobileQuery.matches"
   >
     <app-menubar></app-menubar>
     <mat-divider></mat-divider>
