@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { Router } from '@angular/router';
 import { select, Store } from '@ngrx/store';
 import { FrameDataCharacter } from 'src/app/models/framedata-character';
-import { FrameDataService } from 'src/app/services/frame-data.service';
+import { MetaTagService } from 'src/app/services/meta-tag.service';
 import { selectCharacters } from 'src/app/store/frame-data/frame-data.selectors';
 
 @Component({
@@ -13,7 +12,9 @@ import { selectCharacters } from 'src/app/store/frame-data/frame-data.selectors'
 })
 export class CharactersComponent implements OnInit {
   characters?: FrameDataCharacter[];
-  constructor(private store: Store, private title: Title) {}
+  constructor(private store: Store, private title: Title, private meta: MetaTagService) {
+    this.meta.updateForCharacters();
+  }
 
   ngOnInit(): void {
     this.title.setTitle('Characters - FightCore');

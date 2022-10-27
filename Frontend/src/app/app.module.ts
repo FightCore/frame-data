@@ -31,16 +31,12 @@ import { MovesComponent } from './components/moves/moves/moves.component';
 import { CompareToolComponent } from './components/moves/compare-tool/compare-tool.component';
 import { SidenavComponent } from './components/layout/sidenav/sidenav.component';
 import { environment } from 'src/environments/environment';
-import { ModuleRegistry } from '@ag-grid-community/core';
-import { ClientSideRowModelModule } from '@ag-grid-community/client-side-row-model';
 import { CompareCharactersComponent } from './components/compare/compare-characters/compare-characters.component';
 import { CompareCharactersStatTableComponent } from './components/compare/compare-characters-stat-table/compare-characters-stat-table.component';
 import { userSettingsReducer } from './store/user-settings/user-settings.reducers';
 import { UserSettingsEffects } from './store/user-settings/user-settings.effects';
 import { VideoAutoplayMutedDirective } from './directives/video-autoplay-muted.directive';
 import { OnlyClientSideDirective } from './directives/only-client-side.directive';
-
-ModuleRegistry.registerModules([ClientSideRowModelModule]);
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, environment.siteUrl + '/assets/i18n/', '.json');

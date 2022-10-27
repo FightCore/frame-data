@@ -1,8 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
-import { ColDef } from '@ag-grid-community/core';
 import { CharacterStatistics } from 'src/app/models/character-statistics';
-import { TranslatedAgGridTableComponent } from '../../helpers/translated-ag-grid-table';
 import { select, Store } from '@ngrx/store';
 import { isDarkMode } from 'src/app/store/user-settings/user-settings.selectors';
 
@@ -11,15 +8,11 @@ import { isDarkMode } from 'src/app/store/user-settings/user-settings.selectors'
   templateUrl: './character-statistics-table.component.html',
   styleUrls: ['./character-statistics-table.component.scss'],
 })
-export class CharacterStatisticsTableComponent extends TranslatedAgGridTableComponent {
+export class CharacterStatisticsTableComponent {
   @Input() character?: CharacterStatistics;
   useDarkMode: boolean = false;
-  defaultColumnDefinition: ColDef = {
-    wrapHeaderText: true,
-    autoHeaderHeight: true,
-    headerValueGetter: (value) => this.translateHeaderName(value),
-  };
-  colDefs: ColDef[] = [
+
+  colDefs = [
     { headerName: 'Characters.Attributes.Weight', field: 'weight' },
     {
       headerName: 'Characters.Attributes.Gravity',
@@ -35,16 +28,21 @@ export class CharacterStatisticsTableComponent extends TranslatedAgGridTableComp
     { headerName: 'Characters.Attributes.CanWallJump', field: 'canWallJump' }, // ? 'Yes' : 'No' },
     { headerName: 'Characters.Attributes.Notes', field: 'notes' },
   ];
-  constructor(translateService: TranslateService, private store: Store) {
-    super(translateService);
+  displayedColumns = [
+    'weight',
+    'gravity',
+    'walkSpeed',
+    'runSpeed',
+    'waveDashLengthRank',
+    'jumpSquat',
+    'canWallJump',
+    'notes',
+  ];
 
+  constructor(private store: Store) {
     this.store.pipe(select(isDarkMode())).subscribe((useDarkMode) => {
       this.useDarkMode = useDarkMode;
     });
-  }
-
-  onGridReady() {
-    this.agGrid?.api.sizeColumnsToFit();
   }
 
   getValueForCharacterProperty(value: string | undefined): string | number | boolean {

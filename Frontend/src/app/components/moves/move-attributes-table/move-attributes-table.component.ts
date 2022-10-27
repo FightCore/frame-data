@@ -1,8 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
-import { ColDef } from '@ag-grid-community/core';
+import { Component, Input } from '@angular/core';
 import { Move } from 'src/app/models/move';
-import { TranslatedAgGridTableComponent } from '../../helpers/translated-ag-grid-table';
 import { select, Store } from '@ngrx/store';
 import { isDarkMode } from 'src/app/store/user-settings/user-settings.selectors';
 
@@ -11,9 +8,9 @@ import { isDarkMode } from 'src/app/store/user-settings/user-settings.selectors'
   templateUrl: './move-attributes-table.component.html',
   styleUrls: ['./move-attributes-table.component.scss'],
 })
-export class MoveAttributesTableComponent extends TranslatedAgGridTableComponent {
+export class MoveAttributesTableComponent {
   @Input() move?: Move;
-  colDef: ColDef[] = [
+  colDef = [
     { headerName: 'Moves.Attributes.Start', field: 'start' },
     { headerName: 'Moves.Attributes.End', field: 'end' },
     { headerName: 'Moves.Attributes.TotalFrames', field: 'totalFrames' },
@@ -21,7 +18,7 @@ export class MoveAttributesTableComponent extends TranslatedAgGridTableComponent
     { headerName: 'Moves.Attributes.LandLag', field: 'landLag' },
     {
       headerName: 'Moves.Attributes.LCanceledLandLag',
-      field: 'lCanceledLandLang',
+      field: 'lCanceledLandLag',
     },
     {
       headerName: 'Moves.Attributes.AutoCancelBefore',
@@ -32,22 +29,16 @@ export class MoveAttributesTableComponent extends TranslatedAgGridTableComponent
       field: 'autoCancelAfter',
     },
   ];
-  defaultColDef: ColDef = {
-    headerValueGetter: (value) => this.translateHeaderName(value),
-  };
-  useDarkMode = false;
-
-  constructor(translateService: TranslateService, private store: Store) {
-    super(translateService);
-
-    this.store.pipe(select(isDarkMode())).subscribe((useDarkMode) => {
-      this.useDarkMode = useDarkMode;
-    });
-  }
-
-  onGridReady(): void {
-    this.agGrid?.api.sizeColumnsToFit();
-  }
+  displayedColumns = [
+    'start',
+    'end',
+    'totalFrames',
+    'iasa',
+    'landLag',
+    'lCanceledLandLag',
+    'autoCancelBefore',
+    'autoCancelAfter',
+  ];
 
   getValueForMoveProperty(value: string | undefined): string | number | undefined {
     if (!value || !this.move) {

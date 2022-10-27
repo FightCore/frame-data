@@ -82,11 +82,6 @@ $FightCore-dark-theme: mat.define-dark-theme(
 @tailwind components;
 @tailwind utilities;
 
-@import "./node_modules/@ag-grid-community/core/dist/styles/ag-grid.scss";
-@import "./node_modules/@ag-grid-community/core/dist/styles/ag-theme-alpine/sass/ag-theme-alpine.scss";
-@import "./node_modules/@ag-grid-community/core/dist/styles/ag-theme-alpine-dark/sass/ag-theme-alpine-dark.scss";
-/* You can add global styles to this file, and also import other style files */
-
 html,
 body {
   height: 100%;

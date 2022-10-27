@@ -1,8 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
-import { ColDef } from '@ag-grid-community/core';
+import { Component, Input } from '@angular/core';
 import { Hitbox } from 'src/app/models/hitbox';
-import { TranslatedAgGridTableComponent } from '../../helpers/translated-ag-grid-table';
 import { select, Store } from '@ngrx/store';
 import { isDarkMode } from 'src/app/store/user-settings/user-settings.selectors';
 
@@ -11,10 +8,9 @@ import { isDarkMode } from 'src/app/store/user-settings/user-settings.selectors'
   templateUrl: './hitboxes-table.component.html',
   styleUrls: ['./hitboxes-table.component.scss'],
 })
-export class HitboxesTableComponent extends TranslatedAgGridTableComponent {
+export class HitboxesTableComponent {
   @Input() hitboxes?: Hitbox[];
-  useDarkMode = false;
-  colDef: ColDef[] = [
+  colDef = [
     { headerName: 'Hitboxes.Attributes.Name', field: 'name', pinned: 'left' },
     { headerName: 'Hitboxes.Attributes.Damage', field: 'damage' },
     { headerName: 'Hitboxes.Attributes.Angle', field: 'angle' },
@@ -35,20 +31,18 @@ export class HitboxesTableComponent extends TranslatedAgGridTableComponent {
     },
     { headerName: 'Hitboxes.Attributes.ShieldStun', field: 'shieldstun' },
   ];
-  defaultColDef: ColDef = {
-    headerValueGetter: (value) => this.translateHeaderName(value),
-  };
-  constructor(translateService: TranslateService, private store: Store) {
-    super(translateService);
-
-    this.store.pipe(select(isDarkMode())).subscribe((useDarkMode) => {
-      this.useDarkMode = useDarkMode;
-    });
-  }
-
-  onGridReady(): void {
-    this.agGrid?.api.sizeColumnsToFit();
-  }
+  displayedColumns = [
+    'name',
+    'damage',
+    'angle',
+    'knockbackGrowth',
+    'setKnockback',
+    'baseKnockback',
+    'effect',
+    'hitlagAttacker',
+    'hitlagDefender',
+    'shieldstun',
+  ];
 
   getValueForHitboxProperty(hitbox: Hitbox, value: string | undefined): string | number {
     if (!value || !hitbox) {

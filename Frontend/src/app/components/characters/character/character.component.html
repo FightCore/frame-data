@@ -38,7 +38,7 @@
     </h2>
   </mat-toolbar>
 
-  <!-- <app-character-statistics-table [character]="character!.characterStatistics"></app-character-statistics-table> -->
+  <app-character-statistics-table [character]="character!.characterStatistics"></app-character-statistics-table>
 
   <mat-toolbar id="section-moves" color="primary">
     <h2 class="w-full text-center">
@@ -56,5 +56,5 @@
       {{ 'Characters.MovesTable' | translate }}
     </h2>
   </mat-toolbar>
-  <!-- <app-moves-table [moves]="character!.moves"></app-moves-table> -->
+  <app-moves-table [character]="character" [moves]="character!.moves"></app-moves-table>
 </ng-template>

@@ -38,11 +38,4 @@ export class UserSettingsEffects {
       })
     )
   );
-
-  setDarkMode$ = createEffect(() =>
-    this.actions$.pipe(
-      ofType(updateTheme),
-      tap((useDarkMode) => this.transferState.set(this.stateKey, useDarkMode.useDarkMode))
-    )
-  );
 }

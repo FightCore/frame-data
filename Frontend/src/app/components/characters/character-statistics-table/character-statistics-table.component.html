@@ -1,14 +1,14 @@
-<ag-grid-angular
-  *ngIf="character"
-  style="width: 100%; height: 100px"
-  class="hidden md:block"
-  [class.ag-theme-alpine]="!useDarkMode"
-  [class.ag-theme-alpine-dark]="useDarkMode"
-  [columnDefs]="colDefs"
-  [rowData]="[character]"
-  [defaultColDef]="defaultColumnDefinition"
-  (gridReady)="onGridReady()"
-></ag-grid-angular>
+<div class="hidden md:block">
+  <table *ngIf="character" mat-table [dataSource]="[character]" class="w-full">
+    <ng-container *ngFor="let column of colDefs" [matColumnDef]="column.field">
+      <th mat-header-cell *matHeaderCellDef>{{ column.headerName | translate }}</th>
+      <td mat-cell *matCellDef="let move">{{ getValueForCharacterProperty(column.field) }}</td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+  </table>
+</div>
 
 <table class="visible md:hidden table-auto w-full">
   <tr>
