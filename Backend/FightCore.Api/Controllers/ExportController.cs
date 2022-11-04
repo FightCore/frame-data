@@ -1,5 +1,10 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using AutoMapper;
+using FightCore.Api.DataTransferObjects.Exports.Full;
+using FightCore.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Caching.Distributed;
+using System.Text;
+using Newtonsoft.Json;
 
 namespace FightCore.Api.Controllers
 {
@@ -7,6 +12,18 @@ namespace FightCore.Api.Controllers
     [ApiController]
     public class ExportController : ControllerBase
     {
+        private readonly ICharacterService _characterService;
+        private readonly IMapper _mapper;
+        private readonly IDistributedCache _cache;
+        private const string _fullExportCacheKey = "full-export";
+
+        public ExportController(ICharacterService characterService, IMapper mapper, IDistributedCache cache)
+        {
+            _characterService = characterService;
+            _mapper = mapper;
+            _cache = cache;
+        }
+
         /// <summary>
         /// Exports the character to the specified format and returns the generated file.
         /// </summary>
@@ -19,6 +36,27 @@ namespace FightCore.Api.Controllers
         public async Task<IActionResult> GetExportForCharacter(int id)
         {
             return Ok();
+        }
+
+        [HttpGet("full")]
+        public async Task<IActionResult> GetAllFrameData()
+        {
+            var cachedFullExport = await _cache.GetAsync(_fullExportCacheKey);
+
+            if (cachedFullExport != null)
+            {
+                return Ok(JsonConvert.DeserializeObject<List<FullExportCharacter>>(
+                    Encoding.UTF8.GetString(cachedFullExport)));
+            }
+
+            var export = await _characterService.ExportAll();
+
+            var convertedDtos = _mapper.Map<List<FullExportCharacter>>(export);
+
+            await _cache.SetAsync(_fullExportCacheKey,
+                Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(convertedDtos)));
+
+            return Ok(convertedDtos);
         }
     }
 }

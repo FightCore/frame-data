@@ -11,29 +11,19 @@ import { Move } from '../models/move';
 export class FrameDataService {
   constructor(private httpClient: HttpClient) {}
 
-  getFrameDataForCharacter(
-    characterId: number
-  ): Observable<FrameDataCharacter> {
-    return this.httpClient.get<FrameDataCharacter>(
-      `${environment.baseUrl}/framedata/${characterId}`
-    );
+  getFrameDataForCharacter(characterId: number): Observable<FrameDataCharacter> {
+    return this.httpClient.get<FrameDataCharacter>(`${environment.baseUrl}/framedata/${characterId}`);
   }
 
   getCharacters(): Observable<FrameDataCharacter[]> {
-    return this.httpClient.get<FrameDataCharacter[]>(
-      `${environment.baseUrl}/framedata/characters`
-    );
+    return this.httpClient.get<FrameDataCharacter[]>(`${environment.baseUrl}/framedata/characters`);
   }
 
   getMove(moveId: number): Observable<Move> {
-    return this.httpClient.get<Move>(
-      `${environment.baseUrl}/framedata/moves/${moveId}`
-    );
+    return this.httpClient.get<Move>(`${environment.baseUrl}/framedata/moves/${moveId}`);
   }
 
   getMoves(moveId?: number): Observable<FrameDataCharacter[]> {
-    return this.httpClient.get<FrameDataCharacter[]>(
-      `${environment.baseUrl}/framedata/moves`
-    );
+    return this.httpClient.get<FrameDataCharacter[]>(`${environment.baseUrl}/exports/full`);
   }
 }

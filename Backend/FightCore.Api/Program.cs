@@ -29,11 +29,18 @@ builder.Services.AddDbContext<FrameDataContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
+builder.Services.AddCors(options =>
+    options.AddDefaultPolicy(policy => policy.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin()));
+
 builder.Services.AddScoped<DbContext>(provider => provider.GetRequiredService<FrameDataContext>());
+
+builder.Services.AddDistributedMemoryCache();
 
 builder.Services
     .AddServices()
     .AddRepositories();
+
+builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
 var app = builder.Build();
 
@@ -45,6 +52,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors();
 
 app.UseAuthorization();
 
