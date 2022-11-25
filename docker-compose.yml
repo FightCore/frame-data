@@ -1,0 +1,32 @@
+version: "3.9"
+services:
+  api:
+    build:
+      context: ./Backend
+      dockerfile: ./FightCore.Api/Dockerfile
+    ports:
+      - "3600:80"
+    environment:
+      - ConnectionStrings__DefaultConnection=Server=db;Database=FrameData;User Id=sa;Password='Passw@rd';
+    networks:
+      - database
+      - backend
+  web:
+    build:
+      context: ./Frontend
+      dockerfile: ./Dockerfile
+    ports:
+      - "4000:4000"
+    networks:
+      - backend
+  db:
+    build:
+      context: ./Database
+      dockerfile: ./Dockerfile
+    ports:
+      - "1433:1433"
+    networks:
+      - database
+networks:
+  database:
+  backend:
