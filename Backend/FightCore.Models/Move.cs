@@ -41,11 +41,11 @@ namespace FightCore.Models
 
         public Character Character { get; set; }
 
-        public int? InvulnerableStart { get; set; }
+        //public int? InvulnerableStart { get; set; }
 
-        public int? InvulnerableEnd { get; set; }
+        //public int? InvulnerableEnd { get; set; }
 
-        public string GIFSource { get; set; }
+        //public string GIFSource { get; set; }
 
         public string Source { get; set; }
     }
