@@ -1,8 +1,8 @@
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
-@use "@angular/material" as mat;
+@use '@angular/material' as mat;
 // Plus imports for other components in your app.
-@use "fightcore-pelette.scss" as fc;
+@use 'fightcore-pelette.scss' as fc;
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
 // Be sure that you only ever include this mixin once!
@@ -14,8 +14,7 @@
 //  If you don't need the default component typographies but still want the hierarchy styles,
 //  you can delete this line and instead use:
 //    `@include mat.legacy-typography-hierarchy(mat.define-legacy-typography-config());`
-@include mat.all-legacy-component-typographies();
-@include mat.legacy-core();
+@include mat.core();
 
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
@@ -62,7 +61,7 @@ $FightCore-dark-theme: mat.define-dark-theme(
   }
   .avatar-accent {
     .avatar-content {
-        background-color: mat.get-color-from-palette($accent) !important;
+      background-color: mat.get-color-from-palette($accent) !important;
     }
   }
   .color-primary {
@@ -74,18 +73,16 @@ $FightCore-dark-theme: mat.define-dark-theme(
   }
 }
 
-
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
-@include mat.all-legacy-component-themes($FightCore-light-theme);
+@include mat.all-component-themes($FightCore-light-theme);
 @include background-theme($FightCore-light-theme);
 
 .dark-theme {
-  @include mat.all-legacy-component-colors($FightCore-dark-theme);
+  @include mat.all-component-colors($FightCore-dark-theme);
   @include background-theme($FightCore-dark-theme);
 }
-
 
 @tailwind base;
 @tailwind components;
@@ -97,11 +94,10 @@ body {
 }
 body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
   background-color: #eeeeee;
   height: 100%;
 }
 body.dark-theme {
   background-color: #303030;
 }
-
