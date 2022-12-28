@@ -15,6 +15,20 @@ namespace FightCore.Repositories
         {
         }
 
+        public override Task<List<Character>> GetAll()
+        {
+            return BasicIncludes.ToListAsync();
+        }
+
+        public override Task<Character> GetById(long id)
+        {
+            return Queryable
+                .Include(character => character.Moves)
+                .Include(character => character.CharacterStatistics)
+                .Include(character => character.CharacterInfo)
+                .FirstOrDefaultAsync(character => character.Id == id);
+        }
+
         public Task<List<Character>> ExportAll()
         {
             return Queryable
@@ -24,5 +38,9 @@ namespace FightCore.Repositories
                 .ThenInclude(move => move.Hitboxes)
                 .ToListAsync();
         }
+
+        private IQueryable<Character> BasicIncludes =>
+            Queryable.Include(character => character.CharacterInfo)
+                .Include(character => character.CharacterStatistics);
     }
 }

@@ -1,4 +1,6 @@
-﻿using FightCore.Services;
+﻿using AutoMapper;
+using FightCore.Api.DataTransferObjects.Characters;
+using FightCore.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FightCore.Api.Controllers
@@ -8,10 +10,12 @@ namespace FightCore.Api.Controllers
     public class CharacterController : ControllerBase
     {
         private readonly ICharacterService _characterService;
+        private readonly IMapper _mapper;
 
-        public CharacterController(ICharacterService characterService)
+        public CharacterController(ICharacterService characterService, IMapper mapper)
         {
             _characterService = characterService;
+            _mapper = mapper;
         }
 
         /// <summary>
@@ -21,7 +25,7 @@ namespace FightCore.Api.Controllers
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            return Ok(await _characterService.GetAll());
+            return Ok(_mapper.Map<List<BasicCharacter>>(await _characterService.GetAll()));
         }
 
         /// <summary>
@@ -38,7 +42,7 @@ namespace FightCore.Api.Controllers
                 return NotFound();
             }
 
-            return Ok(character);
+            return Ok(_mapper.Map<CharacterWithMoves>(character));
         }
     }
 }

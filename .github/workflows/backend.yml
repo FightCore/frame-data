@@ -1,0 +1,31 @@
+name: Build Backend
+
+on:
+  push:
+    branches: ['main']
+    paths:
+      - 'Backend/**'
+  pull_request:
+    branches: ['main']
+    paths:
+      - 'Backend/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 6.0.x
+      - name: Restore dependencies
+        run: dotnet restore
+        working-directory: ./Backend
+      - name: Build
+        run: dotnet build --no-restore
+        working-directory: ./Backend
+      - name: Test
+        run: dotnet test --no-build --verbosity normal
+        working-directory: ./Backend

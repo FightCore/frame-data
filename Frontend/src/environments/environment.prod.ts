@@ -1,5 +1,5 @@
 export const environment = {
   production: true,
-  baseUrl: 'https://api.fightcore.gg',
+  baseUrl: 'https://apiv2.fightcore.gg',
   siteUrl: 'https://fightcore.gg',
 };

@@ -30,6 +30,7 @@ export class AppComponent {
   ) {
     if (isPlatformBrowser(platformId)) {
       this.renderer = rendererFactory.createRenderer(null, null);
+      this.renderer.addClass(document.body, 'dark-theme');
       store.pipe(select(isDarkMode())).subscribe((isDarkMode) => {
         if (isDarkMode) {
           this.renderer!.addClass(document.body, 'dark-theme');

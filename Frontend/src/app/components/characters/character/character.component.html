@@ -6,7 +6,7 @@
     <mat-toolbar-row>
       <p class="w-full text-center text-3xl">{{ character!.name }}</p>
     </mat-toolbar-row>
-    <mat-toolbar-row>
+    <mat-toolbar-row *ngIf="mobileQuery === undefined || !mobileQuery.matches">
       <div class="w-full toolbar-buttons">
         <button mat-button class="text-xl" (click)="navigateToSection('attributes')">
           {{ 'Characters.Attributes.Attributes' | translate }}
@@ -19,8 +19,8 @@
         </button>
       </div>
     </mat-toolbar-row>
-    <mat-toolbar-row>
-      <div class="w-full toolbar-buttons">
+    <mat-toolbar-row *ngIf="mobileQuery === undefined || !mobileQuery.matches">
+      <div class="toolbar-buttons">
         <button
           mat-button
           class="text-xl"

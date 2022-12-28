@@ -1,10 +1,11 @@
-import { Component, OnInit } from '@angular/core';
-import { Meta, Title } from '@angular/platform-browser';
+import { MediaMatcher } from '@angular/cdk/layout';
+import { isPlatformBrowser } from '@angular/common';
+import { ChangeDetectorRef, Component, Inject, OnInit, PLATFORM_ID } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 import { select, Store } from '@ngrx/store';
 import { FrameDataCharacter } from 'src/app/models/framedata-character';
 import { MoveType } from 'src/app/models/move-type';
-import { FrameDataService } from 'src/app/services/frame-data.service';
 import { MetaTagService } from 'src/app/services/meta-tag.service';
 import { selectCharacter } from 'src/app/store/frame-data/frame-data.selectors';
 
@@ -15,6 +16,9 @@ import { selectCharacter } from 'src/app/store/frame-data/frame-data.selectors';
 })
 export class CharacterComponent implements OnInit {
   character?: FrameDataCharacter;
+  mobileQuery?: MediaQueryList;
+
+  private _mobileQueryListener?: () => void;
 
   moveTypes = [
     { name: 'Moves.Categories.GroundedAttacks', value: MoveType.grounded },
@@ -26,11 +30,20 @@ export class CharacterComponent implements OnInit {
     { name: 'Moves.Categories.Unknown', value: MoveType.unknown },
   ];
   constructor(
+    @Inject(PLATFORM_ID) platformId: string,
+    changeDetectorRef: ChangeDetectorRef,
+    media: MediaMatcher,
     private store: Store,
     private activatedRoute: ActivatedRoute,
     private metaTagService: MetaTagService,
     private title: Title
-  ) {}
+  ) {
+    if (isPlatformBrowser(platformId)) {
+      this.mobileQuery = media.matchMedia('(max-width: 600px)');
+      this._mobileQueryListener = () => changeDetectorRef.detectChanges();
+      this.mobileQuery.addListener(this._mobileQueryListener);
+    }
+  }
 
   ngOnInit(): void {
     this.activatedRoute.paramMap.subscribe((paramMap) => {

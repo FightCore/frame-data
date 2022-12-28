@@ -6,7 +6,7 @@ namespace FightCore.Services.Base
     public interface IBaseService<TModel>
         where TModel : BaseEntity
     {
-        Task<TModel?> GetById(long id);
+        Task<TModel> GetById(long id);
 
         Task<List<TModel>> GetByIds(ICollection<long> ids);
 
@@ -24,7 +24,7 @@ namespace FightCore.Services.Base
             Repository = repository;
         }
 
-        public Task<TModel?> GetById(long id)
+        public Task<TModel> GetById(long id)
         {
             return Repository.GetById(id);
         }

@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using FightCore.Api.DataTransferObjects.Abstract;
+using FightCore.Api.DataTransferObjects.Characters;
 using FightCore.Api.DataTransferObjects.Exports.Full;
 using FightCore.Models;
 
@@ -11,6 +12,8 @@ namespace FightCore.Api.Configuration.Profiles
         {
             CreateMap<Character, BaseCharacter>();
             CreateMap<Character, FullExportCharacter>();
+            CreateMap<Character, BasicCharacter>();
+            CreateMap<Character, CharacterWithMoves>();
 
             CreateMap<CharacterMiscInfo, BaseCharacterMiscInfo>();
             CreateMap<CharacterStatistics, BaseCharacterStatistics>();
