@@ -1,8 +1,8 @@
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
-@use "@angular/material" as mat;
+@use '@angular/material' as mat;
 // Plus imports for other components in your app.
-@use "fightcore-pelette.scss" as fc;
+@use 'fightcore-pelette.scss' as fc;
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
 // Be sure that you only ever include this mixin once!
@@ -26,6 +26,7 @@ $FightCore-light-theme: mat.define-light-theme(
       accent: $FightCore-accent,
       warn: $FightCore-warn,
     ),
+    typography: mat.define-typography-config(),
   )
 );
 
@@ -36,6 +37,7 @@ $FightCore-dark-theme: mat.define-dark-theme(
       accent: $FightCore-accent,
       warn: $FightCore-warn,
     ),
+    typography: mat.define-typography-config(),
   )
 );
 
@@ -53,7 +55,7 @@ $FightCore-dark-theme: mat.define-dark-theme(
   }
   .avatar-accent {
     .avatar-content {
-        background-color: mat.get-color-from-palette($accent) !important;
+      background-color: mat.get-color-from-palette($accent) !important;
     }
   }
   .color-primary {
@@ -64,7 +66,6 @@ $FightCore-dark-theme: mat.define-dark-theme(
     color: mat.get-color-from-palette($accent);
   }
 }
-
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
@@ -77,7 +78,6 @@ $FightCore-dark-theme: mat.define-dark-theme(
   @include background-theme($FightCore-dark-theme);
 }
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -88,11 +88,10 @@ body {
 }
 body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
   background-color: #eeeeee;
   height: 100%;
 }
 body.dark-theme {
   background-color: #303030;
 }
-

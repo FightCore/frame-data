@@ -1,6 +1,5 @@
 <ng-template appOnlyClientSide>
   <div *ngIf="characters" class="m-3">
-    <h2>Normal Characters</h2>
     <div class="character-stock-icon" *ngFor="let character of characters">
       <a [routerLink]="viewCharacterUrl(character)">
         <img
@@ -12,6 +11,7 @@
         />
       </a>
     </div>
+    <mat-divider></mat-divider>
     <h2>Special Characters</h2>
     <div class="character-stock-icon" *ngFor="let character of specialCharacters">
       <a [routerLink]="viewCharacterUrl(character)">
