@@ -1,20 +1,24 @@
-<h2>{{ statTranslationKey | translate }}</h2>
-
-<table matSort>
+<table
+  class="w-full table-fixed"
+  matSort
+  (matSortChange)="sortData($event)"
+  matSortActive="value"
+  matSortDirection="desc"
+>
   <tr>
-    <th mat-sort-header="character"></th>
-    <th mat-sort-header="stat"></th>
+    <th mat-sort-header="name">Character</th>
+    <th mat-sort-header="value">{{ statTranslationKey | translate }}</th>
   </tr>
 
-  <tr *ngFor="let characterMovePair of values | keyvalue">
+  <tr *ngFor="let sortedValue of sortedValues">
     <td>
       <img
         class="cursor-pointer inline character-icon"
-        [src]="environment.siteUrl + '/assets/images/stocks/' + characterMovePair.key!.normalizedName + '.png'"
-        [alt]="characterMovePair.key.name"
+        [src]="environment.siteUrl + '/assets/images/stocks/' + sortedValue.normalizedName + '.png'"
+        [alt]="sortedValue.name"
       />
-      {{ characterMovePair.key.name }}
+      {{ sortedValue.name }}
     </td>
-    <td>{{ characterMovePair.value }}</td>
+    <td>{{ sortedValue.value }}</td>
   </tr>
 </table>

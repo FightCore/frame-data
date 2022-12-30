@@ -9,6 +9,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatTableModule } from '@angular/material/table';
+import { MatSortModule } from '@angular/material/sort';
 
 @NgModule({
   declarations: [],
@@ -23,6 +24,7 @@ import { MatTableModule } from '@angular/material/table';
     MatSidenavModule,
     MatChipsModule,
     MatTableModule,
+    MatSortModule,
   ],
 })
 export class MaterialModule {}

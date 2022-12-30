@@ -24,6 +24,6 @@ export class FrameDataService {
   }
 
   getMoves(moveId?: number): Observable<FrameDataCharacter[]> {
-    return this.httpClient.get<FrameDataCharacter[]>(`${environment.baseUrl}/exports/full`);
+    return this.httpClient.get<FrameDataCharacter[]>(`${environment.siteUrl}/framedata.json`);
   }
 }

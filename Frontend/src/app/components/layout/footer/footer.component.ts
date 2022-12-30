@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.scss'],
 })
 export class FooterComponent {
-  version: string = '2.0.0-dev';
+  version: string = '2.0.1';
 
   get currentYear(): number {
     return new Date().getFullYear();

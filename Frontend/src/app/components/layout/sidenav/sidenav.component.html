@@ -7,13 +7,14 @@
   <mat-sidenav
     class="sidenav"
     [fixedInViewport]="true"
+    [disableClose]="mobileQuery && !mobileQuery.matches"
     #drawer
-    [mode]="!mobileQuery || mobileQuery.matches ? 'over' : 'side'"
+    [mode]="mobileQuery && mobileQuery.matches ? 'over' : 'side'"
     [opened]="!mobileQuery || !mobileQuery.matches"
   >
     <app-menubar></app-menubar>
     <mat-divider></mat-divider>
-    <button mat-button (click)="onClickToggleTheme()">
+    <button mat-button class="w-full" (click)="onClickToggleTheme()">
       <mat-icon>{{ useDarkMode ? 'light_mode' : 'dark_mode' }}</mat-icon>
       {{ 'MenuBar.SwitchTheme' | translate }}
     </button>

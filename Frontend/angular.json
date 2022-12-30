@@ -27,7 +27,8 @@
               "src/favicon.ico",
               "src/assets",
               "src/robots.txt",
-              "src/sitemap.txt"
+              "src/sitemap.txt",
+              "src/framedata.json"
             ],
             "styles": [
               "src/styles.scss"
@@ -175,6 +176,28 @@
             }
           },
           "defaultConfiguration": "development"
+        },
+        "prerender": {
+          "builder": "@nguniversal/builders:prerender",
+          "configurations": {
+            "development": {
+              "browserTarget": "FightCore:build:production",
+              "serverTarget": "FightCore:server:production"
+            },
+            "production": {
+              "browserTarget": "FightCore:build:production",
+              "serverTarget": "FightCore:server:production"
+            }
+          },
+          "options": {
+            "browserTarget": "FightCore:build:production",
+            "serverTarget": "FightCore:server:production",
+            "routes": [
+              "/characters",
+              "/compare-tool"
+            ],
+            "guessRoutes": true
+          }
         }
       }
     }

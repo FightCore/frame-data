@@ -2,6 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { FrameDataCharacter } from 'src/app/models/framedata-character';
 import { CharacterStatistics } from 'src/app/models/character-statistics';
 import { environment } from 'src/environments/environment';
+import { Sort } from '@angular/material/sort';
 
 @Component({
   selector: 'app-compare-characters-stat-table',
@@ -13,8 +14,8 @@ export class CompareCharactersStatTableComponent implements OnInit {
   @Input() stat?: string;
   @Input() statTranslationKey: string = '';
   environment = environment;
-  values: Map<FrameDataCharacter, string> = new Map<FrameDataCharacter, string>();
-  constructor() {}
+  sortedValues: CompareData[] = [];
+  private values: CompareData[] = [];
 
   ngOnInit(): void {
     if (!this.stat) {
@@ -27,7 +28,43 @@ export class CompareCharactersStatTableComponent implements OnInit {
       characterA.characterStatistics[key] < characterB.characterStatistics[key] ? 1 : -1
     );
     for (const character of this.characters) {
-      this.values.set(character, character.characterStatistics[key].toString());
+      this.values.push({
+        name: character.name,
+        normalizedName: character.normalizedName,
+        value: character.characterStatistics[key] as number,
+      });
     }
+
+    this.sortedValues = this.values.slice();
   }
+  sortData(sort: any) {
+    sort = sort as Sort;
+    const data = this.values.slice();
+    if (!sort.active || sort.direction === '') {
+      this.sortedValues = data;
+      return;
+    }
+
+    this.sortedValues = data.sort((a, b) => {
+      const isAsc = sort.direction === 'asc';
+      switch (sort.active) {
+        case 'name':
+          return this.compare(a.name, b.name, isAsc);
+        case 'value':
+          return this.compare(a.value, b.value, isAsc);
+        default:
+          return 0;
+      }
+    });
+  }
+
+  compare(a: number | string, b: number | string, isAsc: boolean) {
+    return (a < b ? -1 : 1) * (isAsc ? 1 : -1);
+  }
+}
+
+interface CompareData {
+  name: string;
+  normalizedName: string;
+  value: number;
 }
