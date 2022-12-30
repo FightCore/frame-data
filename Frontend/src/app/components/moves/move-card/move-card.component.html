@@ -2,10 +2,10 @@
   <div class="main-container">
     <div>
       <mat-card-header>
-        <mat-card-title class="title">{{ move.name }}</mat-card-title>
+        <mat-card-title>{{ move.name }}</mat-card-title>
         <mat-card-subtitle>{{ move.normalizedName }}</mat-card-subtitle>
       </mat-card-header>
-      <a [routerLink]="moveUrl()">
+      <a *appOnlyClientSide [routerLink]="moveUrl()">
         <video appVideoAutoplayMuted mat-card-image class="frame-data-image" muted playsinline autoplay loop>
           <source
             type="video/webm"
@@ -25,7 +25,7 @@
       </mat-card-content>
     </div>
     <mat-card-actions>
-      <a mat-raised-button color="primary" [routerLink]="moveUrl()">
+      <a mat-raised-button color="primary" [routerLink]="moveUrl()" class="w-full">
         {{ 'Common.View' | translate }}
       </a>
     </mat-card-actions>
