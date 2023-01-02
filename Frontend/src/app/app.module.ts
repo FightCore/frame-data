@@ -37,6 +37,7 @@ import { userSettingsReducer } from './store/user-settings/user-settings.reducer
 import { UserSettingsEffects } from './store/user-settings/user-settings.effects';
 import { VideoAutoplayMutedDirective } from './directives/video-autoplay-muted.directive';
 import { OnlyClientSideDirective } from './directives/only-client-side.directive';
+import { MobileOnlyDirective } from './directives/mobile-only.directive';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, environment.siteUrl + '/assets/i18n/', '.json');
@@ -68,6 +69,7 @@ export function createTranslateLoader(http: HttpClient) {
     CompareCharactersStatTableComponent,
     VideoAutoplayMutedDirective,
     OnlyClientSideDirective,
+    MobileOnlyDirective,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

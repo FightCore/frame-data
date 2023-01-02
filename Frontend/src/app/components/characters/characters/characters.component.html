@@ -2,6 +2,10 @@
   <p class="w-full text-center text-3xl">{{ 'Characters.Characters' | translate }}</p>
 </mat-toolbar>
 
+<mat-card *appMobileOnly>
+  <app-character-quick-picker></app-character-quick-picker>
+</mat-card>
+
 <div class="p-3">
   <div class="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5 gap-2">
     <app-character-preview-card
