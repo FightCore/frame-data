@@ -1,9 +1,14 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row>
-    <img class="logo" [src]="environment.siteUrl + '/assets/images/Fightcore_Wordmark_white.svg'" alt="FightCore" />
+    <img
+      width="300"
+      height="37"
+      [src]="environment.siteUrl + '/assets/images/Fightcore_Wordmark_white.svg'"
+      alt="FightCore"
+    />
   </mat-toolbar-row>
 </mat-toolbar>
-<div class="p-3 nav-buttons-container">
+<div class="p-3">
   <a mat-button class="cursor-pointer w-full" [routerLink]="'characters'">
     <mat-icon>person</mat-icon> {{ 'MenuBar.Characters' | translate }}
   </a>

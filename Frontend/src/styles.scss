@@ -53,11 +53,6 @@ $FightCore-dark-theme: mat.define-dark-theme(
   .background-color-accent {
     background-color: mat.get-color-from-palette($accent);
   }
-  .avatar-accent {
-    .avatar-content {
-      background-color: mat.get-color-from-palette($accent) !important;
-    }
-  }
   .color-primary {
     color: mat.get-color-from-palette($primary);
   }

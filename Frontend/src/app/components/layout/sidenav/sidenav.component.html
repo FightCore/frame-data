@@ -1,6 +1,8 @@
 <mat-toolbar *ngIf="mobileQuery && mobileQuery.matches" color="primary">
-  <button mat-icon-button (click)="drawer.toggle()"><mat-icon>menu</mat-icon></button>
-  <img class="logo" src="assets/images/Fightcore_Wordmark_white.svg" alt="FightCore" />
+  <button aria-label="sidenav-open" mat-icon-button (click)="drawer.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <img width="250" height="30" src="assets/images/Fightcore_Wordmark_white.svg" alt="FightCore" />
 </mat-toolbar>
 
 <mat-sidenav-container>
