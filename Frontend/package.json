@@ -6,7 +6,6 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
     "lint": "ng lint",
     "dev:ssr": "ng run FightCore:serve-ssr",
     "serve:ssr": "node dist/FightCore/server/main.js",
