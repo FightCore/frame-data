@@ -6,6 +6,7 @@ import { ActivatedRoute } from '@angular/router';
 import { select, Store } from '@ngrx/store';
 import { FrameDataCharacter } from 'src/app/models/framedata-character';
 import { MoveType } from 'src/app/models/move-type';
+import { CanonicalService } from 'src/app/services/canonical.service';
 import { MetaTagService } from 'src/app/services/meta-tag.service';
 import { selectCharacter } from 'src/app/store/frame-data/frame-data.selectors';
 
@@ -36,7 +37,8 @@ export class CharacterComponent implements OnInit {
     private store: Store,
     private activatedRoute: ActivatedRoute,
     private metaTagService: MetaTagService,
-    private title: Title
+    private title: Title,
+    private canonicalService: CanonicalService
   ) {
     if (isPlatformBrowser(platformId)) {
       this.mobileQuery = media.matchMedia('(max-width: 600px)');
@@ -57,6 +59,7 @@ export class CharacterComponent implements OnInit {
         if (character) {
           this.metaTagService.updateCharacterMetaTags(character);
           this.title.setTitle(`${character.name} - FightCore`);
+          this.canonicalService.createLinkForCharacter(character);
         }
       });
     });

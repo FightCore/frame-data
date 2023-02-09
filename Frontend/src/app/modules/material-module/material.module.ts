@@ -7,7 +7,6 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatChipsModule } from '@angular/material/chips';
 import { MatTableModule } from '@angular/material/table';
 import { MatSortModule } from '@angular/material/sort';
 
@@ -22,7 +21,6 @@ import { MatSortModule } from '@angular/material/sort';
     MatCardModule,
     MatTooltipModule,
     MatSidenavModule,
-    MatChipsModule,
     MatTableModule,
     MatSortModule,
   ],

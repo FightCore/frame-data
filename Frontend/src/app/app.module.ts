@@ -38,11 +38,6 @@ import { UserSettingsEffects } from './store/user-settings/user-settings.effects
 import { VideoAutoplayMutedDirective } from './directives/video-autoplay-muted.directive';
 import { OnlyClientSideDirective } from './directives/only-client-side.directive';
 import { MobileOnlyDirective } from './directives/mobile-only.directive';
-
-export function createTranslateLoader(http: HttpClient) {
-  return new TranslateHttpLoader(http, environment.siteUrl + '/assets/i18n/', '.json');
-}
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -77,11 +72,6 @@ export function createTranslateLoader(http: HttpClient) {
     BrowserAnimationsModule,
     HttpClientModule,
     TranslateModule.forRoot({
-      loader: {
-        provide: TranslateLoader,
-        useFactory: createTranslateLoader,
-        deps: [HttpClient],
-      },
       defaultLanguage: 'en',
     }),
     StoreModule.forRoot({ frameData: frameDataReducer, userSettings: userSettingsReducer }),

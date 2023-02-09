@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { select, Store } from '@ngrx/store';
 import { FrameDataCharacter } from 'src/app/models/framedata-character';
+import { CanonicalService } from 'src/app/services/canonical.service';
 import { MetaTagService } from 'src/app/services/meta-tag.service';
 import { selectCharacters } from 'src/app/store/frame-data/frame-data.selectors';
 
@@ -12,12 +13,18 @@ import { selectCharacters } from 'src/app/store/frame-data/frame-data.selectors'
 })
 export class CharactersComponent implements OnInit {
   characters?: FrameDataCharacter[];
-  constructor(private store: Store, private title: Title, private meta: MetaTagService) {
+  constructor(
+    private store: Store,
+    private title: Title,
+    private meta: MetaTagService,
+    private canonicalService: CanonicalService
+  ) {
     this.meta.updateForCharacters();
   }
 
   ngOnInit(): void {
-    this.title.setTitle('Characters - FightCore');
+    this.title.setTitle('FightCore');
+    this.canonicalService.createLinkForCharacters();
     this.store.pipe(select(selectCharacters())).subscribe((characters) => {
       this.characters = [...characters].sort((a, b) => (a.name > b.name ? 1 : -1));
     });

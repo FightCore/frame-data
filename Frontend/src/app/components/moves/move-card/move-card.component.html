@@ -5,7 +5,11 @@
         <mat-card-title>{{ move.name }}</mat-card-title>
         <mat-card-subtitle>{{ move.normalizedName }}</mat-card-subtitle>
       </mat-card-header>
-      <a *appOnlyClientSide [routerLink]="moveUrl()">
+      <a
+        *appOnlyClientSide
+        [routerLink]="moveUrl()"
+        [ariaLabel]="'View more specific details about the move ' + move.name"
+      >
         <video appVideoAutoplayMuted mat-card-image class="frame-data-image" muted playsinline autoplay loop>
           <source
             type="video/webm"

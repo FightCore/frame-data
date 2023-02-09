@@ -65,12 +65,13 @@ $FightCore-dark-theme: mat.define-dark-theme(
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
-@include mat.all-component-themes($FightCore-light-theme);
-@include background-theme($FightCore-light-theme);
 
-.dark-theme {
-  @include mat.all-component-colors($FightCore-dark-theme);
-  @include background-theme($FightCore-dark-theme);
+@include mat.all-component-themes($FightCore-dark-theme);
+@include background-theme($FightCore-dark-theme);
+
+.light-theme {
+  @include mat.all-component-colors($FightCore-light-theme);
+  @include background-theme($FightCore-light-theme);
 }
 
 @tailwind base;
@@ -84,9 +85,9 @@ body {
 body {
   margin: 0;
   font-family: Roboto, 'Helvetica Neue', sans-serif;
-  background-color: #eeeeee;
+  background-color: #303030;
   height: 100%;
 }
-body.dark-theme {
-  background-color: #303030;
+body.light-theme {
+  background-color: #eeeeee;
 }

@@ -9,6 +9,7 @@ import { filter } from 'rxjs';
 import { isPlatformBrowser } from '@angular/common';
 import { loadSettings } from './store/user-settings/user-settings.actions';
 import { isDarkMode } from './store/user-settings/user-settings.selectors';
+import { En } from './translations/en';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -30,18 +31,18 @@ export class AppComponent {
   ) {
     if (isPlatformBrowser(platformId)) {
       this.renderer = rendererFactory.createRenderer(null, null);
-      this.renderer.addClass(document.body, 'dark-theme');
       store.pipe(select(isDarkMode())).subscribe((isDarkMode) => {
-        if (isDarkMode) {
-          this.renderer!.addClass(document.body, 'dark-theme');
+        if (!isDarkMode) {
+          this.renderer!.addClass(document.body, 'light-theme');
         } else {
-          this.renderer!.removeClass(document.body, 'dark-theme');
+          this.renderer!.removeClass(document.body, 'light-theme');
         }
       });
     }
     store.dispatch(loadSettings());
+    translateService.setTranslation(En.key, En.get());
     // this language will be used as a fallback when a translation isn't found in the current language
-    translateService.setDefaultLang('en');
+    translateService.setDefaultLang(En.key);
 
     // the lang to use, if the lang isn't available, it will use the current loader to get them
     translateService.use('en');

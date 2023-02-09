@@ -23,7 +23,7 @@ export class FrameDataService {
     return this.httpClient.get<Move>(`${environment.baseUrl}/framedata/moves/${moveId}`);
   }
 
-  getMoves(moveId?: number): Observable<FrameDataCharacter[]> {
-    return this.httpClient.get<FrameDataCharacter[]>(`${environment.siteUrl}/framedata.json`);
+  getMoves(): Observable<FrameDataCharacter[]> {
+    return this.httpClient.get<FrameDataCharacter[]>(`https://data.fightcore.gg/framedata.json`);
   }
 }

@@ -86,6 +86,15 @@
                   "with": "src/environments/environment.docker.ts"
                 }
               ]
+            },
+            "beta": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.beta.ts"
+                }
+              ],
+              "index": "src/index.beta.html"
             }
           },
           "defaultConfiguration": "production"
@@ -95,6 +104,9 @@
           "configurations": {
             "production": {
               "browserTarget": "FightCore:build:production"
+            },
+            "beta": {
+              "browserTarget": "FightCore:build:beta"
             },
             "development": {
               "browserTarget": "FightCore:build:development"
@@ -159,6 +171,15 @@
                 }
               ]
             },
+            "beta": {
+              "outputHashing": "media",
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.beta.ts"
+                }
+              ],
+            },
             "docker": {
               "outputHashing": "media",
               "fileReplacements": [
@@ -184,6 +205,10 @@
               "browserTarget": "FightCore:build:development",
               "serverTarget": "FightCore:server:development"
             },
+            "beta": {
+              "browserTarget": "FightCore:build:beta",
+              "serverTarget": "FightCore:server:beta"
+            },
             "production": {
               "browserTarget": "FightCore:build:production",
               "serverTarget": "FightCore:server:production"
@@ -197,6 +222,10 @@
             "development": {
               "browserTarget": "FightCore:build:development",
               "serverTarget": "FightCore:server:development"
+            },
+            "beta": {
+              "browserTarget": "FightCore:build:beta",
+              "serverTarget": "FightCore:server:beta"
             },
             "production": {
               "browserTarget": "FightCore:build:production",

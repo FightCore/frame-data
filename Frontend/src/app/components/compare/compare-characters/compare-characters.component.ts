@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { select, Store } from '@ngrx/store';
 import { FrameDataCharacter } from 'src/app/models/framedata-character';
+import { CanonicalService } from 'src/app/services/canonical.service';
 import { selectCharacters } from 'src/app/store/frame-data/frame-data.selectors';
 
 @Component({
@@ -21,9 +22,10 @@ export class CompareCharactersComponent implements OnInit {
   characters: FrameDataCharacter[] = [];
   // Some characters currently don't have known statistics, we want to filter them from this page.
   private filterCharacters = ['fwireframe'];
-  constructor(private store: Store) {}
+  constructor(private store: Store, private canonicalService: CanonicalService) {}
 
   ngOnInit(): void {
+    this.canonicalService.createLinkForCompare();
     this.store
       .pipe(select(selectCharacters()))
       .subscribe(

@@ -5,6 +5,8 @@ import { Move } from 'src/app/models/move';
 import { select, Store } from '@ngrx/store';
 import { selectMove } from 'src/app/store/frame-data/frame-data.selectors';
 import { Meta, Title } from '@angular/platform-browser';
+import { MetaTagService } from 'src/app/services/meta-tag.service';
+import { CanonicalService } from 'src/app/services/canonical.service';
 
 @Component({
   selector: 'app-move',
@@ -15,7 +17,13 @@ export class MoveComponent implements OnInit {
   character?: FrameDataCharacter;
   move?: Move;
 
-  constructor(private store: Store, private activatedRoute: ActivatedRoute, private meta: Meta, private title: Title) {}
+  constructor(
+    private store: Store,
+    private activatedRoute: ActivatedRoute,
+    private metaTagService: MetaTagService,
+    private title: Title,
+    private canonicalService: CanonicalService
+  ) {}
   ngOnInit(): void {
     const characterId = this.activatedRoute.snapshot.paramMap.get('characterId');
     const moveId = this.activatedRoute.snapshot.paramMap.get('moveId');
@@ -39,7 +47,10 @@ export class MoveComponent implements OnInit {
         if (!move || !this.character) {
           return;
         }
+
         this.title.setTitle(`${this.character.name} - ${move.name} - FightCore`);
+        this.metaTagService.updateMoveTags(move, this.character);
+        this.canonicalService.createLinkForMove(this.character, this.move as Move);
       });
   }
 }

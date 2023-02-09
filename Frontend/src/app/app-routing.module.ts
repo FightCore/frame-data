@@ -8,6 +8,10 @@ import { MovesComponent } from './components/moves/moves/moves.component';
 
 const routes: Routes = [
   {
+    path: '',
+    component: CharactersComponent,
+  },
+  {
     path: 'characters',
     component: CharactersComponent,
   },

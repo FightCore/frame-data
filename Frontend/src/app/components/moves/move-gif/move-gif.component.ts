@@ -1,11 +1,4 @@
-import {
-  AfterViewInit,
-  Component,
-  ElementRef,
-  Input,
-  OnInit,
-  ViewChild,
-} from '@angular/core';
+import { AfterViewInit, Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 import { SuperGif } from '@wizpanda/super-gif';
 import { Move } from 'src/app/models/move';
 
@@ -19,6 +12,7 @@ export class MoveGifComponent implements AfterViewInit {
   @Input() characterName?: string;
   @ViewChild('moveImage') moveImage?: ElementRef;
   superGif?: SuperGif;
+  gifLoadedError = false;
 
   ngAfterViewInit(): void {
     this.superGif = new SuperGif(this.moveImage!.nativeElement, {});
@@ -31,6 +25,10 @@ export class MoveGifComponent implements AfterViewInit {
 
   previousFrame(): void {
     this.superGif?.stepFrame(-1);
+  }
+
+  onImageError(): void {
+    this.gifLoadedError = true;
   }
 
   pauseGif(): void {

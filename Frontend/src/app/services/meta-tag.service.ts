@@ -65,9 +65,13 @@ export class MetaTagService {
   private generateTags(title: string, description: string): void {
     const tags = [
       { name: 'title', content: title },
-      { name: 'twitter:title', content: title },
       { name: 'description', content: description },
+      { name: 'theme-color', content: '#96153a' },
+      { name: 'twitter:title', content: title },
+      { name: 'twitter:creator', content: '@FightCoregg' },
       { name: 'twitter:description', content: description },
+      { name: 'twitter:card', content: 'summary' },
+      { name: 'twitter:site', content: 'https://fightcore.gg' },
     ];
 
     for (const tag of tags) {
@@ -77,6 +81,8 @@ export class MetaTagService {
     const ogTags = [
       { property: 'og:title', content: title },
       { property: 'og:description', content: description },
+      { property: 'og:url', content: 'https://fightcore.gg' },
+      { property: 'og:type', content: 'website' },
     ];
 
     for (const tag of ogTags) {
