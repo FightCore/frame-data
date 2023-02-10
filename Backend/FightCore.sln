@@ -23,9 +23,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6 Configuration", "6 Config
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "7 Test", "7 Test", "{E9E94790-DA94-40B3-B1BA-695FDA457FA6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FightCore.Services", "FightCore.Services\FightCore.Services.csproj", "{2E8E83C1-F463-4DC6-BB5C-6D125D96E9CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FightCore.Services", "FightCore.Services\FightCore.Services.csproj", "{2E8E83C1-F463-4DC6-BB5C-6D125D96E9CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FightCore.Repositories", "FightCore.Repositories\FightCore.Repositories.csproj", "{B44C6FA4-2B27-4C6D-9569-8B7C7D85284C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FightCore.Repositories", "FightCore.Repositories\FightCore.Repositories.csproj", "{B44C6FA4-2B27-4C6D-9569-8B7C7D85284C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

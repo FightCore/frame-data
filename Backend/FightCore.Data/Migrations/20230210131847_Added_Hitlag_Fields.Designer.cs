@@ -4,6 +4,7 @@ using FightCore.FrameData;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FightCore.FrameData.Migrations
 {
     [DbContext(typeof(FrameDataContext))]
-    partial class FrameDataContextModelSnapshot : ModelSnapshot
+    [Migration("20230210131847_Added_Hitlag_Fields")]
+    partial class Added_Hitlag_Fields
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -73,7 +75,7 @@ namespace FightCore.FrameData.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("CharactersMiscInfos");
+                    b.ToTable("CharacterMiscInfo");
                 });
 
             modelBuilder.Entity("FightCore.Models.CharacterStatistics", b =>
@@ -172,14 +174,11 @@ namespace FightCore.FrameData.Migrations
                     b.Property<int>("Shieldstun")
                         .HasColumnType("int");
 
-                    b.Property<int?>("YoshiArmorBreakPercentage")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
 
                     b.HasIndex("MoveId");
 
-                    b.ToTable("Hitboxes");
+                    b.ToTable("Hitbox");
                 });
 
             modelBuilder.Entity("FightCore.Models.Move", b =>
@@ -239,7 +238,7 @@ namespace FightCore.FrameData.Migrations
 
                     b.HasIndex("CharacterId");
 
-                    b.ToTable("Moves");
+                    b.ToTable("Move");
                 });
 
             modelBuilder.Entity("FightCore.Models.Character", b =>

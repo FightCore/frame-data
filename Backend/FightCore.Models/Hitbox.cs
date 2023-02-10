@@ -25,7 +25,13 @@ namespace FightCore.Models
 
         public int HitlagDefender { get; set; }
 
+        public int HitlagAttackerCrouched { get; set; }
+
+        public int HitlagDefenderCrouched { get; set; }
+
         public int Shieldstun { get; set; }
+
+        public int? YoshiArmorBreakPercentage { get; set; }
 
         public Move Move { get; set; }
 
