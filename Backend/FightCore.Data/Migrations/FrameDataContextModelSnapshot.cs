@@ -20,7 +20,7 @@ namespace FightCore.FrameData.Migrations
                 .HasAnnotation("ProductVersion", "6.0.6")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
-            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
+            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
             modelBuilder.Entity("FightCore.Models.Character", b =>
                 {
@@ -28,7 +28,7 @@ namespace FightCore.FrameData.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
 
                     b.Property<long?>("CharacterInfoId")
                         .HasColumnType("bigint");
@@ -51,7 +51,7 @@ namespace FightCore.FrameData.Migrations
 
                     b.HasIndex("CharacterStatisticsId");
 
-                    b.ToTable("Characters");
+                    b.ToTable("Characters", (string)null);
                 });
 
             modelBuilder.Entity("FightCore.Models.CharacterMiscInfo", b =>
@@ -60,7 +60,7 @@ namespace FightCore.FrameData.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
 
                     b.Property<string>("Discord")
                         .HasColumnType("nvarchar(max)");
@@ -73,7 +73,7 @@ namespace FightCore.FrameData.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("CharactersMiscInfos");
+                    b.ToTable("CharactersMiscInfos", (string)null);
                 });
 
             modelBuilder.Entity("FightCore.Models.CharacterStatistics", b =>
@@ -82,7 +82,7 @@ namespace FightCore.FrameData.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
 
                     b.Property<bool>("CanWallJump")
                         .HasColumnType("bit");
@@ -122,7 +122,7 @@ namespace FightCore.FrameData.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("CharacterStatistics");
+                    b.ToTable("CharacterStatistics", (string)null);
                 });
 
             modelBuilder.Entity("FightCore.Models.Hitbox", b =>
@@ -131,7 +131,7 @@ namespace FightCore.FrameData.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
 
                     b.Property<long>("Angle")
                         .HasColumnType("bigint");
@@ -179,7 +179,7 @@ namespace FightCore.FrameData.Migrations
 
                     b.HasIndex("MoveId");
 
-                    b.ToTable("Hitboxes");
+                    b.ToTable("Hitboxes", (string)null);
                 });
 
             modelBuilder.Entity("FightCore.Models.Move", b =>
@@ -188,7 +188,7 @@ namespace FightCore.FrameData.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
 
                     b.Property<int?>("AutoCancelAfter")
                         .HasColumnType("int");
@@ -239,7 +239,7 @@ namespace FightCore.FrameData.Migrations
 
                     b.HasIndex("CharacterId");
 
-                    b.ToTable("Moves");
+                    b.ToTable("Moves", (string)null);
                 });
 
             modelBuilder.Entity("FightCore.Models.Character", b =>
