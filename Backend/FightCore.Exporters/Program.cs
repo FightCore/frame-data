@@ -7,7 +7,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using FightCore.Exporters;
 
-Console.WriteLine("Hello, World!");
 var configuration = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
 var dbContextOptions =
 	new DbContextOptionsBuilder<FrameDataContext>().UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
@@ -17,6 +16,7 @@ var repository = new CharacterRepository(dbContext);
 var services = new CharacterService(repository);
 
 var export = await services.ExportAll();
+export = export.OrderBy(character => character.Id).ToList();
 
 var folder = configuration["Exports:Folder"];
 
@@ -30,6 +30,7 @@ foreach (var character in export)
 		move.CharacterId = default;
 		return move;
 	});
+	moves = moves.OrderBy(move => move.Id).ToList();
 
 	await Exporter.Export(moves, Path.Combine(folder, character.NormalizedName), "moves");
 }
