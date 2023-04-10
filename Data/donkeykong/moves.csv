@@ -1,0 +1,66 @@
+Name,NormalizedName,LandLag,LCanceledLandLag,TotalFrames,IASA,AutoCancelBefore,AutoCancelAfter,Start,End,Type,Notes,Percent,CharacterId,Source,Id
+Edge attack,edge,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1285
+Pummel,pummel,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1286
+Back throw,bthrow,,,39,,,,0,0,Throw,,,0,http://meleeframedata.com/,1287
+Up throw,uthrow,,,43,,,,0,0,Throw,,,0,http://meleeframedata.com/,1288
+Down throw,dthrow,,,59,,,,0,0,Throw,,,0,http://meleeframedata.com/,1289
+cargo_fthrow,cargo_fthrow,,,0,,,,,,Throw,,,0,http://meleeframedata.com/,1290
+cargo_bthrow,cargo_bthrow,,,0,,,,,,Throw,,,0,http://meleeframedata.com/,1291
+cargo_uthrow,cargo_uthrow,,,0,,,,,,Throw,,,0,http://meleeframedata.com/,1292
+cargo_dthrow,cargo_dthrow,,,0,,,,,,Throw,,,0,http://meleeframedata.com/,1293
+Down Air,dair,31,15,54,,3,49,18,23,Air,,,0,http://meleeframedata.com/,1304
+Back Air,bair,15,7,39,32,7,19,7,15,Air,strong hit box frame 7-8,,0,http://meleeframedata.com/,1305
+Giant Punch,neutralb,,,46,,,,17,21,Special,"weak hit frame 18, 10 frames shield stun
+Intangible frames 17-18, only on fully charged punch",,0,http://meleeframedata.com/,1309
+Headbutt,sideb,,,59,,,,20,21,Special,,,0,http://meleeframedata.com/,1310
+Spinning Kong,upb,,,84,,,,3,58,Special,"strong hit frames 3-5 and invulnerable. 3 hits from frames 19-42 that do 8% each, and 4 hits from frames 43-74 that do 3% each (and 3 frames shield stun",,0,http://meleeframedata.com/,1311
+Hand Slap,downb,,,60,,,,19,31,Special,13 frames of startup and 20 frames of endlag account for the startup and finish of down b. if you continue down b after two slaps these frame counts aren't present inbetween slaps,,0,http://meleeframedata.com/,1312
+Dashattack,dattack,,,54,,,,9,20,Grounded,strong hitbox frame 9-12,,0,http://meleeframedata.com/,1314
+Forward Tilt,ftilt,,,33,,,,8,11,Tilt,"angled up does 11%, angled down does 9%",,0,http://meleeframedata.com/,1315
+Up Tilt,utilt,,,39,,,,6,11,Tilt,,,0,http://meleeframedata.com/,1316
+Down Tilt,dtilt,,,22,,,,6,9,Tilt,,,0,http://meleeframedata.com/,1317
+Forward Smash,fsmash,,,54,,,,22,23,Grounded,,,0,http://meleeframedata.com/,1318
+Up Smash,usmash,,,53,,,,14,16,Grounded,,,0,http://meleeframedata.com/,1319
+Down Smash,dsmash,,,55,,,,10,13,Grounded,,,0,http://meleeframedata.com/,1320
+Neutral Air,nair,20,10,43,39,10,38,10,26,Air,strong hitbox frame 10-13,,0,http://meleeframedata.com/,1321
+Forward Air,fair,30,15,59,,1,59,25,29,Air,frame 25-26 is the meteor hitbox,,0,http://meleeframedata.com/,1322
+Up Air,uair,25,12,44,38,6,12,6,8,Air,,,0,http://meleeframedata.com/,1323
+Airdodge,airdodge,,,49,,,,0,,Dodge,,,0,http://meleeframedata.com/,1450
+Spotdodge,spotdodge,,,37,,,,2,23,Dodge,,,0,http://meleeframedata.com/,1451
+Roll forwards,rollforward,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,1452
+Roll backwards,rollbackwards,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,1475
+Jab 1,jab1,,,24,,,,5,7,Grounded,,,0,http://meleeframedata.com/,1486
+Jab 2,jab2,,,33,,,,4,10,Grounded,,,0,http://meleeframedata.com/,1487
+Headbutt (Air),asideb,,,59,,,,20,21,Special,,,0,http://meleeframedata.com/,1543
+Spinning Kong (Air),aupb,,,84,,,,2,66,Special,"strong hit frames 2-5 (and inv). followed by 5 hits that do 5% or 4%, and 4 more hits that do 2%. Invunerable arms frames 11-42",,0,http://meleeframedata.com/,1544
+Giant Punch (Air),aneutralb,,,46,,,,17,21,Special,"for aerial and ground, frame data is dependent on charge stored. listed is the amounts for a full charge",,0,http://meleeframedata.com/,1545
+Grab,grab,,,30,,,,8,9,Unknown,,,0,http://meleeframedata.com/,1575
+Dashgrab,dashgrab,,,40,,,,10,11,Unknown,,,0,http://meleeframedata.com/,1576
+Forward Tilt (Up),uaft,,,33,,,,8,11,Tilt,"angled up does 11%, angled down does 9%",,0,http://meleeframedata.com/,1640
+Forward Tilt (Down),daft,,,33,,,,8,11,Tilt,"angled up does 11%, angled down does 9%",,0,http://meleeframedata.com/,1641
+Tech-Roll Forward,ftechroll,,,40,,,,,,Unknown,"Horizontal Movement At: 9
+Distance: 14.8 ft
+Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1695
+Tech-Roll Backward,btechroll,,,40,,,,,,Unknown,"Horizontal Movement At: 10
+Distance: 14.8 ft
+Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1696
+Getup-Attack (Back),bgetup,,,49,,,,,,Unknown,"Hit: 6-7 (Behind), 18-19 (Front)
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1697
+Getup-Attack (Stomach),fgetup,,,49,,,,,,Unknown,"Hit: 19-20 (Front), 24-25 (Behind)
+Invincible: 1-25",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1698
+Getup-Roll Forward (Back),fgetuprollback,,,35,,,,,,Unknown,"Horizontal Movement At: 10
+Distance: 11.4 ft
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1699
+Getup-Roll Forward (Stomach),fgetuprollstomach,,,35,,,,,,Unknown,"Horizontal Movement At: 8
+Distance: 12 ft
+Invincible: 1-14 (If the roll takes you to an edge and you try to move/crouch/jump/shield as it ends you will slip off)",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1700
+Getup-Roll Backward (Back),bgetuprollback,,,35,,,,,,Unknown,"Horizontal Movement At: 16
+Distance: 11.6 ft
+Invincible: 1-24",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1701
+Getup-Roll Backward (Stomach),bgetuprollstomach,,,35,,,,,,Unknown,"Horizontal Movement At: 13
+Distance: 11.4 ft
+Invincible: 1-24 (If the roll takes you to an edge you will slip off unless you WALK forward, or if an attack is timed on that exact frame)",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1702
+Tech-Neutral,neutraltech,,,26,,,,,,Unknown,Invincible: 1-20,,0,http://meleeframedata.com/,1889
+Tech-Wall,walltech,,,30,6,,,,,Unknown,"Invincible: 1-14
+Input an upwards direction anywhere on 1-4 for walljump tech on 6)",,0,http://meleeframedata.com/,1915
+Tech-Wall Jump,walltechjump,,,40,1,,,,,Unknown,,,0,http://meleeframedata.com/,1941

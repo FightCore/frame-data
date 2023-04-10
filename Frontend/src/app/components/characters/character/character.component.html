@@ -4,7 +4,7 @@
 <ng-template #characterData>
   <mat-toolbar class="mb-5" color="primary">
     <mat-toolbar-row>
-      <p class="w-full text-center text-3xl">{{ character!.name }}</p>
+      <h1 class="w-full text-center text-3xl">{{ character!.name }}</h1>
     </mat-toolbar-row>
     <mat-toolbar-row *ngIf="mobileQuery === undefined || !mobileQuery.matches">
       <div class="w-full toolbar-buttons">

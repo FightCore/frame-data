@@ -1,0 +1,67 @@
+Name,NormalizedName,LandLag,LCanceledLandLag,TotalFrames,IASA,AutoCancelBefore,AutoCancelAfter,Start,End,Type,Notes,Percent,CharacterId,Source,Id
+Edge attack,edge,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1244
+Pummel,pummel,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1245
+Forward throw,fthrow,,,39,,,,12,15,Throw,,,0,http://meleeframedata.com/,1246
+Back throw,bthrow,,,39,,,,11,15,Throw,,,0,http://meleeframedata.com/,1247
+Up throw,uthrow,,,49,,,,26,26,Throw,,,0,http://meleeframedata.com/,1248
+Down throw,dthrow,,,49,,,,22,23,Throw,,,0,http://meleeframedata.com/,1249
+Down Air,dair,50,25,89,80,13,64,13,64,Air,weak hit frames 16-64,,0,http://meleeframedata.com/,1260
+Up Air,uair,30,15,69,60,5,55,5,49,Air,,,0,http://meleeframedata.com/,1262
+Forward Air,fair,15,7,55,,1,50,14,33,Air,weak hit frames 30-33,,0,http://meleeframedata.com/,1263
+Spin Attack,upb,,,79,,,,8,41,Special,weak hit has 4 frames shieldstun,,0,http://meleeframedata.com/,1266
+Hookshot,zair,30,,59,,,,11,18,Air,"Hook to a wall: 11-19
+Jumping from hookwall: 1-8 (depending on how far from the point of hooking you are, or if you're dangling)
+Jump duration: 36
+Fastfall anytime (unless you air dodged upward)
+Landfallspeciallag: 4",,0,http://meleeframedata.com/,1267
+unknown,unknown,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1268
+Bow,neutralb,,,42,,,,18,78,Special,total time for full charge+release = 84 frames. 24 frames of endlag upon release. damage increases the longer the charge (will do 1% if very close upon release),,0,http://meleeframedata.com/,1269
+Boomerang,sideb,,,45,,,,27,168,Special,boomerang active for 141-171 frames. catch duration 19 frames. can also do 14% damage,,0,http://meleeframedata.com/,1270
+Bomb,downb,,,316,,,,39,316,Special,bomb duration from end of pull (startup) is 277 frames,,0,http://meleeframedata.com/,1271
+Dashattack,dattack,,,53,40,,,7,12,Grounded,,,0,http://meleeframedata.com/,1273
+Forward Tilt,ftilt,,,39,,,,16,19,Tilt,,,0,http://meleeframedata.com/,1274
+Up Tilt,utilt,,,29,,,,9,15,Tilt,,,0,http://meleeframedata.com/,1275
+Down Tilt,dtilt,,,39,30,,,14,16,Tilt,,,0,http://meleeframedata.com/,1276
+Forward Smash,fsmash,,,49,,,,15,18,Grounded,"second hit active frames 10-13, 59 frames total with an IASA Frame 50 and does 18% damage",,0,http://meleeframedata.com/,1277
+Up Smash,usmash,,,60,45,,,11,43,Grounded,"first hit is frames 11-15 and does 4% damage, second hit is frames 26-28 and does 2% damage, and hit 3 is frames 41-43 and can do 10% or 9% damage",,0,http://meleeframedata.com/,1278
+Down Smash,dsmash,,,49,42,,,9,23,Grounded,"strong hit frames 9-11 and can do 17% or 16% damage, weak hit frames 21-23 and can do 13% or 11% damage",,0,http://meleeframedata.com/,1279
+Neutral Air,nair,15,7,41,36,4,31,4,39,Air,,,0,http://meleeframedata.com/,1280
+Back Air,bair,15,7,39,30,1,28,6,23,Air,"both hits do 7% each, hit one is frames 6-9, second hit is frames 18-23",,0,http://meleeframedata.com/,1281
+Roll forwards,rollforward,,,37,,,,4,19,Dodge,,,0,http://meleeframedata.com/,1383
+Roll backwards,rollbackwards,,,37,,,,4,19,Dodge,,,0,http://meleeframedata.com/,1384
+Spotdodge,spotdodge,,,22,,,,2,15,Dodge,,,0,http://meleeframedata.com/,1386
+Airdodge,airdodge,,,49,,,,0,,Dodge,,,0,http://meleeframedata.com/,1397
+Jab 1,jab1,,,24,20,,,6,8,Grounded,,,0,http://meleeframedata.com/,1500
+Jab 2,jab2,,,21,17,,,6,7,Grounded,,,0,http://meleeframedata.com/,1501
+Jab 3,jab3,,,49,32,,,6,10,Grounded,,,0,http://meleeframedata.com/,1502
+Rapid Jabs,rjab,,,34,,,,9,10,Grounded,"7 frame startup, then a 34 frame loop for each hit on frames 2-3, then an additional 10 frames of endlag for rapid jab ending",,0,http://meleeframedata.com/,1503
+Spin Attack (Air),aupb,24,,79,,,,8,50,Special,"5 total hits, first can do 4 or 6%, next 3 do 2%, last one can do 4 or 6%",,0,http://meleeframedata.com/,1559
+Grab,grab,,,85,,,,11,13,Unknown,Hook hitbox is from frame 11-17,,0,http://meleeframedata.com/,1591
+Dashgrab,dashgrab,,,95,,,,12,17,Unknown,"Hook hitbox from frame 12-17, close grab only on frame 12.",,0,http://meleeframedata.com/,1592
+Tech-Roll Forward,ftechroll,,,40,,,,,,Unknown,"Horizontal Movement At: 11
+Distance: 16.2 ft
+Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1759
+Tech-Roll Backward,btechroll,,,40,,,,,,Unknown,"Horizontal Movement At: 9
+Distance: 16.2 ft
+Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1760
+Getup-Attack (Back),bgetup,,,49,,,,,,Unknown,"Hit: 19-20 (Front), 28-29 (Behind)
+Invincible: 1-29",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1761
+Getup-Attack (Stomach),fgetup,,,49,,,,,,Unknown,"Hit: 15-16 (Behind), 24-26 (Front)
+Invincible: 1-26",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1762
+Getup-Roll Forward (Back),fgetuprollback,,,35,,,,,,Unknown,"Horizontal Movement At: 11
+Distance: 13.8 ft
+Invincible: 1-24",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1763
+Getup-Roll Forward (Stomach),fgetuprollstomach,,,35,,,,,,Unknown,"Horizontal Movement At: 8
+Distance: 14 ft
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1764
+Getup-Roll Backward (Back),bgetuprollback,,,35,,,,,,Unknown,"Horizontal Movement At: 11
+Distance: 14.4 ft
+Invincible: 1-31",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1765
+Getup-Roll Backward (Stomach),bgetuprollstomach,,,35,,,,,,Unknown,"Horizontal Movement At: 12
+Distance: 14.2 ft
+Invincible: 1-25",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1766
+Tech-Neutral,neutraltech,,,26,,,,,,Unknown,Invincible: 1-20,,0,http://meleeframedata.com/,1885
+Tech-Wall,walltech,,,31,6,,,,,Unknown,"Invincible: 1-14
+Input an upwards direction anywhere on 1-4 for walljump tech on 6)",,0,http://meleeframedata.com/,1911
+Tech-Wall Jump,walltechjump,,,40,1,,,,,Unknown,,,0,http://meleeframedata.com/,1937
+Forward Smash 2,fsmash2,,,59,50,,,10,13,Grounded,Shield stun: 18 shield hit lag: 8 Adantage: -28,,0,https://smashboards.com/threads/link-hitboxes-and-frame-data.306010/,1968

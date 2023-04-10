@@ -1,0 +1,60 @@
+Name,NormalizedName,LandLag,LCanceledLandLag,TotalFrames,IASA,AutoCancelBefore,AutoCancelAfter,Start,End,Type,Notes,Percent,CharacterId,Source,Id
+Skull Bash,sideb,,,70,,,,5,40,Special,data refers to lunge. charge time can be between 14-90 frames. damage increases based on charge time,,0,http://meleeframedata.com/,754
+Quick Attack,upb,24,,149,,,,13,0,Special,"hits active frames 13-18 on first jump, 27-31 on second. first jump lasts 68 frames, second lasts 81",,0,http://meleeframedata.com/,755
+Thunder,downb,,,109,,,,20,49,Special,"data refers to pikachu standing still and being hit. thunder will last until frame 104 if not hit. hitbox hits pikachu at 40 standing still and 51 while falling. hitbox lasts frames 1-9, 60 total",,0,http://meleeframedata.com/,756
+Thunder Jolt,neutralb,,,57,,,,18,117,Special,,,0,http://meleeframedata.com/,821
+Dashattack,dattack,,,49,,,,5,16,Grounded,,,0,http://meleeframedata.com/,864
+Forward Tilt,ftilt,,,29,,,,5,14,Tilt,,,0,http://meleeframedata.com/,865
+Down throw,dthrow,,,47,,,,12,19,Throw,,,0,http://meleeframedata.com/,970
+Up Tilt,utilt,,,23,,,,7,14,Tilt,,,0,http://meleeframedata.com/,971
+Down Tilt,dtilt,,,21,19,,,7,9,Tilt,,,0,http://meleeframedata.com/,972
+Forward Smash,fsmash,,,49,,,,16,23,Grounded,"strong hit frames 16-18, weaker hit (19% damage) frames 19-21, weakest hit frames 22-23",,0,http://meleeframedata.com/,973
+Up Smash,usmash,,,43,41,,,8,17,Grounded,"strong hit frames 8-10 (can also do 18% or 17% damage), weaker hit frames 11-13 with 7 frames shield stun, weakest hit frames 14-17 with 5 frames shield stun",,0,http://meleeframedata.com/,974
+Down Smash,dsmash,,,54,51,,,7,25,Grounded,"Notes - 7 weak hitboxes lasting 2 frames each, and one final strong hitbox at frame 25",,0,http://meleeframedata.com/,975
+Neutral Air,nair,15,7,39,,3,34,3,28,Air,weak hit frames 11-28,,0,http://meleeframedata.com/,976
+Forward Air,fair,20,10,39,,10,37,10,28,Air,"5 hitboxes of 2% damage each, frames 10-12, 14-16, 18-20, 22-24, 26-28",,0,http://meleeframedata.com/,977
+Back Air,bair,30,15,59,,4,49,4,37,Air,weak hit frames 8-37,,0,http://meleeframedata.com/,978
+Up Air,uair,26,13,27,,3,17,3,8,Air,angle depends on the timing of the hit (check info button on homepage for details),,0,http://meleeframedata.com/,979
+Down Air,dair,40,20,57,48,1,38,14,26,Air,,,0,http://meleeframedata.com/,980
+unknown_air,unknown_air,,,0,,,,,,Air,,,0,http://meleeframedata.com/,981
+Edge attack,edge,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,983
+Pummel,pummel,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,984
+Forward throw,fthrow,,,43,,,,10,29,Throw,,,0,http://meleeframedata.com/,985
+Back throw,bthrow,,,49,,,,0,0,Throw,,,0,http://meleeframedata.com/,986
+Up throw,uthrow,,,43,,,,14,19,Throw,,,0,http://meleeframedata.com/,987
+Airdodge,airdodge,,,49,,,,0,,Dodge,,,0,http://meleeframedata.com/,1385
+Spotdodge,spotdodge,,,22,,,,2,15,Dodge,,,0,http://meleeframedata.com/,1399
+Roll forwards,rollforward,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,1400
+Roll backwards,rollbackwards,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,1411
+Jab 1,jab1,,,21,,,,2,3,Grounded,,,0,http://meleeframedata.com/,1518
+Thunder Jolt (Air),aneutralb,,,57,,,,18,117,Special,strong hit occurs before thunderjolt hits the ground,,0,http://meleeframedata.com/,1564
+Grab,grab,,,30,,,,7,8,Unknown,,,0,http://meleeframedata.com/,1605
+Dashgrab,dashgrab,,,40,,,,11,12,Unknown,,,0,http://meleeframedata.com/,1606
+Forward Tilt (Up),uaft,,,29,,,,5,14,Tilt,,,0,http://meleeframedata.com/,1650
+Forward Tilt (Down),daft,,,29,,,,5,14,Tilt,,,0,http://meleeframedata.com/,1651
+Tech-Roll Forward,ftechroll,,,40,,,,,,Unknown,"Horizontal Movement At: 10
+Distance: 12 ft
+Invincible: 1-20 (If the roll takes you to an edge and you try to move/crouch/jump/shield as it ends you will slip off)",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1823
+Tech-Roll Backward,btechroll,,,40,,,,,,Unknown,"Horizontal Movement At: 9
+Distance: 13.2 ft
+Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1824
+Getup-Attack (Back),bgetup,,,49,,,,,,Unknown,"Hit: 13-14 (Behind), 18-19 (Front)
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1825
+Getup-Attack (Stomach),fgetup,,,50,,,,,,Unknown,"Hit: 17-18 (Front), 23-24 (Behind)
+Invincible: 1-24",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1826
+Getup-Roll Forward (Back),fgetuprollback,,,35,,,,,,Unknown,"Horizontal Movement At: 6
+Distance: 11.4 ft
+Invincible: 1-14",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1827
+Getup-Roll Forward (Stomach),fgetuprollstomach,,,36,,,,,,Unknown,"Horizontal Movement At: 6
+Distance: 8.4 ft
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1828
+Getup-Roll Backward (Back),bgetuprollback,,,35,,,,,,Unknown,"Horizontal Movement At: 6
+Distance: 10.8 ft
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1829
+Getup-Roll Backward (Stomach),bgetuprollstomach,,,35,,,,,,Unknown,"Horizontal Movement At: 6
+Distance: 7.8 ft
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1830
+Tech-Neutral,neutraltech,,,26,,,,,,Unknown,Invincible: 1-24,,0,http://meleeframedata.com/,1895
+Tech-Wall,walltech,,,31,6,,,,,Unknown,"Invincible: 1-14
+Input an upwards direction anywhere on 1-4 for walljump tech on 6)",,0,http://meleeframedata.com/,1921
+Tech-Wall Jump,walltechjump,,,40,1,,,,,Unknown,,,0,http://meleeframedata.com/,1947

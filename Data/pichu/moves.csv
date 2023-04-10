@@ -1,0 +1,59 @@
+Name,NormalizedName,LandLag,LCanceledLandLag,TotalFrames,IASA,AutoCancelBefore,AutoCancelAfter,Start,End,Type,Notes,Percent,CharacterId,Source,Id
+Up Smash,usmash,,,43,41,,,9,11,Grounded,,,0,http://meleeframedata.com/,740
+Down Smash,dsmash,,,54,,,,7,13,Grounded,,,0,http://meleeframedata.com/,741
+Neutral Air,nair,12,6,39,,3,34,3,28,Air,weak hit frames 11-28,,0,http://meleeframedata.com/,742
+Forward Air,fair,15,7,39,,10,37,10,28,Air,"5 hits do 2% each, frames 10-12, 14-16, 18-20, 22-24, 26-28",,0,http://meleeframedata.com/,743
+Back Air,bair,18,9,59,,4,49,4,37,Air,,,0,http://meleeframedata.com/,744
+Up Air,uair,18,9,27,,4,17,4,9,Air,,,0,http://meleeframedata.com/,745
+Down Air,dair,26,13,57,48,1,38,14,26,Air,,,0,http://meleeframedata.com/,746
+Edge attack,edge,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,748
+Pummel,pummel,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,749
+Forward throw,fthrow,,,43,,,,10,29,Throw,,,0,http://meleeframedata.com/,750
+Back throw,bthrow,,,49,,,,0,0,Throw,,,0,http://meleeframedata.com/,751
+Up throw,uthrow,,,43,,,,14,19,Throw,,,0,http://meleeframedata.com/,752
+Down throw,dthrow,,,47,,,,12,19,Throw,,,0,http://meleeframedata.com/,753
+Forward Smash,fsmash,,,49,,,,16,36,Grounded,6 weak hits lasting 3 frames each and one final hit lasting 3 frames (34-36),,0,http://meleeframedata.com/,757
+Down Tilt,dtilt,,,21,19,,,7,9,Tilt,,,0,http://meleeframedata.com/,759
+Forward Tilt,ftilt,,,29,,,,5,14,Tilt,"angled up does one more %, angled down does one less",,0,http://meleeframedata.com/,760
+Skull Bash,sideb,30,,70,,,,5,40,Special,data refers to lunge. charging takes anywhere between 14-161 frames. 34 frames of endlag on hit. damage increases based on charge and travel distance,,0,http://meleeframedata.com/,773
+Thunder,downb,,,109,,,,20,49,Special,"data refers to pichu standiung still and being hit. thunder will last frames 20-84, will hit pichuj at 40 (and stop) if standing still, 53 if falling. when hit, hitbox lasts frames 1-9 with 60 frames endlag",,0,http://meleeframedata.com/,774
+Thunder Jolt,neutralb,,,57,,,,18,117,Special,,,0,http://meleeframedata.com/,775
+Dashattack,dattack,,,49,,,,5,16,Grounded,,,0,http://meleeframedata.com/,777
+Up Tilt,utilt,,,23,,,,7,14,Tilt,,,0,http://meleeframedata.com/,778
+Agility,upb,12,,158,,,,13,71,Special,"13 frames to aim first jump, that jump lasts a total of 71 frames. 29 frames to aim 2nd jump, that jump lasts a total of 87 frames",,0,http://meleeframedata.com/,1370
+Roll forwards,rollforward,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,1375
+Roll backwards,rollbackwards,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,1376
+Spotdodge,spotdodge,,,22,,,,2,15,Dodge,,,0,http://meleeframedata.com/,1377
+Airdodge,airdodge,,,49,,,,0,,Dodge,,,0,http://meleeframedata.com/,1378
+Jab 1,jab1,,,21,,,,2,3,Grounded,,,0,http://meleeframedata.com/,1517
+Thunder Jolt (Air),aneutralb,,,57,,,,18,117,Special,,,0,http://meleeframedata.com/,1563
+Grab,grab,,,30,,,,7,8,Unknown,,,0,http://meleeframedata.com/,1603
+Dashgrab,dashgrab,,,40,,,,11,12,Unknown,,,0,http://meleeframedata.com/,1604
+Forward Tilt (Up),uaft,,,29,,,,5,14,Tilt,,,0,http://meleeframedata.com/,1630
+Forward Tilt (Down),daft,,,29,,,,5,14,Tilt,,,0,http://meleeframedata.com/,1631
+Tech-Roll Forward,ftechroll,,,40,,,,,,Unknown,"Horizontal Movement At: 12
+Distance: 8.4 ft
+Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1815
+Tech-Roll Backward,btechroll,,,40,,,,,,Unknown,"Horizontal Movement At: 10
+Distance: 8.4 ft
+Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1816
+Getup-Attack (Back),bgetup,,,49,,,,,,Unknown,"Hit: 13-14 (Behind), 18-19 (Front)
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1817
+Getup-Attack (Stomach),fgetup,,,50,,,,,,Unknown,"Hit: 17-18 (Front), 23-24 (Behind)
+Invincible: 1-24",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1818
+Getup-Roll Forward (Back),fgetuprollback,,,35,,,,,,Unknown,"Horizontal Movement At: 6
+Distance: 6.2 ft
+Invincible: 1-14",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1819
+Getup-Roll Forward (Stomach),fgetuprollstomach,,,36,,,,,,Unknown,"Horizontal Movement At: 6
+Distance: 4.6 ft
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1820
+Getup-Roll Backward (Back),bgetuprollback,,,35,,,,,,Unknown,"Horizontal Movement At: 6
+Distance: 6 ft
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1821
+Getup-Roll Backward (Stomach),bgetuprollstomach,,,35,,,,,,Unknown,"Horizontal Movement At: 6
+Distance: 4.2 ft
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1822
+Tech-Neutral,neutraltech,,,26,,,,,,Unknown,Invincible: 1-24,,0,http://meleeframedata.com/,1881
+Tech-Wall,walltech,,,31,6,,,,,Unknown,"Invincible: 1-14
+Input an upwards direction anywhere on 1-4 for walljump tech on 6)",,0,http://meleeframedata.com/,1907
+Tech-Wall Jump,walltechjump,,,40,1,,,,,Unknown,,,0,http://meleeframedata.com/,1933

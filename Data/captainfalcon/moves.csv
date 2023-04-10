@@ -1,0 +1,65 @@
+Name,NormalizedName,LandLag,LCanceledLandLag,TotalFrames,IASA,AutoCancelBefore,AutoCancelAfter,Start,End,Type,Notes,Percent,CharacterId,Source,Id
+Falcon Punch,neutralb,,,99,65,,,52,56,Special,,,0,http://meleeframedata.com/,1049
+Raptor Boost,sideb,,,79,,,,15,34,Special,"once side b collides with a player, the punch hitbox starts, active frames 3-7, with 25 frames endlag",,0,http://meleeframedata.com/,1071
+Facon kick,downb,,,64,,,,14,32,Special,"strong hit frames 14-16, weaker hit frames 17-24, weakest hit frames 25-32",,0,http://meleeframedata.com/,1072
+Dashattack,dattack,,,39,38,,,7,16,Grounded,weak hitbox frame 10-16,,0,http://meleeframedata.com/,1074
+Up throw,uthrow,,,43,,,,11,28,Throw,,,0,http://meleeframedata.com/,1095
+Forward Tilt,ftilt,,,29,,,,9,11,Tilt,,,0,http://meleeframedata.com/,1096
+Up Tilt,utilt,,,39,38,,,17,21,Tilt,,,0,http://meleeframedata.com/,1097
+Down Tilt,dtilt,,,35,35,,,10,15,Tilt,,,0,http://meleeframedata.com/,1098
+Forward Smash,fsmash,,,64,60,,,18,21,Grounded,,,0,http://meleeframedata.com/,1099
+Up Smash,usmash,,,54,40,,,21,28,Grounded,"active 21-22 and 27-28, first hit can do 8% or 14%, second hit can do 12%-13%",,0,http://meleeframedata.com/,1100
+Down Smash,dsmash,,,49,45,,,19,32,Grounded,"front (strong) hit is frame 19-22, back (weak) hit is frame 29-32",,0,http://meleeframedata.com/,1101
+Neutral Air,nair,15,7,44,,4,33,7,29,Air,"active frame 7-12 and 20-29, 2nd hit is the strong hit",,0,http://meleeframedata.com/,1102
+Forward Air,fair,19,9,39,36,7,34,14,30,Air,strong hitbox frame 14-16,,0,http://meleeframedata.com/,1103
+Back Air,bair,18,9,35,29,7,20,10,17,Air,weak hit frame 14-17,,0,http://meleeframedata.com/,1104
+Up Air,uair,15,7,33,30,1,21,6,14,Air,"Notes - strong hitbox frame 6-10, move can do anywhere from 6 to 13 damage",,0,http://meleeframedata.com/,1105
+Down Air,dair,24,12,44,38,4,35,16,20,Air,,,0,http://meleeframedata.com/,1106
+Edge attack,edge,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1108
+Pummel,pummel,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1109
+Falcon Dive,upb,,,64,,,,13,33,Special,"can grab ledge 5 frames after active end. if grabbed, hit is active frames 2-6 and hit animation takes a total of 79 frames",,0,http://meleeframedata.com/,1110
+Forward throw,fthrow,,,39,,,,11,17,Throw,,,0,http://meleeframedata.com/,1111
+Back throw,bthrow,,,49,,,,12,19,Throw,,,0,http://meleeframedata.com/,1112
+Down throw,dthrow,,,39,,,,0,0,Throw,,,0,http://meleeframedata.com/,1113
+Roll backwards,rollbackwards,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,1471
+Roll forwards,rollforward,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,1472
+Spotdodge,spotdodge,,,32,,,,3,20,Dodge,,,0,http://meleeframedata.com/,1473
+Airdodge,airdodge,,,49,,,,0,,Dodge,,,0,http://meleeframedata.com/,1474
+Jab 1,jab1,,,21,16,,,3,5,Grounded,,,0,http://meleeframedata.com/,1478
+Jab 2,jab2,,,19,18,,,4,6,Grounded,,,0,http://meleeframedata.com/,1479
+Jab 3,jab3,,,31,22,,,5,11,Grounded,weak hitbox frame 9-11,,0,http://meleeframedata.com/,1480
+Falcon Kick (Air),adownb,45,,57,,,,15,29,Special,"can also do 11% damage. landing lag only occurs if ground hitbox is activated, which is also the weak hitbox",,0,http://meleeframedata.com/,1485
+Falcon Punch (Air),aneutralb,,,99,65,,,52,56,Special,,,0,http://meleeframedata.com/,1540
+Raptor Boost (Air),asideb,20,,79,,,,15,34,Special,"once side b collides with a player, the punch hitbox starts, active frames 3-7, with 45 frames endlag",,0,http://meleeframedata.com/,1541
+Falcon Dive (Air),aupb,,,64,,,,13,33,Special,"can grab ledge 5 frames after active end. if grabbed, hit is active frames 2-6 and hit animation takes a total of 79 frames",,0,http://meleeframedata.com/,1542
+Grab,grab,,,30,,,,7,8,Unknown,,,0,http://meleeframedata.com/,1571
+Dashgrab,dashgrab,,,40,,,,11,12,Unknown,,,0,http://meleeframedata.com/,1572
+Rapid Jabs,rjab,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1624
+Forward Tilt (Up),uaft,,,29,,,,9,11,Tilt,,,0,http://meleeframedata.com/,1628
+Forward Tilt (Down),daft,,,29,,,,9,11,Tilt,,,0,http://meleeframedata.com/,1629
+Tech-Roll Forward,ftechroll,,,40,,,,,,Unknown,"Horizontal Movement At: 11
+Distance: 16.6 ft
+Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1679
+Tech-Roll Backward,btechroll,,,40,,,,,,Unknown,"Horizontal Movement At: 8
+Distance: 13.6 ft
+Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1680
+Getup-Attack (Back),bgetup,,,49,,,,,,Unknown,"Hit: 19-20 (Both Sides), 28-29 (Both Sides)
+Invincible: 1-29",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1681
+Getup-Attack (Stomach),fgetup,,,49,,,,,,Unknown,"Hit: 20-21 (Behind), 26-27 (Front)
+Invincible: 1-27",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1682
+Getup-Roll Forward (Back),fgetuprollback,,,35,,,,,,Unknown,"Horizontal Movement At: 5
+Distance: 11 ft
+Invincible: 1-23",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1683
+Getup-Roll Forward (Stomach),fgetuprollstomach,,,35,,,,,,Unknown,"Horizontal Movement At: 10
+Distance: 11 ft
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1684
+Getup-Roll Backward (Back),bgetuprollback,,,35,,,,,,Unknown,"Horizontal Movement At: 5
+Distance: 11 ft
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1685
+Getup-Roll Backward (Stomach),bgetuprollstomach,,,35,,,,,,Unknown,"Horizontal Movement At: 15
+Distance: 11 ft
+Invincible: 1-25",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1686
+Tech-Neutral,neutraltech,,,26,,,,,,Unknown,Invincible: 1-20,,0,http://meleeframedata.com/,1879
+Tech-Wall,walltech,,,31,6,,,,,Unknown,"Invincible: 1-14
+Input an upwards direction anywhere on 1-4 for walljump tech on 6)",,0,http://meleeframedata.com/,1905
+Tech-Wall Jump,walltechjump,,,40,1,,,,,Unknown,,,0,http://meleeframedata.com/,1931

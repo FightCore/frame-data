@@ -1,0 +1,68 @@
+Name,NormalizedName,LandLag,LCanceledLandLag,TotalFrames,IASA,AutoCancelBefore,AutoCancelAfter,Start,End,Type,Notes,Percent,CharacterId,Source,Id
+Down throw,dthrow,,,42,,,,0,0,Throw,,,0,http://meleeframedata.com/,758
+Up throw,uthrow,,,44,,,,0,0,Throw,,,0,http://meleeframedata.com/,779
+Back throw,bthrow,,,44,,,,0,0,Throw,,,0,http://meleeframedata.com/,780
+Forward throw,fthrow,,,31,,,,0,0,Throw,,,0,http://meleeframedata.com/,781
+Counter,downb,,,59,,,,5,29,Special,"when counter activates, hitbox active frames 14-20 (delayed by 1 frame if stronger move)",,0,http://meleeframedata.com/,824
+Dashattack,dattack,,,49,40,,,12,15,Grounded,,,0,http://meleeframedata.com/,826
+Forward Tilt,ftilt,,,35,,,,7,10,Tilt,,,0,http://meleeframedata.com/,827
+Up Tilt,utilt,,,39,32,,,6,12,Tilt,,,0,http://meleeframedata.com/,828
+Down Tilt,dtilt,,,49,20,,,7,9,Tilt,,,0,http://meleeframedata.com/,829
+Forward Smash,fsmash,,,49,48,,,10,13,Grounded,,,0,http://meleeframedata.com/,830
+Up Smash,usmash,,,54,46,,,13,16,Grounded,weak hit has half the shieldstun,,0,http://meleeframedata.com/,831
+Down Smash,dsmash,,,64,62,,,5,22,Grounded,"active frame 5-7, 20-22, weak hit has 6 frames shieldstun",,0,http://meleeframedata.com/,832
+Neutral Air,nair,15,7,49,,6,24,6,21,Air,"active frame 6-7, 15-21, weakhit has half the shieldstun",,0,http://meleeframedata.com/,833
+Forward Air,fair,15,7,33,30,1,26,4,7,Air,,,0,http://meleeframedata.com/,834
+Back Air,bair,24,12,39,35,1,31,7,11,Air,,,0,http://meleeframedata.com/,835
+Up Air,uair,15,7,45,,5,26,5,8,Air,,,0,http://meleeframedata.com/,836
+Down Air,dair,32,16,59,,6,47,6,9,Air,,,0,http://meleeframedata.com/,837
+Edge attack,edge,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,839
+Pummel,pummel,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,840
+Dolphin Slash,upb,,,39,,,,5,11,Special,"strong hit frame 5, can do 10 or 13% damage. weak hit frames 6-11, does 7 or 6% damage",,0,http://meleeframedata.com/,841
+"Sword Dance (1, Side)",sideb,,,29,,,,6,8,Special,,,0,http://meleeframedata.com/,843
+Shield Breaker,neutralb,,,29,,,,16,20,Special,"minimum charge time 11 frames, maximum 121. hitbox active frames 5-10 after releasing charge",,0,http://meleeframedata.com/,862
+Roll backwards,rollbackwards,,,35,,,,4,23,Dodge,,,0,http://meleeframedata.com/,1412
+Airdodge,airdodge,,,49,,,,4,29,Dodge,,,0,http://meleeframedata.com/,1413
+Spotdodge,spotdodge,,,27,,,,2,18,Dodge,,,0,http://meleeframedata.com/,1414
+Roll forwards,rollforward,,,35,,,,4,19,Dodge,,,0,http://meleeframedata.com/,1423
+Jab 1,jab1,,,27,26,,,4,7,Grounded,,,0,http://meleeframedata.com/,1488
+Jab 2,jab2,,,27,26,,,4,8,Grounded,,,0,http://meleeframedata.com/,1489
+Grab,grab,,,30,,,,7,8,Unknown,,,0,http://meleeframedata.com/,1579
+Dashgrab,dashgrab,,,40,,,,10,11,Unknown,,,0,http://meleeframedata.com/,1580
+Dolphin Slash (Air),aupb,,,39,,,,5,11,Special,"strong hit frame 5, can do 10 or 13% damage. weak hit frames 6-11, does 7 or 6% damage",,0,http://meleeframedata.com/,1661
+Tech-Roll Forward,ftechroll,,,40,,,,,,Unknown,"Horizontal Movement At: 9
+Distance: 15.2 ft
+Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1783
+Tech-Roll Backward,btechroll,,,40,,,,,,Unknown,"Horizontal Movement At: 8
+Distance: 15.2 ft
+Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1784
+Getup-Attack (Back),bgetup,,,49,,,,,,Unknown,"Hit: 20-23 (Behind), 30-31 (Front)
+Invincible: 1-31",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1785
+Getup-Attack (Stomach),fgetup,,,49,,,,,,Unknown,"Hit: 22-23 (Front), 27-28 (Behind)
+Invincible: 1-28",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1786
+Getup-Roll Forward (Back),fgetuprollback,,,35,,,,,,Unknown,"Horizontal Movement At: 5
+Distance: 12.2 ft
+Invincible: 6-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1787
+Getup-Roll Forward (Stomach),fgetuprollstomach,,,35,,,,,,Unknown,"Horizontal Movement At: 6
+Distance: 11.4 ft
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1788
+Getup-Roll Backward (Back),bgetuprollback,,,35,,,,,,Unknown,"Horizontal Movement At: 5
+Distance: 10 ft
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1789
+Getup-Roll Backward (Stomach),bgetuprollstomach,,,35,,,,,,Unknown,"Horizontal Movement At: 13
+Distance: 11.4 ft
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1790
+Tech-Neutral,neutraltech,,,26,,,,,,Unknown,Invincible: 1-20,,0,http://meleeframedata.com/,1900
+Tech-Wall,walltech,,,31,6,,,,,Unknown,"Invincible: 1-14
+Input an upwards direction anywhere on 1-4 for walljump tech on 6)",,0,http://meleeframedata.com/,1926
+Tech-Wall Jump,walltechjump,,,40,1,,,,,Unknown,,,0,http://meleeframedata.com/,1952
+"Sword Dance (2, Neutral/Side/Down)",sideb2,,,40,,,,14,16,Special,Window for attack 3: 17-33,,0,https://smashboards.com/threads/complete-marth-hitboxes-and-frame-data.285324/,1982
+"Sword Dance (2, Up)",sideb2up,,,40,,,,12,15,Special,Window for attack 3: 17-32,,0,https://smashboards.com/threads/complete-marth-hitboxes-and-frame-data.285324/,1983
+"Sword Dance (3, Side/Neutral)",sideb3,,,46,,,,11,14,Special,Window for attack 4: 16-37,,0,https://smashboards.com/threads/complete-marth-hitboxes-and-frame-data.285324/,1984
+"Sword Dance (3, Up)",sideb3up,,,46,,,,13,17,Special,Window for attack 4: 18-38,,0,https://smashboards.com/threads/complete-marth-hitboxes-and-frame-data.285324/,1985
+"Sword Dance (3, Down)",sideb3down,,,46,,,,15,18,Special,Window for attack 4: 19-35,,0,https://smashboards.com/threads/complete-marth-hitboxes-and-frame-data.285324/,1986
+"Sword Dance (4, Side/Neutral)",sideb4,,,50,,,,23,26,Special,,,0,https://smashboards.com/threads/complete-marth-hitboxes-and-frame-data.285324/,1988
+"Sword Dance (4, Up)",sideb4up,,,50,,,,20,25,Special,,,0,https://smashboards.com/threads/complete-marth-hitboxes-and-frame-data.285324/,1989
+"Sword Dance (4, Down)",sideb4down,,,60,,,,,,Special,"Hit: 13-15, 19-21, 25-27, 31-33,
+37-38
+",,0,https://smashboards.com/threads/complete-marth-hitboxes-and-frame-data.285324/,1990

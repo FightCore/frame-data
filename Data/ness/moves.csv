@@ -1,0 +1,64 @@
+Name,NormalizedName,LandLag,LCanceledLandLag,TotalFrames,IASA,AutoCancelBefore,AutoCancelAfter,Start,End,Type,Notes,Percent,CharacterId,Source,Id
+Forward throw,fthrow,,,52,,,,0,0,Throw,,,0,http://meleeframedata.com/,699
+Back throw,bthrow,,,52,,,,0,0,Throw,,,0,http://meleeframedata.com/,700
+Up throw,uthrow,,,55,,,,0,0,Throw,,,0,http://meleeframedata.com/,701
+Down throw,dthrow,,,49,,,,10,33,Throw,,,0,http://meleeframedata.com/,702
+Pummel,pummel,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,706
+Edge attack,edge,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,716
+Down Air,dair,28,14,59,,20,28,20,28,Air,,,0,http://meleeframedata.com/,718
+PK Thunder,upb,30,,193,,,,19,139,Special,"frame data refers to maxmimum time thunder can be active. 54 frames endlag once thunder is gone if it didnt hit ness. if it did, ness hitbox active frames 1-36, 70 total frames, strong hit active frames 1-12. ",,0,http://meleeframedata.com/,719
+PK Flash,neutralb,,,109,,,,64,77,Special,"minimum total is 109 frames, maximum is 217. damage increases based on charge time",,0,http://meleeframedata.com/,720
+PK Fire,sideb,,,69,,,,20,40,Special,burning hits last 100 frames,,0,http://meleeframedata.com/,721
+Dashattack,dattack,,,41,40,,,8,22,Grounded,"3 hitboxes, strong one at frame 8, weak ones at frame 15 and 22",,0,http://meleeframedata.com/,723
+Forward Tilt,ftilt,,,34,,,,7,11,Tilt,,,0,http://meleeframedata.com/,724
+Up Tilt,utilt,,,39,32,,,5,9,Tilt,,,0,http://meleeframedata.com/,725
+Down Tilt,dtilt,,,13,,,,3,5,Tilt,,,0,http://meleeframedata.com/,726
+Forward Smash,fsmash,,,49,,,,16,17,Grounded,,,0,http://meleeframedata.com/,727
+usmash_charge,usmash_charge,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,728
+Up Smash,usmash,,,49,49,,,12,31,Grounded,weak hit frames 15-31,,0,http://meleeframedata.com/,729
+dsmash_charge,dsmash_charge,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,730
+Down Smash,dsmash,,,61,59,,,12,31,Grounded,"weak hit frames 13-31, can also do 7% damage",,0,http://meleeframedata.com/,731
+Neutral Air,nair,22,11,39,,5,26,5,23,Air,weak hit frames 13-23,,0,http://meleeframedata.com/,732
+Forward Air,fair,18,9,41,40,8,29,8,24,Air,"5 weak hits (can also do 3% damage) frames 8-10, 11-13, 14-16, 17-19, and 20-22. Strong hit frames 23-24",,0,http://meleeframedata.com/,733
+Back Air,bair,18,9,39,36,10,24,10,19,Air,weak hit frames 12-19 with 6 frames shield stun,,0,http://meleeframedata.com/,734
+Up Air,uair,18,9,45,42,8,26,8,11,Air,,,0,http://meleeframedata.com/,735
+PSI Magnet,downb,,,59,,,,10,39,Special,"frame data refers to minimum amount of time move can be used. 21 frames of lag upon release, 18 upon absorb",,0,http://meleeframedata.com/,1369
+Roll forwards,rollforward,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,1425
+Roll backwards,rollbackwards,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,1426
+Airdodge,airdodge,,,48,,,,0,,Dodge,,,0,http://meleeframedata.com/,1453
+Spotdodge,spotdodge,,,27,,,,2,18,Dodge,,,0,http://meleeframedata.com/,1454
+Jab 1,jab1,,,19,,,,3,4,Grounded,,,0,http://meleeframedata.com/,1512
+Jab 2,jab2,,,19,,,,3,4,Grounded,,,0,http://meleeframedata.com/,1513
+Jab 3,jab3,,,29,,,,6,9,Grounded,,,0,http://meleeframedata.com/,1514
+PK Flash (Air),aneutralb,,,109,,,,64,77,Special,"minimum total is 109 frames, maximum is 217. damage increases based on charge time",,0,http://meleeframedata.com/,1560
+PK Fire (Air),asideb,30,,69,,,,20,40,Special,"burning hits last 100 frames, hits do 2% each (no data on how many hits)",,0,http://meleeframedata.com/,1561
+Grab,grab,,,30,,,,8,9,Unknown,,,0,http://meleeframedata.com/,1599
+Dashgrab,dashgrab,,,40,,,,10,11,Unknown,,,0,http://meleeframedata.com/,1600
+Forward Tilt (Up),uaft,,,34,,,,7,11,Tilt,,,0,http://meleeframedata.com/,1632
+Forward Tilt (Down),daft,,,34,,,,7,11,Tilt,,,0,http://meleeframedata.com/,1633
+Tech-Roll Forward,ftechroll,,,40,,,,,,Unknown,"Horizontal Movement At: 9
+Distance: 13.2 ft
+Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1799
+Tech-Roll Backward,btechroll,,,40,,,,,,Unknown,"Horizontal Movement At: 9
+Distance: 13.2 ft
+Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1800
+Getup-Attack (Back),bgetup,,,49,,,,,,Unknown,"Hit: 20-21 (Behind), 24-25 (Front)
+Invincible: 1-25",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1801
+Getup-Attack (Stomach),fgetup,,,49,,,,,,Unknown,"Hit: 19-20 (Behind), 25-26 (Front)
+Invincible: 1-26",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1802
+Getup-Roll Forward (Back),fgetuprollback,,,35,,,,,,Unknown,"Horizontal Movement At: 7
+Distance: 11.4 ft
+Invincible: 1-21",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1803
+Getup-Roll Forward (Stomach),fgetuprollstomach,,,35,,,,,,Unknown,"Horizontal Movement At: 6
+Distance: 11.4 ft
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1804
+Getup-Roll Backward (Back),bgetuprollback,,,35,,,,,,Unknown,"Horizontal Movement At: 13
+Distance: 11.4 ft
+Invincible: 1-22",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1805
+Getup-Roll Backward (Stomach),bgetuprollstomach,,,35,,,,,,Unknown,"Horizontal Movement At: 11
+Distance: 11.8 ft
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1806
+Tech-Neutral,neutraltech,,,26,,,,,,Unknown,Invincible: 1-20,,0,http://meleeframedata.com/,1882
+Tech-Wall,walltech,,,31,6,,,,,Unknown,"Invincible: 1-14
+Input an upwards direction anywhere on 1-4 for walljump tech on 6)",,0,http://meleeframedata.com/,1908
+Tech-Wall Jump,walltechjump,,,40,1,,,,,Unknown,,,0,http://meleeframedata.com/,1934

@@ -1,0 +1,62 @@
+Name,NormalizedName,LandLag,LCanceledLandLag,TotalFrames,IASA,AutoCancelBefore,AutoCancelAfter,Start,End,Type,Notes,Percent,CharacterId,Source,Id
+unknown,unknown,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,703
+beamsword,beamsword,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,704
+bob_omb,bob_omb,,,0,,,,,,Special,,,0,http://meleeframedata.com/,705
+mr_saturn,mr_saturn,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,707
+Peach Parasol,upb,30,,40,,,,6,29,Special,"frame data refers to peach rising, 11 hits total (no info on %s). can fast fall as soon as frame 56",,0,http://meleeframedata.com/,708
+Vegetable,downb,,,29,,,,29,29,Special,data refers to the turnip pull. will update this with all projectiles damage soon,,0,http://meleeframedata.com/,709
+Dashattack,dattack,,,37,36,,,6,20,Grounded,weak hit frames 9-20 and can also do 8% damage (with 5 frames shieldstun),,0,http://meleeframedata.com/,710
+Toad,neutralb,,,64,,,,10,30,Special,"when hit, invincible for 8 frames. 1st sport released on that 8th frame. lasts 78 frames total. 7 hits of 3% damage",,0,http://meleeframedata.com/,711
+Forward Tilt,ftilt,,,41,37,,,6,13,Tilt,weak hit frames 8-13,,0,http://meleeframedata.com/,713
+Up Tilt,utilt,,,39,37,,,9,13,Tilt,,,0,http://meleeframedata.com/,714
+Peach Bomber,sideb,33,,46,,,,21,31,Special,"additional 27 frames of lag if you don't land. if hit, 28 frames of lag from time of hit",,0,http://meleeframedata.com/,715
+Down Tilt,dtilt,,,27,26,,,12,13,Tilt,,,0,http://meleeframedata.com/,736
+Forward Smash,fsmash,,,47,,,,15,18,Grounded,,,0,http://meleeframedata.com/,737
+Up Smash,usmash,,,44,,,,13,22,Grounded,weak hit has 5 frames shield stun. can also do 15% and 8 frames shield stun,,0,http://meleeframedata.com/,738
+Down Smash,dsmash,,,39,,,,5,26,Grounded,"six hitboxes (yes, SIX) EACH do 14% or 12% damage...",,0,http://meleeframedata.com/,739
+Neutral Air,nair,17,8,49,42,3,35,3,23,Air,"weak hit frames 7-23, can also do 10% damage (and has 6 frames shield stun)",,0,http://meleeframedata.com/,761
+Forward Air,fair,25,12,54,51,16,38,16,20,Air,,,0,http://meleeframedata.com/,762
+Back Air,bair,15,7,44,38,6,22,6,22,Air,weak hit frames 10-22 with 6 frames shield stun,,0,http://meleeframedata.com/,763
+Up Air,uair,15,7,35,34,7,21,7,11,Air,,,0,http://meleeframedata.com/,764
+Down Air,dair,15,7,39,,12,39,12,31,Air,,,0,http://meleeframedata.com/,765
+Edge attack,edge,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,767
+Pummel,pummel,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,768
+Forward throw,fthrow,,,33,,,,14,14,Throw,,,0,http://meleeframedata.com/,769
+Back throw,bthrow,,,49,,,,20,20,Throw,,,0,http://meleeframedata.com/,770
+Up throw,uthrow,,,49,,,,20,24,Throw,,,0,http://meleeframedata.com/,771
+Down throw,dthrow,,,64,,,,34,42,Throw,,,0,http://meleeframedata.com/,772
+Airdodge,airdodge,,,49,,,,4,19,Dodge,,,0,http://meleeframedata.com/,1374
+Roll forwards,rollforward,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,1446
+Roll backwards,rollbackwards,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,1447
+Spotdodge,spotdodge,,,27,,,,2,18,Dodge,,,0,http://meleeframedata.com/,1448
+Jab 1,jab1,,,19,16,,,2,3,Grounded,,,0,http://meleeframedata.com/,1515
+Jab 2,jab2,,,19,16,,,2,3,Grounded,,,0,http://meleeframedata.com/,1516
+Peach Bomber (Air),asideb,33,,56,,,,31,41,Special,"additional 27 frames of lag if you don't land. if hit, 28 frames of lag from time of hit",,0,http://meleeframedata.com/,1562
+Grab,grab,,,30,,,,7,8,Unknown,,,0,http://meleeframedata.com/,1601
+Dashgrab,dashgrab,,,40,,,,7,8,Unknown,,,0,http://meleeframedata.com/,1602
+Tech-Roll Forward,ftechroll,,,40,,,,,,Unknown,"Horizontal Movement At: 8
+Distance: 15.4 ft
+Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1807
+Tech-Roll Backward,btechroll,,,40,,,,,,Unknown,"Horizontal Movement At: 9
+Distance: 15.6 ft
+Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1808
+Getup-Attack (Back),bgetup,,,49,,,,,,Unknown,"Hit: 17-19 (Behind), 25-27 (Front)
+Invincible: 1-27",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1809
+Getup-Attack (Stomach),fgetup,,,49,,,,,,Unknown,"Hit: 17-18 (Front), 25-26 (Behind)
+Invincible: 1-26",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1810
+Getup-Roll Forward (Back),fgetuprollback,,,35,,,,,,Unknown,"Horizontal Movement At: 12
+Distance: 13 ft
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1811
+Getup-Roll Forward (Stomach),fgetuprollstomach,,,35,,,,,,Unknown,"Horizontal Movement At: 12
+Distance: 13 ft
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1812
+Getup-Roll Backward (Back),bgetuprollback,,,35,,,,,,Unknown,"Horizontal Movement At: 10
+Distance: 13 ft
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1813
+Getup-Roll Backward (Stomach),bgetuprollstomach,,,35,,,,,,Unknown,"Horizontal Movement At: 3
+Distance: 14.2 ft
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1814
+Tech-Neutral,neutraltech,,,26,,,,,,Unknown,Invincible: 1-20,,0,http://meleeframedata.com/,1896
+Tech-Wall,walltech,,,31,6,,,,,Unknown,"Invincible: 1-14
+Input an upwards direction anywhere on 1-4 for walljump tech on 6)",,0,http://meleeframedata.com/,1922
+Tech-Wall Jump,walltechjump,,,40,1,,,,,Unknown,,,0,http://meleeframedata.com/,1948

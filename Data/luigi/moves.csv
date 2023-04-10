@@ -1,0 +1,65 @@
+Name,NormalizedName,LandLag,LCanceledLandLag,TotalFrames,IASA,AutoCancelBefore,AutoCancelAfter,Start,End,Type,Notes,Percent,CharacterId,Source,Id
+Down Smash,dsmash,,,37,,,,5,15,Grounded,"front hit frames 5-6, back hit frames 14-15",,0,http://meleeframedata.com/,782
+Neutral Air,nair,15,7,45,,3,35,3,31,Air,weak hit frames 7-31 with 5 frames shield stun,,0,http://meleeframedata.com/,783
+Forward Air,fair,25,12,34,33,2,19,7,10,Air,,,0,http://meleeframedata.com/,784
+Back Air,bair,15,7,28,,6,18,6,17,Air,,,0,http://meleeframedata.com/,785
+Up Air,uair,15,7,33,30,2,15,5,7,Air,,,0,http://meleeframedata.com/,786
+Down Air,dair,18,9,32,29,6,23,10,14,Air,,,0,http://meleeframedata.com/,787
+Edge attack,edge,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,789
+Taunt,taunt,,,70,,,,45,45,Unknown,,,0,http://meleeframedata.com/,790
+Pummel,pummel,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,791
+Forward throw,fthrow,,,27,,,,0,0,Throw,,,0,http://meleeframedata.com/,792
+Back throw,bthrow,,,66,,,,0,0,Throw,,,0,http://meleeframedata.com/,793
+Up throw,uthrow,,,39,,,,0,0,Throw,,,0,http://meleeframedata.com/,794
+Down throw,dthrow,,,39,,,,0,0,Throw,,,0,http://meleeframedata.com/,795
+Up Smash,usmash,,,39,,,,9,11,Grounded,,,0,http://meleeframedata.com/,799
+Forward Smash,fsmash,,,41,,,,12,13,Grounded,,,0,http://meleeframedata.com/,801
+Up Tilt,utilt,,,29,,,,4,12,Tilt,,,0,http://meleeframedata.com/,802
+unknown,unknown,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,812
+Green Missile,sideb,,,92,,,,23,62,Special,"additional 41 frames of lag upon landing. misfire is the strong hitbox, regular hitbox does between 5%-26%, depending on charge ",,0,http://meleeframedata.com/,813
+Super Jump Punch,upb,40,,39,,,,5,23,Special,weak hitbox frames 6-23 and has 2 frames shieldstun. can grab edge as soon as frame 27,,0,http://meleeframedata.com/,814
+Luigi Cyclone,downb,,,79,,,,6,43,Special,"hits frame 6-29, 43. strong hit second. ",,0,http://meleeframedata.com/,815
+Fireball,neutralb,,,46,,,,17,67,Special,fireball lasts 50 frames,,0,http://meleeframedata.com/,816
+Dashattack,dattack,,,63,59,,,4,37,Grounded,"hitboxes frames 4, 10, 16, 22, 29, 37",,0,http://meleeframedata.com/,818
+Forward Tilt,ftilt,,,32,32,,,4,8,Tilt,,,0,http://meleeframedata.com/,819
+Down Tilt,dtilt,,,34,,,,5,8,Tilt,,,0,http://meleeframedata.com/,820
+Roll forwards,rollforward,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,1430
+Roll backwards,rollbackwards,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,1431
+Spotdodge,spotdodge,,,22,,,,2,15,Dodge,,,0,http://meleeframedata.com/,1432
+Airdodge,airdodge,,,48,,,,0,,Dodge,,,0,http://meleeframedata.com/,1433
+Jab 1,jab1,,,15,,,,2,3,Grounded,,,0,http://meleeframedata.com/,1504
+Jab 2,jab2,,,17,,,,2,3,Grounded,,,0,http://meleeframedata.com/,1505
+Jab 3,jab3,,,29,22,,,4,5,Grounded,,,0,http://meleeframedata.com/,1506
+Grab,grab,,,30,,,,7,8,Unknown,,,0,http://meleeframedata.com/,1593
+Dashgrab,dashgrab,,,40,,,,11,12,Unknown,,,0,http://meleeframedata.com/,1594
+Forward Tilt (Up),uaft,,,32,32,,,4,8,Tilt,,,0,http://meleeframedata.com/,1646
+Forward Tilt (Down),daft,,,32,32,,,4,8,Tilt,,,0,http://meleeframedata.com/,1647
+Luigi Cyclone (Air),adownb,,,79,,,,6,43,Special,"hits frame 6-29, 43. strong hit second. ",,0,http://meleeframedata.com/,1657
+Super Jump Punch (Air),aupb,40,,39,,,,5,23,Special,weak hitbox frames 6-23 and has 2 frames shieldstun. can grab edge as soon as frame 27,,0,http://meleeframedata.com/,1658
+Tech-Roll Forward,ftechroll,,,40,,,,,,Unknown,"Horizontal Movement At: 9
+Distance: 16.6 ft
+Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1767
+Tech-Roll Backward,btechroll,,,40,,,,,,Unknown,"Horizontal Movement At: 10
+Distance: 16.6 ft
+Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1768
+Getup-Attack (Back),bgetup,,,49,,,,,,Unknown,"Hit: 20-21 (Behind), 24-25 (Front)
+Invincible: 1-25",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1769
+Getup-Attack (Stomach),fgetup,,,49,,,,,,Unknown,"Hit: 19-20 (Behind), 25-26 (Front)
+Invincible: 1-26",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1770
+Getup-Roll Forward (Back),fgetuprollback,,,35,,,,,,Unknown,"Horizontal Movement At: 6
+Distance: 14.4 ft
+Invincible: 1-21",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1771
+Getup-Roll Forward (Stomach),fgetuprollstomach,,,35,,,,,,Unknown,"Horizontal Movement At: 6
+Distance: 14.2 ft
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1772
+Getup-Roll Backward (Back),bgetuprollback,,,35,,,,,,Unknown,"Horizontal Movement At: 12
+Distance: 14.2 ft
+Invincible: 1-22",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1773
+Getup-Roll Backward (Stomach),bgetuprollstomach,,,35,,,,,,Unknown,"Horizontal Movement At: 11
+Distance: 14.2 ft
+Invincible: 1-24",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1774
+Tech-Neutral,neutraltech,,,26,,,,,,Unknown,Invincible: 1-20,,0,http://meleeframedata.com/,1892
+Tech-Wall,walltech,,,31,6,,,,,Unknown,"Invincible: 1-14
+Input an upwards direction anywhere on 1-4 for walljump tech on 6)",,0,http://meleeframedata.com/,1918
+Tech-Wall Jump,walltechjump,,,40,1,,,,,Unknown,,,0,http://meleeframedata.com/,1944
+Green Missile (Misfire),sidebmissfire,,,74,,,,5,44,Special,"additional 41 frames of lag upon landing. misfire is the strong hitbox, regular hitbox does between 5%-26%, depending on charge ",,0,http://meleeframedata.com/,1991

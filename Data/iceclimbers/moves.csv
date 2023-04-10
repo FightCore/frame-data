@@ -1,0 +1,58 @@
+Name,NormalizedName,LandLag,LCanceledLandLag,TotalFrames,IASA,AutoCancelBefore,AutoCancelAfter,Start,End,Type,Notes,Percent,CharacterId,Source,Id
+Up Smash,usmash,,,49,44,,,14,18,Grounded,,,0,http://meleeframedata.com/,1034
+Down Smash,dsmash,,,39,36,,,6,11,Grounded,,,0,http://meleeframedata.com/,1035
+Neutral Air,nair,20,10,49,46,6,29,6,23,Air,,,0,http://meleeframedata.com/,1036
+Forward Air,fair,20,10,59,55,2,55,19,22,Air,,,0,http://meleeframedata.com/,1037
+Back Air,bair,20,10,39,36,8,18,8,11,Air,,,0,http://meleeframedata.com/,1038
+Up Air,uair,32,16,39,30,6,26,6,23,Air,weak hit frames 10-23,,0,http://meleeframedata.com/,1039
+Down Air,dair,25,12,65,64,3,57,3,52,Air,,,0,http://meleeframedata.com/,1040
+Forward Smash,fsmash,,,47,47,,,13,14,Grounded,,,0,http://meleeframedata.com/,1041
+Pummel,pummel,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1043
+Forward throw,fthrow,,,49,,,,24,27,Throw,,,0,http://meleeframedata.com/,1044
+Back throw,bthrow,,,39,,,,0,0,Throw,,,0,http://meleeframedata.com/,1045
+Up throw,uthrow,,,59,,,,25,30,Throw,,,0,http://meleeframedata.com/,1046
+Down throw,dthrow,,,49,,,,0,0,Throw,,,0,http://meleeframedata.com/,1047
+Edge attack,edge,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1050
+Down Tilt,dtilt,,,34,29,,,8,11,Tilt,,,0,http://meleeframedata.com/,1051
+Up Tilt,utilt,,,49,42,,,8,26,Tilt,"6 weak hits 2 frames each, followed by strong hit at frame 26",,0,http://meleeframedata.com/,1052
+Forward Tilt,ftilt,,,31,28,,,6,9,Tilt,,,0,http://meleeframedata.com/,1053
+Ice Shot,neutralb,,,59,,,,15,20,Special,"ice apppers frame 17, lasts 61 frames. hammer hit and ice botj do 5%",,0,http://meleeframedata.com/,1066
+Squall Hammer,sideb,,,89,,,,12,55,Special,"11 hits 4% each, lasting 1 frame each",,0,http://meleeframedata.com/,1067
+Blizzard,downb,,,79,,,,16,66,Special,"hitboxes appear every 5 frames, last 11 frames total (do 1% in the last couple frames). 9 hits total",,0,http://meleeframedata.com/,1068
+Dashattack,dattack,,,41,38,,,11,12,Grounded,,,0,http://meleeframedata.com/,1070
+Belay,upb,,,89,,,,17,59,Special,nana invulnerable frames 5-59,,0,http://meleeframedata.com/,1367
+Roll backwards,rollbackwards,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,1455
+Roll forwards,rollforward,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,1456
+Spotdodge,spotdodge,,,27,,,,2,18,Dodge,,,0,http://meleeframedata.com/,1457
+Airdodge,airdodge,,,48,,,,0,,Dodge,,,0,http://meleeframedata.com/,1458
+Jab 1,jab1,,,29,16,,,4,7,Grounded,,,0,http://meleeframedata.com/,1534
+Jab 2,jab2,,,29,18,,,5,7,Grounded,,,0,http://meleeframedata.com/,1535
+Squall Hammer (Air),asideb,,,89,,,,12,55,Special,"11 hits 4% each, lasting 1 frame each",,0,http://meleeframedata.com/,1557
+Grab,grab,,,30,,,,7,8,Unknown,,,0,http://meleeframedata.com/,1621
+Dashgrab,dashgrab,,,40,,,,7,8,Unknown,,,0,http://meleeframedata.com/,1622
+Tech-Roll Forward,ftechroll,,,40,,,,,,Unknown,"Horizontal Movement At: 9
+Distance: 15.2 ft
+Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1735
+Tech-Roll Backward,btechroll,,,40,,,,,,Unknown,"Horizontal Movement At: 16
+Distance: 15.2 ft
+Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1736
+Getup-Attack (Back),bgetup,,,49,,,,,,Unknown,"Hit: 6-11 (Behind), 21-26 (Front)
+Invincible: 1-26",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1737
+Getup-Attack (Stomach),fgetup,,,49,,,,,,Unknown,"Hit: 19-20 (Behind), 25-26 (Front)
+Invincible: 1-26",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1738
+Getup-Roll Forward (Back),fgetuprollback,,,35,,,,,,Unknown,"Horizontal Movement At: 6
+Distance: 13.2 ft
+Invincible: 1-21",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1739
+Getup-Roll Forward (Stomach),fgetuprollstomach,,,35,,,,,,Unknown,"Horizontal Movement At: 6
+Distance: 13 ft
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1740
+Getup-Roll Backward (Back),bgetuprollback,,,35,,,,,,Unknown,"Horizontal Movement At: 10
+Distance: 13 ft
+Invincible: 1-22 (If the roll takes you to an edge you will slip off unless you WALK forward, or if an attack is timed on that exact frame)",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1741
+Getup-Roll Backward (Stomach),bgetuprollstomach,,,35,,,,,,Unknown,"Horizontal Movement At: 11
+Distance: 13 ft
+Invincible: 1-24",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1742
+Tech-Neutral,neutraltech,,,26,,,,,,Unknown,Invincible: 1-20,,0,http://meleeframedata.com/,1894
+Tech-Wall,walltech,,,25,6,,,,,Unknown,"Invincible: 1-14
+Input an upwards direction anywhere on 1-4 for walljump tech on 6)",,0,http://meleeframedata.com/,1920
+Tech-Wall Jump,walltechjump,,,40,1,,,,,Unknown,,,0,http://meleeframedata.com/,1946
