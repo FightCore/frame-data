@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FightCore.Data\FightCore.Data.csproj" />
+    <ProjectReference Include="..\FightCore.External.MeleeDatabase\FightCore.External.MeleeDatabase.csproj" />
     <ProjectReference Include="..\FightCore.Models\FightCore.Models.csproj" />
     <ProjectReference Include="..\FightCore.Repositories\FightCore.Repositories.csproj" />
     <ProjectReference Include="..\FightCore.Services\FightCore.Services.csproj" />

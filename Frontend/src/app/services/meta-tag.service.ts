@@ -10,19 +10,19 @@ export class MetaTagService {
   constructor(private meta: Meta) {}
 
   updateCharacterMetaTags(character: FrameDataCharacter): void {
-    const title = `${character.name} - FightCore`;
+    const title = `${character.name} | FightCore - Melee Frame Data`;
     const description = `Frame data for ${character.name} from Super Smash Bros. Melee`;
     this.generateTags(title, description);
   }
 
   updateMoveTags(move: Move, character: FrameDataCharacter): void {
-    const title = `${character.name} ${move.name} - FightCore`;
+    const title = `${character.name} ${move.name} | FightCore - Melee Frame Data`;
     const description = `Frame data for ${move.name} from ${character.name} in Super Smash Bros. Melee`;
     this.generateTags(title, description);
   }
 
   updateForCharacters(): void {
-    const title = 'Characters Overview - FightCore';
+    const title = 'Characters Overview | FightCore - Melee Frame data';
     const description = 'Frame data for all characters in Super Smash Bros. Melee';
     this.generateTags(title, description);
   }

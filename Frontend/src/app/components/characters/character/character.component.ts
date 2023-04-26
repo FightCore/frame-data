@@ -58,7 +58,7 @@ export class CharacterComponent implements OnInit {
         this.character = character;
         if (character) {
           this.metaTagService.updateCharacterMetaTags(character);
-          this.title.setTitle(`${character.name} - FightCore`);
+          this.title.setTitle(`${character.name} | FightCore - Melee Frame Data`);
           this.canonicalService.createLinkForCharacter(character);
         }
       });

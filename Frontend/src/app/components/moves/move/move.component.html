@@ -6,7 +6,7 @@
       {{ 'Moves.NameTitle' | translate : { characterName: character!.name, moveName: move!.name } }}
     </h1>
   </mat-toolbar>
-  <div class="grid grid-cols-2">
+  <div class="grid grid-cols-1 lg:grid-cols-2">
     <app-move-gif *appOnlyClientSide [move]="move" [characterName]="character!.normalizedName"></app-move-gif>
     <div class="pl-3">
       <h3>{{ 'Common.Notes' | translate }}</h3>

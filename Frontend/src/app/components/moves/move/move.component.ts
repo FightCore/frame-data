@@ -48,7 +48,7 @@ export class MoveComponent implements OnInit {
           return;
         }
 
-        this.title.setTitle(`${this.character.name} - ${move.name} - FightCore`);
+        this.title.setTitle(`${this.character.name} - ${move.name} | FightCore - Melee Frame Data`);
         this.metaTagService.updateMoveTags(move, this.character);
         this.canonicalService.createLinkForMove(this.character, this.move as Move);
       });

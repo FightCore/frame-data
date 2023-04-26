@@ -35,11 +35,14 @@
       "Damage": "Damage",
       "Effect": "Effect",
       "HitlagAttacker": "Hitlag Attacker",
+      "HitlagAttackerCrouched": "Hitlag Attacker (crouched)",
       "HitlagDefender": "Hitlag Defender",
+      "HitlagDefenderCrouched": "Hitlag Defender (crouched)",
       "KnockbackGrowth": "Knockback Growth",
       "Name": "Name",
       "SetKnockback": "Set Knockback",
-      "ShieldStun": "Shieldstun"
+      "ShieldStun": "Shieldstun",
+      "YoshiArmorBreakPercentage": "Yoshi DJ Armor Break Percentage"
     },
     "FrameInGIF": "Frame in GIF (not in the move): {{ frame }}"
   },

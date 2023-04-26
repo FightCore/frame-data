@@ -3,15 +3,22 @@ using CsvHelper;
 using Newtonsoft.Json;
 using System.Collections;
 using System.Globalization;
+using Newtonsoft.Json.Serialization;
 
 namespace FightCore.Exporters
 {
 	public static class Exporter
 	{
+		private static readonly DefaultContractResolver _contractResolver = new()
+		{
+			NamingStrategy = new CamelCaseNamingStrategy()
+		};
+
 		private static readonly JsonSerializerSettings _noNestedJsonSettings = new()
 		{
 			Formatting = Formatting.None,
-			ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+			ReferenceLoopHandling = ReferenceLoopHandling.Ignore,
+			ContractResolver = _contractResolver
 		};
 
 		public static async Task Export(IEnumerable toExport, string folder, string name)

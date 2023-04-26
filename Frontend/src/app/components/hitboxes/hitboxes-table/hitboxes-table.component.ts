@@ -29,7 +29,16 @@ export class HitboxesTableComponent {
       headerName: 'Hitboxes.Attributes.HitlagDefender',
       field: 'hitlagDefender',
     },
+    {
+      headerName: 'Hitboxes.Attributes.HitlagAttackerCrouched',
+      field: 'hitlagAttackerCrouched',
+    },
+    {
+      headerName: 'Hitboxes.Attributes.HitlagDefenderCrouched',
+      field: 'hitlagDefenderCrouched',
+    },
     { headerName: 'Hitboxes.Attributes.ShieldStun', field: 'shieldstun' },
+    { headerName: 'Hitboxes.Attributes.YoshiArmorBreakPercentage', field: 'yoshiArmorBreakPercentage' },
   ];
   displayedColumns = [
     'name',
@@ -41,7 +50,10 @@ export class HitboxesTableComponent {
     'effect',
     'hitlagAttacker',
     'hitlagDefender',
+    'hitlagAttackerCrouched',
+    'hitlagDefenderCrouched',
     'shieldstun',
+    'yoshiArmorBreakPercentage',
   ];
 
   getValueForHitboxProperty(hitbox: Hitbox, value: string | undefined): string | number {

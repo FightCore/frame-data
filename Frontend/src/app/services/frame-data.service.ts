@@ -24,6 +24,6 @@ export class FrameDataService {
   }
 
   getMoves(): Observable<FrameDataCharacter[]> {
-    return this.httpClient.get<FrameDataCharacter[]>(`https://data.fightcore.gg/framedata.json`);
+    return this.httpClient.get<FrameDataCharacter[]>(`http://localhost:4200/framedata.json`);
   }
 }

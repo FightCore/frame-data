@@ -6,6 +6,7 @@ using FightCore.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using FightCore.Exporters;
+using FightCore.External.MeleeDatabase;
 
 var configuration = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
 var dbContextOptions =
@@ -21,6 +22,7 @@ export = export.OrderBy(character => character.Id).ToList();
 var folder = configuration["Exports:Folder"];
 
 await Exporter.Export(export, folder, "characters");
+await DatabaseCreator.Export(export, Path.Combine(folder, "test.db"));
 
 foreach (var character in export)
 {

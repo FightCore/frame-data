@@ -21,7 +21,7 @@ export class MovesComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.title.setTitle('Moves - FightCore');
+    this.title.setTitle('Moves | FightCore - Melee Frame Data');
     this.store
       .pipe(select(selectMoves()))
       .pipe(
