@@ -1,4 +1,4 @@
-﻿using FightCore.Models.Base;
+using FightCore.Models.Base;
 
 namespace FightCore.Models
 {
