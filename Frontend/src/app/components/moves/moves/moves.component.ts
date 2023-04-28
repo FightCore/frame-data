@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { select, Store } from '@ngrx/store';
 import { map } from 'rxjs';
-import { Move } from 'src/app/models/move';
+import { Move } from '@fightcore/models';
 import { selectMoves } from 'src/app/store/frame-data/frame-data.selectors';
 import { isDarkMode } from 'src/app/store/user-settings/user-settings.selectors';
 

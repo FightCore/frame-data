@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Character } from 'src/app/models/character';
-import { Move } from 'src/app/models/move';
+import { Character, Move } from '@fightcore/models';
 import { select, Store } from '@ngrx/store';
 import { selectMove } from 'src/app/store/frame-data/frame-data.selectors';
 import { Meta, Title } from '@angular/platform-browser';

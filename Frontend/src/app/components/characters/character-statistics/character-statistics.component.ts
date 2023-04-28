@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Character } from 'src/app/models/character';
+import { Character } from '@fightcore/models';
 
 @Component({
   selector: 'app-character-statistics',

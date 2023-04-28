@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Move } from 'src/app/models/move';
+import { Move } from '@fightcore/models';
 
 @Component({
   selector: 'app-move-attributes-list',

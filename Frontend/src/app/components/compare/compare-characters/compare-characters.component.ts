@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { select, Store } from '@ngrx/store';
-import { Character } from 'src/app/models/character';
+import { Character } from '@fightcore/models';
 import { CanonicalService } from 'src/app/services/canonical.service';
 import { selectCharacters } from 'src/app/store/frame-data/frame-data.selectors';
 

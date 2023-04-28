@@ -1,6 +1,6 @@
 import { AfterViewInit, Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 import { SuperGif } from '@wizpanda/super-gif';
-import { Move } from 'src/app/models/move';
+import { Move } from '@fightcore/models';
 
 @Component({
   selector: 'app-move-gif',

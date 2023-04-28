@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Hitbox } from 'src/app/models/hitbox';
+import { Hitbox } from '@fightcore/models';
 import { select, Store } from '@ngrx/store';
 import { isDarkMode } from 'src/app/store/user-settings/user-settings.selectors';
 

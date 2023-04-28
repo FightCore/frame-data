@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { makeStateKey, StateKey, TransferState } from '@angular/platform-browser';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { map, mergeMap, of, tap } from 'rxjs';
-import { Character } from 'src/app/models/character';
+import { Character } from '@fightcore/models';
 import { FrameDataService } from 'src/app/services/frame-data.service';
 import * as FrameDataActions from './frame-data.actions';
 

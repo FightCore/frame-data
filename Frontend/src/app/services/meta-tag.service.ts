@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Meta, MetaDefinition } from '@angular/platform-browser';
-import { Character } from '../models/character';
-import { Move } from '../models/move';
+import { Character, Move } from '@fightcore/models';
 
 @Injectable({
   providedIn: 'root',

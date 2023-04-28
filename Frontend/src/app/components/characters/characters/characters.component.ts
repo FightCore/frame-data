@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { select, Store } from '@ngrx/store';
-import { Character } from 'src/app/models/character';
+import { Character } from '@fightcore/models';
 import { CanonicalService } from 'src/app/services/canonical.service';
 import { MetaTagService } from 'src/app/services/meta-tag.service';
 import { selectCharacters } from 'src/app/store/frame-data/frame-data.selectors';

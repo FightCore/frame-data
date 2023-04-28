@@ -2,7 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { select, Store } from '@ngrx/store';
 import slugify from 'slugify';
-import { Character } from 'src/app/models/character';
+import { Character } from '@fightcore/models';
 import { selectCharacters } from 'src/app/store/frame-data/frame-data.selectors';
 import { environment } from 'src/environments/environment';
 

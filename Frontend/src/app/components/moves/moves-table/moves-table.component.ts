@@ -2,8 +2,7 @@ import { Component, Input } from '@angular/core';
 import { Store, select } from '@ngrx/store';
 import { TranslateService } from '@ngx-translate/core';
 import slugify from 'slugify';
-import { Character } from 'src/app/models/character';
-import { Move } from 'src/app/models/move';
+import { Character, Move } from '@fightcore/models';
 import { isDarkMode } from 'src/app/store/user-settings/user-settings.selectors';
 
 @Component({

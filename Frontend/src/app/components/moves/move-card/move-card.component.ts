@@ -2,7 +2,7 @@ import { isPlatformBrowser } from '@angular/common';
 import { Component, Inject, Input, OnInit, PLATFORM_ID } from '@angular/core';
 import { Router } from '@angular/router';
 import slugify from 'slugify';
-import { Move } from 'src/app/models/move';
+import { Move } from '@fightcore/models';
 
 @Component({
   selector: 'app-move-card',

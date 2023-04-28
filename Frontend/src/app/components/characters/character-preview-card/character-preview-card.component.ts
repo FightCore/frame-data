@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Character } from 'src/app/models/character';
+import { Character } from '@fightcore/models';
 import slugify from 'slugify';
 import { environment } from 'src/environments/environment';
 

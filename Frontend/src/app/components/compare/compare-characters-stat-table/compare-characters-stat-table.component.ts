@@ -1,6 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Character } from 'src/app/models/character';
-import { CharacterStatistics } from 'src/app/models/character-statistics';
+import { Character, CharacterStatistics } from '@fightcore/models';
 import { environment } from 'src/environments/environment';
 import { Sort } from '@angular/material/sort';
 

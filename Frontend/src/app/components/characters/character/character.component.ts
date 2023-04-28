@@ -4,8 +4,7 @@ import { ChangeDetectorRef, Component, Inject, OnInit, PLATFORM_ID } from '@angu
 import { Title } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 import { select, Store } from '@ngrx/store';
-import { Character } from 'src/app/models/character';
-import { MoveType } from 'src/app/models/move-type';
+import { Character, MoveType } from '@fightcore/models';
 import { CanonicalService } from 'src/app/services/canonical.service';
 import { MetaTagService } from 'src/app/services/meta-tag.service';
 import { selectCharacter } from 'src/app/store/frame-data/frame-data.selectors';

@@ -1,7 +1,6 @@
-import { Character } from 'src/app/models/character';
+import { Character, Move } from '@fightcore/models';
 import * as FrameDataActions from './frame-data.actions';
 import { Action, createReducer, on } from '@ngrx/store';
-import { Move } from 'src/app/models/move';
 
 export const featureKey = 'frameData';
 

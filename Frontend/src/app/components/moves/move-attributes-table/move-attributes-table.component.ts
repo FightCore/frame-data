@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Move } from 'src/app/models/move';
+import { Move } from '@fightcore/models';
 import { select, Store } from '@ngrx/store';
 import { isDarkMode } from 'src/app/store/user-settings/user-settings.selectors';
 

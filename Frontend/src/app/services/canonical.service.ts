@@ -1,8 +1,7 @@
 import { Inject, Injectable } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
-import { Character } from '../models/character';
+import { Character, Move } from '@fightcore/models';
 import slugify from 'slugify';
-import { Move } from '../models/move';
 
 @Injectable({
   providedIn: 'root',
