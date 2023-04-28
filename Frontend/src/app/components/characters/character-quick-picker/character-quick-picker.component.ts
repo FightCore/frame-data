@@ -2,7 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { select, Store } from '@ngrx/store';
 import slugify from 'slugify';
-import { FrameDataCharacter } from 'src/app/models/framedata-character';
+import { Character } from 'src/app/models/character';
 import { selectCharacters } from 'src/app/store/frame-data/frame-data.selectors';
 import { environment } from 'src/environments/environment';
 
@@ -12,8 +12,8 @@ import { environment } from 'src/environments/environment';
   styleUrls: ['./character-quick-picker.component.scss'],
 })
 export class CharacterQuickPickerComponent implements OnInit {
-  characters: FrameDataCharacter[] = [];
-  specialCharacters: FrameDataCharacter[] = [];
+  characters: Character[] = [];
+  specialCharacters: Character[] = [];
   environment = environment;
   private specialCharacterNames: string[] = ['fwireframe'];
 
@@ -34,11 +34,11 @@ export class CharacterQuickPickerComponent implements OnInit {
     });
   }
 
-  sortCharacters(characterOne: FrameDataCharacter, characterTwo: FrameDataCharacter): number {
+  sortCharacters(characterOne: Character, characterTwo: Character): number {
     return characterOne.name > characterTwo.name ? 1 : -1;
   }
 
-  viewCharacterUrl(character: FrameDataCharacter): string {
+  viewCharacterUrl(character: Character): string {
     return `/characters/${character.fightCoreId}/${slugify(character.name)}`;
   }
 }

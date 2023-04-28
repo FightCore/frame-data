@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 import { Store, select } from '@ngrx/store';
 import { TranslateService } from '@ngx-translate/core';
 import slugify from 'slugify';
-import { FrameDataCharacter } from 'src/app/models/framedata-character';
+import { Character } from 'src/app/models/character';
 import { Move } from 'src/app/models/move';
 import { isDarkMode } from 'src/app/store/user-settings/user-settings.selectors';
 
@@ -13,7 +13,7 @@ import { isDarkMode } from 'src/app/store/user-settings/user-settings.selectors'
 })
 export class MovesTableComponent {
   @Input() moves?: Move[];
-  @Input() character?: FrameDataCharacter;
+  @Input() character?: Character;
   colDef = [
     { headerName: 'Moves.Attributes.Name', field: 'name' },
     { headerName: 'Moves.Attributes.Start', field: 'start' },

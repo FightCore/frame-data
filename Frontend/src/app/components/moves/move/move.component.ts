@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { FrameDataCharacter } from 'src/app/models/framedata-character';
+import { Character } from 'src/app/models/character';
 import { Move } from 'src/app/models/move';
 import { select, Store } from '@ngrx/store';
 import { selectMove } from 'src/app/store/frame-data/frame-data.selectors';
@@ -14,7 +14,7 @@ import { CanonicalService } from 'src/app/services/canonical.service';
   styleUrls: ['./move.component.scss'],
 })
 export class MoveComponent implements OnInit {
-  character?: FrameDataCharacter;
+  character?: Character;
   move?: Move;
 
   constructor(

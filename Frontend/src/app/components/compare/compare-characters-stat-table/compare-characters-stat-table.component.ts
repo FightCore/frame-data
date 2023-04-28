@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { FrameDataCharacter } from 'src/app/models/framedata-character';
+import { Character } from 'src/app/models/character';
 import { CharacterStatistics } from 'src/app/models/character-statistics';
 import { environment } from 'src/environments/environment';
 import { Sort } from '@angular/material/sort';
@@ -10,7 +10,7 @@ import { Sort } from '@angular/material/sort';
   styleUrls: ['./compare-characters-stat-table.component.scss'],
 })
 export class CompareCharactersStatTableComponent implements OnInit {
-  @Input() characters: FrameDataCharacter[] = [];
+  @Input() characters: Character[] = [];
   @Input() stat?: string;
   @Input() statTranslationKey: string = '';
   environment = environment;

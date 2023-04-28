@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { FrameDataCharacter } from 'src/app/models/framedata-character';
+import { Character } from 'src/app/models/character';
 
 @Component({
   selector: 'app-character-statistics',
@@ -7,7 +7,7 @@ import { FrameDataCharacter } from 'src/app/models/framedata-character';
   styleUrls: ['./character-statistics.component.scss'],
 })
 export class CharacterStatisticsComponent implements OnInit {
-  @Input() frameDataCharacter?: FrameDataCharacter;
+  @Input() frameDataCharacter?: Character;
   statistics?: any[];
   ngOnInit(): void {
     const stats = this.frameDataCharacter!.characterStatistics;

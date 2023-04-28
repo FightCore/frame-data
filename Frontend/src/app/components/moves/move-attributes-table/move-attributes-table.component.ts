@@ -28,6 +28,10 @@ export class MoveAttributesTableComponent {
       headerName: 'Moves.Attributes.AutoCancelAfter',
       field: 'autoCancelAfter',
     },
+    {
+      headerName: 'Moves.Attributes.LandingFallSpecialLag',
+      field: 'landingFallSpecialLag',
+    },
   ];
   displayedColumns = [
     'start',
@@ -36,6 +40,7 @@ export class MoveAttributesTableComponent {
     'iasa',
     'landLag',
     'lCanceledLandLag',
+    'landingFallSpecialLag',
     'autoCancelBefore',
     'autoCancelAfter',
   ];

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { select, Store } from '@ngrx/store';
-import { FrameDataCharacter } from 'src/app/models/framedata-character';
+import { Character } from 'src/app/models/character';
 import { CanonicalService } from 'src/app/services/canonical.service';
 import { selectCharacters } from 'src/app/store/frame-data/frame-data.selectors';
 
@@ -19,7 +19,7 @@ export class CompareCharactersComponent implements OnInit {
     { key: 'plaIntangibilityFrames', translation: 'Characters.Attributes.PLAIntangibilityFrames' },
     { key: 'jumpSquat', translation: 'Characters.Attributes.JumpSquat' },
   ];
-  characters: FrameDataCharacter[] = [];
+  characters: Character[] = [];
   // Some characters currently don't have known statistics, we want to filter them from this page.
   private filterCharacters = ['fwireframe'];
   constructor(private store: Store, private canonicalService: CanonicalService) {}

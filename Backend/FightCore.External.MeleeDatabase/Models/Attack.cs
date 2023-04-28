@@ -61,7 +61,7 @@ namespace FightCore.External.MeleeDatabase.Models
 			End = move.End;
 			Total = move.TotalFrames;
 			Iasa = move.IASA;
-			Ld_Fl_Spec = -1;
+			Ld_Fl_Spec = move.LandingFallSpecialLag ?? -1;
 			Stun = strongestHitbox?.Shieldstun;
 			Percent = strongestHitbox?.Damage;
 			Percent_Weak = weakestHitbox?.Damage;

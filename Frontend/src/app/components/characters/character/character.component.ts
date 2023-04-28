@@ -4,7 +4,7 @@ import { ChangeDetectorRef, Component, Inject, OnInit, PLATFORM_ID } from '@angu
 import { Title } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 import { select, Store } from '@ngrx/store';
-import { FrameDataCharacter } from 'src/app/models/framedata-character';
+import { Character } from 'src/app/models/character';
 import { MoveType } from 'src/app/models/move-type';
 import { CanonicalService } from 'src/app/services/canonical.service';
 import { MetaTagService } from 'src/app/services/meta-tag.service';
@@ -16,7 +16,7 @@ import { selectCharacter } from 'src/app/store/frame-data/frame-data.selectors';
   styleUrls: ['./character.component.scss'],
 })
 export class CharacterComponent implements OnInit {
-  character?: FrameDataCharacter;
+  character?: Character;
   mobileQuery?: MediaQueryList;
 
   private _mobileQueryListener?: () => void;

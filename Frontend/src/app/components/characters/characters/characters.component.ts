@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { select, Store } from '@ngrx/store';
-import { FrameDataCharacter } from 'src/app/models/framedata-character';
+import { Character } from 'src/app/models/character';
 import { CanonicalService } from 'src/app/services/canonical.service';
 import { MetaTagService } from 'src/app/services/meta-tag.service';
 import { selectCharacters } from 'src/app/store/frame-data/frame-data.selectors';
@@ -12,7 +12,7 @@ import { selectCharacters } from 'src/app/store/frame-data/frame-data.selectors'
   styleUrls: ['./characters.component.scss'],
 })
 export class CharactersComponent implements OnInit {
-  characters?: FrameDataCharacter[];
+  characters?: Character[];
   constructor(
     private store: Store,
     private title: Title,

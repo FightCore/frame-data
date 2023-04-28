@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Meta, MetaDefinition } from '@angular/platform-browser';
-import { FrameDataCharacter } from '../models/framedata-character';
+import { Character } from '../models/character';
 import { Move } from '../models/move';
 
 @Injectable({
@@ -9,13 +9,13 @@ import { Move } from '../models/move';
 export class MetaTagService {
   constructor(private meta: Meta) {}
 
-  updateCharacterMetaTags(character: FrameDataCharacter): void {
+  updateCharacterMetaTags(character: Character): void {
     const title = `${character.name} | FightCore - Melee Frame Data`;
     const description = `Frame data for ${character.name} from Super Smash Bros. Melee`;
     this.generateTags(title, description);
   }
 
-  updateMoveTags(move: Move, character: FrameDataCharacter): void {
+  updateMoveTags(move: Move, character: Character): void {
     const title = `${character.name} ${move.name} | FightCore - Melee Frame Data`;
     const description = `Frame data for ${move.name} from ${character.name} in Super Smash Bros. Melee`;
     this.generateTags(title, description);

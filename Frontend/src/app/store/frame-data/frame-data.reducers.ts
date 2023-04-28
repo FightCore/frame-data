@@ -1,4 +1,4 @@
-import { FrameDataCharacter } from 'src/app/models/framedata-character';
+import { Character } from 'src/app/models/character';
 import * as FrameDataActions from './frame-data.actions';
 import { Action, createReducer, on } from '@ngrx/store';
 import { Move } from 'src/app/models/move';
@@ -6,7 +6,7 @@ import { Move } from 'src/app/models/move';
 export const featureKey = 'frameData';
 
 export interface FrameDataState {
-  characters: FrameDataCharacter[];
+  characters: Character[];
   moves: Move[];
 }
 export const initialState: FrameDataState = {

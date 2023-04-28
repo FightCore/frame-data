@@ -2,8 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
-import { FrameDataCharacter } from '../models/framedata-character';
-import { Move } from '../models/move';
+import { Character } from '../models/character';
 
 @Injectable({
   providedIn: 'root',
@@ -11,19 +10,7 @@ import { Move } from '../models/move';
 export class FrameDataService {
   constructor(private httpClient: HttpClient) {}
 
-  getFrameDataForCharacter(characterId: number): Observable<FrameDataCharacter> {
-    return this.httpClient.get<FrameDataCharacter>(`${environment.baseUrl}/framedata/${characterId}`);
-  }
-
-  getCharacters(): Observable<FrameDataCharacter[]> {
-    return this.httpClient.get<FrameDataCharacter[]>(`${environment.baseUrl}/framedata/characters`);
-  }
-
-  getMove(moveId: number): Observable<Move> {
-    return this.httpClient.get<Move>(`${environment.baseUrl}/framedata/moves/${moveId}`);
-  }
-
-  getMoves(): Observable<FrameDataCharacter[]> {
-    return this.httpClient.get<FrameDataCharacter[]>(`http://localhost:4200/framedata.json`);
+  getMoves(): Observable<Character[]> {
+    return this.httpClient.get<Character[]>(`${environment.siteUrl}/framedata.json`);
   }
 }

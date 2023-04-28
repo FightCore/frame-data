@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { FrameDataCharacter } from 'src/app/models/framedata-character';
+import { Character } from 'src/app/models/character';
 import slugify from 'slugify';
 import { environment } from 'src/environments/environment';
 
@@ -10,7 +10,7 @@ import { environment } from 'src/environments/environment';
   styleUrls: ['./character-preview-card.component.scss'],
 })
 export class CharacterPreviewCardComponent {
-  @Input() character?: FrameDataCharacter;
+  @Input() character?: Character;
   environment = environment;
   constructor() {}
 

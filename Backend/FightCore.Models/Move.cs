@@ -10,11 +10,11 @@ namespace FightCore.Models
 
         public List<Hitbox> Hitboxes { get; set; }
 
-        #region Land lag
         public int? LandLag { get; set; }
 
         public int? LCanceledLandLag { get; set; }
-        #endregion
+
+        public int? LandingFallSpecialLag { get; set; }
 
         public int TotalFrames { get; set; }
 

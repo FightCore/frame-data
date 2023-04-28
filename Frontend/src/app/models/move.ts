@@ -1,4 +1,4 @@
-import { FrameDataCharacter } from './framedata-character';
+import { Character } from './character';
 import { Hitbox } from './hitbox';
 import { MoveType } from './move-type';
 
@@ -18,6 +18,7 @@ export interface Move {
   end?: number;
   notes?: string;
   source?: string;
-  character?: FrameDataCharacter;
+  character?: Character;
   characterId?: number;
+  landingFallSpecialLag?: number;
 }

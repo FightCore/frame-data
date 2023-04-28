@@ -75,6 +75,7 @@ export class En {
           Start: 'Start',
           TotalFrames: 'Total Frames',
           Value: 'Value',
+          LandingFallSpecialLag: 'Landing Fall Special Lag',
         },
         Categories: {
           AerialAttacks: 'Aerial Attacks',

@@ -29,6 +29,7 @@ export class MoveAttributesListComponent implements OnInit {
       { name: 'Moves.Attributes.LCanceledLandLag', value: this.move.lCanceledLandLang },
       { name: 'Moves.Attributes.AutoCancelBefore', value: this.move.autoCancelBefore },
       { name: 'Moves.Attributes.AutoCancelAfter', value: this.move.autoCancelAfter },
+      { name: 'Moves.Attributes.LandingFallSpecialLag', value: this.move.landingFallSpecialLag },
     ].filter((attribute) => attribute.value);
   }
 }

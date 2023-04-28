@@ -1,6 +1,6 @@
 import { Inject, Injectable } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
-import { FrameDataCharacter } from '../models/framedata-character';
+import { Character } from '../models/character';
 import slugify from 'slugify';
 import { Move } from '../models/move';
 
@@ -12,13 +12,13 @@ export class CanonicalService {
 
   constructor(@Inject(DOCUMENT) private document: Document) {}
 
-  createLinkForCharacter(character: FrameDataCharacter): void {
+  createLinkForCharacter(character: Character): void {
     this.createLinkForCanonicalURL(
       `${this.fightCoreUrl}characters/${character.fightCoreId}/${slugify(character.name)}`
     );
   }
 
-  createLinkForMove(character: FrameDataCharacter, move: Move): void {
+  createLinkForMove(character: Character, move: Move): void {
     this.createLinkForCanonicalURL(
       `${this.fightCoreUrl}characters/${character.fightCoreId}/${slugify(character.name)}/moves/${move.id}/${slugify(
         move.name
