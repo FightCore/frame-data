@@ -1,12 +1,14 @@
 import { MediaMatcher } from '@angular/cdk/layout';
 import { isPlatformBrowser } from '@angular/common';
 import { ChangeDetectorRef, Component, Inject, OnDestroy, OnInit, PLATFORM_ID, ViewChild } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { MatSidenav } from '@angular/material/sidenav';
 import { NavigationEnd, NavigationStart, Router } from '@angular/router';
 import { select, Store } from '@ngrx/store';
 import { filter, tap } from 'rxjs';
 import { updateTheme } from 'src/app/store/user-settings/user-settings.actions';
 import { isDarkMode } from 'src/app/store/user-settings/user-settings.selectors';
+import { SearchDialogComponent } from '../../search/search-dialog/search-dialog.component';
 
 @Component({
   selector: 'app-sidenav',
@@ -24,7 +26,8 @@ export class SidenavComponent implements OnDestroy {
     changeDetectorRef: ChangeDetectorRef,
     media: MediaMatcher,
     router: Router,
-    private store: Store
+    private store: Store,
+    private dialog: MatDialog
   ) {
     if (isPlatformBrowser(platformId)) {
       this.mobileQuery = media.matchMedia('(max-width: 600px)');
@@ -47,6 +50,12 @@ export class SidenavComponent implements OnDestroy {
 
   ngOnDestroy(): void {
     this.mobileQuery?.removeListener(this._mobileQueryListener!);
+  }
+
+  openSearch(): void {
+    this.dialog.open(SearchDialogComponent, {
+      width: '60vw',
+    });
   }
 
   onClickToggleTheme(): void {

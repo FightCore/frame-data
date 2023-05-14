@@ -38,6 +38,8 @@ import { UserSettingsEffects } from './store/user-settings/user-settings.effects
 import { VideoAutoplayMutedDirective } from './directives/video-autoplay-muted.directive';
 import { OnlyClientSideDirective } from './directives/only-client-side.directive';
 import { MobileOnlyDirective } from './directives/mobile-only.directive';
+import { SearchDialogComponent } from './components/search/search-dialog/search-dialog.component';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -65,12 +67,14 @@ import { MobileOnlyDirective } from './directives/mobile-only.directive';
     VideoAutoplayMutedDirective,
     OnlyClientSideDirective,
     MobileOnlyDirective,
+    SearchDialogComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    FormsModule,
     TranslateModule.forRoot({
       defaultLanguage: 'en',
     }),

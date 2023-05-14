@@ -9,6 +9,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatTableModule } from '@angular/material/table';
 import { MatSortModule } from '@angular/material/sort';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [],
@@ -23,6 +25,8 @@ import { MatSortModule } from '@angular/material/sort';
     MatSidenavModule,
     MatTableModule,
     MatSortModule,
+    MatDialogModule,
+    MatInputModule,
   ],
 })
 export class MaterialModule {}
