@@ -3,9 +3,8 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { TranslateModule } from '@ngx-translate/core';
+import { HttpClientModule } from '@angular/common/http';
 import { SharedModule } from './modules/shared-module/shared.module';
 import { MenubarComponent } from './components/layout/menubar/menubar.component';
 import { FooterComponent } from './components/layout/footer/footer.component';
@@ -30,7 +29,6 @@ import { EffectsModule } from '@ngrx/effects';
 import { MovesComponent } from './components/moves/moves/moves.component';
 import { CompareToolComponent } from './components/moves/compare-tool/compare-tool.component';
 import { SidenavComponent } from './components/layout/sidenav/sidenav.component';
-import { environment } from 'src/environments/environment';
 import { CompareCharactersComponent } from './components/compare/compare-characters/compare-characters.component';
 import { CompareCharactersStatTableComponent } from './components/compare/compare-characters-stat-table/compare-characters-stat-table.component';
 import { userSettingsReducer } from './store/user-settings/user-settings.reducers';
@@ -40,6 +38,7 @@ import { OnlyClientSideDirective } from './directives/only-client-side.directive
 import { MobileOnlyDirective } from './directives/mobile-only.directive';
 import { SearchDialogComponent } from './components/search/search-dialog/search-dialog.component';
 import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,

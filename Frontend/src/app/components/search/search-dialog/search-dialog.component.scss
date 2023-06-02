@@ -1,0 +1,10 @@
+.alt-card-color {
+  background-color: #575757;
+}
+
+::ng-deep .light-theme {
+  .alt-card-color {
+    background-color: #ececec;
+  }
+
+}

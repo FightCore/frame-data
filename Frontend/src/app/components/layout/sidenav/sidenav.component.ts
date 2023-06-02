@@ -1,5 +1,5 @@
 import { MediaMatcher } from '@angular/cdk/layout';
-import { isPlatformBrowser } from '@angular/common';
+import { DOCUMENT, isPlatformBrowser } from '@angular/common';
 import { ChangeDetectorRef, Component, Inject, OnDestroy, OnInit, PLATFORM_ID, ViewChild } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { MatSidenav } from '@angular/material/sidenav';
@@ -9,6 +9,7 @@ import { filter, tap } from 'rxjs';
 import { updateTheme } from 'src/app/store/user-settings/user-settings.actions';
 import { isDarkMode } from 'src/app/store/user-settings/user-settings.selectors';
 import { SearchDialogComponent } from '../../search/search-dialog/search-dialog.component';
+import { EventManager } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-sidenav',
@@ -27,7 +28,9 @@ export class SidenavComponent implements OnDestroy {
     media: MediaMatcher,
     router: Router,
     private store: Store,
-    private dialog: MatDialog
+    private dialog: MatDialog,
+    private eventManager: EventManager,
+    @Inject(DOCUMENT) private document: Document
   ) {
     if (isPlatformBrowser(platformId)) {
       this.mobileQuery = media.matchMedia('(max-width: 600px)');
@@ -46,6 +49,11 @@ export class SidenavComponent implements OnDestroy {
     this.store.pipe(select(isDarkMode())).subscribe((useDarkMode) => {
       this.useDarkMode = useDarkMode;
     });
+
+    this.eventManager.addEventListener(this.document.documentElement, 'keydown.control.k', (event: any) => {
+      event.preventDefault();
+      this.openSearch();
+    });
   }
 
   ngOnDestroy(): void {
@@ -55,6 +63,8 @@ export class SidenavComponent implements OnDestroy {
   openSearch(): void {
     this.dialog.open(SearchDialogComponent, {
       width: '60vw',
+      height: '80vh',
+      maxHeight: '80vh',
     });
   }
 
