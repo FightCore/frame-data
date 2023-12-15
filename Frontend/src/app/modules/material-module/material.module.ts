@@ -11,6 +11,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatSortModule } from '@angular/material/sort';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatInputModule } from '@angular/material/input';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [],
@@ -27,6 +28,7 @@ import { MatInputModule } from '@angular/material/input';
     MatSortModule,
     MatDialogModule,
     MatInputModule,
+    MatListModule,
   ],
 })
 export class MaterialModule {}

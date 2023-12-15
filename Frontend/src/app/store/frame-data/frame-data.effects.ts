@@ -1,10 +1,10 @@
-import { Injectable } from '@angular/core';
-import { makeStateKey, StateKey, TransferState } from '@angular/platform-browser';
+import { Injectable, makeStateKey, StateKey, TransferState } from '@angular/core';
+
 import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { map, mergeMap, of, tap } from 'rxjs';
-import { Character } from '@fightcore/models';
 import { FrameDataService } from 'src/app/services/frame-data.service';
 import * as FrameDataActions from './frame-data.actions';
+import { ExtendedCharacter } from 'src/app/models/extended-character';
 
 @Injectable()
 export class FrameDataEffects {
@@ -13,7 +13,7 @@ export class FrameDataEffects {
     private frameDataService: FrameDataService,
     private transferState: TransferState
   ) {}
-  stateKey: StateKey<Character[]> = makeStateKey<Character[]>('moves');
+  stateKey: StateKey<ExtendedCharacter[]> = makeStateKey<ExtendedCharacter[]>('moves');
   loadFrameData$ = createEffect(() =>
     this.actions$.pipe(
       ofType(FrameDataActions.loadCharacters),

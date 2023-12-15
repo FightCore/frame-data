@@ -245,6 +245,309 @@ namespace FightCore.FrameData.Migrations
                     b.ToTable("Moves");
                 });
 
+            modelBuilder.Entity("FightCore.Models.Subactions.Commands.ScriptCommand", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
+
+                    b.Property<string>("DisplayName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("HexString")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<long>("Length")
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Order")
+                        .HasColumnType("int");
+
+                    b.Property<long?>("SubactionId")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("Type")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("SubactionId");
+
+                    b.ToTable("ScriptCommands");
+
+                    b.UseTptMappingStrategy();
+                });
+
+            modelBuilder.Entity("FightCore.Models.Subactions.MoveSubaction", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
+
+                    b.Property<int>("Frame")
+                        .HasColumnType("int");
+
+                    b.Property<int>("MatchType")
+                        .HasColumnType("int");
+
+                    b.Property<long>("MoveId")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("SubactionId")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MoveId");
+
+                    b.HasIndex("SubactionId");
+
+                    b.ToTable("MoveSubactions");
+                });
+
+            modelBuilder.Entity("FightCore.Models.Subactions.Subaction", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
+
+                    b.Property<long>("CharacterId")
+                        .HasColumnType("bigint");
+
+                    b.Property<int>("Index")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CharacterId");
+
+                    b.ToTable("Subactions");
+                });
+
+            modelBuilder.Entity("FightCore.Models.Subactions.SubactionHeader", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
+
+                    b.Property<long>("ScriptOffset")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("StringOffset")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("SubactionId")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("Unknown1Offset")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("Unknown2Offset")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("Unknown3Flags")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("Unknown4Offset")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("SubactionId")
+                        .IsUnique();
+
+                    b.ToTable("SubactionHeader");
+                });
+
+            modelBuilder.Entity("FightCore.Models.Subactions.Commands.AutoCancelCommand", b =>
+                {
+                    b.HasBaseType("FightCore.Models.Subactions.Commands.ScriptCommand");
+
+                    b.Property<bool>("AutoCancelEnabled")
+                        .HasColumnType("bit");
+
+                    b.ToTable("AutoCancelCommands");
+                });
+
+            modelBuilder.Entity("FightCore.Models.Subactions.Commands.BodyStateCommand", b =>
+                {
+                    b.HasBaseType("FightCore.Models.Subactions.Commands.ScriptCommand");
+
+                    b.Property<int>("BodyType")
+                        .HasColumnType("int");
+
+                    b.ToTable("BodyStateCommands");
+                });
+
+            modelBuilder.Entity("FightCore.Models.Subactions.Commands.HitboxCommand", b =>
+                {
+                    b.HasBaseType("FightCore.Models.Subactions.Commands.ScriptCommand");
+
+                    b.Property<int>("Angle")
+                        .HasColumnType("int");
+
+                    b.Property<int>("BaseKnockback")
+                        .HasColumnType("int");
+
+                    b.Property<int>("BoneId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Damage")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Element")
+                        .HasColumnType("int");
+
+                    b.Property<int>("HitboxId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("HitsAir")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("HitsGround")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("HurtboxInteraction")
+                        .HasColumnType("int");
+
+                    b.Property<int>("KnockbackGrowth")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SFX")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ShieldDamage")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Size")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Unknown0")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UnknownQ")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UnknownR")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UnknownV")
+                        .HasColumnType("int");
+
+                    b.Property<int>("WeightDependantKnockback")
+                        .HasColumnType("int");
+
+                    b.Property<int>("XOffset")
+                        .HasColumnType("int");
+
+                    b.Property<int>("YOffset")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ZOffset")
+                        .HasColumnType("int");
+
+                    b.ToTable("HitboxCommands");
+                });
+
+            modelBuilder.Entity("FightCore.Models.Subactions.Commands.PartialBodystateCommand", b =>
+                {
+                    b.HasBaseType("FightCore.Models.Subactions.Commands.ScriptCommand");
+
+                    b.Property<int>("Bone")
+                        .HasColumnType("int");
+
+                    b.ToTable("PartialBodystateCommands");
+                });
+
+            modelBuilder.Entity("FightCore.Models.Subactions.Commands.PointerCommand", b =>
+                {
+                    b.HasBaseType("FightCore.Models.Subactions.Commands.ScriptCommand");
+
+                    b.Property<long>("Pointer")
+                        .HasColumnType("bigint");
+
+                    b.ToTable("PointerCommands");
+                });
+
+            modelBuilder.Entity("FightCore.Models.Subactions.Commands.StartLoopCommand", b =>
+                {
+                    b.HasBaseType("FightCore.Models.Subactions.Commands.ScriptCommand");
+
+                    b.Property<int>("Iterations")
+                        .HasColumnType("int");
+
+                    b.ToTable("StartLoopCommands");
+                });
+
+            modelBuilder.Entity("FightCore.Models.Subactions.Commands.ThrowCommand", b =>
+                {
+                    b.HasBaseType("FightCore.Models.Subactions.Commands.ScriptCommand");
+
+                    b.Property<int>("Angle")
+                        .HasColumnType("int");
+
+                    b.Property<int>("BaseKnockback")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Damage")
+                        .HasColumnType("int");
+
+                    b.Property<int>("KnockbackGrowth")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ThrowElement")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ThrowType")
+                        .HasColumnType("int");
+
+                    b.Property<int>("WeightDependantKnockback")
+                        .HasColumnType("int");
+
+                    b.ToTable("ThrowCommands");
+                });
+
+            modelBuilder.Entity("FightCore.Models.Subactions.Commands.TimerCommand", b =>
+                {
+                    b.HasBaseType("FightCore.Models.Subactions.Commands.ScriptCommand");
+
+                    b.Property<int>("Frames")
+                        .HasColumnType("int");
+
+                    b.ToTable("TimerCommands");
+                });
+
+            modelBuilder.Entity("FightCore.Models.Subactions.Commands.UnsolvedCommand", b =>
+                {
+                    b.HasBaseType("FightCore.Models.Subactions.Commands.ScriptCommand");
+
+                    b.ToTable("UnsolvedCommands");
+                });
+
+            modelBuilder.Entity("FightCore.Models.Subactions.Commands.VisibilityCommand", b =>
+                {
+                    b.HasBaseType("FightCore.Models.Subactions.Commands.ScriptCommand");
+
+                    b.Property<int>("Visibility")
+                        .HasColumnType("int");
+
+                    b.ToTable("VisibilityCommands");
+                });
+
             modelBuilder.Entity("FightCore.Models.Character", b =>
                 {
                     b.HasOne("FightCore.Models.CharacterMiscInfo", "CharacterInfo")
@@ -282,14 +585,165 @@ namespace FightCore.FrameData.Migrations
                     b.Navigation("Character");
                 });
 
+            modelBuilder.Entity("FightCore.Models.Subactions.Commands.ScriptCommand", b =>
+                {
+                    b.HasOne("FightCore.Models.Subactions.Subaction", null)
+                        .WithMany("Commands")
+                        .HasForeignKey("SubactionId");
+                });
+
+            modelBuilder.Entity("FightCore.Models.Subactions.MoveSubaction", b =>
+                {
+                    b.HasOne("FightCore.Models.Move", "Move")
+                        .WithMany("MoveSubactions")
+                        .HasForeignKey("MoveId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("FightCore.Models.Subactions.Subaction", "Subaction")
+                        .WithMany("MoveSubactions")
+                        .HasForeignKey("SubactionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Move");
+
+                    b.Navigation("Subaction");
+                });
+
+            modelBuilder.Entity("FightCore.Models.Subactions.Subaction", b =>
+                {
+                    b.HasOne("FightCore.Models.Character", "Character")
+                        .WithMany("Subactions")
+                        .HasForeignKey("CharacterId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Character");
+                });
+
+            modelBuilder.Entity("FightCore.Models.Subactions.SubactionHeader", b =>
+                {
+                    b.HasOne("FightCore.Models.Subactions.Subaction", "Subaction")
+                        .WithOne("Header")
+                        .HasForeignKey("FightCore.Models.Subactions.SubactionHeader", "SubactionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Subaction");
+                });
+
+            modelBuilder.Entity("FightCore.Models.Subactions.Commands.AutoCancelCommand", b =>
+                {
+                    b.HasOne("FightCore.Models.Subactions.Commands.ScriptCommand", null)
+                        .WithOne()
+                        .HasForeignKey("FightCore.Models.Subactions.Commands.AutoCancelCommand", "Id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("FightCore.Models.Subactions.Commands.BodyStateCommand", b =>
+                {
+                    b.HasOne("FightCore.Models.Subactions.Commands.ScriptCommand", null)
+                        .WithOne()
+                        .HasForeignKey("FightCore.Models.Subactions.Commands.BodyStateCommand", "Id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("FightCore.Models.Subactions.Commands.HitboxCommand", b =>
+                {
+                    b.HasOne("FightCore.Models.Subactions.Commands.ScriptCommand", null)
+                        .WithOne()
+                        .HasForeignKey("FightCore.Models.Subactions.Commands.HitboxCommand", "Id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("FightCore.Models.Subactions.Commands.PartialBodystateCommand", b =>
+                {
+                    b.HasOne("FightCore.Models.Subactions.Commands.ScriptCommand", null)
+                        .WithOne()
+                        .HasForeignKey("FightCore.Models.Subactions.Commands.PartialBodystateCommand", "Id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("FightCore.Models.Subactions.Commands.PointerCommand", b =>
+                {
+                    b.HasOne("FightCore.Models.Subactions.Commands.ScriptCommand", null)
+                        .WithOne()
+                        .HasForeignKey("FightCore.Models.Subactions.Commands.PointerCommand", "Id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("FightCore.Models.Subactions.Commands.StartLoopCommand", b =>
+                {
+                    b.HasOne("FightCore.Models.Subactions.Commands.ScriptCommand", null)
+                        .WithOne()
+                        .HasForeignKey("FightCore.Models.Subactions.Commands.StartLoopCommand", "Id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("FightCore.Models.Subactions.Commands.ThrowCommand", b =>
+                {
+                    b.HasOne("FightCore.Models.Subactions.Commands.ScriptCommand", null)
+                        .WithOne()
+                        .HasForeignKey("FightCore.Models.Subactions.Commands.ThrowCommand", "Id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("FightCore.Models.Subactions.Commands.TimerCommand", b =>
+                {
+                    b.HasOne("FightCore.Models.Subactions.Commands.ScriptCommand", null)
+                        .WithOne()
+                        .HasForeignKey("FightCore.Models.Subactions.Commands.TimerCommand", "Id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("FightCore.Models.Subactions.Commands.UnsolvedCommand", b =>
+                {
+                    b.HasOne("FightCore.Models.Subactions.Commands.ScriptCommand", null)
+                        .WithOne()
+                        .HasForeignKey("FightCore.Models.Subactions.Commands.UnsolvedCommand", "Id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("FightCore.Models.Subactions.Commands.VisibilityCommand", b =>
+                {
+                    b.HasOne("FightCore.Models.Subactions.Commands.ScriptCommand", null)
+                        .WithOne()
+                        .HasForeignKey("FightCore.Models.Subactions.Commands.VisibilityCommand", "Id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("FightCore.Models.Character", b =>
                 {
                     b.Navigation("Moves");
+
+                    b.Navigation("Subactions");
                 });
 
             modelBuilder.Entity("FightCore.Models.Move", b =>
                 {
                     b.Navigation("Hitboxes");
+
+                    b.Navigation("MoveSubactions");
+                });
+
+            modelBuilder.Entity("FightCore.Models.Subactions.Subaction", b =>
+                {
+                    b.Navigation("Commands");
+
+                    b.Navigation("Header");
+
+                    b.Navigation("MoveSubactions");
                 });
 #pragma warning restore 612, 618
         }

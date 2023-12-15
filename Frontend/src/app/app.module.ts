@@ -38,6 +38,17 @@ import { OnlyClientSideDirective } from './directives/only-client-side.directive
 import { MobileOnlyDirective } from './directives/mobile-only.directive';
 import { SearchDialogComponent } from './components/search/search-dialog/search-dialog.component';
 import { FormsModule } from '@angular/forms';
+import { ScriptCommandComponent } from './components/subactions/commands/script-command/script-command.component';
+import { AutoCancelCommandComponent } from './components/subactions/commands/auto-cancel-command/auto-cancel-command.component';
+import { BodyStateCommandComponent } from './components/subactions/commands/body-state-command/body-state-command.component';
+import { HitboxCommandComponent } from './components/subactions/commands/hitbox-command/hitbox-command.component';
+import { PartialBodystateCommandComponent } from './components/subactions/commands/partial-bodystate-command/partial-bodystate-command.component';
+import { PointerCommandComponent } from './components/subactions/commands/pointer-command/pointer-command.component';
+import { StartLoopCommandComponent } from './components/subactions/commands/start-loop-command/start-loop-command.component';
+import { ThrowCommandComponent } from './components/subactions/commands/throw-command/throw-command.component';
+import { TimerCommandComponent } from './components/subactions/commands/timer-command/timer-command.component';
+import { UnsolvedCommandComponent } from './components/subactions/commands/unsolved-command/unsolved-command.component';
+import { VisibilityCommandComponent } from './components/subactions/commands/visibility-command/visibility-command.component';
 
 @NgModule({
   declarations: [
@@ -67,6 +78,17 @@ import { FormsModule } from '@angular/forms';
     OnlyClientSideDirective,
     MobileOnlyDirective,
     SearchDialogComponent,
+    ScriptCommandComponent,
+    AutoCancelCommandComponent,
+    BodyStateCommandComponent,
+    HitboxCommandComponent,
+    PartialBodystateCommandComponent,
+    PointerCommandComponent,
+    StartLoopCommandComponent,
+    ThrowCommandComponent,
+    TimerCommandComponent,
+    UnsolvedCommandComponent,
+    VisibilityCommandComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

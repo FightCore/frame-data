@@ -1,4 +1,5 @@
 using FightCore.Models.Base;
+using FightCore.Models.Subactions;
 
 namespace FightCore.Models
 {
@@ -48,5 +49,7 @@ namespace FightCore.Models
         //public string GIFSource { get; set; }
 
         public string Source { get; set; }
-    }
+
+        public List<MoveSubaction> MoveSubactions { get; set; }
+	}
 }

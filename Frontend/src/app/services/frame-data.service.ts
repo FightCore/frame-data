@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { Character } from '@fightcore/models';
+import { ExtendedCharacter } from '../models/extended-character';
 
 @Injectable({
   providedIn: 'root',
@@ -10,7 +11,11 @@ import { Character } from '@fightcore/models';
 export class FrameDataService {
   constructor(private httpClient: HttpClient) {}
 
-  getMoves(): Observable<Character[]> {
-    return this.httpClient.get<Character[]>(`${environment.siteUrl}/framedata.json`);
+  getMoves(): Observable<ExtendedCharacter[]> {
+    return this.httpClient.get<ExtendedCharacter[]>(`${environment.siteUrl}/assets/framedata/framedata.json`);
+  }
+
+  getMovesForCharacter(characterName: string): Observable<ExtendedCharacter> {
+    return this.httpClient.get<ExtendedCharacter>(`${environment.siteUrl}/assets/framedata/${characterName}.json`);
   }
 }

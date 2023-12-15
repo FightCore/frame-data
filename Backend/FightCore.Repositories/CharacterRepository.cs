@@ -36,7 +36,14 @@ namespace FightCore.Repositories
                 .Include(character => character.CharacterStatistics)
                 .Include(character => character.Moves)
                 .ThenInclude(move => move.Hitboxes)
-                .ToListAsync();
+                .Include(character => character.Moves)
+                .ThenInclude(move => move.MoveSubactions)
+                .ThenInclude(moveSubaction => moveSubaction.Subaction)
+                .ThenInclude(subaction => subaction.Commands)
+				.Include(character => character.Subactions)
+                .ThenInclude(subaction => subaction.Commands)
+                .AsSplitQuery()
+				.ToListAsync();
         }
 
         private IQueryable<Character> BasicIncludes =>

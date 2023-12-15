@@ -39,9 +39,9 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
+              "src/assets/framedata",
               "src/robots.txt",
-              "src/sitemap.txt",
-              "src/framedata.json"
+              "src/sitemap.txt"
             ],
             "styles": [
               "src/styles.scss"
@@ -103,13 +103,13 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "FightCore:build:production"
+              "buildTarget": "FightCore:build:production"
             },
             "beta": {
-              "browserTarget": "FightCore:build:beta"
+              "buildTarget": "FightCore:build:beta"
             },
             "development": {
-              "browserTarget": "FightCore:build:development"
+              "buildTarget": "FightCore:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -117,7 +117,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "FightCore:build"
+            "buildTarget": "FightCore:build"
           }
         },
         "test": {
@@ -200,7 +200,7 @@
           "defaultConfiguration": "production"
         },
         "serve-ssr": {
-          "builder": "@nguniversal/builders:ssr-dev-server",
+          "builder": "@angular-devkit/build-angular:ssr-dev-server",
           "configurations": {
             "development": {
               "browserTarget": "FightCore:build:development",
@@ -218,7 +218,7 @@
           "defaultConfiguration": "development"
         },
         "prerender": {
-          "builder": "@nguniversal/builders:prerender",
+          "builder": "@angular-devkit/build-angular:prerender",
           "configurations": {
             "development": {
               "browserTarget": "FightCore:build:development",
@@ -240,7 +240,7 @@
               "characters",
               "compare-tool"
             ],
-            "guessRoutes": true
+            "discoverRoutes": true
           }
         }
       }

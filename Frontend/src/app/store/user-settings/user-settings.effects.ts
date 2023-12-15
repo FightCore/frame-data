@@ -1,6 +1,6 @@
 import { isPlatformBrowser } from '@angular/common';
-import { Inject, Injectable, PLATFORM_ID } from '@angular/core';
-import { makeStateKey, StateKey, TransferState } from '@angular/platform-browser';
+import { Inject, Injectable, PLATFORM_ID, makeStateKey, StateKey, TransferState } from '@angular/core';
+
 import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { mergeMap, of, tap } from 'rxjs';
 import { loadedSettings, loadSettings } from './user-settings.actions';
