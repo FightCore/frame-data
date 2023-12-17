@@ -3,7 +3,7 @@
     <img
       #moveImage
       class="w-full"
-      [src]="'https://i.fightcore.gg/melee/moves/' + characterName + '/' + move!.normalizedName + '.gif'"
+      [src]="gifUrl"
       width="100%"
       (error)="onImageError()"
       [alt]="move!.normalizedName + '-gif'"

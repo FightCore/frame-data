@@ -15,6 +15,5 @@ export class ScriptCommandComponent implements OnInit {
     this.commands = structuredClone(this.commands).sort((a: ScriptCommand, b: ScriptCommand) =>
       a.order > b.order ? 1 : -1
     );
-    console.log(this.commands);
   }
 }

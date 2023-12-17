@@ -21,6 +21,7 @@ export class SidenavComponent implements OnDestroy {
   mobileQuery?: MediaQueryList;
   useDarkMode = false;
   private _mobileQueryListener?: () => void;
+  private isSearchOpen = false;
 
   constructor(
     @Inject(PLATFORM_ID) platformId: string,
@@ -61,11 +62,19 @@ export class SidenavComponent implements OnDestroy {
   }
 
   openSearch(): void {
-    this.dialog.open(SearchDialogComponent, {
-      width: '60vw',
-      height: '80vh',
-      maxHeight: '80vh',
-    });
+    if (this.isSearchOpen) {
+      return;
+    }
+    this.dialog
+      .open(SearchDialogComponent, {
+        width: this.mobileQuery?.matches ? '95vw' : '60vw',
+        height: '80vh',
+        maxHeight: '80vh',
+      })
+      .afterClosed()
+      .subscribe(() => (this.isSearchOpen = false));
+
+    this.isSearchOpen = true;
   }
 
   onClickToggleTheme(): void {
