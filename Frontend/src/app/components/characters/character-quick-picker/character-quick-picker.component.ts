@@ -45,6 +45,6 @@ export class CharacterQuickPickerComponent implements OnInit {
   }
 
   viewCharacterUrl(character: Character): string {
-    return `/characters/${character.fightCoreId}/${slugify(character.name)}`;
+    return `/characters/${character.fightCoreId}/${slugify(character.name)}/`;
   }
 }

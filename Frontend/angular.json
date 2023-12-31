@@ -236,11 +236,8 @@
           "options": {
             "browserTarget": "FightCore:build:production",
             "serverTarget": "FightCore:server:production",
-            "routes": [
-              "characters",
-              "compare-tool"
-            ],
-            "discoverRoutes": true
+            "discoverRoutes": false,
+            "routesFile": "routes.txt"
           }
         }
       }
