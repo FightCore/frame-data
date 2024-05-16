@@ -30,9 +30,13 @@ foreach (var character in export)
 	{
 		move.Character = null;
 		move.CharacterId = default;
+		move.MoveSubactions = null;
 		return move;
 	});
 	moves = moves.OrderBy(move => move.Id).ToList();
 
+	character.Moves = moves.ToList();
+
 	await Exporter.Export(moves, Path.Combine(folder, character.NormalizedName), "moves");
+	await Exporter.ExportJson(character, Path.Combine(folder, "characters"), character.NormalizedName);
 }

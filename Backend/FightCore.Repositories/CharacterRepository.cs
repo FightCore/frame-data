@@ -37,11 +37,11 @@ namespace FightCore.Repositories
                 .Include(character => character.Moves)
                 .ThenInclude(move => move.Hitboxes)
                 .Include(character => character.Moves)
-                .ThenInclude(move => move.MoveSubactions)
-                .ThenInclude(moveSubaction => moveSubaction.Subaction)
-                .ThenInclude(subaction => subaction.Commands)
-				.Include(character => character.Subactions)
-                .ThenInclude(subaction => subaction.Commands)
+    //            .ThenInclude(move => move.MoveSubactions)
+    //            .ThenInclude(moveSubaction => moveSubaction.Subaction)
+    //            .ThenInclude(subaction => subaction.Commands)
+				//.Include(character => character.Subactions)
+    //            .ThenInclude(subaction => subaction.Commands)
                 .AsSplitQuery()
 				.ToListAsync();
         }
