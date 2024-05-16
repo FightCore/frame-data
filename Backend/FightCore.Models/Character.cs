@@ -1,4 +1,5 @@
 ﻿using FightCore.Models.Base;
+using FightCore.Models.Subactions;
 
 namespace FightCore.Models
 {
@@ -20,5 +21,7 @@ namespace FightCore.Models
         public CharacterStatistics CharacterStatistics { get; set; }
 
         public CharacterMiscInfo CharacterInfo { get; set; }
+
+        public List<Subaction> Subactions { get; set; }
     }
 }

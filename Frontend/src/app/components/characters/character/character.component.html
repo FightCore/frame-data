@@ -32,13 +32,23 @@
       </div>
     </mat-toolbar-row>
   </mat-toolbar>
+  <!-- <mat-toolbar id="section-subactions" color="primary">
+    <h2 class="w-full text-center">
+      {{ 'Characters.Subactions' | translate }}
+    </h2>
+  </mat-toolbar>
+  {{ character!.subactions![0].index }} - {{ character!.subactions![0].name }}
+  <app-script-command [commands]="character!.subactions![0].commands"></app-script-command>
   <mat-toolbar id="section-attributes" color="primary">
     <h2 class="w-full text-center">
       {{ 'Characters.Attributes.Attributes' | translate }}
     </h2>
-  </mat-toolbar>
+  </mat-toolbar> -->
 
-  <app-character-statistics-table [character]="character!.characterStatistics"></app-character-statistics-table>
+  <app-character-statistics-table
+    ngSkipHydration
+    [character]="character!.characterStatistics"
+  ></app-character-statistics-table>
 
   <mat-toolbar id="section-moves" color="primary">
     <h2 class="w-full text-center">
@@ -56,5 +66,5 @@
       {{ 'Characters.MovesTable' | translate }}
     </h2>
   </mat-toolbar>
-  <app-moves-table [character]="character" [moves]="character!.moves"></app-moves-table>
+  <app-moves-table ngSkipHydration [character]="character" [moves]="character!.moves"></app-moves-table>
 </ng-template>

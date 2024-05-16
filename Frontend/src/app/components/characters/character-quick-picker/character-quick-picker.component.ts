@@ -5,6 +5,7 @@ import slugify from 'slugify';
 import { Character } from '@fightcore/models';
 import { selectCharacters } from 'src/app/store/frame-data/frame-data.selectors';
 import { environment } from 'src/environments/environment';
+import { first } from 'rxjs';
 
 @Component({
   selector: 'app-character-quick-picker',
@@ -20,18 +21,23 @@ export class CharacterQuickPickerComponent implements OnInit {
   constructor(private router: Router, private store: Store) {}
 
   ngOnInit(): void {
-    this.store.pipe(select(selectCharacters())).subscribe((characters) => {
-      for (const character of characters) {
-        if (this.specialCharacterNames.includes(character.normalizedName)) {
-          this.specialCharacters.push(character);
-        } else {
-          this.characters.push(character);
+    this.store
+      .pipe(
+        select(selectCharacters()),
+        first((characters) => characters.length > 0)
+      )
+      .subscribe((characters) => {
+        for (const character of characters) {
+          if (this.specialCharacterNames.includes(character.normalizedName)) {
+            this.specialCharacters.push(character);
+          } else {
+            this.characters.push(character);
+          }
         }
-      }
 
-      this.characters = this.characters.sort(this.sortCharacters);
-      this.specialCharacters = this.specialCharacters.sort(this.sortCharacters);
-    });
+        this.characters = this.characters.sort(this.sortCharacters);
+        this.specialCharacters = this.specialCharacters.sort(this.sortCharacters);
+      });
   }
 
   sortCharacters(characterOne: Character, characterTwo: Character): number {
@@ -39,6 +45,6 @@ export class CharacterQuickPickerComponent implements OnInit {
   }
 
   viewCharacterUrl(character: Character): string {
-    return `/characters/${character.fightCoreId}/${slugify(character.name)}`;
+    return `/characters/${character.fightCoreId}/${slugify(character.name)}/`;
   }
 }

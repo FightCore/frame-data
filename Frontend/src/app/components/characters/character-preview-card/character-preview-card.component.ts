@@ -11,6 +11,7 @@ import { environment } from 'src/environments/environment';
 })
 export class CharacterPreviewCardComponent {
   @Input() character?: Character;
+  @Input() useAltBackground: boolean = false;
   environment = environment;
   constructor() {}
 

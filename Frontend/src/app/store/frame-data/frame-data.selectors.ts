@@ -8,12 +8,14 @@ export const selectCharacters = () =>
 
 export const selectCharacter = (props: { characterId: number }) =>
   createSelector(selectCharactersState, (state: FrameDataState) =>
-    state.characters.find((character) => character.fightCoreId === props.characterId)
+    state.extendedCharacters.find((character) => character.fightCoreId === props.characterId)
   );
 
 export const selectMoves = () => createSelector(selectCharactersState, (state: FrameDataState) => state.moves);
 
 export const selectMove = (props: { characterId: number; moveId: number }) =>
   createSelector(selectCharactersState, (state: FrameDataState) =>
-    state.moves.find((move) => move.characterId === props.characterId && move.id === props.moveId)
+    state.extendedCharacters
+      .find((character) => character.fightCoreId === props.characterId)
+      ?.moves.find((move) => move.id === props.moveId)
   );

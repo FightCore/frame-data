@@ -23,16 +23,16 @@ namespace FightCore.Exporters
 
 		public static async Task Export(IEnumerable toExport, string folder, string name)
 		{
+			await ExportJson(toExport, folder, name);
+			await ExportCsv(toExport, folder, name);
+		}
+
+		public static async Task ExportCsv(IEnumerable toExport, string folder, string name)
+		{
 			if (!Directory.Exists(folder))
 			{
 				Directory.CreateDirectory(folder);
 			}
-
-			var movesJson = JsonConvert.SerializeObject(toExport, _noNestedJsonSettings);
-			var jsonPath = Path.Combine(folder, $"{name}.json");
-			Console.WriteLine($"Writing to {jsonPath}");
-			await File.WriteAllTextAsync(jsonPath, movesJson);
-
 			var csvPath = Path.Combine(folder, $"{name}.csv");
 			await using var writer = new StreamWriter(csvPath, false);
 			await using var csv = new CsvWriter(writer, new CsvConfiguration(CultureInfo.InvariantCulture)
@@ -44,6 +44,21 @@ namespace FightCore.Exporters
 			Console.WriteLine($"Writing to {csvPath}");
 
 			await csv.WriteRecordsAsync(toExport);
+		}
+
+		public static Task ExportJson(object toExport, string folder, string name)
+		{
+			if (!Directory.Exists(folder))
+			{
+				Directory.CreateDirectory(folder);
+			}
+
+			var json = JsonConvert.SerializeObject(toExport, _noNestedJsonSettings);
+			var jsonPath = Path.Combine(folder, $"{name}.json");
+			Console.WriteLine($"Writing to {jsonPath}");
+			return File.WriteAllTextAsync(jsonPath, json);
+
+
 		}
 	}
 }

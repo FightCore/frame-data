@@ -16,11 +16,16 @@
   >
     <app-menubar></app-menubar>
     <mat-divider></mat-divider>
-    <button mat-raised-button (click)="openSearch()">Search</button>
-    <button mat-button class="w-full" (click)="onClickToggleTheme()">
-      <mat-icon>{{ useDarkMode ? 'light_mode' : 'dark_mode' }}</mat-icon>
-      {{ 'MenuBar.SwitchTheme' | translate }}
-    </button>
+    <div class="p-3">
+      <button mat-button class="cursor-pointer w-full" (click)="openSearch()">
+        <mat-icon>search</mat-icon>Search (Control + K)
+      </button>
+      <button mat-button class="w-full" (click)="onClickToggleTheme()">
+        <mat-icon>{{ useDarkMode ? 'light_mode' : 'dark_mode' }}</mat-icon>
+        {{ 'MenuBar.SwitchTheme' | translate }}
+      </button>
+    </div>
+
     <app-character-quick-picker></app-character-quick-picker>
   </mat-sidenav>
   <mat-sidenav-content>

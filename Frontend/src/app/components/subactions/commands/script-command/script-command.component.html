@@ -1,0 +1,44 @@
+<div class="flex">
+  <div class="flex-none">
+    <mat-selection-list>
+      <div *ngFor="let command of commands" class="my-1" [ngSwitch]="command.commandType">
+        <ng-container *ngSwitchCase="CommandType.autoCancel">
+          <app-auto-cancel-command [command]="command"></app-auto-cancel-command>
+        </ng-container>
+        <ng-container *ngSwitchCase="CommandType.bodyState">
+          <app-body-state-command [command]="command"></app-body-state-command>
+        </ng-container>
+        <ng-container *ngSwitchCase="CommandType.hitbox">
+          <app-hitbox-command [command]="command"></app-hitbox-command>
+        </ng-container>
+        <ng-container *ngSwitchCase="CommandType.partialBodyState">
+          <app-partial-bodystate-command [command]="command"></app-partial-bodystate-command>
+        </ng-container>
+        <ng-container *ngSwitchCase="CommandType.pointer">
+          <app-pointer-command [command]="command"></app-pointer-command>
+        </ng-container>
+        <ng-container *ngSwitchCase="CommandType.startLoop">
+          <app-start-loop-command [command]="command"></app-start-loop-command>
+        </ng-container>
+        <ng-container *ngSwitchCase="CommandType.throw">
+          <app-throw-command [command]="command"></app-throw-command>
+        </ng-container>
+        <ng-container v *ngSwitchCase="CommandType.timer">
+          <app-timer-command [command]="command"></app-timer-command>
+        </ng-container>
+        <ng-container *ngSwitchCase="CommandType.unsolved">
+          <app-unsolved-command [command]="command"></app-unsolved-command>
+        </ng-container>
+        <ng-container *ngSwitchCase="CommandType.visibility">
+          <app-visibility-command [command]="command"></app-visibility-command>
+        </ng-container>
+        <ng-container *ngSwitchDefault>Default case!</ng-container>
+      </div>
+    </mat-selection-list>
+  </div>
+  <div class="flex-auto">
+    <mat-card>
+      <mat-card-header>Command details</mat-card-header>
+    </mat-card>
+  </div>
+</div>

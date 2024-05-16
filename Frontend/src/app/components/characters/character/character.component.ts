@@ -8,6 +8,9 @@ import { Character, MoveType } from '@fightcore/models';
 import { CanonicalService } from 'src/app/services/canonical.service';
 import { MetaTagService } from 'src/app/services/meta-tag.service';
 import { selectCharacter } from 'src/app/store/frame-data/frame-data.selectors';
+import { ExtendedCharacter } from 'src/app/models/extended-character';
+import { expandCharacter } from 'src/app/store/frame-data/frame-data.actions';
+import { filter } from 'rxjs';
 
 @Component({
   selector: 'app-character',
@@ -15,7 +18,7 @@ import { selectCharacter } from 'src/app/store/frame-data/frame-data.selectors';
   styleUrls: ['./character.component.scss'],
 })
 export class CharacterComponent implements OnInit {
-  character?: Character;
+  character?: ExtendedCharacter;
   mobileQuery?: MediaQueryList;
 
   private _mobileQueryListener?: () => void;
@@ -52,15 +55,18 @@ export class CharacterComponent implements OnInit {
       if (!characterId) {
         return;
       }
-
-      this.store.pipe(select(selectCharacter({ characterId: parseFloat(characterId) }))).subscribe((character) => {
-        this.character = character;
-        if (character) {
-          this.metaTagService.updateCharacterMetaTags(character);
-          this.title.setTitle(`${character.name} | FightCore - Melee Frame Data`);
-          this.canonicalService.createLinkForCharacter(character);
-        }
-      });
+      this.store.dispatch(expandCharacter({ fightCoreId: parseFloat(characterId) }));
+      this.store
+        .select(selectCharacter({ characterId: parseFloat(characterId) }))
+        .pipe(filter((character) => character !== null && character !== undefined))
+        .subscribe((character) => {
+          this.character = character;
+          if (character) {
+            this.metaTagService.updateCharacterMetaTags(character);
+            this.title.setTitle(`${character.name} | FightCore - Melee Frame Data`);
+            this.canonicalService.createLinkForCharacter(character);
+          }
+        });
     });
   }
 

@@ -91,3 +91,38 @@ body {
 body.light-theme {
   background-color: #eeeeee;
 }
+
+.alt-card-color {
+  background-color: #575757 !important;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+::-webkit-scrollbar:vertical {
+  width: 11px;
+   background-color:   #303030
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  border: 2px solid #303030 !important; /* should match background, can't be transparent */
+  background-color: #575757;
+}
+
+.light-theme {
+  .alt-card-color {
+    background-color: #ececec !important;
+  }
+}
+.light-theme::-webkit-scrollbar:vertical {
+  width: 11px;
+   background-color:   #eeeeee
+}
+
+.light-theme::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  border: 2px solid #eeeeee !important;
+  background-color: #96153a;
+}

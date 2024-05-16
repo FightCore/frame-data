@@ -5,6 +5,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Distributed;
 using System.Text;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
+using FightCore.Api.DataTransferObjects.Exports.Characters;
 
 namespace FightCore.Api.Controllers
 {
@@ -53,10 +55,36 @@ namespace FightCore.Api.Controllers
 
             var convertedDtos = _mapper.Map<List<FullExportCharacter>>(export);
 
-            await _cache.SetAsync(_fullExportCacheKey,
-                Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(convertedDtos)));
+            foreach (var character in convertedDtos)
+            {
+	            var json = JsonConvert.SerializeObject(character, Formatting.None, new JsonSerializerSettings()
+	            {
+		            ContractResolver = new DefaultContractResolver
+		            {
+			            NamingStrategy = new CamelCaseNamingStrategy()
+		            },
+		            TypeNameHandling = TypeNameHandling.Objects,
+		            TypeNameAssemblyFormatHandling = TypeNameAssemblyFormatHandling.Full
+	            });
 
-            return Ok(convertedDtos);
+	            System.IO.File.WriteAllText($"C:\\tmp\\framedata\\{character.NormalizedName}.json", json);
+			}
+
+            var convertedDto = _mapper.Map<List<BasicExportCharacter>>(export);
+
+            var fullJson = JsonConvert.SerializeObject(convertedDto, Formatting.None, new JsonSerializerSettings()
+            {
+	            ContractResolver = new DefaultContractResolver
+	            {
+		            NamingStrategy = new CamelCaseNamingStrategy()
+	            },
+	            TypeNameHandling = TypeNameHandling.Objects,
+	            TypeNameAssemblyFormatHandling = TypeNameAssemblyFormatHandling.Full
+            });
+
+            System.IO.File.WriteAllText("C:\\tmp\\framedata.json", fullJson);
+
+			return Ok(convertedDtos);
         }
     }
 }

@@ -24,32 +24,34 @@ export class MoveComponent implements OnInit {
     private canonicalService: CanonicalService
   ) {}
   ngOnInit(): void {
-    const characterId = this.activatedRoute.snapshot.paramMap.get('characterId');
-    const moveId = this.activatedRoute.snapshot.paramMap.get('moveId');
+    this.activatedRoute.paramMap.subscribe((paramMap) => {
+      const characterId = paramMap.get('characterId');
+      const moveId = paramMap.get('moveId');
 
-    if (!characterId || !moveId) {
-      return;
-    }
-    this.store
-      .pipe(
-        select(
-          selectMove({
-            characterId: parseFloat(characterId),
-            moveId: parseFloat(moveId),
-          })
+      if (!characterId || !moveId) {
+        return;
+      }
+      this.store
+        .pipe(
+          select(
+            selectMove({
+              characterId: parseFloat(characterId),
+              moveId: parseFloat(moveId),
+            })
+          )
         )
-      )
-      .subscribe((move) => {
-        this.move = move;
-        this.character = move?.character;
+        .subscribe((move) => {
+          this.move = move;
+          this.character = move?.character;
 
-        if (!move || !this.character) {
-          return;
-        }
+          if (!move || !this.character) {
+            return;
+          }
 
-        this.title.setTitle(`${this.character.name} - ${move.name} | FightCore - Melee Frame Data`);
-        this.metaTagService.updateMoveTags(move, this.character);
-        this.canonicalService.createLinkForMove(this.character, this.move as Move);
-      });
+          this.title.setTitle(`${this.character.name} - ${move.name} | FightCore - Melee Frame Data`);
+          this.metaTagService.updateMoveTags(move, this.character);
+          this.canonicalService.createLinkForMove(this.character, this.move as Move);
+        });
+    });
   }
 }

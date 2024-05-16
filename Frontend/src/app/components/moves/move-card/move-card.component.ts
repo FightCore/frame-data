@@ -13,6 +13,7 @@ export class MoveCardComponent {
   @Input() move?: Move;
   @Input() characterName?: string;
   @Input() characterId?: number;
+  @Input() useAltBackground = false;
 
   moveUrl(): string {
     return `/characters/${this.characterId!}/${slugify(this.characterName!)}/moves/${this.move!.id}/${slugify(

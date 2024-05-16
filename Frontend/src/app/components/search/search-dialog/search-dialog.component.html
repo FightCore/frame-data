@@ -9,51 +9,49 @@
     />
   </mat-form-field>
 
-  <div>
-    <div *ngIf="searchResult && (searchResult?.type === 1 || searchResult?.type === 2)">
-      <mat-card class="mat-elevation-z4 mb-2">
-        <mat-card-header>
-          <div mat-card-avatar>
-            <img
-              width="75"
-              height="75"
-              [alt]="searchResult.character!.name"
-              loading="lazy"
-              [src]="environment.siteUrl + '/assets/images/stocks/' + searchResult.character.normalizedName + '.png'"
-            />
-          </div>
-          <mat-card-title>{{ searchResult.character!.name }}</mat-card-title>
-        </mat-card-header>
-        <mat-card-actions>
-          <button mat-raised-button color="primary" class="w-full">View</button>
-        </mat-card-actions>
-      </mat-card>
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-2">
+    <div *ngIf="character">
+      <app-character-preview-card [useAltBackground]="true" [character]="character"></app-character-preview-card>
     </div>
-    <div *ngIf="searchResult && searchResult.type === 2">
-      <mat-card *ngIf="searchResult.move" class="mat-elevation-z4 mb-2">
+    <div *ngIf="move">
+      <app-move-card
+        [useAltBackground]="true"
+        [characterName]="character!.normalizedName"
+        [characterId]="character!.fightCoreId"
+        [move]="move"
+      ></app-move-card>
+    </div>
+  </div>
+  <div *ngIf="possibleMoves">
+    <mat-divider class="m-2"></mat-divider>
+    <h2 class="text-xl">Possible moves</h2>
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-2">
+      <mat-card class="mat-elevation-z4 alt-card-color" *ngFor="let move of possibleMoves">
         <mat-card-header>
           <mat-card-title>
-            {{ searchResult.move.name }}
+            {{ move.name }}
           </mat-card-title>
         </mat-card-header>
         <mat-card-actions>
           <button mat-raised-button color="primary" class="w-full">View</button>
         </mat-card-actions>
       </mat-card>
-      <mat-divider class="m-2"></mat-divider>
-      <h2 class="text-xl">Possible moves</h2>
-      <div class="grid grid-cols-1 lg:grid-cols-4 gap-2">
-        <mat-card class="mat-elevation-z4" *ngFor="let move of searchResult.possibleMoves">
-          <mat-card-header>
-            <mat-card-title>
-              {{ move.name }}
-            </mat-card-title>
-          </mat-card-header>
-          <mat-card-actions>
-            <button mat-raised-button color="primary" class="w-full">View</button>
-          </mat-card-actions>
-        </mat-card>
-      </div>
+    </div>
+  </div>
+  <div *ngIf="!possibleMoves && !move && character">
+    <mat-divider class="m-2"></mat-divider>
+    <h2 class="text-xl">Moves</h2>
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-2">
+      <mat-card class="mat-elevation-z4 alt-card-color" *ngFor="let move of character.moves">
+        <mat-card-header>
+          <mat-card-title>
+            {{ move.name }}
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-actions>
+          <button mat-raised-button color="primary" class="w-full">View</button>
+        </mat-card-actions>
+      </mat-card>
     </div>
   </div>
 </div>
