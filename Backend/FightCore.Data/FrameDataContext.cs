@@ -47,6 +47,8 @@ namespace FightCore.FrameData
 
         public DbSet<VisibilityCommand> VisibilityCommands { get; set; }
 
+        public DbSet<Source> Sources { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 	        base.OnModelCreating(modelBuilder);

@@ -33,6 +33,8 @@ namespace FightCore.Models
 
         public int? YoshiArmorBreakPercentage { get; set; }
 
+        public bool IsWeightIndependent { get; set; }
+
         public Move Move { get; set; }
 
         public long MoveId { get; set; }

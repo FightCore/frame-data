@@ -157,6 +157,9 @@ namespace FightCore.FrameData.Migrations
                     b.Property<int>("HitlagDefenderCrouched")
                         .HasColumnType("int");
 
+                    b.Property<bool>("IsWeightIndependent")
+                        .HasColumnType("bit");
+
                     b.Property<long>("KnockbackGrowth")
                         .HasColumnType("bigint");
 
@@ -202,8 +205,14 @@ namespace FightCore.FrameData.Migrations
                     b.Property<int?>("End")
                         .HasColumnType("int");
 
+                    b.Property<string>("GifUrl")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int?>("IASA")
                         .HasColumnType("int");
+
+                    b.Property<bool>("IsInterpolated")
+                        .HasColumnType("bit");
 
                     b.Property<int?>("LCanceledLandLag")
                         .HasColumnType("int");
@@ -243,6 +252,25 @@ namespace FightCore.FrameData.Migrations
                     b.HasIndex("CharacterId");
 
                     b.ToTable("Moves");
+                });
+
+            modelBuilder.Entity("FightCore.Models.Source", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Url")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Sources");
                 });
 
             modelBuilder.Entity("FightCore.Models.Subactions.Commands.ScriptCommand", b =>
@@ -371,6 +399,21 @@ namespace FightCore.FrameData.Migrations
                         .IsUnique();
 
                     b.ToTable("SubactionHeader");
+                });
+
+            modelBuilder.Entity("MoveSource", b =>
+                {
+                    b.Property<long>("MovesId")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("SourcesId")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("MovesId", "SourcesId");
+
+                    b.HasIndex("SourcesId");
+
+                    b.ToTable("MoveSource");
                 });
 
             modelBuilder.Entity("FightCore.Models.Subactions.Commands.AutoCancelCommand", b =>
@@ -631,6 +674,21 @@ namespace FightCore.FrameData.Migrations
                         .IsRequired();
 
                     b.Navigation("Subaction");
+                });
+
+            modelBuilder.Entity("MoveSource", b =>
+                {
+                    b.HasOne("FightCore.Models.Move", null)
+                        .WithMany()
+                        .HasForeignKey("MovesId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("FightCore.Models.Source", null)
+                        .WithMany()
+                        .HasForeignKey("SourcesId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("FightCore.Models.Subactions.Commands.AutoCancelCommand", b =>

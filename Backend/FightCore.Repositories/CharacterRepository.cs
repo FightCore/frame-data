@@ -37,6 +37,7 @@ namespace FightCore.Repositories
                 .Include(character => character.Moves)
                 .ThenInclude(move => move.Hitboxes)
                 .Include(character => character.Moves)
+                .ThenInclude(move => move.Sources)
     //            .ThenInclude(move => move.MoveSubactions)
     //            .ThenInclude(moveSubaction => moveSubaction.Subaction)
     //            .ThenInclude(subaction => subaction.Commands)

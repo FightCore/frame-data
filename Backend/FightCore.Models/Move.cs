@@ -19,9 +19,6 @@ namespace FightCore.Models
 
         public int TotalFrames { get; set; }
 
-        /// <summary>
-        /// Interrupt-able As Soon As
-        /// </summary>
         public int? IASA { get; set; }
 
         public int? AutoCancelBefore { get; set; }
@@ -42,14 +39,15 @@ namespace FightCore.Models
 
         public Character Character { get; set; }
 
-        //public int? InvulnerableStart { get; set; }
-
-        //public int? InvulnerableEnd { get; set; }
-
-        //public string GIFSource { get; set; }
-
+        // This will be deprecated soon for Sources.
         public string Source { get; set; }
 
+        public string GifUrl { get; set; }
+
+        public bool IsInterpolated { get; set; }
+
         public List<MoveSubaction> MoveSubactions { get; set; }
+
+        public List<Source> Sources { get; set; }
 	}
 }

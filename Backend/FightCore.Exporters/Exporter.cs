@@ -18,7 +18,8 @@ namespace FightCore.Exporters
 		{
 			Formatting = Formatting.None,
 			ReferenceLoopHandling = ReferenceLoopHandling.Ignore,
-			ContractResolver = _contractResolver
+			ContractResolver = _contractResolver,
+			NullValueHandling = NullValueHandling.Ignore
 		};
 
 		public static async Task Export(IEnumerable toExport, string folder, string name)
