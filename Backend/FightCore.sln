@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32414.318
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FightCore.Api", "FightCore.Api\FightCore.Api.csproj", "{3232AA76-099E-46C3-BC10-E7B920021F36}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 Data", "2 Data", "{A77ED78E-6888-4E1A-8568-81025B346908}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FightCore.Data", "FightCore.Data\FightCore.Data.csproj", "{A6FE40B6-7DBF-44E7-AAB0-308C3129CBCC}"
@@ -33,7 +31,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "8 External", "8 External", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FightCore.External.MeleeDatabase", "FightCore.External.MeleeDatabase\FightCore.External.MeleeDatabase.csproj", "{987322DB-A53C-4986-ACE7-4599E51CC160}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FightCore.Enricher", "FightCore.Enricher\FightCore.Enricher.csproj", "{D08E7AD2-C650-4053-866D-612CE38C323C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FightCore.Enricher", "FightCore.Enricher\FightCore.Enricher.csproj", "{D08E7AD2-C650-4053-866D-612CE38C323C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,10 +39,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3232AA76-099E-46C3-BC10-E7B920021F36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3232AA76-099E-46C3-BC10-E7B920021F36}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3232AA76-099E-46C3-BC10-E7B920021F36}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3232AA76-099E-46C3-BC10-E7B920021F36}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A6FE40B6-7DBF-44E7-AAB0-308C3129CBCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A6FE40B6-7DBF-44E7-AAB0-308C3129CBCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6FE40B6-7DBF-44E7-AAB0-308C3129CBCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -78,7 +72,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{3232AA76-099E-46C3-BC10-E7B920021F36} = {DE0BEBC8-CE3C-4AD1-94F9-C42F17BC2688}
 		{A6FE40B6-7DBF-44E7-AAB0-308C3129CBCC} = {A77ED78E-6888-4E1A-8568-81025B346908}
 		{B4B7710C-364F-4D25-ABF9-F6E5DB650EDB} = {67033A68-467B-4841-807D-F566D897CEE8}
 		{2E8E83C1-F463-4DC6-BB5C-6D125D96E9CB} = {6A0A0240-80C1-49B9-BEAD-22BB66844D9C}
