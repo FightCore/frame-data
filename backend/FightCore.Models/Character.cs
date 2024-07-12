@@ -13,7 +13,6 @@ namespace FightCore.Models
         /// </summary>
         public string NormalizedName { get; set; }
 
-        [Obsolete]
         public long FightCoreId { get; set; }
 
         public List<Move> Moves { get; set; }
