@@ -1,5 +1,0 @@
-User-agent: *
-Disallow: /assets/i18n/
-Allow: /
-
-Sitemap: https://www.fightcore.com/sitemap.txt
