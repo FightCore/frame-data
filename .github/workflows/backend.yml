@@ -4,11 +4,11 @@ on:
   push:
     branches: ['main']
     paths:
-      - 'Backend/**'
+      - 'backend/**'
   pull_request:
     branches: ['main']
     paths:
-      - 'Backend/**'
+      - 'backend/**'
 
 jobs:
   build:
@@ -22,10 +22,10 @@ jobs:
           dotnet-version: 6.0.x
       - name: Restore dependencies
         run: dotnet restore
-        working-directory: ./Backend
+        working-directory: ./backend
       - name: Build
         run: dotnet build --no-restore
-        working-directory: ./Backend
+        working-directory: ./backend
       - name: Test
         run: dotnet test --no-build --verbosity normal
-        working-directory: ./Backend
+        working-directory: ./backend
