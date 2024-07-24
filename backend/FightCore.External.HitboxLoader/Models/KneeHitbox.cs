@@ -1,12 +1,29 @@
-﻿namespace FightCore.External.HitboxLoader.Models
+﻿using FightCore.Models;
+
+namespace FightCore.External.HitboxLoader.Models
 {
-	public class KneeHitbox
+	public class ShoemakerHitbox
 	{
-		public decimal dmg;
+		public int id;
+		public int dmg;
 		public int angle;
-		public int kg;
-		public int bk;
-		public int wbk;
-		public string effect;
+		public int kbGrowth;
+		public int weightDepKb;
+		public int baseKb;
+		public string element;
+
+		public Hitbox ToHitbox()
+		{
+			return new Hitbox
+			{
+				Angle = angle,
+				BaseKnockback = baseKb,
+				Damage = dmg,
+				Effect = char.ToUpper(element[0]) + element.Substring(1),
+				KnockbackGrowth = kbGrowth,
+				SetKnockback = weightDepKb,
+				Name = "id"+id
+			};
+		}
 	}
 }

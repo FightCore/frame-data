@@ -1,17 +1,17 @@
-﻿using FightCore.External.HitboxLoader;
-using FightCore.External.HitboxLoader.Models;
-using Newtonsoft.Json.Linq;
+﻿//using FightCore.External.HitboxLoader;
+//using FightCore.External.HitboxLoader.Models;
+//using Newtonsoft.Json.Linq;
 
-namespace FightCore.External.HitboxLoader
-{
-	public static class HitboxParser
-	{
-		public static KneeHitbox Parse(JToken jsonToken)
-		{
-			return jsonToken.ToObject<KneeHitbox>();
-		}
-	}
-}
+//namespace FightCore.External.HitboxLoader
+//{
+//	public static class HitboxParser
+//	{
+//		public static KneeHitbox Parse(JToken jsonToken)
+//		{
+//			return jsonToken.ToObject<KneeHitbox>();
+//		}
+//	}
+//}
 
 
 //var json = JObject.Parse(File.ReadAllText("C://tmp/hitboxDB.json"));
