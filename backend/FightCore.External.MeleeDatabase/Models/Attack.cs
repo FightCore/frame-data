@@ -44,16 +44,16 @@ namespace FightCore.External.MeleeDatabase.Models
 		{
 			Hitbox strongestHitbox = null;
 			Hitbox weakestHitbox = null;
-			if (move.Hitboxes.Any())
-			{
-				strongestHitbox = move.Hitboxes.MaxBy(hitbox => hitbox.Damage);
-				weakestHitbox = move.Hitboxes.MinBy(hitbox => hitbox.Damage);
+			//if (move.Hitboxes.Any())
+			//{
+			//	strongestHitbox = move.Hitboxes.MaxBy(hitbox => hitbox.Damage);
+			//	weakestHitbox = move.Hitboxes.MinBy(hitbox => hitbox.Damage);
 
-				if (strongestHitbox.Damage == weakestHitbox.Damage)
-				{
-					weakestHitbox = null;
-				}
-			}
+			//	if (strongestHitbox.Damage == weakestHitbox.Damage)
+			//	{
+			//		weakestHitbox = null;
+			//	}
+			//}
 
 			Char = CharacterKeyConverter.GetCharValueForNormalizedName(character.NormalizedName);
 			Move = AttackKeyConverter.GetCharValueForNormalizedName(move.NormalizedName);

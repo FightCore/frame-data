@@ -8,4 +8,4 @@ services:
     ports:
       - "1433:1433"
     volumes:
-      - 'E:/FightCore/bak:/home/bak'
+      - './bak:/home/bak'

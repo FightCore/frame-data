@@ -1,5 +1,6 @@
 ﻿using FightCore.External.HitboxLoader;
 using FightCore.FrameData;
+using FightCore.Models;
 using FightCore.Repositories;
 using FightCore.Services;
 using Microsoft.EntityFrameworkCore;
@@ -16,58 +17,40 @@ var services = new CharacterService(repository);
 
 var export = await services.ExportAll();
 
-var characterMap = new Dictionary<string, string>()
+var characters = new List<string>()
 {
-	{ "Zd", "zelda" }
+	"zelda"
 };
 
 var moveMap = new Dictionary<string, string>()
 {
-	{ "jab", "jab1" },
-	{ "neutralSpecial", "neutralb" },
-	{ "ftilt", "ftilt" }
+	//{ "jab", "jab1" },
+	//{ "neutralSpecial", "neutralb" },
+	{ "utilt", "utilt" },
+	{ "dattack", "dashattack"},
+	{ "fsmash", "fsmash_m"},
+	{ "usmash", "usmash"},
+	{ "dsmash", "dsmash"}
 };
 
-
-var json = JObject.Parse(File.ReadAllText("C://tmp/hitboxDBJSON.json"));
-foreach (var character in json)
+foreach (var character in characters)
 {
-	if (!characterMap.TryGetValue(character.Key, out var fightCoreCharacterName))
+	var characterJson = JObject.Parse(File.ReadAllText($"C://tmp/{character}.json"));
+	foreach (var (fightcoreName, dataName) in moveMap)
 	{
-		continue;
-	}
-
-	Console.WriteLine(fightCoreCharacterName);
-	foreach (var move in character.Value.Children())
-	{	
-		var moveProp = move as JProperty;
-		if (!moveMap.TryGetValue(moveProp.Name, out var fightCoreMoveName))
+		var move = characterJson[dataName];
+		if (move == null)
 		{
 			continue;
 		}
 
-		Console.WriteLine(fightCoreMoveName);
-
-		foreach (var hitbox in moveProp.Value.Children())
+		var hits = move["hitFrames"].ToObject<List<Hit>>();
+		var fightCoreMove = dbContext.Moves.FirstOrDefault(move => move.NormalizedName == fightcoreName && move.Character.NormalizedName == character);
+		foreach (var hit in hits)
 		{
-			var hitboxProp = hitbox as JProperty;
-
-			if (hitboxProp.Value.Children().Any(child => child.Type == JTokenType.Property && (child as JProperty).Value.Children().Any()))
-			{
-				foreach(var hitboxValue in hitboxProp.Value.Children())
-				{
-					var hitboxValueProp = hitboxValue as JProperty;
-					Console.WriteLine(hitboxProp.Name + " " + hitboxValueProp.Name);
-					HitboxParser.Parse(hitboxValueProp.Value);
-				}
-			}
-			else
-			{
-				Console.WriteLine(hitboxProp.Name);
-				HitboxParser.Parse(hitboxProp.Value);
-			}
+			hit.MoveId = fightCoreMove.Id;
 		}
+		dbContext.AddRange(hits);
+		dbContext.SaveChanges();
 	}
-
-	return;
 }

@@ -25,7 +25,7 @@ namespace FightCore.External.MeleeDatabase.Models
 			Start = move.Start.Value;
 			End = move.End.Value;
 			Total = move.TotalFrames;
-			Percent = move.Hitboxes.FirstOrDefault()?.Damage;
+			//Percent = move.Hitboxes.FirstOrDefault()?.Damage;
 			Notes = move.Notes;
 		}
 	}
