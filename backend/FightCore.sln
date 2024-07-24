@@ -33,6 +33,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FightCore.External.MeleeDat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FightCore.Enricher", "FightCore.Enricher\FightCore.Enricher.csproj", "{D08E7AD2-C650-4053-866D-612CE38C323C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FightCore.External.HitboxLoader", "FightCore.External.HitboxLoader\FightCore.External.HitboxLoader.csproj", "{9A68D1EF-33C6-4AF7-91EB-1782938FA71E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,6 +69,10 @@ Global
 		{D08E7AD2-C650-4053-866D-612CE38C323C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D08E7AD2-C650-4053-866D-612CE38C323C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D08E7AD2-C650-4053-866D-612CE38C323C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A68D1EF-33C6-4AF7-91EB-1782938FA71E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A68D1EF-33C6-4AF7-91EB-1782938FA71E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A68D1EF-33C6-4AF7-91EB-1782938FA71E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A68D1EF-33C6-4AF7-91EB-1782938FA71E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -79,6 +85,7 @@ Global
 		{AF729D55-243E-4715-B6D6-96673B6C0432} = {DE0BEBC8-CE3C-4AD1-94F9-C42F17BC2688}
 		{987322DB-A53C-4986-ACE7-4599E51CC160} = {E826F2BE-E2F2-4AF3-BC0D-F070E0719588}
 		{D08E7AD2-C650-4053-866D-612CE38C323C} = {DE0BEBC8-CE3C-4AD1-94F9-C42F17BC2688}
+		{9A68D1EF-33C6-4AF7-91EB-1782938FA71E} = {E826F2BE-E2F2-4AF3-BC0D-F070E0719588}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8C766FB9-5F38-458C-B0E2-225D2173CB93}
