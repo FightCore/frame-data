@@ -18,7 +18,7 @@ foreach (var move in moves.Where(move => string.IsNullOrEmpty(move.GifUrl)))
 {
 	try
 	{
-		request = new RestRequest($"melee/moves/{move.Character.NormalizedName}/{move.NormalizedName}.gif");
+		request = new RestRequest($"beta/{move.Character.NormalizedName}/{move.NormalizedName}.gif");
 		response = await restClient.GetAsync(request);
 		if (response.StatusCode == System.Net.HttpStatusCode.NotFound)
 		{

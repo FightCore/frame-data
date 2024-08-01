@@ -11,5 +11,7 @@ namespace FightCore.Models
 		public int End { get; set; }
 
 		public long MoveId { get; set; }
+
+		public string Name { get; set; }
 	}
 }

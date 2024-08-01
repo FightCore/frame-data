@@ -5,7 +5,7 @@ namespace FightCore.External.HitboxLoader.Models
 	public class ShoemakerHitbox
 	{
 		public int id;
-		public int dmg;
+		public int damage;
 		public int angle;
 		public int kbGrowth;
 		public int weightDepKb;
@@ -18,7 +18,7 @@ namespace FightCore.External.HitboxLoader.Models
 			{
 				Angle = angle,
 				BaseKnockback = baseKb,
-				Damage = dmg,
+				Damage = damage,
 				Effect = char.ToUpper(element[0]) + element.Substring(1),
 				KnockbackGrowth = kbGrowth,
 				SetKnockback = weightDepKb,
