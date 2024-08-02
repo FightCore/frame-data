@@ -11,8 +11,7 @@
         Throw = 6,
         Tech = 7,
         EdgeAttack = 8,
-        Grab = 9,
-        Item = 10,
-        Movement = 11
+        Item = 9,
+        KirbySpecial = 10,
     }
 }
