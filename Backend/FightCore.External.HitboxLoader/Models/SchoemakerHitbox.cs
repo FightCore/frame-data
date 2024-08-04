@@ -22,7 +22,7 @@ namespace FightCore.External.HitboxLoader.Models
 				Effect = char.ToUpper(element[0]) + element.Substring(1),
 				KnockbackGrowth = kbGrowth,
 				SetKnockback = weightDepKb,
-				Name = "id"+id
+				Name = "id" + id
 			};
 		}
 	}
