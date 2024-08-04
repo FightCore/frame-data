@@ -4,6 +4,7 @@ using FightCore.FrameData;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FightCore.FrameData.Migrations
 {
     [DbContext(typeof(FrameDataContext))]
-    partial class FrameDataContextModelSnapshot : ModelSnapshot
+    [Migration("20240724133217_Add_Hit")]
+    partial class Add_Hit
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -136,11 +139,8 @@ namespace FightCore.FrameData.Migrations
                     b.Property<int>("End")
                         .HasColumnType("int");
 
-                    b.Property<long>("MoveId")
+                    b.Property<long?>("MoveId")
                         .HasColumnType("bigint");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Start")
                         .HasColumnType("int");
@@ -637,9 +637,7 @@ namespace FightCore.FrameData.Migrations
                 {
                     b.HasOne("FightCore.Models.Move", null)
                         .WithMany("Hits")
-                        .HasForeignKey("MoveId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("MoveId");
                 });
 
             modelBuilder.Entity("FightCore.Models.Hitbox", b =>

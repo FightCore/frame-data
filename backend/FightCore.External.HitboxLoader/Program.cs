@@ -1,4 +1,5 @@
 ﻿using FightCore.External.HitboxLoader;
+using FightCore.External.HitboxLoader.Models;
 using FightCore.FrameData;
 using FightCore.Repositories;
 using FightCore.Services;
@@ -16,58 +17,75 @@ var services = new CharacterService(repository);
 
 var export = await services.ExportAll();
 
-var characterMap = new Dictionary<string, string>()
-{
-	{ "Zd", "zelda" }
-};
-
 var moveMap = new Dictionary<string, string>()
 {
-	{ "jab", "jab1" },
-	{ "neutralSpecial", "neutralb" },
-	{ "ftilt", "ftilt" }
+	{ "utilt", "utilt" },
+	{ "ftilt", "ftilt_m" },
+	{ "dtilt", "dtilt" },
+	{ "jab1", "jab1" },
+	{ "jab2", "jab2" },
+	{ "jab3", "jab3" },
+	{ "rjab", "rapidjabs_loop" },
+	{ "dattack", "dashattack"},
+	{ "fsmash", "fsmash_m"},
+	{ "usmash", "usmash"},
+	{ "dsmash", "dsmash"},
+	{ "nair", "nair" },
+	{ "fair", "fair" },
+	{ "dair", "dair" },
+	{ "uair", "uair" },
+	{ "grab", "grab" },
+	{ "dashgrab", "dashgrab" },
+	{ "pummel", "pummel" },
+	{ "uaft", "ftilt_h" },
+	{ "daft", "ftilt_l" }
 };
 
-
-var json = JObject.Parse(File.ReadAllText("C://tmp/hitboxDBJSON.json"));
-foreach (var character in json)
+var characters = Directory.GetFiles("C://tmp/hitboxes/", "*.json").Select(file => Path.GetFileNameWithoutExtension(file));
+var missingMoves = new List<string>()
 {
-	if (!characterMap.TryGetValue(character.Key, out var fightCoreCharacterName))
-	{
-		continue;
-	}
+	"Character,Move"
+};
 
-	Console.WriteLine(fightCoreCharacterName);
-	foreach (var move in character.Value.Children())
-	{	
-		var moveProp = move as JProperty;
-		if (!moveMap.TryGetValue(moveProp.Name, out var fightCoreMoveName))
+foreach (var character in characters)
+{
+	Console.WriteLine(character);
+
+	var characterJson = JObject.Parse(File.ReadAllText($"C://tmp/hitboxes/{character}.json"));
+	foreach (var (fightcoreName, dataName) in moveMap)
+	{
+		var move = characterJson[dataName];
+		if (move == null || move.Type == JTokenType.Null)
 		{
 			continue;
 		}
 
-		Console.WriteLine(fightCoreMoveName);
+		var hits = move["hitFrames"].ToObject<List<ShoemakerHit>>();
+		var fightCoreMove = dbContext.Moves.Include(move => move.Hits).FirstOrDefault(move => move.NormalizedName == fightcoreName && move.Character.NormalizedName == character);
 
-		foreach (var hitbox in moveProp.Value.Children())
+		if (fightCoreMove == null)
 		{
-			var hitboxProp = hitbox as JProperty;
-
-			if (hitboxProp.Value.Children().Any(child => child.Type == JTokenType.Property && (child as JProperty).Value.Children().Any()))
-			{
-				foreach(var hitboxValue in hitboxProp.Value.Children())
-				{
-					var hitboxValueProp = hitboxValue as JProperty;
-					Console.WriteLine(hitboxProp.Name + " " + hitboxValueProp.Name);
-					HitboxParser.Parse(hitboxValueProp.Value);
-				}
-			}
-			else
-			{
-				Console.WriteLine(hitboxProp.Name);
-				HitboxParser.Parse(hitboxProp.Value);
-			}
+			missingMoves.Add($"{character},{fightcoreName}");
+			continue;
 		}
-	}
+		if (fightCoreMove.Hits.Any())
+		{
+			continue;
+		}
 
-	return;
+		Console.WriteLine(fightcoreName);
+
+		var mappedHits = hits.Select(hit => hit.ToHit()).ToList();
+		foreach (var hit in mappedHits)
+		{
+			hit.MoveId = fightCoreMove.Id;
+		}
+		dbContext.AddRange(mappedHits);
+		dbContext.SaveChanges();
+	}
 }
+
+File.WriteAllLines("C://tmp/hitboxes/missing.csv", missingMoves);
+
+// Do the ikneedata parsing
+HitboxParser.ParseAll(dbContext);

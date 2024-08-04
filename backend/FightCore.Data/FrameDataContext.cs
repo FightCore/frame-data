@@ -15,6 +15,8 @@ namespace FightCore.FrameData
 
         public DbSet<Move> Moves { get; set; }
 
+        public DbSet<Hit> Hits { get; set; }
+
         public DbSet<Hitbox> Hitboxes { get; set; }
 
         public DbSet<CharacterMiscInfo> CharactersMiscInfos { get; set; }

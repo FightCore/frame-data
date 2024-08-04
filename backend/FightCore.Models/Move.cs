@@ -9,7 +9,7 @@ namespace FightCore.Models
 
         public string NormalizedName { get; set; }
 
-        public List<Hitbox> Hitboxes { get; set; }
+        public List<Hit> Hits { get; set; }
 
         public int? LandLag { get; set; }
 

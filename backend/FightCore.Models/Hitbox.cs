@@ -1,4 +1,6 @@
-﻿using FightCore.Models.Base;
+﻿using System.Text.Json.Serialization;
+using FightCore.Models.Base;
+using Newtonsoft.Json;
 
 namespace FightCore.Models
 {
@@ -10,16 +12,13 @@ namespace FightCore.Models
 
         public long Angle { get; set; }
 
-        // Ikneeddata = kg.
         public long KnockbackGrowth { get; set; }
 
-        // Ikneeddata = wbk
-        public long SetKnockback { get; set; }
+		public long SetKnockback { get; set; }
 
-        // Ikneeddata = bk
-        public long BaseKnockback { get; set; }
+		public long BaseKnockback { get; set; }
 
-        public string Effect { get; set; }
+		public string Effect { get; set; }
 
         public int HitlagAttacker { get; set; }
 
@@ -34,9 +33,5 @@ namespace FightCore.Models
         public int? YoshiArmorBreakPercentage { get; set; }
 
         public bool IsWeightIndependent { get; set; }
-
-        public Move Move { get; set; }
-
-        public long MoveId { get; set; }
     }
 }
