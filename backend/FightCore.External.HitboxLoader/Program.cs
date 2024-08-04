@@ -1,7 +1,6 @@
 ﻿using FightCore.External.HitboxLoader;
 using FightCore.External.HitboxLoader.Models;
 using FightCore.FrameData;
-using FightCore.Models;
 using FightCore.Repositories;
 using FightCore.Services;
 using Microsoft.EntityFrameworkCore;

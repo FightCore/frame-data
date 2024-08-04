@@ -110,7 +110,7 @@ namespace FightCore.External.HitboxLoader
 			{ "bthrow", "bthrow" },
 			{ "uthrow", "uthrow" },
 			{ "dthrow", "dthrow" },
-			// Kirby Moves (oh god)
+			// Kirby Moves
 			{ "ShiekSpecial", "shiekspecial" },
 			{ "ICsSpecial", "iceclimbersspecial" },
 			{ "YLinkSpecial", "younglinkspecial" },
