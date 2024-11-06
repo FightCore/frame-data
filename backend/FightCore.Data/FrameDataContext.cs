@@ -51,10 +51,14 @@ namespace FightCore.FrameData
 
         public DbSet<Source> Sources { get; set; }
 
+        public DbSet<AlternativeAnimation> AlternativeAnimations { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 	        base.OnModelCreating(modelBuilder);
 	        modelBuilder.Entity<ScriptCommand>().UseTptMappingStrategy();
+
+            modelBuilder.Entity<AlternativeAnimation>().HasOne(animation => animation.Move).WithMany(move => move.AlternativeAnimations).HasForeignKey(animation => animation.MoveId);
         }
     }
 }

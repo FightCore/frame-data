@@ -44,10 +44,16 @@ namespace FightCore.Models
 
         public string GifUrl { get; set; }
 
+        public string WebmUrl { get; set; }
+
+        public string PngUrl { get; set; }
+
         public bool IsInterpolated { get; set; }
 
         public List<MoveSubaction> MoveSubactions { get; set; }
 
         public List<Source> Sources { get; set; }
+
+        public List<AlternativeAnimation> AlternativeAnimations { get; set; }
 	}
 }
