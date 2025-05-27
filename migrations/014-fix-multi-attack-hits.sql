@@ -1,4 +1,6 @@
 -- Remove hit from bowser's down air that does not exist
+DELETE Hitboxes
+WHERE HitId = 2140
 DELETE Hits
 WHERE Id = 2140
 
@@ -8,6 +10,8 @@ SET [End] = 39
 WHERE Id = 1216
 
 -- Fix the bowser down smash's strong hit
+DELETE Hitboxes
+WHERE HitId = 2127
 DELETE Hits
 WHERE Id = 2127
 
@@ -21,6 +25,8 @@ SET [End] = 32
 WHERE Id = 1211
 
 -- Fix Captain Falcon's up air having an impossible hitbox
+DELETE Hitboxes
+WHERE HitId = 2179
 DELETE Hits
 WHERE Id = 2179
 
@@ -29,6 +35,8 @@ SET [End] = 13
 WHERE Id = 1105
 
 -- Move ending hit from Ice Climbers from frame 29 to frame 26
+DELETE Hitboxes
+WHERE HitId = 2334
 DELETE Hits
 WHERE ID = 2334
 
@@ -37,6 +45,8 @@ SET [Start] = 26, [End] = 26
 WHERE ID = 2335
 
 -- Fix Jigglypuff's down air incorrect last hitbox
+DELETE Hitboxes
+WHERE HitId = 2378
 DELETE Hits
 WHERE Id = 2378
 
@@ -46,6 +56,8 @@ WHERE id = 963
 
 -- Remove Kirby's down air incorrect last hitbox
 -- Remove the incorrect note from the move
+DELETE Hitboxes
+WHERE HitId = 2419
 DELETE Hits
 WHERE Id = 2419
 
@@ -71,14 +83,19 @@ WHERE Id = 2163
 
 -- Remove a bad mario down air hitbox
 -- Fix the auto cancel after
+DELETE Hitboxes
+WHERE HitId = 2513
 DELETE Hits
 WHERE Id = 2513
 
 UPDATE Moves
 SET [End] = 29,
     AutoCancelAfter = 32
+WHERE Id = 845
 
 -- Fix mewtwo having an extra neutral air hitbox and incorrect IASA and autocancel after.
+DELETE Hitboxes
+WHERE HitId = 2571
 DELETE Hits
 WHERE Id = 2571
 
@@ -126,6 +143,8 @@ SET [End] = 48,
 WHERE Id = 1511
 
 -- Fix mewtwo's upsmash timing being wrong
+DELETE Hitboxes
+WHERE HitId = 2560
 DELETE Hits
 WHERE Id = 2560
 
@@ -143,6 +162,8 @@ SET Notes = 'IASA frame is not visualized within animation due to a bug in the g
 WHERE Id = 731
 
 -- Fix the loop of hitboxes being incorrect on Ness forward air
+DELETE Hitboxes
+WHERE HitId = 2622
 DELETE Hits
 WHERE Id = 2622
 
@@ -169,6 +190,8 @@ WHERE Id = 1514
 
 -- Fix Peach dair having the wrong number of hits
 -- Set IASA frame to the proper value
+DELETE Hitboxes
+WHERE HitId = 2659
 DELETE Hits
 WHERE Id = 2659
 
@@ -178,6 +201,8 @@ SET [End] = 31,
 WHERE Id = 765
 
 -- Remove wrong loop hitbox for Pichu's forward air
+DELETE Hitboxes
+WHERE HitId = 2688
 DELETE Hits
 WHERE Id = 2688
 
@@ -187,6 +212,8 @@ AutoCancelAfter = 33
 WHERE Id = 743
 
 -- Fix Pichu's forward smash having too long of a normal hits
+DELETE Hitboxes
+WHERE HitId = 2678
 DELETE Hits
 WHERE Id = 2678
 
@@ -199,6 +226,8 @@ SET [End] = 33
 WHERE Id = 757
 
 -- Fix Pikachu's down smash having one loop hitbox too many
+DELETE Hitboxes
+WHERE HitId = 2722
 DELETE Hits
 WHERE Id = 2722
 
@@ -211,6 +240,8 @@ SET [End] = 25
 WHERE Id = 975
 
 -- Fix Pikachu's forward air having the wrong loop hitboxs
+DELETE Hitboxes
+WHERE HitId = 2730
 DELETE Hits
 WHERE Id = 2730
 
@@ -234,6 +265,8 @@ Notes = NULL
 WHERE Id = 914
 
 -- Fix Roy's up smash having a hitbox that doesn't exist
+DELETE Hitboxes
+WHERE HitId = 2758
 DELETE Hits
 WHERE Id = 2758
 
@@ -284,20 +317,24 @@ UPDATE Hits
 SET [Start] = 30, [End] = 31
 WHERE Id = 2792
 
+DELETE Hitboxes
+WHERE HitId = 2791
 DELETE Hits
 WHERE Id = 2791
 
 -- Samus up air fixes, wrong due to loop
 UPDATE Hits
-SET [Start] = 20, [End] - 21
+SET [Start] = 20, [End] = 21
 WHERE Id = 2800
 
+DELETE Hitboxes
+WHERE HitId = 2799
 DELETE Hits
 WHERE Id = 2799
 
 UPDATE Moves
 SET [End] = 21
-
+WHERE Id = 1029
 -- Sheik rapid jab fixes due to 0 frame
 UPDATE Hits
 SET [Start] = 3, [End] = 4
@@ -324,11 +361,13 @@ SET [Start] = 33, [End] = 34
 WHERE Id = 2836
 
 UPDATE Moves
-[Start] = 3, [End] = 34,
+SET [Start] = 3, [End] = 34,
     Notes = 'Loop has an additional 6 frames startup and 8 frames endlag'
 WHERE Id = 1611
 
 -- Fix Yoshi's down air having a hitbox that does not exist
+DELETE Hitboxes
+WHERE HitId = 2887
 DELETE Hits
 WHERE Id = 2887
 
@@ -340,6 +379,8 @@ SET [End] = 44,
 WHERE Id = 905
 
 -- Fix Yoshi's grab having a 0th frame
+DELETE Hitboxes
+WHERE HitId = 2889
 DELETE Hits
 WHERE Id = 2889
 
@@ -366,6 +407,8 @@ SET [Start] = 11, [End] = 14
 WHERE Id = 2919
 
 -- Fix Zelda's forward smash having bad timings due to loops
+DELETE Hitboxes
+WHERE HitId = 2940
 DELETE Hits
 WHERE Id = 2940
 
@@ -378,6 +421,8 @@ SET [End] = 24
 WHERE Id = 1146
 
 -- Fix Zelda's jab having bad timings due to loops
+DELETE Hitboxes
+WHERE HitId = 2933
 DELETE Hits
 WHERE Id = 2933
 
@@ -386,6 +431,8 @@ SET [End] = 15, Notes = NULL
 WHERE Id = 1531
 
 -- Fix Zelda's nair having bad timings due to loops
+DELETE Hitboxes
+WHERE HitId = 2963
 DELETE Hits
 WHERE Id = 2963
 
@@ -398,6 +445,8 @@ SET [End] = 27
 WHERE Id = 1147
 
 -- Fix Zelda's up smash having bad timings due to loops
+DELETE Hitboxes
+WHERE HitId = 2954
 DELETE Hits
 WHERE Id = 2954
 
@@ -437,5 +486,7 @@ UPDATE Hits
 SET [Start] = 18, [End] = 19
 WHERE Id = 2801
 
+DELETE Hitboxes
+WHERE HitId = 2808
 DELETE Hits
 WHERE Id = 2808
