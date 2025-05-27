@@ -15,7 +15,7 @@ var moves = await dbContext.Moves.Include(move => move.Character).ToListAsync();
 var imageUrlValidator = new ImageUrlValidator();
 var alternativeAnimationFinder = new AlternativeAnimationFinder();
 
-foreach (var move in moves.Where(move => !string.IsNullOrEmpty(move.GifUrl)))
+foreach (var move in moves.Where(move => move.Type == MoveType.Tech))
 {
 	Console.WriteLine($"{move.Character.NormalizedName} {move.NormalizedName}");
 	var gifUrl = $"beta/{move.Character.NormalizedName}/{move.NormalizedName}.gif";

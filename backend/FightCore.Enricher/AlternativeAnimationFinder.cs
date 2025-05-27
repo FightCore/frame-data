@@ -6,7 +6,7 @@
 	{
 		private readonly string _localDirectory;
 
-        public AlternativeAnimationFinder(string localDirectory = "C:/tmp/pngs")
+        public AlternativeAnimationFinder(string localDirectory = "E:\\FightCore\\i.fightcore.gg\\melee\\moves")
         {
             _localDirectory = localDirectory;
         }
