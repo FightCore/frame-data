@@ -1,64 +1,73 @@
-Name,NormalizedName,LandLag,LCanceledLandLag,TotalFrames,IASA,AutoCancelBefore,AutoCancelAfter,Start,End,Type,Notes,Percent,CharacterId,Source,Id
-Forward Air,fair,25,12,44,,3,44,10,32,Air,"weak hit frames 13-32, with 4 frames shieldstun",,0,http://meleeframedata.com/,866
-Back Air,bair,18,,39,,10,39,10,24,Air,"5 total hits, frame windows 10-12, 13-15, 16-18, 19-21, 22-24",,0,http://meleeframedata.com/,867
-Up Air,uair,15,,39,,7,39,7,22,Air,"weak hit frames 7-16, strong hit frames 21-22",,0,http://meleeframedata.com/,868
-Down Air,dair,20,10,49,,6,49,12,38,Air,weak hit frames 13-38,,0,http://meleeframedata.com/,869
-Edge attack,edge,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,871
-Pummel,pummel,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,872
-unknown,unknown,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,873
-Forward throw,fthrow,,,27,,,,0,0,Throw,,,0,http://meleeframedata.com/,874
-Back throw,bthrow,,,66,,,,0,0,Throw,,,0,http://meleeframedata.com/,875
-Up throw,uthrow,,,39,,,,0,0,Throw,,,0,http://meleeframedata.com/,876
-Down throw,dthrow,,,39,,,,0,0,Throw,,,0,http://meleeframedata.com/,877
-Neutral Air,nair,15,,44,,3,44,20,29,Air,,,0,http://meleeframedata.com/,883
-Down Smash,dsmash,,,34,,,,15,19,Grounded,shield stun for weak hit is 6 frames,,0,http://meleeframedata.com/,885
-Forward Smash,fsmash,,,44,42,,,13,33,Grounded,"non fire hitbox 14% damage, weak hit frames 17-33 with 4 frames shieldstun",,0,http://meleeframedata.com/,886
-Chef,neutralb,,,49,,,,18,21,Special,"pan hit is the strong hit, sausages are the weak hits. can throw more sausage every 20-34 frames. sausage lasts 80 frames total",,0,http://meleeframedata.com/,895
-Judgement,sideb,,,49,,,,16,29,Special,"The first hammer in a match cannot be a 1 or 2.
+Name,NormalizedName,LandLag,LCanceledLandLag,LandingFallSpecialLag,TotalFrames,IASA,AutoCancelBefore,AutoCancelAfter,Start,End,Type,Notes,Percent,CharacterId,Source,GifUrl,WebmUrl,PngUrl,IsInterpolated,Id
+Forward Air,fair,25,12,,44,,3,44,10,32,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mrgame&watch/fair.gif,https://i.fightcore.gg/beta/mrgame&watch/fair.webm,https://i.fightcore.gg/png/mrgame&watch/fair.png,False,866
+Back Air,bair,18,,,39,,10,39,10,24,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mrgame&watch/bair.gif,https://i.fightcore.gg/beta/mrgame&watch/bair.webm,https://i.fightcore.gg/png/mrgame&watch/bair.png,False,867
+Up Air,uair,15,,,39,,7,39,7,22,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mrgame&watch/uair.gif,https://i.fightcore.gg/beta/mrgame&watch/uair.webm,https://i.fightcore.gg/png/mrgame&watch/uair.png,False,868
+Down Air,dair,20,10,,49,,6,49,12,38,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mrgame&watch/dair.gif,https://i.fightcore.gg/beta/mrgame&watch/dair.webm,https://i.fightcore.gg/png/mrgame&watch/dair.png,False,869
+Edge attack,edge,,,,0,,,,,,EdgeAttack,,,0,http://meleeframedata.com/,,,,False,871
+Pummel,pummel,,,,0,,,,,,Throw,,,0,http://meleeframedata.com/,,,,False,872
+unknown,unknown,,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,,,,False,873
+Forward throw,fthrow,,,,27,,,,0,0,Throw,,,0,http://meleeframedata.com/,,,,False,874
+Back throw,bthrow,,,,66,,,,0,0,Throw,,,0,http://meleeframedata.com/,,,,False,875
+Up throw,uthrow,,,,39,,,,0,0,Throw,,,0,http://meleeframedata.com/,,,,False,876
+Down throw,dthrow,,,,39,,,,0,0,Throw,,,0,http://meleeframedata.com/,,,,False,877
+Neutral Air,nair,15,,,44,,3,44,20,29,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mrgame&watch/nair.gif,https://i.fightcore.gg/beta/mrgame&watch/nair.webm,https://i.fightcore.gg/png/mrgame&watch/nair.png,False,883
+Down Smash,dsmash,,,,34,,,,15,19,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mrgame&watch/dsmash.gif,https://i.fightcore.gg/beta/mrgame&watch/dsmash.webm,https://i.fightcore.gg/png/mrgame&watch/dsmash.png,False,885
+Forward Smash,fsmash,,,,44,42,,,13,33,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mrgame&watch/fsmash.gif,https://i.fightcore.gg/beta/mrgame&watch/fsmash.webm,https://i.fightcore.gg/png/mrgame&watch/fsmash.png,False,886
+Chef,neutralb,,,,49,,,,18,21,Special,"pan hit is the strong hit, sausages are the weak hits. can throw more sausage every 20-34 frames. sausage lasts 80 frames total",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mrgame&watch/neutralb.gif,https://i.fightcore.gg/beta/mrgame&watch/neutralb.webm,https://i.fightcore.gg/png/mrgame&watch/neutralb.png,False,895
+Judgement,sideb,,,,49,,,,16,29,Special,"The first hammer in a match cannot be a 1 or 2.
 The second hammer in a match cannot be a 2.
 Any number the hammer displays cannot be obtained again until after 2 more hammers.
 A death (fall or SD) will reset the rules currently applied to #3.
 So long as the forward B animation starts, it will count as the next number. In other words: If you input forward B on frame 1 and are hit on frame 2, it'll still count as the number coming out.
 
-9 Hitbox is smaller than the other hitboxes check https://i.fightcore.gg/mrgame&watch/sideb9.gif",,0,http://meleeframedata.com/,896
-Fire,upb,40,,39,,,,1,37,Special,,,0,http://meleeframedata.com/,897
-Oil Panic,downb,,,49,,,,2,37,Special,"percent damage is max damage game & watch can do. absorb stats: active frames 5-37, ends frame 49. will loop every 32 frames until b is let go",,0,http://meleeframedata.com/,898
-Dashattack,dattack,,,37,,,,6,29,Grounded,,,0,http://meleeframedata.com/,900
-Forward Tilt,ftilt,,,44,42,,,13,30,Tilt,,,0,http://meleeframedata.com/,901
-Up Tilt,utilt,,,0,,,,9,29,Tilt,,,0,http://meleeframedata.com/,902
-Down Tilt,dtilt,,,29,26,,,6,13,Tilt,,,0,http://meleeframedata.com/,903
-Up Smash,usmash,,,44,40,,,24,28,Grounded,,,0,http://meleeframedata.com/,904
-Roll forwards,rollforward,,,35,,,,4,19,Dodge,,,0,http://meleeframedata.com/,1403
-Roll backwards,rollbackwards,,,35,,,,4,19,Dodge,,,0,http://meleeframedata.com/,1404
-Spotdodge,spotdodge,,,32,,,,2,12,Dodge,,,0,http://meleeframedata.com/,1405
-Airdodge,airdodge,,,49,,,,0,,Dodge,,,0,http://meleeframedata.com/,1406
-Jab 1,jab1,,,17,16,,,4,6,Grounded,,,0,http://meleeframedata.com/,1493
-Grab,grab,,,30,,,,7,8,Unknown,,,0,http://meleeframedata.com/,1583
-Dashgrab,dashgrab,,,40,,,,11,12,Unknown,,,0,http://meleeframedata.com/,1584
-Rapid Jabs,rjab,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1626
-Tech-Roll Forward,ftechroll,,,40,,,,,,Unknown,"Horizontal Movement At: 7
+9 Hitbox is smaller than the other hitboxes check https://i.fightcore.gg/mrgame&watch/sideb9.gif",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mrgame&watch/sideb.gif,https://i.fightcore.gg/beta/mrgame&watch/sideb.webm,,False,896
+Fire,upb,40,,,39,,,,1,37,Special,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mrgame&watch/upb.gif,https://i.fightcore.gg/beta/mrgame&watch/upb.webm,https://i.fightcore.gg/png/mrgame&watch/upb.png,False,897
+Oil Panic,downb,,,,49,,,,2,37,Special,"percent damage is max damage game & watch can do. absorb stats: active frames 5-37, ends frame 49. will loop every 32 frames until b is let go",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mrgame&watch/downb.gif,https://i.fightcore.gg/beta/mrgame&watch/downb.webm,https://i.fightcore.gg/png/mrgame&watch/downb.png,False,898
+Dashattack,dattack,,,,37,,,,6,29,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mrgame&watch/dattack.gif,https://i.fightcore.gg/beta/mrgame&watch/dattack.webm,https://i.fightcore.gg/png/mrgame&watch/dattack.png,False,900
+Forward Tilt,ftilt,,,,44,42,,,13,30,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mrgame&watch/ftilt.gif,https://i.fightcore.gg/beta/mrgame&watch/ftilt.webm,https://i.fightcore.gg/png/mrgame&watch/ftilt.png,False,901
+Up Tilt,utilt,,,,0,,,,9,29,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mrgame&watch/utilt.gif,https://i.fightcore.gg/beta/mrgame&watch/utilt.webm,https://i.fightcore.gg/png/mrgame&watch/utilt.png,False,902
+Down Tilt,dtilt,,,,29,26,,,6,13,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mrgame&watch/dtilt.gif,https://i.fightcore.gg/beta/mrgame&watch/dtilt.webm,https://i.fightcore.gg/png/mrgame&watch/dtilt.png,False,903
+Up Smash,usmash,,,,44,40,,,24,28,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mrgame&watch/usmash.gif,https://i.fightcore.gg/beta/mrgame&watch/usmash.webm,https://i.fightcore.gg/png/mrgame&watch/usmash.png,False,904
+Roll forwards,rollforward,,,,35,,,,4,19,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mrgame&watch/rollforward.gif,https://i.fightcore.gg/beta/mrgame&watch/rollforward.webm,https://i.fightcore.gg/png/mrgame&watch/rollforward.png,False,1403
+Roll backwards,rollbackwards,,,,35,,,,4,19,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mrgame&watch/rollbackwards.gif,https://i.fightcore.gg/beta/mrgame&watch/rollbackwards.webm,https://i.fightcore.gg/png/mrgame&watch/rollbackwards.png,False,1404
+Spotdodge,spotdodge,,,,32,,,,2,12,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mrgame&watch/spotdodge.gif,https://i.fightcore.gg/beta/mrgame&watch/spotdodge.webm,https://i.fightcore.gg/png/mrgame&watch/spotdodge.png,False,1405
+Airdodge,airdodge,,,,49,,,,0,,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mrgame&watch/airdodge.gif,https://i.fightcore.gg/beta/mrgame&watch/airdodge.webm,https://i.fightcore.gg/png/mrgame&watch/airdodge.png,False,1406
+Jab 1,jab1,,,,17,16,,,4,6,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mrgame&watch/jab1.gif,https://i.fightcore.gg/beta/mrgame&watch/jab1.webm,https://i.fightcore.gg/png/mrgame&watch/jab1.png,False,1493
+Grab,grab,,,,30,,,,7,8,Throw,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mrgame&watch/grab.gif,https://i.fightcore.gg/beta/mrgame&watch/grab.webm,https://i.fightcore.gg/png/mrgame&watch/grab.png,False,1583
+Dashgrab,dashgrab,,,,40,,,,11,12,Throw,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mrgame&watch/dashgrab.gif,https://i.fightcore.gg/beta/mrgame&watch/dashgrab.webm,https://i.fightcore.gg/png/mrgame&watch/dashgrab.png,False,1584
+Rapid Jabs,rjab,,,,0,,,,,,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/melee/moves/mrgame&watch/rjab.gif,https://i.fightcore.gg/beta/mrgame&watch/rjab.webm,https://i.fightcore.gg/png/mrgame&watch/rjab.png,False,1626
+Tech-Roll Forward,ftechroll,,,,40,,,,,,Tech,"Horizontal Movement At: 7
 Distance: 9.8 ft
-Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1719
-Tech-Roll Backward,btechroll,,,40,,,,,,Unknown,"Horizontal Movement At: 7
+Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,https://i.fightcore.gg/beta/mrgame&watch/ftechroll.gif,https://i.fightcore.gg/beta/mrgame&watch/ftechroll.webm,https://i.fightcore.gg/png/mrgame&watch/ftechroll.png,False,1719
+Tech-Roll Backward,btechroll,,,,40,,,,,,Tech,"Horizontal Movement At: 7
 Distance: 9.6 ft
-Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1720
-Getup-Attack (Back),bgetup,,,49,,,,,,Unknown,"Hit: 20-21 (Front), 33-34 (Behind)
-Invincible: 1-34",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1721
-Getup-Attack (Stomach),fgetup,,,49,,,,,,Unknown,"Hit: 20-21 (Front), 32-33 (Behind)
-Invincible: 1-33",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1722
-Getup-Roll Forward (Back),fgetuprollback,,,35,,,,,,Unknown,"Horizontal Movement At: 5
+Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,https://i.fightcore.gg/beta/mrgame&watch/btechroll.gif,https://i.fightcore.gg/beta/mrgame&watch/btechroll.webm,https://i.fightcore.gg/png/mrgame&watch/btechroll.png,False,1720
+Getup-Attack (Back),bgetup,,,,49,,,,,,Tech,"Hit: 20-21 (Front), 33-34 (Behind)
+Invincible: 1-34",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1721
+Getup-Attack (Stomach),fgetup,,,,49,,,,,,Tech,"Hit: 20-21 (Front), 32-33 (Behind)
+Invincible: 1-33",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1722
+Getup-Roll Forward (Back),fgetuprollback,,,,35,,,,,,Tech,"Horizontal Movement At: 5
 Distance: 8.6 ft
-Invincible: 1-21",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1723
-Getup-Roll Forward (Stomach),fgetuprollstomach,,,35,,,,,,Unknown,"Horizontal Movement At: 5
+Invincible: 1-21",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1723
+Getup-Roll Forward (Stomach),fgetuprollstomach,,,,35,,,,,,Tech,"Horizontal Movement At: 5
 Distance: 8.8 ft
-Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1724
-Getup-Roll Backward (Back),bgetuprollback,,,35,,,,,,Unknown,"Horizontal Movement At: 5
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1724
+Getup-Roll Backward (Back),bgetuprollback,,,,35,,,,,,Tech,"Horizontal Movement At: 5
 Distance: 8.4 ft
-Invincible: 1-22",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1725
-Getup-Roll Backward (Stomach),bgetuprollstomach,,,35,,,,,,Unknown,"Horizontal Movement At: 5
+Invincible: 1-22",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1725
+Getup-Roll Backward (Stomach),bgetuprollstomach,,,,35,,,,,,Tech,"Horizontal Movement At: 5
 Distance: 9 ft
-Invincible: 1-24",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1726
-Tech-Neutral,neutraltech,,,26,,,,,,Unknown,Invincible: 1-20,,0,http://meleeframedata.com/,1883
-Tech-Wall,walltech,,,31,6,,,,,Unknown,"Invincible: 1-14
-Input an upwards direction anywhere on 1-4 for walljump tech on 6)",,0,http://meleeframedata.com/,1909
-Tech-Wall Jump,walltechjump,,,40,1,,,,,Unknown,,,0,http://meleeframedata.com/,1935
+Invincible: 1-24",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1726
+Tech-Neutral,neutraltech,,,,26,,,,,,Tech,Invincible: 1-20,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mrgame&watch/neutraltech.gif,https://i.fightcore.gg/beta/mrgame&watch/neutraltech.webm,https://i.fightcore.gg/png/mrgame&watch/neutraltech.png,False,1883
+Tech-Wall,walltech,,,,31,6,,,,,Tech,"Invincible: 1-14
+Input an upwards direction anywhere on 1-4 for walljump tech on 6)",,0,http://meleeframedata.com/,,,,False,1909
+Tech-Wall Jump,walltechjump,,,,40,1,,,,,Tech,,,0,http://meleeframedata.com/,,,,False,1935
+Judgement (Air),asideb,,,,49,,,,16,29,Special,"The first hammer in a match cannot be a 1 or 2.
+The second hammer in a match cannot be a 2.
+Any number the hammer displays cannot be obtained again until after 2 more hammers.
+A death (fall or SD) will reset the rules currently applied to #3.
+So long as the forward B animation starts, it will count as the next number. In other words: If you input forward B on frame 1 and are hit on frame 2, it'll still count as the number coming out.
+
+9 Hitbox is smaller than the other hitboxes check https://i.fightcore.gg/mrgame&watch/sideb9.gif",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mrgame&watch/asideb.gif,https://i.fightcore.gg/beta/mrgame&watch/asideb.webm,,True,2009
+Fire (Air),aupb,40,,,39,,,,1,37,Special,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mrgame&watch/aupb.gif,https://i.fightcore.gg/beta/mrgame&watch/aupb.webm,https://i.fightcore.gg/png/mrgame&watch/aupb.png,True,2010
+Oil Panic (Air),adownb,,,,49,,,,2,37,Special,"percent damage is max damage game & watch can do. absorb stats: active frames 5-37, ends frame 49. will loop every 32 frames until b is let go",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mrgame&watch/adownb.gif,https://i.fightcore.gg/beta/mrgame&watch/adownb.webm,https://i.fightcore.gg/png/mrgame&watch/adownb.png,True,2011

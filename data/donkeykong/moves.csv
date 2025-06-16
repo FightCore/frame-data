@@ -1,66 +1,67 @@
-Name,NormalizedName,LandLag,LCanceledLandLag,TotalFrames,IASA,AutoCancelBefore,AutoCancelAfter,Start,End,Type,Notes,Percent,CharacterId,Source,Id
-Edge attack,edge,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1285
-Pummel,pummel,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1286
-Back throw,bthrow,,,39,,,,0,0,Throw,,,0,http://meleeframedata.com/,1287
-Up throw,uthrow,,,43,,,,0,0,Throw,,,0,http://meleeframedata.com/,1288
-Down throw,dthrow,,,59,,,,0,0,Throw,,,0,http://meleeframedata.com/,1289
-cargo_fthrow,cargo_fthrow,,,0,,,,,,Throw,,,0,http://meleeframedata.com/,1290
-cargo_bthrow,cargo_bthrow,,,0,,,,,,Throw,,,0,http://meleeframedata.com/,1291
-cargo_uthrow,cargo_uthrow,,,0,,,,,,Throw,,,0,http://meleeframedata.com/,1292
-cargo_dthrow,cargo_dthrow,,,0,,,,,,Throw,,,0,http://meleeframedata.com/,1293
-Down Air,dair,31,15,54,,3,49,18,23,Air,,,0,http://meleeframedata.com/,1304
-Back Air,bair,15,7,39,32,7,19,7,15,Air,strong hit box frame 7-8,,0,http://meleeframedata.com/,1305
-Giant Punch,neutralb,,,46,,,,17,21,Special,"weak hit frame 18, 10 frames shield stun
-Intangible frames 17-18, only on fully charged punch",,0,http://meleeframedata.com/,1309
-Headbutt,sideb,,,59,,,,20,21,Special,,,0,http://meleeframedata.com/,1310
-Spinning Kong,upb,,,84,,,,3,58,Special,"strong hit frames 3-5 and invulnerable. 3 hits from frames 19-42 that do 8% each, and 4 hits from frames 43-74 that do 3% each (and 3 frames shield stun",,0,http://meleeframedata.com/,1311
-Hand Slap,downb,,,60,,,,19,31,Special,13 frames of startup and 20 frames of endlag account for the startup and finish of down b. if you continue down b after two slaps these frame counts aren't present inbetween slaps,,0,http://meleeframedata.com/,1312
-Dashattack,dattack,,,54,,,,9,20,Grounded,strong hitbox frame 9-12,,0,http://meleeframedata.com/,1314
-Forward Tilt,ftilt,,,33,,,,8,11,Tilt,"angled up does 11%, angled down does 9%",,0,http://meleeframedata.com/,1315
-Up Tilt,utilt,,,39,,,,6,11,Tilt,,,0,http://meleeframedata.com/,1316
-Down Tilt,dtilt,,,22,,,,6,9,Tilt,,,0,http://meleeframedata.com/,1317
-Forward Smash,fsmash,,,54,,,,22,23,Grounded,,,0,http://meleeframedata.com/,1318
-Up Smash,usmash,,,53,,,,14,16,Grounded,,,0,http://meleeframedata.com/,1319
-Down Smash,dsmash,,,55,,,,10,13,Grounded,,,0,http://meleeframedata.com/,1320
-Neutral Air,nair,20,10,43,39,10,38,10,26,Air,strong hitbox frame 10-13,,0,http://meleeframedata.com/,1321
-Forward Air,fair,30,15,59,,1,59,25,29,Air,frame 25-26 is the meteor hitbox,,0,http://meleeframedata.com/,1322
-Up Air,uair,25,12,44,38,6,12,6,8,Air,,,0,http://meleeframedata.com/,1323
-Airdodge,airdodge,,,49,,,,0,,Dodge,,,0,http://meleeframedata.com/,1450
-Spotdodge,spotdodge,,,37,,,,2,23,Dodge,,,0,http://meleeframedata.com/,1451
-Roll forwards,rollforward,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,1452
-Roll backwards,rollbackwards,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,1475
-Jab 1,jab1,,,24,,,,5,7,Grounded,,,0,http://meleeframedata.com/,1486
-Jab 2,jab2,,,33,,,,4,10,Grounded,,,0,http://meleeframedata.com/,1487
-Headbutt (Air),asideb,,,59,,,,20,21,Special,,,0,http://meleeframedata.com/,1543
-Spinning Kong (Air),aupb,,,84,,,,2,66,Special,"strong hit frames 2-5 (and inv). followed by 5 hits that do 5% or 4%, and 4 more hits that do 2%. Invunerable arms frames 11-42",,0,http://meleeframedata.com/,1544
-Giant Punch (Air),aneutralb,,,46,,,,17,21,Special,"for aerial and ground, frame data is dependent on charge stored. listed is the amounts for a full charge",,0,http://meleeframedata.com/,1545
-Grab,grab,,,30,,,,8,9,Unknown,,,0,http://meleeframedata.com/,1575
-Dashgrab,dashgrab,,,40,,,,10,11,Unknown,,,0,http://meleeframedata.com/,1576
-Forward Tilt (Up),uaft,,,33,,,,8,11,Tilt,"angled up does 11%, angled down does 9%",,0,http://meleeframedata.com/,1640
-Forward Tilt (Down),daft,,,33,,,,8,11,Tilt,"angled up does 11%, angled down does 9%",,0,http://meleeframedata.com/,1641
-Tech-Roll Forward,ftechroll,,,40,,,,,,Unknown,"Horizontal Movement At: 9
+Name,NormalizedName,LandLag,LCanceledLandLag,LandingFallSpecialLag,TotalFrames,IASA,AutoCancelBefore,AutoCancelAfter,Start,End,Type,Notes,Percent,CharacterId,Source,GifUrl,WebmUrl,PngUrl,IsInterpolated,Id
+Edge attack,edge,,,,0,,,,,,EdgeAttack,,,0,http://meleeframedata.com/,,,,False,1285
+Pummel,pummel,,,,0,,,,,,Throw,,,0,http://meleeframedata.com/,,,,False,1286
+Back throw,bthrow,,,,39,,,,0,0,Throw,,,0,http://meleeframedata.com/,,,,False,1287
+Up throw,uthrow,,,,43,,,,0,0,Throw,,,0,http://meleeframedata.com/,,,,False,1288
+Down throw,dthrow,,,,59,,,,0,0,Throw,,,0,http://meleeframedata.com/,,,,False,1289
+cargo_fthrow,cargo_fthrow,,,,0,,,,,,Throw,,,0,http://meleeframedata.com/,,,,False,1290
+cargo_bthrow,cargo_bthrow,,,,0,,,,,,Throw,,,0,http://meleeframedata.com/,,,,False,1291
+cargo_uthrow,cargo_uthrow,,,,0,,,,,,Throw,,,0,http://meleeframedata.com/,,,,False,1292
+cargo_dthrow,cargo_dthrow,,,,0,,,,,,Throw,,,0,http://meleeframedata.com/,,,,False,1293
+Down Air,dair,31,15,,54,,3,49,18,23,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/donkeykong/dair.gif,https://i.fightcore.gg/beta/donkeykong/dair.webm,https://i.fightcore.gg/png/donkeykong/dair.png,False,1304
+Back Air,bair,15,7,,39,32,7,19,7,15,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/donkeykong/bair.gif,https://i.fightcore.gg/beta/donkeykong/bair.webm,https://i.fightcore.gg/png/donkeykong/bair.png,False,1305
+Giant Punch,neutralb,,,,46,,,,17,21,Special,"weak hit frame 18, 10 frames shield stun
+Intangible frames 17-18, only on fully charged punch",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/donkeykong/neutralb.gif,https://i.fightcore.gg/beta/donkeykong/neutralb.webm,,False,1309
+Headbutt,sideb,,,,59,,,,20,21,Special,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/donkeykong/sideb.gif,https://i.fightcore.gg/beta/donkeykong/sideb.webm,https://i.fightcore.gg/png/donkeykong/sideb.png,False,1310
+Spinning Kong,upb,,,,84,,,,3,58,Special,"strong hit frames 3-5 and invulnerable. 3 hits from frames 19-42 that do 8% each, and 4 hits from frames 43-74 that do 3% each (and 3 frames shield stun",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/donkeykong/upb.gif,https://i.fightcore.gg/beta/donkeykong/upb.webm,https://i.fightcore.gg/png/donkeykong/upb.png,False,1311
+Hand Slap,downb,,,,60,,,,19,31,Special,13 frames of startup and 20 frames of endlag account for the startup and finish of down b. if you continue down b after two slaps these frame counts aren't present inbetween slaps,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/donkeykong/downb.gif,https://i.fightcore.gg/beta/donkeykong/downb.webm,https://i.fightcore.gg/png/donkeykong/downb.png,False,1312
+Dashattack,dattack,,,,54,,,,9,20,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/donkeykong/dattack.gif,https://i.fightcore.gg/beta/donkeykong/dattack.webm,https://i.fightcore.gg/png/donkeykong/dattack.png,False,1314
+Forward Tilt,ftilt,,,,33,,,,8,11,Tilt,"angled up does 11%, angled down does 9%",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/donkeykong/ftilt.gif,https://i.fightcore.gg/beta/donkeykong/ftilt.webm,https://i.fightcore.gg/png/donkeykong/ftilt.png,False,1315
+Up Tilt,utilt,,,,39,,,,6,11,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/donkeykong/utilt.gif,https://i.fightcore.gg/beta/donkeykong/utilt.webm,https://i.fightcore.gg/png/donkeykong/utilt.png,False,1316
+Down Tilt,dtilt,,,,22,,,,6,9,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/donkeykong/dtilt.gif,https://i.fightcore.gg/beta/donkeykong/dtilt.webm,https://i.fightcore.gg/png/donkeykong/dtilt.png,False,1317
+Forward Smash,fsmash,,,,54,,,,22,23,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/donkeykong/fsmash.gif,https://i.fightcore.gg/beta/donkeykong/fsmash.webm,https://i.fightcore.gg/png/donkeykong/fsmash.png,False,1318
+Up Smash,usmash,,,,53,,,,14,16,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/donkeykong/usmash.gif,https://i.fightcore.gg/beta/donkeykong/usmash.webm,https://i.fightcore.gg/png/donkeykong/usmash.png,False,1319
+Down Smash,dsmash,,,,55,,,,10,13,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/donkeykong/dsmash.gif,https://i.fightcore.gg/beta/donkeykong/dsmash.webm,https://i.fightcore.gg/png/donkeykong/dsmash.png,False,1320
+Neutral Air,nair,20,10,,43,39,10,38,10,26,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/donkeykong/nair.gif,https://i.fightcore.gg/beta/donkeykong/nair.webm,https://i.fightcore.gg/png/donkeykong/nair.png,False,1321
+Forward Air,fair,30,15,,59,,1,59,25,29,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/donkeykong/fair.gif,https://i.fightcore.gg/beta/donkeykong/fair.webm,https://i.fightcore.gg/png/donkeykong/fair.png,False,1322
+Up Air,uair,25,12,,44,38,6,12,6,8,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/donkeykong/uair.gif,https://i.fightcore.gg/beta/donkeykong/uair.webm,https://i.fightcore.gg/png/donkeykong/uair.png,False,1323
+Airdodge,airdodge,,,,49,,,,0,,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/donkeykong/airdodge.gif,https://i.fightcore.gg/beta/donkeykong/airdodge.webm,https://i.fightcore.gg/png/donkeykong/airdodge.png,False,1450
+Spotdodge,spotdodge,,,,37,,,,2,23,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/donkeykong/spotdodge.gif,https://i.fightcore.gg/beta/donkeykong/spotdodge.webm,https://i.fightcore.gg/png/donkeykong/spotdodge.png,False,1451
+Roll forwards,rollforward,,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/donkeykong/rollforward.gif,https://i.fightcore.gg/beta/donkeykong/rollforward.webm,https://i.fightcore.gg/png/donkeykong/rollforward.png,False,1452
+Roll backwards,rollbackwards,,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/donkeykong/rollbackwards.gif,https://i.fightcore.gg/beta/donkeykong/rollbackwards.webm,https://i.fightcore.gg/png/donkeykong/rollbackwards.png,False,1475
+Jab 1,jab1,,,,24,,,,5,7,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/donkeykong/jab1.gif,https://i.fightcore.gg/beta/donkeykong/jab1.webm,https://i.fightcore.gg/png/donkeykong/jab1.png,False,1486
+Jab 2,jab2,,,,33,,,,4,10,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/donkeykong/jab2.gif,https://i.fightcore.gg/beta/donkeykong/jab2.webm,https://i.fightcore.gg/png/donkeykong/jab2.png,False,1487
+Headbutt (Air),asideb,,,,59,,,,20,21,Special,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/donkeykong/asideb.gif,https://i.fightcore.gg/beta/donkeykong/asideb.webm,https://i.fightcore.gg/png/donkeykong/asideb.png,False,1543
+Spinning Kong (Air),aupb,,,,84,,,,2,66,Special,"strong hit frames 2-5 (and inv). followed by 5 hits that do 5% or 4%, and 4 more hits that do 2%. Invunerable arms frames 11-42",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/donkeykong/aupb.gif,https://i.fightcore.gg/beta/donkeykong/aupb.webm,https://i.fightcore.gg/png/donkeykong/aupb.png,False,1544
+Giant Punch (Air),aneutralb,,,,46,,,,17,21,Special,"for aerial and ground, frame data is dependent on charge stored. listed is the amounts for a full charge",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/donkeykong/aneutralb.gif,https://i.fightcore.gg/beta/donkeykong/aneutralb.webm,,False,1545
+Grab,grab,,,,30,,,,8,9,Throw,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/donkeykong/grab.gif,https://i.fightcore.gg/beta/donkeykong/grab.webm,https://i.fightcore.gg/png/donkeykong/grab.png,False,1575
+Dashgrab,dashgrab,,,,40,,,,10,11,Throw,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/donkeykong/dashgrab.gif,https://i.fightcore.gg/beta/donkeykong/dashgrab.webm,https://i.fightcore.gg/png/donkeykong/dashgrab.png,False,1576
+Forward Tilt (Up),uaft,,,,33,,,,8,11,Tilt,"angled up does 11%, angled down does 9%",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/donkeykong/uaft.gif,https://i.fightcore.gg/beta/donkeykong/uaft.webm,https://i.fightcore.gg/png/donkeykong/uaft.png,False,1640
+Forward Tilt (Down),daft,,,,33,,,,8,11,Tilt,"angled up does 11%, angled down does 9%",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/donkeykong/daft.gif,https://i.fightcore.gg/beta/donkeykong/daft.webm,https://i.fightcore.gg/png/donkeykong/daft.png,False,1641
+Tech-Roll Forward,ftechroll,,,,40,,,,,,Tech,"Horizontal Movement At: 9
 Distance: 14.8 ft
-Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1695
-Tech-Roll Backward,btechroll,,,40,,,,,,Unknown,"Horizontal Movement At: 10
+Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,https://i.fightcore.gg/beta/donkeykong/ftechroll.gif,https://i.fightcore.gg/beta/donkeykong/ftechroll.webm,https://i.fightcore.gg/png/donkeykong/ftechroll.png,False,1695
+Tech-Roll Backward,btechroll,,,,40,,,,,,Tech,"Horizontal Movement At: 10
 Distance: 14.8 ft
-Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1696
-Getup-Attack (Back),bgetup,,,49,,,,,,Unknown,"Hit: 6-7 (Behind), 18-19 (Front)
-Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1697
-Getup-Attack (Stomach),fgetup,,,49,,,,,,Unknown,"Hit: 19-20 (Front), 24-25 (Behind)
-Invincible: 1-25",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1698
-Getup-Roll Forward (Back),fgetuprollback,,,35,,,,,,Unknown,"Horizontal Movement At: 10
+Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,https://i.fightcore.gg/beta/donkeykong/btechroll.gif,https://i.fightcore.gg/beta/donkeykong/btechroll.webm,https://i.fightcore.gg/png/donkeykong/btechroll.png,False,1696
+Getup-Attack (Back),bgetup,,,,49,,,,,,Tech,"Hit: 6-7 (Behind), 18-19 (Front)
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1697
+Getup-Attack (Stomach),fgetup,,,,49,,,,,,Tech,"Hit: 19-20 (Front), 24-25 (Behind)
+Invincible: 1-25",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1698
+Getup-Roll Forward (Back),fgetuprollback,,,,35,,,,,,Tech,"Horizontal Movement At: 10
 Distance: 11.4 ft
-Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1699
-Getup-Roll Forward (Stomach),fgetuprollstomach,,,35,,,,,,Unknown,"Horizontal Movement At: 8
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1699
+Getup-Roll Forward (Stomach),fgetuprollstomach,,,,35,,,,,,Tech,"Horizontal Movement At: 8
 Distance: 12 ft
-Invincible: 1-14 (If the roll takes you to an edge and you try to move/crouch/jump/shield as it ends you will slip off)",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1700
-Getup-Roll Backward (Back),bgetuprollback,,,35,,,,,,Unknown,"Horizontal Movement At: 16
+Invincible: 1-14 (If the roll takes you to an edge and you try to move/crouch/jump/shield as it ends you will slip off)",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1700
+Getup-Roll Backward (Back),bgetuprollback,,,,35,,,,,,Tech,"Horizontal Movement At: 16
 Distance: 11.6 ft
-Invincible: 1-24",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1701
-Getup-Roll Backward (Stomach),bgetuprollstomach,,,35,,,,,,Unknown,"Horizontal Movement At: 13
+Invincible: 1-24",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1701
+Getup-Roll Backward (Stomach),bgetuprollstomach,,,,35,,,,,,Tech,"Horizontal Movement At: 13
 Distance: 11.4 ft
-Invincible: 1-24 (If the roll takes you to an edge you will slip off unless you WALK forward, or if an attack is timed on that exact frame)",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1702
-Tech-Neutral,neutraltech,,,26,,,,,,Unknown,Invincible: 1-20,,0,http://meleeframedata.com/,1889
-Tech-Wall,walltech,,,30,6,,,,,Unknown,"Invincible: 1-14
-Input an upwards direction anywhere on 1-4 for walljump tech on 6)",,0,http://meleeframedata.com/,1915
-Tech-Wall Jump,walltechjump,,,40,1,,,,,Unknown,,,0,http://meleeframedata.com/,1941
+Invincible: 1-24 (If the roll takes you to an edge you will slip off unless you WALK forward, or if an attack is timed on that exact frame)",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1702
+Tech-Neutral,neutraltech,,,,26,,,,,,Tech,Invincible: 1-20,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/donkeykong/neutraltech.gif,https://i.fightcore.gg/beta/donkeykong/neutraltech.webm,https://i.fightcore.gg/png/donkeykong/neutraltech.png,False,1889
+Tech-Wall,walltech,,,,30,6,,,,,Tech,"Invincible: 1-14
+Input an upwards direction anywhere on 1-4 for walljump tech on 6)",,0,http://meleeframedata.com/,,,,False,1915
+Tech-Wall Jump,walltechjump,,,,40,1,,,,,Tech,,,0,http://meleeframedata.com/,,,,False,1941
+Hand Slap (Air),adownb,,,,60,,,,19,31,Special,13 frames of startup and 20 frames of endlag account for the startup and finish of down b. if you continue down b after two slaps these frame counts aren't present inbetween slaps,,0,http://meleeframedata.com/,,,,True,2030

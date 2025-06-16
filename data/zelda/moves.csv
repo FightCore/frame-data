@@ -1,59 +1,62 @@
-Name,NormalizedName,LandLag,LCanceledLandLag,TotalFrames,IASA,AutoCancelBefore,AutoCancelAfter,Start,End,Type,Notes,Percent,CharacterId,Source,Id
-unknown,unknown,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,698
-Up throw,uthrow,,,49,,,,0,0,Throw,,,0,http://meleeframedata.com/,1117
-Down throw,dthrow,,,64,,,,24,49,Throw,,,0,http://meleeframedata.com/,1118
-Back throw,bthrow,,,49,,,,0,0,Throw,,,0,http://meleeframedata.com/,1134
-Forward throw,fthrow,,,49,,,,0,0,Throw,,,0,http://meleeframedata.com/,1136
-Edge attack,edge,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1137
-Nayru's Love,neutralb,,,59,,,,12,27,Special,"invulnerable frames 4-11, reflects frames 4-41. 7 hitboxes first 6 doing 1% or 2%, last hit doing 4% or 5% ",,0,http://meleeframedata.com/,1138
-Farores Wind,upb,30,,114,,,,10,11,Special,invulnerable frames 33-53. aim at frame 33,,0,http://meleeframedata.com/,1139
-Din's Fire,sideb,,,77,,,,60,62,Special,"listed is the fastest din's fuire can be activated. can be detonated as late as frame 98. upon detonation, hitbox comes out frames 23-26. hitbox is larger the longer its charged",,0,http://meleeframedata.com/,1140
-Dashattack,dattack,,,37,36,,,6,13,Grounded,"strong hit frames 6-8 and can also do 9% damage, weak hit frames 9-13 and can also do 8% damage with 5 frames shield stun",,0,http://meleeframedata.com/,1142
-Forward Tilt,ftilt,,,37,37,,,12,14,Tilt,,,0,http://meleeframedata.com/,1143
-Up Tilt,utilt,,,43,40,,,10,24,Tilt,,,0,http://meleeframedata.com/,1144
-Down Tilt,dtilt,,,31,30,,,5,7,Tilt,,,0,http://meleeframedata.com/,1145
-Forward Smash,fsmash,,,39,,,,16,26,Grounded,"5 weak hits lasting one frame each, then final strong hit",,0,http://meleeframedata.com/,1146
-Up Smash,usmash,,,56,51,,,5,36,Grounded,"13 weak hits lasting one frame each, followed by the strong hit",,0,http://meleeframedata.com/,1147
-Down Smash,dsmash,,,39,32,,,4,16,Grounded,"front hit active frames 4-7, back hit frames 13-16",,0,http://meleeframedata.com/,1148
-Neutral Air,nair,18,9,49,42,6,37,6,31,Air,"6 weak hits 2 frames each (can also do 3% damage), and one final strong hit",,0,http://meleeframedata.com/,1149
-Forward Air,fair,18,9,39,36,8,24,8,11,Air,weak hit has 6 frames shield stun,,0,http://meleeframedata.com/,1150
-Back Air,bair,18,9,35,33,5,25,5,8,Air,weak hit has 6 frames shield stun,,0,http://meleeframedata.com/,1151
-Up Air,uair,25,12,54,,14,44,14,16,Air,,,0,http://meleeframedata.com/,1152
-Down Air,dair,24,12,43,43,1,39,14,17,Air,,,0,http://meleeframedata.com/,1153
-Pummel,pummel,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1155
-Transform,downb,,,69,,,,34,43,Special,"invulnerable frames 34-43, shiek comes out frame 44",,0,http://meleeframedata.com/,1371
-Roll backwards,rollbackwards,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,1439
-Spotdodge,spotdodge,,,32,,,,3,20,Dodge,,,0,http://meleeframedata.com/,1440
-Airdodge,airdodge,,,49,,,,4,19,Dodge,,,0,http://meleeframedata.com/,1441
-Roll forwards,rollforward,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,1449
-Jab 1,jab1,,,29,27,,,11,17,Grounded,4 hits lasting 1 frame each doing 2% damage each,,0,http://meleeframedata.com/,1531
-Din's Fire (Air),asideb,,,77,,,,60,62,Special,"listed is the fastest din's fuire can be activated. can be detonated as late as frame 98. upon detonation, hitbox comes out frames 23-26. hitbox is larger the longer its charged",,0,http://meleeframedata.com/,1570
-Grab,grab,,,30,,,,12,13,Unknown,,,0,http://meleeframedata.com/,1617
-Dashgrab,dashgrab,,,40,,,,12,13,Unknown,,,0,http://meleeframedata.com/,1618
-Farores Wind (Air),aupb,30,,114,,,,10,11,Special,invulnerable frames 33-53. aim at frame 33,,0,http://meleeframedata.com/,1662
-Tech-Roll Forward,ftechroll,,,40,,,,,,Unknown,"Horizontal Movement At: 8
+Name,NormalizedName,LandLag,LCanceledLandLag,LandingFallSpecialLag,TotalFrames,IASA,AutoCancelBefore,AutoCancelAfter,Start,End,Type,Notes,Percent,CharacterId,Source,GifUrl,WebmUrl,PngUrl,IsInterpolated,Id
+unknown,unknown,,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,,,,False,698
+Up throw,uthrow,,,,49,,,,0,0,Throw,,,0,http://meleeframedata.com/,,,,False,1117
+Down throw,dthrow,,,,64,,,,24,49,Throw,,,0,http://meleeframedata.com/,,,,False,1118
+Back throw,bthrow,,,,49,,,,0,0,Throw,,,0,http://meleeframedata.com/,,,,False,1134
+Forward throw,fthrow,,,,49,,,,0,0,Throw,,,0,http://meleeframedata.com/,,,,False,1136
+Edge attack,edge,,,,0,,,,,,EdgeAttack,,,0,http://meleeframedata.com/,,,,False,1137
+Nayru's Love,neutralb,,,,59,,,,12,27,Special,"invulnerable frames 4-11, reflects frames 4-41. 7 hitboxes first 6 doing 1% or 2%, last hit doing 4% or 5% ",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/zelda/neutralb.gif,https://i.fightcore.gg/beta/zelda/neutralb.webm,https://i.fightcore.gg/png/zelda/neutralb.png,False,1138
+Farores Wind,upb,30,,,114,,,,10,11,Special,invulnerable frames 33-53. aim at frame 33,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/zelda/upb.gif,https://i.fightcore.gg/beta/zelda/upb.webm,https://i.fightcore.gg/png/zelda/upb.png,False,1139
+Din's Fire,sideb,,,,77,,,,60,62,Special,"listed is the fastest din's fuire can be activated. can be detonated as late as frame 98. upon detonation, hitbox comes out frames 23-26. hitbox is larger the longer its charged",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/zelda/sideb.gif,https://i.fightcore.gg/beta/zelda/sideb.webm,https://i.fightcore.gg/png/zelda/sideb.png,False,1140
+Dashattack,dattack,,,,37,36,,,6,13,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/zelda/dattack.gif,https://i.fightcore.gg/beta/zelda/dattack.webm,https://i.fightcore.gg/png/zelda/dattack.png,False,1142
+Forward Tilt,ftilt,,,,37,37,,,12,14,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/zelda/ftilt.gif,https://i.fightcore.gg/beta/zelda/ftilt.webm,https://i.fightcore.gg/png/zelda/ftilt.png,False,1143
+Up Tilt,utilt,,,,43,40,,,10,24,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/zelda/utilt.gif,https://i.fightcore.gg/beta/zelda/utilt.webm,https://i.fightcore.gg/png/zelda/utilt.png,False,1144
+Down Tilt,dtilt,,,,31,30,,,5,7,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/zelda/dtilt.gif,https://i.fightcore.gg/beta/zelda/dtilt.webm,https://i.fightcore.gg/png/zelda/dtilt.png,False,1145
+Forward Smash,fsmash,,,,39,,,,16,24,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/zelda/fsmash.gif,https://i.fightcore.gg/beta/zelda/fsmash.webm,https://i.fightcore.gg/png/zelda/fsmash.png,False,1146
+Up Smash,usmash,,,,56,51,,,5,34,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/zelda/usmash.gif,https://i.fightcore.gg/beta/zelda/usmash.webm,https://i.fightcore.gg/png/zelda/usmash.png,False,1147
+Down Smash,dsmash,,,,39,32,,,4,16,Grounded,"front hit active frames 4-7, back hit frames 13-16",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/zelda/dsmash.gif,https://i.fightcore.gg/beta/zelda/dsmash.webm,https://i.fightcore.gg/png/zelda/dsmash.png,False,1148
+Neutral Air,nair,18,9,,49,42,6,37,6,31,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/zelda/nair.gif,https://i.fightcore.gg/beta/zelda/nair.webm,https://i.fightcore.gg/png/zelda/nair.png,False,1149
+Forward Air,fair,18,9,,39,36,8,24,8,11,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/zelda/fair.gif,https://i.fightcore.gg/beta/zelda/fair.webm,https://i.fightcore.gg/png/zelda/fair.png,False,1150
+Back Air,bair,18,9,,35,33,5,25,5,8,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/zelda/bair.gif,https://i.fightcore.gg/beta/zelda/bair.webm,https://i.fightcore.gg/png/zelda/bair.png,False,1151
+Up Air,uair,25,12,,54,,14,44,14,16,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/zelda/uair.gif,https://i.fightcore.gg/beta/zelda/uair.webm,https://i.fightcore.gg/png/zelda/uair.png,False,1152
+Down Air,dair,24,12,,43,43,1,39,14,17,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/zelda/dair.gif,https://i.fightcore.gg/beta/zelda/dair.webm,https://i.fightcore.gg/png/zelda/dair.png,False,1153
+Pummel,pummel,,,,0,,,,,,Throw,,,0,http://meleeframedata.com/,,,,False,1155
+Transform,downb,,,,69,,,,34,43,Special,"invulnerable frames 34-43, shiek comes out frame 44",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/zelda/downb.gif,https://i.fightcore.gg/beta/zelda/downb.webm,https://i.fightcore.gg/png/zelda/downb.png,False,1371
+Roll backwards,rollbackwards,,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/zelda/rollbackwards.gif,https://i.fightcore.gg/beta/zelda/rollbackwards.webm,https://i.fightcore.gg/png/zelda/rollbackwards.png,False,1439
+Spotdodge,spotdodge,,,,32,,,,3,20,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/zelda/spotdodge.gif,https://i.fightcore.gg/beta/zelda/spotdodge.webm,https://i.fightcore.gg/png/zelda/spotdodge.png,False,1440
+Airdodge,airdodge,,,,49,,,,4,19,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/zelda/airdodge.gif,https://i.fightcore.gg/beta/zelda/airdodge.webm,https://i.fightcore.gg/png/zelda/airdodge.png,False,1441
+Roll forwards,rollforward,,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/zelda/rollforward.gif,https://i.fightcore.gg/beta/zelda/rollforward.webm,https://i.fightcore.gg/png/zelda/rollforward.png,False,1449
+Jab 1,jab1,,,,29,27,,,11,15,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/zelda/jab1.gif,https://i.fightcore.gg/beta/zelda/jab1.webm,https://i.fightcore.gg/png/zelda/jab1.png,False,1531
+Din's Fire (Air),asideb,,,,77,,,,60,62,Special,"listed is the fastest din's fuire can be activated. can be detonated as late as frame 98. upon detonation, hitbox comes out frames 23-26. hitbox is larger the longer its charged",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/zelda/asideb.gif,https://i.fightcore.gg/beta/zelda/asideb.webm,https://i.fightcore.gg/png/zelda/asideb.png,False,1570
+Grab,grab,,,,30,,,,12,13,Throw,,,0,http://meleeframedata.com/,https://i.fightcore.gg/melee/moves/zelda/grab.gif,https://i.fightcore.gg/beta/zelda/grab.webm,,False,1617
+Dashgrab,dashgrab,,,,40,,,,12,13,Throw,,,0,http://meleeframedata.com/,https://i.fightcore.gg/melee/moves/zelda/dashgrab.gif,https://i.fightcore.gg/beta/zelda/dashgrab.webm,,False,1618
+Farores Wind (Air),aupb,30,,,114,,,,10,11,Special,invulnerable frames 33-53. aim at frame 33,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/zelda/aupb.gif,https://i.fightcore.gg/beta/zelda/aupb.webm,https://i.fightcore.gg/png/zelda/aupb.png,False,1662
+Tech-Roll Forward,ftechroll,,,,40,,,,,,Tech,"Horizontal Movement At: 8
 Distance: 16.6 ft
-Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1871
-Tech-Roll Backward,btechroll,,,40,,,,,,Unknown,"Horizontal Movement At: 9
+Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,https://i.fightcore.gg/beta/zelda/ftechroll.gif,https://i.fightcore.gg/beta/zelda/ftechroll.webm,https://i.fightcore.gg/png/zelda/ftechroll.png,False,1871
+Tech-Roll Backward,btechroll,,,,40,,,,,,Tech,"Horizontal Movement At: 9
 Distance: 16.6 ft
-Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1872
-Getup-Attack (Back),bgetup,,,49,,,,,,Unknown,"Hit: 17-19 (Behind), 25-27 (Front)
-Invincible: 1-27",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1873
-Getup-Attack (Stomach),fgetup,,,49,,,,,,Unknown,"Hit: 17-18 (Front), 25-26 (Behind)
-Invincible: 1-26",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1874
-Getup-Roll Forward (Back),fgetuprollback,,,35,,,,,,Unknown,"Horizontal Movement At: 12
+Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,https://i.fightcore.gg/beta/zelda/btechroll.gif,https://i.fightcore.gg/beta/zelda/btechroll.webm,https://i.fightcore.gg/png/zelda/btechroll.png,False,1872
+Getup-Attack (Back),bgetup,,,,49,,,,,,Tech,"Hit: 17-19 (Behind), 25-27 (Front)
+Invincible: 1-27",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1873
+Getup-Attack (Stomach),fgetup,,,,49,,,,,,Tech,"Hit: 17-18 (Front), 25-26 (Behind)
+Invincible: 1-26",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1874
+Getup-Roll Forward (Back),fgetuprollback,,,,35,,,,,,Tech,"Horizontal Movement At: 12
 Distance: 14.4 ft
-Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1875
-Getup-Roll Forward (Stomach),fgetuprollstomach,,,35,,,,,,Unknown,"Horizontal Movement At: 12
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1875
+Getup-Roll Forward (Stomach),fgetuprollstomach,,,,35,,,,,,Tech,"Horizontal Movement At: 12
 Distance: 14.4 ft
-Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1876
-Getup-Roll Backward (Back),bgetuprollback,,,35,,,,,,Unknown,"Horizontal Movement At: 10
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1876
+Getup-Roll Backward (Back),bgetuprollback,,,,35,,,,,,Tech,"Horizontal Movement At: 10
 Distance: 14.4 ft
-Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1877
-Getup-Roll Backward (Stomach),bgetuprollstomach,,,35,,,,,,Unknown,"Horizontal Movement At: 3
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1877
+Getup-Roll Backward (Stomach),bgetuprollstomach,,,,35,,,,,,Tech,"Horizontal Movement At: 3
 Distance: 15.6 ft
-Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1878
-Tech-Neutral,neutraltech,,,26,,,,,,Unknown,Invincible: 1-20,,0,http://meleeframedata.com/,1904
-Tech-Wall,walltech,,,31,6,,,,,Unknown,"Invincible: 1-14
-Input an upwards direction anywhere on 1-4 for walljump tech on 6)",,0,http://meleeframedata.com/,1930
-Tech-Wall Jump,walltechjump,,,40,1,,,,,Unknown,,,0,http://meleeframedata.com/,1956
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1878
+Tech-Neutral,neutraltech,,,,26,,,,,,Tech,Invincible: 1-20,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/zelda/neutraltech.gif,https://i.fightcore.gg/beta/zelda/neutraltech.webm,https://i.fightcore.gg/png/zelda/neutraltech.png,False,1904
+Tech-Wall,walltech,,,,31,6,,,,,Tech,"Invincible: 1-14
+Input an upwards direction anywhere on 1-4 for walljump tech on 6)",,0,http://meleeframedata.com/,,,,False,1930
+Tech-Wall Jump,walltechjump,,,,40,1,,,,,Tech,,,0,http://meleeframedata.com/,,,,False,1956
+Transform (Air),adownb,,,,69,,,,34,43,Special,"invulnerable frames 34-43, shiek comes out frame 44",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/zelda/adownb.gif,https://i.fightcore.gg/beta/zelda/adownb.webm,https://i.fightcore.gg/png/zelda/adownb.png,True,2037
+Forward Tilt (Up),uaft,,,,37,37,,,12,14,Tilt,,,0,,https://i.fightcore.gg/beta/zelda/uaft.gif,https://i.fightcore.gg/beta/zelda/uaft.webm,https://i.fightcore.gg/png/zelda/uaft.png,False,2044
+Forward Tilt (Down),daft,,,,37,37,,,12,14,Tilt,,,0,,https://i.fightcore.gg/beta/zelda/daft.gif,https://i.fightcore.gg/beta/zelda/daft.webm,https://i.fightcore.gg/png/zelda/daft.png,False,2050

@@ -1,64 +1,64 @@
-Name,NormalizedName,LandLag,LCanceledLandLag,TotalFrames,IASA,AutoCancelBefore,AutoCancelAfter,Start,End,Type,Notes,Percent,CharacterId,Source,Id
-Whirling Fortress,upb,,,79,,,,5,46,Special,invincible frames 1-4,,0,http://meleeframedata.com/,1201
-Bowser Bomb,downb,,,106,,,,42,47,Special,data assumes down b lands on same height platform it started,,0,http://meleeframedata.com/,1202
-Fire Breath,neutralb,,,92,,,,23,62,Special,frames listed are the minimum anmount of frames move will be active (if you quickly tab b),,0,http://meleeframedata.com/,1203
-Dashattack,dattack,,,59,56,,,10,17,Grounded,weak hit frames 14-17,,0,http://meleeframedata.com/,1205
-Forward Tilt,ftilt,,,47,37,,,12,16,Tilt,,,0,http://meleeframedata.com/,1206
-Up Tilt,utilt,,,54,50,,,7,10,Tilt,,,0,http://meleeframedata.com/,1207
-Down Tilt,dtilt,,,59,55,,,14,31,Tilt,"weak hitbox frames 27-31, strong hitbox frames 14-18",,0,http://meleeframedata.com/,1208
-Forward Smash,fsmash,,,69,66,,,29,33,Grounded,,,0,http://meleeframedata.com/,1209
-Up Smash,usmash,,,59,53,,,16,30,Grounded,"strong hit frames 16-21, can also do 17% damage. weak hit frame 30 and has 7 frames shield stun",,0,http://meleeframedata.com/,1210
-Down Smash,dsmash,,,69,68,,,14,35,Grounded,7 weak hits followed by strong hit at frame 35,,0,http://meleeframedata.com/,1211
-Neutral Air,nair,15,7,49,48,8,39,8,23,Air,,,0,http://meleeframedata.com/,1212
-Forward Air,fair,30,15,45,42,9,30,8,11,Air,,,0,http://meleeframedata.com/,1213
-Back Air,bair,35,17,49,,9,44,9,17,Air,weak hit frames 11-17,,0,http://meleeframedata.com/,1214
-Up Air,uair,30,15,47,45,10,39,22,25,Air,,,0,http://meleeframedata.com/,1215
-Down Air,dair,40,20,79,78,14,69,14,42,Air,"10 hits, 2 frames each",,0,http://meleeframedata.com/,1216
-Koopa Klaw,sideb,,,59,,,,16,18,Special,"scratch can do 12, 10, or 8% damage. when grabbed, ""bite"" does 4%, forward throw does 13%, and back throw does 9%",,0,http://meleeframedata.com/,1218
-Edge attack,edge,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1219
-unknown,unknown,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1220
-Pummel,pummel,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1241
-Back throw,bthrow,,,39,,,,0,0,Throw,,,0,http://meleeframedata.com/,1242
-Forward throw,fthrow,,,59,,,,0,0,Throw,,,0,http://meleeframedata.com/,1261
-Up throw,uthrow,,,43,,,,11,28,Throw,,,0,http://meleeframedata.com/,1264
-Down throw,dthrow,,,39,,,,0,0,Throw,,,0,http://meleeframedata.com/,1265
-Roll backwards,rollbackwards,,,39,,,,4,19,Dodge,,,0,http://meleeframedata.com/,1442
-Roll forwards,rollforward,,,39,,,,4,19,Dodge,,,0,http://meleeframedata.com/,1443
-Spotdodge,spotdodge,,,42,,,,4,24,Dodge,,,0,http://meleeframedata.com/,1444
-Airdodge,airdodge,,,49,,,,2,,Dodge,,,0,http://meleeframedata.com/,1445
-Jab 1,jab1,,,24,21,,,7,9,Grounded,,,0,http://meleeframedata.com/,1532
-Jab 2,jab2,,,29,26,,,8,10,Grounded,,,0,http://meleeframedata.com/,1533
-Koopa Klaw (Air),asideb,,,59,,,,16,18,Special,"scratch can do 12, 10, or 8% damage. when grabbed, bite does 4%, forward throw does 13%, and back throw does 9%",,0,http://meleeframedata.com/,1536
-Bowser Bomb (Air),adownb,,,0,,,,32,0,Special,"active until landing, then 60 frames of endlag",,0,http://meleeframedata.com/,1537
-Whirling Fortress (Air),aupb,,,49,,,,5,46,Special,can also do 3% damage. all hitboxes connecting will result in 29% damage. able to grab edge 13 frames before freefall if started in the air,,0,http://meleeframedata.com/,1538
-Fire Breath (Air),aneutralb,,,92,,,,23,62,Special,frames listed are the minimum anmount of frames move will be active (if you quickly tab b),,0,http://meleeframedata.com/,1539
-Grab,grab,,,40,,,,9,10,Unknown,,,0,http://meleeframedata.com/,1619
-Dashgrab,dashgrab,,,50,,,,10,12,Unknown,,,0,http://meleeframedata.com/,1620
-Forward Tilt (Up),uaft,,,47,37,,,12,16,Tilt,,,0,http://meleeframedata.com/,1636
-Forward Tilt (Down),daft,,,47,37,,,12,16,Tilt,,,0,http://meleeframedata.com/,1637
-Tech-Roll Forward,ftechroll,,,40,,,,,,Unknown,"Horizontal Movement At: 14
+Name,NormalizedName,LandLag,LCanceledLandLag,LandingFallSpecialLag,TotalFrames,IASA,AutoCancelBefore,AutoCancelAfter,Start,End,Type,Notes,Percent,CharacterId,Source,GifUrl,WebmUrl,PngUrl,IsInterpolated,Id
+Whirling Fortress,upb,,,,79,,,,5,46,Special,invincible frames 1-4,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/bowser/upb.gif,https://i.fightcore.gg/beta/bowser/upb.webm,https://i.fightcore.gg/png/bowser/upb.png,False,1201
+Bowser Bomb,downb,,,,106,,,,42,47,Special,data assumes down b lands on same height platform it started,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/bowser/downb.gif,https://i.fightcore.gg/beta/bowser/downb.webm,https://i.fightcore.gg/png/bowser/downb.png,False,1202
+Fire Breath,neutralb,,,,92,,,,23,62,Special,frames listed are the minimum amount of frames move will be active (if you quickly tab b),,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/bowser/neutralb.gif,https://i.fightcore.gg/beta/bowser/neutralb.webm,https://i.fightcore.gg/png/bowser/neutralb.png,False,1203
+Dashattack,dattack,,,,59,56,,,10,17,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/bowser/dattack.gif,https://i.fightcore.gg/beta/bowser/dattack.webm,https://i.fightcore.gg/png/bowser/dattack.png,False,1205
+Forward Tilt,ftilt,,,,47,37,,,12,16,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/bowser/ftilt.gif,https://i.fightcore.gg/beta/bowser/ftilt.webm,https://i.fightcore.gg/png/bowser/ftilt.png,False,1206
+Up Tilt,utilt,,,,54,50,,,7,10,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/bowser/utilt.gif,https://i.fightcore.gg/beta/bowser/utilt.webm,https://i.fightcore.gg/png/bowser/utilt.png,False,1207
+Down Tilt,dtilt,,,,59,55,,,14,31,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/bowser/dtilt.gif,https://i.fightcore.gg/beta/bowser/dtilt.webm,https://i.fightcore.gg/png/bowser/dtilt.png,False,1208
+Forward Smash,fsmash,,,,69,66,,,29,33,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/bowser/fsmash.gif,https://i.fightcore.gg/beta/bowser/fsmash.webm,https://i.fightcore.gg/png/bowser/fsmash.png,False,1209
+Up Smash,usmash,,,,59,53,,,16,30,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/bowser/usmash.gif,https://i.fightcore.gg/beta/bowser/usmash.webm,https://i.fightcore.gg/png/bowser/usmash.png,False,1210
+Down Smash,dsmash,,,,69,68,,,14,32,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/bowser/dsmash.gif,https://i.fightcore.gg/beta/bowser/dsmash.webm,https://i.fightcore.gg/png/bowser/dsmash.png,False,1211
+Neutral Air,nair,15,7,,49,48,8,39,8,23,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/bowser/nair.gif,https://i.fightcore.gg/beta/bowser/nair.webm,https://i.fightcore.gg/png/bowser/nair.png,False,1212
+Forward Air,fair,30,15,,45,42,9,30,8,11,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/bowser/fair.gif,https://i.fightcore.gg/beta/bowser/fair.webm,https://i.fightcore.gg/png/bowser/fair.png,False,1213
+Back Air,bair,35,17,,49,,9,44,9,17,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/bowser/bair.gif,https://i.fightcore.gg/beta/bowser/bair.webm,https://i.fightcore.gg/png/bowser/bair.png,False,1214
+Up Air,uair,30,15,,47,45,10,39,22,25,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/bowser/uair.gif,https://i.fightcore.gg/beta/bowser/uair.webm,https://i.fightcore.gg/png/bowser/uair.png,False,1215
+Down Air,dair,40,20,,79,78,14,69,14,39,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/bowser/dair.gif,https://i.fightcore.gg/beta/bowser/dair.webm,https://i.fightcore.gg/png/bowser/dair.png,False,1216
+Koopa Klaw,sideb,,,,59,,,,16,18,Special,"scratch can do 12, 10, or 8% damage. when grabbed, ""bite"" does 4%, forward throw does 13%, and back throw does 9%",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/bowser/sideb.gif,https://i.fightcore.gg/beta/bowser/sideb.webm,https://i.fightcore.gg/png/bowser/sideb.png,False,1218
+Edge attack,edge,,,,0,,,,,,EdgeAttack,,,0,http://meleeframedata.com/,,,,False,1219
+unknown,unknown,,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,,,,False,1220
+Pummel,pummel,,,,0,,,,,,Throw,,,0,http://meleeframedata.com/,,,,False,1241
+Back throw,bthrow,,,,39,,,,0,0,Throw,,,0,http://meleeframedata.com/,,,,False,1242
+Forward throw,fthrow,,,,59,,,,0,0,Throw,,,0,http://meleeframedata.com/,,,,False,1261
+Up throw,uthrow,,,,43,,,,11,28,Throw,,,0,http://meleeframedata.com/,,,,False,1264
+Down throw,dthrow,,,,39,,,,0,0,Throw,,,0,http://meleeframedata.com/,,,,False,1265
+Roll backwards,rollbackwards,,,,39,,,,4,19,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/bowser/rollbackwards.gif,https://i.fightcore.gg/beta/bowser/rollbackwards.webm,https://i.fightcore.gg/png/bowser/rollbackwards.png,False,1442
+Roll forwards,rollforward,,,,39,,,,4,19,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/bowser/rollforward.gif,https://i.fightcore.gg/beta/bowser/rollforward.webm,https://i.fightcore.gg/png/bowser/rollforward.png,False,1443
+Spotdodge,spotdodge,,,,42,,,,4,24,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/bowser/spotdodge.gif,https://i.fightcore.gg/beta/bowser/spotdodge.webm,https://i.fightcore.gg/png/bowser/spotdodge.png,False,1444
+Airdodge,airdodge,,,,49,,,,2,,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/bowser/airdodge.gif,https://i.fightcore.gg/beta/bowser/airdodge.webm,https://i.fightcore.gg/png/bowser/airdodge.png,False,1445
+Jab 1,jab1,,,,24,21,,,7,9,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/bowser/jab1.gif,https://i.fightcore.gg/beta/bowser/jab1.webm,https://i.fightcore.gg/png/bowser/jab1.png,False,1532
+Jab 2,jab2,,,,29,26,,,8,10,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/bowser/jab2.gif,https://i.fightcore.gg/beta/bowser/jab2.webm,https://i.fightcore.gg/png/bowser/jab2.png,False,1533
+Koopa Klaw (Air),asideb,,,,59,,,,16,18,Special,"scratch can do 12, 10, or 8% damage. when grabbed, bite does 4%, forward throw does 13%, and back throw does 9%",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/bowser/asideb.gif,https://i.fightcore.gg/beta/bowser/asideb.webm,https://i.fightcore.gg/png/bowser/asideb.png,False,1536
+Bowser Bomb (Air),adownb,,,,0,,,,32,0,Special,"active until landing, then 60 frames of endlag",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/bowser/adownb.gif,https://i.fightcore.gg/beta/bowser/adownb.webm,https://i.fightcore.gg/png/bowser/adownb.png,False,1537
+Whirling Fortress (Air),aupb,,,,49,,,,5,46,Special,can also do 3% damage. all hitboxes connecting will result in 29% damage. able to grab edge 13 frames before freefall if started in the air,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/bowser/aupb.gif,https://i.fightcore.gg/beta/bowser/aupb.webm,https://i.fightcore.gg/png/bowser/aupb.png,False,1538
+Fire Breath (Air),aneutralb,,,,92,,,,23,62,Special,frames listed are the minimum anmount of frames move will be active (if you quickly tab b),,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/bowser/aneutralb.gif,https://i.fightcore.gg/beta/bowser/aneutralb.webm,https://i.fightcore.gg/png/bowser/aneutralb.png,False,1539
+Grab,grab,,,,40,,,,9,10,Throw,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/bowser/grab.gif,https://i.fightcore.gg/beta/bowser/grab.webm,https://i.fightcore.gg/png/bowser/grab.png,False,1619
+Dashgrab,dashgrab,,,,50,,,,10,12,Throw,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/bowser/dashgrab.gif,https://i.fightcore.gg/beta/bowser/dashgrab.webm,https://i.fightcore.gg/png/bowser/dashgrab.png,False,1620
+Forward Tilt (Up),uaft,,,,47,37,,,12,16,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/bowser/uaft.gif,https://i.fightcore.gg/beta/bowser/uaft.webm,https://i.fightcore.gg/png/bowser/uaft.png,False,1636
+Forward Tilt (Down),daft,,,,47,37,,,12,16,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/bowser/daft.gif,https://i.fightcore.gg/beta/bowser/daft.webm,https://i.fightcore.gg/png/bowser/daft.png,False,1637
+Tech-Roll Forward,ftechroll,,,,40,,,,,,Tech,"Horizontal Movement At: 14
 Distance: 13.8 ft
-Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1671
-Tech-Roll Backward,btechroll,,,40,,,,,,Unknown,"Horizontal Movement At: 8
+Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,https://i.fightcore.gg/beta/bowser/ftechroll.gif,https://i.fightcore.gg/beta/bowser/ftechroll.webm,https://i.fightcore.gg/png/bowser/ftechroll.png,False,1671
+Tech-Roll Backward,btechroll,,,,40,,,,,,Tech,"Horizontal Movement At: 8
 Distance: 13.6 ft
-Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1672
-Getup-Attack (Back),bgetup,,,49,,,,,,Unknown,"Hit: 18-19 (Behind), 25-26 (Front)
-Invincible: 1-26",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1673
-Getup-Attack (Stomach),fgetup,,,49,,,,,,Unknown,"Hit: 10-11 (Front), 26-27 (Behind)
-Invincible: 1-27",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1674
-Getup-Roll Forward (Back),fgetuprollback,,,35,,,,,,Unknown,"Horizontal Movement At: 16
+Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,https://i.fightcore.gg/beta/bowser/btechroll.gif,https://i.fightcore.gg/beta/bowser/btechroll.webm,https://i.fightcore.gg/png/bowser/btechroll.png,False,1672
+Getup-Attack (Back),bgetup,,,,49,,,,,,Tech,"Hit: 18-19 (Behind), 25-26 (Front)
+Invincible: 1-26",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1673
+Getup-Attack (Stomach),fgetup,,,,49,,,,,,Tech,"Hit: 10-11 (Front), 26-27 (Behind)
+Invincible: 1-27",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1674
+Getup-Roll Forward (Back),fgetuprollback,,,,35,,,,,,Tech,"Horizontal Movement At: 16
 Distance: 14.2 ft
-Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1675
-Getup-Roll Forward (Stomach),fgetuprollstomach,,,35,,,,,,Unknown,"Horizontal Movement At: 13
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1675
+Getup-Roll Forward (Stomach),fgetuprollstomach,,,,35,,,,,,Tech,"Horizontal Movement At: 13
 Distance: 9.4 ft
-Invincible: 1-27",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1676
-Getup-Roll Backward (Back),bgetuprollback,,,35,,,,,,Unknown,"Horizontal Movement At: 12
+Invincible: 1-27",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1676
+Getup-Roll Backward (Back),bgetuprollback,,,,35,,,,,,Tech,"Horizontal Movement At: 12
 Distance: 13.4 ft
-Invincible: 1-27 (If the roll takes you to an edge you will slip off unless an attack is timed on that exact frame)",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1677
-Getup-Roll Backward (Stomach),bgetuprollstomach,,,35,,,,,,Unknown,"Horizontal Movement At: 10
+Invincible: 1-27 (If the roll takes you to an edge you will slip off unless an attack is timed on that exact frame)",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1677
+Getup-Roll Backward (Stomach),bgetuprollstomach,,,,35,,,,,,Tech,"Horizontal Movement At: 10
 Distance: 9.4 ft
-Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1678
-Tech-Neutral,neutraltech,,,26,,,,,,Unknown,Invincible: 1-20,,0,http://meleeframedata.com/,1886
-Tech-Wall,walltech,,,31,6,,,,,Unknown,"Invincible: 1-14
-Input an upwards direction anywhere on 1-4 for walljump tech on 6)",,0,http://meleeframedata.com/,1912
-Tech-Wall Jump,walltechjump,,,40,1,,,,,Unknown,,,0,http://meleeframedata.com/,1938
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1678
+Tech-Neutral,neutraltech,,,,26,,,,,,Tech,Invincible: 1-20,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/bowser/neutraltech.gif,https://i.fightcore.gg/beta/bowser/neutraltech.webm,https://i.fightcore.gg/png/bowser/neutraltech.png,False,1886
+Tech-Wall,walltech,,,,31,6,,,,,Tech,"Invincible: 1-14
+Input an upwards direction anywhere on 1-4 for walljump tech on 6)",,0,http://meleeframedata.com/,,,,False,1912
+Tech-Wall Jump,walltechjump,,,,40,1,,,,,Tech,,,0,http://meleeframedata.com/,,,,False,1938

@@ -1,61 +1,64 @@
-Name,NormalizedName,LandLag,LCanceledLandLag,TotalFrames,IASA,AutoCancelBefore,AutoCancelAfter,Start,End,Type,Notes,Percent,CharacterId,Source,Id
-Down Tilt,dtilt,,,29,28,,,7,9,Tilt,,,0,http://meleeframedata.com/,1327
-Forward Smash,fsmash,,,39,,,,12,21,Grounded,weak hit frame 17-21,,0,http://meleeframedata.com/,1328
-Up Smash,usmash,,,43,,,,7,15,Grounded,strong hit frame 7-10,,0,http://meleeframedata.com/,1329
-Down Smash,dsmash,,,49,46,,,6,10,Grounded,,,0,http://meleeframedata.com/,1330
-Neutral Air,nair,15,7,49,42,4,36,4,31,Air,strong hit frame 4-7,,0,http://meleeframedata.com/,1331
-Forward Air,fair,22,11,59,53,6,48,6,45,Air," 5 hits, 2 frames each, with average 7 frames between them. % damage in descending order",,0,http://meleeframedata.com/,1332
-Back Air,bair,20,10,39,38,4,22,4,19,Air,strong hit frame 4-7,,0,http://meleeframedata.com/,1333
-Up Air,uair,18,9,39,36,8,25,8,14,Air,strong hit frame 11-14,,0,http://meleeframedata.com/,1334
-Down Air,dair,18,9,49,,5,29,5,24,Air,weak hit frames 15-24,,0,http://meleeframedata.com/,1335
-Edge attack,edge,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1337
-Pummel,pummel,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1338
-Forward throw,fthrow,,,33,,,,10,10,Throw,,,0,http://meleeframedata.com/,1339
-Back throw,bthrow,,,38,,,,15,21,Throw,,,0,http://meleeframedata.com/,1340
-Up throw,uthrow,,,38,,,,18,24,Throw,,,0,http://meleeframedata.com/,1341
-Down throw,dthrow,,,43,,,,23,31,Throw,,,0,http://meleeframedata.com/,1342
-Up Tilt,utilt,,,23,23,,,5,11,Tilt,,,0,http://meleeframedata.com/,1344
-Forward Tilt,ftilt,,,26,,,,5,9,Tilt,all angles have the same stats,,0,http://meleeframedata.com/,1346
-Fire Bird,upb,6,,84,,,,43,64,Special,"grabs edge starting at frame 16 (before moving), grabs edges during moving part as early as frame 65",,0,http://meleeframedata.com/,1361
-Reflector,downb,,,3,,,,1,1,Special,"able to be jump cancelled frames 4-21. reflects frames 4 to release+1. when landed, falco is in 5 frames of hitlag. normally has 19 frames endlag",,0,http://meleeframedata.com/,1362
-Blaster,neutralb,,,57,,,,23,122,Special,repeating shots come out every 24 frames. lasers last 99 frames,,0,http://meleeframedata.com/,1363
-Falco Phantasm,sideb,,,59,,,,18,21,Special,"shorten frames: 16-17 for shortest, 18 for middle, 19 for longest",,0,http://meleeframedata.com/,1364
-Dashattack,dattack,,,39,36,,,4,17,Grounded,strong hit frame 4-7,,0,http://meleeframedata.com/,1365
-Roll forwards,rollforward,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,1463
-Roll backwards,rollbackwards,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,1464
-Spotdodge,spotdodge,,,22,,,,2,15,Dodge,,,0,http://meleeframedata.com/,1465
-Airdodge,airdodge,,,49,,,,0,,Dodge,,,0,http://meleeframedata.com/,1466
-Jab 1,jab1,,,17,16,,,2,3,Grounded,,,0,http://meleeframedata.com/,1483
-Jab 2,jab2,,,19,18,,,2,3,Grounded,,,0,http://meleeframedata.com/,1484
-Falco Phantasm (Air),asideb,20,,59,,,,18,21,Special,"shorten frames: 16-17 for shortest, 18 for middle, 19 for longest",,0,http://meleeframedata.com/,1550
-Fire Bird (Air),aupb,6,,84,,,,43,64,Special,"grabs edge starting at frame 16 (before moving), grabs edges during moving part as early as frame 65",,0,http://meleeframedata.com/,1551
-Blaster (Air),aneutralb,0,,42,,,,13,112,Special,auto cancels upon landing,,0,http://meleeframedata.com/,1552
-Grab,grab,,,30,,,,7,8,Unknown,,,0,http://meleeframedata.com/,1577
-Dashgrab,dashgrab,,,40,,,,12,13,Unknown,,,0,http://meleeframedata.com/,1578
-Rapid Jabs,rjab,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1627
-Tech-Roll Forward,ftechroll,,,40,,,,,,Unknown,"Horizontal Movement At: 9
+Name,NormalizedName,LandLag,LCanceledLandLag,LandingFallSpecialLag,TotalFrames,IASA,AutoCancelBefore,AutoCancelAfter,Start,End,Type,Notes,Percent,CharacterId,Source,GifUrl,WebmUrl,PngUrl,IsInterpolated,Id
+Down Tilt,dtilt,,,,29,28,,,7,9,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/falco/dtilt.gif,https://i.fightcore.gg/beta/falco/dtilt.webm,https://i.fightcore.gg/png/falco/dtilt.png,False,1327
+Forward Smash,fsmash,,,,39,,,,12,21,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/falco/fsmash.gif,https://i.fightcore.gg/beta/falco/fsmash.webm,https://i.fightcore.gg/png/falco/fsmash.png,False,1328
+Up Smash,usmash,,,,43,,,,7,15,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/falco/usmash.gif,https://i.fightcore.gg/beta/falco/usmash.webm,https://i.fightcore.gg/png/falco/usmash.png,False,1329
+Down Smash,dsmash,,,,49,46,,,6,10,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/falco/dsmash.gif,https://i.fightcore.gg/beta/falco/dsmash.webm,https://i.fightcore.gg/png/falco/dsmash.png,False,1330
+Neutral Air,nair,15,7,,49,42,4,36,4,31,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/falco/nair.gif,https://i.fightcore.gg/beta/falco/nair.webm,https://i.fightcore.gg/png/falco/nair.png,False,1331
+Forward Air,fair,22,11,,59,53,6,48,6,45,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/falco/fair.gif,https://i.fightcore.gg/beta/falco/fair.webm,https://i.fightcore.gg/png/falco/fair.png,False,1332
+Back Air,bair,20,10,,39,38,4,22,4,19,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/falco/bair.gif,https://i.fightcore.gg/beta/falco/bair.webm,https://i.fightcore.gg/png/falco/bair.png,False,1333
+Up Air,uair,18,9,,39,36,8,25,8,14,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/falco/uair.gif,https://i.fightcore.gg/beta/falco/uair.webm,https://i.fightcore.gg/png/falco/uair.png,False,1334
+Down Air,dair,18,9,,49,,5,29,5,24,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/falco/dair.gif,https://i.fightcore.gg/beta/falco/dair.webm,https://i.fightcore.gg/png/falco/dair.png,False,1335
+Edge attack,edge,,,,0,,,,,,EdgeAttack,,,0,http://meleeframedata.com/,,,,False,1337
+Pummel,pummel,,,,0,,,,,,Throw,,,0,http://meleeframedata.com/,,,,False,1338
+Forward throw,fthrow,,,,33,,,,10,10,Throw,,,0,http://meleeframedata.com/,,,,False,1339
+Back throw,bthrow,,,,38,,,,15,21,Throw,,,0,http://meleeframedata.com/,,,,False,1340
+Up throw,uthrow,,,,38,,,,18,24,Throw,,,0,http://meleeframedata.com/,,,,False,1341
+Down throw,dthrow,,,,43,,,,23,31,Throw,,,0,http://meleeframedata.com/,,,,False,1342
+Up Tilt,utilt,,,,23,23,,,5,11,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/falco/utilt.gif,https://i.fightcore.gg/beta/falco/utilt.webm,https://i.fightcore.gg/png/falco/utilt.png,False,1344
+Forward Tilt,ftilt,,,,26,,,,5,9,Tilt,all angles have the same stats,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/falco/ftilt.gif,https://i.fightcore.gg/beta/falco/ftilt.webm,https://i.fightcore.gg/png/falco/ftilt.png,False,1346
+Fire Bird,upb,6,,,84,,,,43,64,Special,"grabs edge starting at frame 16 (before moving), grabs edges during moving part as early as frame 65",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/falco/upb.gif,https://i.fightcore.gg/beta/falco/upb.webm,https://i.fightcore.gg/png/falco/upb.png,False,1361
+Reflector,downb,,,,3,,,,1,1,Special,"able to be jump cancelled frames 4-21. reflects frames 4 to release+1. when landed, falco is in 5 frames of hitlag. normally has 19 frames endlag",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/falco/downb.gif,https://i.fightcore.gg/beta/falco/downb.webm,https://i.fightcore.gg/png/falco/downb.png,False,1362
+Blaster,neutralb,,,,57,,,,23,122,Special,repeating shots come out every 24 frames. lasers last 99 frames,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/falco/neutralb.gif,https://i.fightcore.gg/beta/falco/neutralb.webm,https://i.fightcore.gg/png/falco/neutralb.png,False,1363
+Falco Phantasm,sideb,,,,59,,,,18,21,Special,"shorten frames: 16-17 for shortest, 18 for middle, 19 for longest",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/falco/sideb.gif,https://i.fightcore.gg/beta/falco/sideb.webm,https://i.fightcore.gg/png/falco/sideb.png,False,1364
+Dashattack,dattack,,,,39,36,,,4,17,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/falco/dattack.gif,https://i.fightcore.gg/beta/falco/dattack.webm,https://i.fightcore.gg/png/falco/dattack.png,False,1365
+Roll forwards,rollforward,,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/falco/rollforward.gif,https://i.fightcore.gg/beta/falco/rollforward.webm,https://i.fightcore.gg/png/falco/rollforward.png,False,1463
+Roll backwards,rollbackwards,,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/falco/rollbackwards.gif,https://i.fightcore.gg/beta/falco/rollbackwards.webm,https://i.fightcore.gg/png/falco/rollbackwards.png,False,1464
+Spotdodge,spotdodge,,,,22,,,,2,15,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/falco/spotdodge.gif,https://i.fightcore.gg/beta/falco/spotdodge.webm,https://i.fightcore.gg/png/falco/spotdodge.png,False,1465
+Airdodge,airdodge,,,,49,,,,0,,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/falco/airdodge.gif,https://i.fightcore.gg/beta/falco/airdodge.webm,https://i.fightcore.gg/png/falco/airdodge.png,False,1466
+Jab 1,jab1,,,,17,16,,,2,3,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/falco/jab1.gif,https://i.fightcore.gg/beta/falco/jab1.webm,https://i.fightcore.gg/png/falco/jab1.png,False,1483
+Jab 2,jab2,,,,19,18,,,2,3,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/falco/jab2.gif,https://i.fightcore.gg/beta/falco/jab2.webm,https://i.fightcore.gg/png/falco/jab2.png,False,1484
+Falco Phantasm (Air),asideb,20,,,59,,,,18,21,Special,"shorten frames: 16-17 for shortest, 18 for middle, 19 for longest",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/falco/asideb.gif,https://i.fightcore.gg/beta/falco/asideb.webm,https://i.fightcore.gg/png/falco/asideb.png,False,1550
+Fire Bird (Air),aupb,6,,,84,,,,43,64,Special,"grabs edge starting at frame 16 (before moving), grabs edges during moving part as early as frame 65",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/falco/aupb.gif,https://i.fightcore.gg/beta/falco/aupb.webm,https://i.fightcore.gg/png/falco/aupb.png,False,1551
+Blaster (Air),aneutralb,0,,,42,,,,13,112,Special,auto cancels upon landing,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/falco/aneutralb.gif,https://i.fightcore.gg/beta/falco/aneutralb.webm,https://i.fightcore.gg/png/falco/aneutralb.png,False,1552
+Grab,grab,,,,30,,,,7,8,Throw,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/falco/grab.gif,https://i.fightcore.gg/beta/falco/grab.webm,https://i.fightcore.gg/png/falco/grab.png,False,1577
+Dashgrab,dashgrab,,,,40,,,,12,13,Throw,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/falco/dashgrab.gif,https://i.fightcore.gg/beta/falco/dashgrab.webm,https://i.fightcore.gg/png/falco/dashgrab.png,False,1578
+Rapid Jabs,rjab,,,,0,,,,,,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/falco/rjab.gif,https://i.fightcore.gg/beta/falco/rjab.webm,https://i.fightcore.gg/png/falco/rjab.png,False,1627
+Tech-Roll Forward,ftechroll,,,,40,,,,,,Tech,"Horizontal Movement At: 9
 Distance: 14.4 ft
-Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1703
-Tech-Roll Backward,btechroll,,,40,,,,,,Unknown,"Horizontal Movement At: 6
+Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,https://i.fightcore.gg/beta/falco/ftechroll.gif,https://i.fightcore.gg/beta/falco/ftechroll.webm,https://i.fightcore.gg/png/falco/ftechroll.png,False,1703
+Tech-Roll Backward,btechroll,,,,40,,,,,,Tech,"Horizontal Movement At: 6
 Distance: 14.4 ft
-Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1704
-Getup-Attack (Back),bgetup,,,49,,,,,,Unknown,"Hit: 17-19 (Front), 24-26 (Behind)
-Invincible: 1-26",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1705
-Getup-Attack (Stomach),fgetup,,,49,,,,,,Unknown,"Hit: 19-20 (Behind), 25-26 (Front)
-Invincible: 1-26",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1706
-Getup-Roll Forward (Back),fgetuprollback,,,35,,,,,,Unknown,"Horizontal Movement At: 6
+Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,https://i.fightcore.gg/beta/falco/btechroll.gif,https://i.fightcore.gg/beta/falco/btechroll.webm,https://i.fightcore.gg/png/falco/btechroll.png,False,1704
+Getup-Attack (Back),bgetup,,,,49,,,,,,Tech,"Hit: 17-19 (Front), 24-26 (Behind)
+Invincible: 1-26",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1705
+Getup-Attack (Stomach),fgetup,,,,49,,,,,,Tech,"Hit: 19-20 (Behind), 25-26 (Front)
+Invincible: 1-26",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1706
+Getup-Roll Forward (Back),fgetuprollback,,,,35,,,,,,Tech,"Horizontal Movement At: 6
 Distance: 12.4 ft
-Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1707
-Getup-Roll Forward (Stomach),fgetuprollstomach,,,35,,,,,,Unknown,"Horizontal Movement At: 8
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1707
+Getup-Roll Forward (Stomach),fgetuprollstomach,,,,35,,,,,,Tech,"Horizontal Movement At: 8
 Distance: 12.6 ft
-Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1708
-Getup-Roll Backward (Back),bgetuprollback,,,35,,,,,,Unknown,"Horizontal Movement At: 12
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1708
+Getup-Roll Backward (Back),bgetuprollback,,,,35,,,,,,Tech,"Horizontal Movement At: 12
 Distance: 12.8 ft
-Invincible: 12-29 (Not a typo. If the roll takes you to an edge you will slip off unless an attack is timed on that exact frame)",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1709
-Getup-Roll Backward (Stomach),bgetuprollstomach,,,35,,,,,,Unknown,"Horizontal Movement At: 5
+Invincible: 12-29 (Not a typo. If the roll takes you to an edge you will slip off unless an attack is timed on that exact frame)",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1709
+Getup-Roll Backward (Stomach),bgetuprollstomach,,,,35,,,,,,Tech,"Horizontal Movement At: 5
 Distance: 12.6 ft
-Invincible: 1-24",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1710
-Tech-Neutral,neutraltech,,,26,,,,,,Unknown,Invincible: 1-20,,0,http://meleeframedata.com/,1902
-Tech-Wall,walltech,,,31,6,,,,,Unknown,"Invincible: 1-14
-Input an upwards direction anywhere on 1-4 for walljump tech on 6)",,0,http://meleeframedata.com/,1928
-Tech-Wall Jump,walltechjump,,,40,1,,,,,Unknown,,,0,http://meleeframedata.com/,1954
+Invincible: 1-24",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1710
+Tech-Neutral,neutraltech,,,,26,,,,,,Tech,Invincible: 1-20,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/falco/neutraltech.gif,https://i.fightcore.gg/beta/falco/neutraltech.webm,https://i.fightcore.gg/png/falco/neutraltech.png,False,1902
+Tech-Wall,walltech,,,,31,6,,,,,Tech,"Invincible: 1-14
+Input an upwards direction anywhere on 1-4 for walljump tech on 6)",,0,http://meleeframedata.com/,,,,False,1928
+Tech-Wall Jump,walltechjump,,,,40,1,,,,,Tech,,,0,http://meleeframedata.com/,,,,False,1954
+Reflector (Air),adownb,,,,3,,,,1,1,Special,"able to be jump cancelled frames 4-21. reflects frames 4 to release+1. when landed, falco is in 5 frames of hitlag. normally has 19 frames endlag",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/falco/adownb.gif,https://i.fightcore.gg/beta/falco/adownb.webm,https://i.fightcore.gg/png/falco/adownb.png,True,2032
+Forward Tilt (Up),uaft,,,,26,,,,5,9,Tilt,,,0,,https://i.fightcore.gg/beta/falco/uaft.gif,https://i.fightcore.gg/beta/falco/uaft.webm,https://i.fightcore.gg/png/falco/uaft.png,False,2043
+Forward Tilt (Down),daft,,,,26,,,,5,9,Tilt,,,0,,https://i.fightcore.gg/beta/falco/daft.gif,https://i.fightcore.gg/beta/falco/daft.webm,https://i.fightcore.gg/png/falco/daft.png,False,2049

@@ -1,85 +1,90 @@
-Name,NormalizedName,LandLag,LCanceledLandLag,TotalFrames,IASA,AutoCancelBefore,AutoCancelAfter,Start,End,Type,Notes,Percent,CharacterId,Source,Id
-LinkSpecial,linkspecial,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1054
-LuigiSpecial,luigispecial,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1055
-MarioSpecial,mariospecial,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1056
-NessSpecial,nessspecial,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1057
-PeachSpecial,peachspecial,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1058
-PichuSpecial,pichuspecial,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1059
-PikaSpecial,pikachuspecial,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1060
-SamusSpecial,samusspecial,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1061
-Forward throw,fthrow,,,61,,,,0,0,Throw,,,0,http://meleeframedata.com/,1062
-Back throw,bthrow,,,49,,,,0,0,Throw,,,0,http://meleeframedata.com/,1063
-Up throw,uthrow,,,79,,,,0,0,Throw,,,0,http://meleeframedata.com/,1064
-Down throw,dthrow,,,87,,,,10,56,Throw,,,0,http://meleeframedata.com/,1065
-BowserSpecial,bowserspecial,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1093
-Pummel,pummel,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1114
-Edge attack,edge,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1115
-YoshiSpecial,yoshispecial,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1159
-MrGandWSpecial,mrgameandwatchspecial,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1160
-Swallow,neutralb,,,79,,,,17,60,Special,damage is based off character weight. Information on each ability kirby can obtain is listed here: https://smashboards.com/threads/kirby-hitboxes-and-frame-data.322531/,,0,http://meleeframedata.com/,1161
-Dashattack,dattack,,,63,60,,,9,43,Grounded,weak hit frames 16-43,,0,http://meleeframedata.com/,1163
-Forward Tilt,ftilt,,,32,28,,,5,8,Tilt,,,0,http://meleeframedata.com/,1164
-Up Tilt,utilt,,,23,,,,4,7,Tilt,weak hit frames 5-7,,0,http://meleeframedata.com/,1165
-Down Tilt,dtilt,,,29,,,,4,7,Tilt,,,0,http://meleeframedata.com/,1166
-Forward Smash,fsmash,,,49,,,,13,21,Grounded,weak hit frames 16-21,,0,http://meleeframedata.com/,1167
-Up Smash,usmash,,,49,,,,13,23,Grounded,"hits can do anywhere between 12-15%, gets weaker as the move goes on",,0,http://meleeframedata.com/,1168
-Down Smash,dsmash,,,55,50,,,7,22,Grounded,,,0,http://meleeframedata.com/,1169
-Neutral Air,nair,15,7,79,50,10,37,10,34,Air,weak hit frames 18-34,,0,http://meleeframedata.com/,1170
-Forward Air,fair,20,10,49,40,10,37,10,26,Air,"two hits of 5 damage (frames 10-11, 17-18) and one hit of 8 damage (frames 25-26)",,0,http://meleeframedata.com/,1171
-Back Air,bair,15,7,43,36,6,27,6,20,Air,weak hit frames 9-20,,0,http://meleeframedata.com/,1172
-Up Air,uair,15,7,39,36,11,16,11,13,Air,,,0,http://meleeframedata.com/,1173
-Down Air,dair,20,10,59,55,18,47,18,37,Air,"hitbox on frames 18-19, 21-22, 24-25, 27-28, 30-31, 33-34, 36-37",,0,http://meleeframedata.com/,1174
-unknown_air,unknown_air,,,0,,,,,,Air,,,0,http://meleeframedata.com/,1175
-MewtwoSpecial,mewtwospecial,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1176
-RoySpecial,royspecial,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1178
-PuffSpecial,jigglypuffspecial,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1179
-SheikSpecial,sheikspecial,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1184
-ICsSpecial,iceclimbersspecial,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1185
-YLinkSpecial,younglinkspecial,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1186
-DocSpecial,drmariospecial,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1187
-FalcoSpecial,falcospecial,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1188
-FoxSpecial,foxspecial,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1189
-Hammer Hit,sideb,,,59,,,,22,28,Special,weak hit has 9 frames shieldstun,,0,http://meleeframedata.com/,1190
-Final Cutter,upb,,,34,,,,2,26,Special,"info descirbes the landing hitbox/lag. rising hit comes out frame 23, hits 23-24, 47-49, and 54-56m with 8%, 1%, 6% respectivley.",,0,http://meleeframedata.com/,1191
-Stone,downb,,,78,,,,30,47,Special,can be stone anywhere from 17 to 150 frames. gretting out of stone has 31 frames of lag.,,0,http://meleeframedata.com/,1192
-FalconSpecial,captainfalconspecial,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1193
-GanonSpecial,ganondorfspecial,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1194
-DKSpecial,donkeykongspecial,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1195
-ZeldaSpecial,zeldaspecial,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1196
-MarthSpecial,marthspecial,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1197
-Roll forwards,rollforward,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,1395
-Roll backwards,rollbackwards,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,1396
-Spotdodge,spotdodge,,,22,,,,2,15,Dodge,,,0,http://meleeframedata.com/,1398
-Airdodge,airdodge,,,49,,,,0,,Dodge,,,0,http://meleeframedata.com/,1424
-Jab 1,jab1,,,17,16,,,3,4,Grounded,,,0,http://meleeframedata.com/,1497
-Jab 2,jab2,,,19,16,,,2,3,Grounded,,,0,http://meleeframedata.com/,1498
-Rapid Jabs,rjab,,,19,,,,2,3,Grounded,final hit end lag = 9 frames,,0,http://meleeframedata.com/,1499
-Hammer Spin (Air),asideb,16,,69,,,,7,46,Special,6 strong hitboxes followed by 6 weak hitboxes,,0,http://meleeframedata.com/,1558
-Grab,grab,,,30,,,,7,8,Unknown,,,0,http://meleeframedata.com/,1589
-Dashgrab,dashgrab,,,40,,,,11,12,Unknown,,,0,http://meleeframedata.com/,1590
-Tech-Roll Forward,ftechroll,,,40,,,,,,Unknown,"Horizontal Movement At: 10
+Name,NormalizedName,LandLag,LCanceledLandLag,LandingFallSpecialLag,TotalFrames,IASA,AutoCancelBefore,AutoCancelAfter,Start,End,Type,Notes,Percent,CharacterId,Source,GifUrl,WebmUrl,PngUrl,IsInterpolated,Id
+Link Special,linkspecial,,,,0,,,,,,KirbySpecial,,,0,http://meleeframedata.com/,,,,False,1054
+Luigi Special,luigispecial,,,,0,,,,,,KirbySpecial,,,0,http://meleeframedata.com/,https://i.fightcore.gg/melee/moves/kirby/luigispecial.gif,https://i.fightcore.gg/beta/kirby/luigispecial.webm,,False,1055
+Mario Special,mariospecial,,,,0,,,,,,KirbySpecial,,,0,http://meleeframedata.com/,https://i.fightcore.gg/melee/moves/kirby/mariospecial.gif,https://i.fightcore.gg/beta/kirby/mariospecial.webm,,False,1056
+Ness Special,nessspecial,,,,0,,,,,,KirbySpecial,,,0,http://meleeframedata.com/,https://i.fightcore.gg/melee/moves/kirby/nessspecial.gif,https://i.fightcore.gg/beta/kirby/nessspecial.webm,,False,1057
+Peach Special,peachspecial,,,,0,,,,,,KirbySpecial,,,0,http://meleeframedata.com/,https://i.fightcore.gg/melee/moves/kirby/peachspecial.gif,https://i.fightcore.gg/beta/kirby/peachspecial.webm,,False,1058
+Pichu Special,pichuspecial,,,,0,,,,,,KirbySpecial,,,0,http://meleeframedata.com/,https://i.fightcore.gg/melee/moves/kirby/pichuspecial.gif,https://i.fightcore.gg/beta/kirby/pichuspecial.webm,,False,1059
+Pikachu Special,pikachuspecial,,,,0,,,,,,KirbySpecial,,,0,http://meleeframedata.com/,https://i.fightcore.gg/melee/moves/kirby/pikachuspecial.gif,https://i.fightcore.gg/beta/kirby/pikachuspecial.webm,,False,1060
+Samus Special,samusspecial,,,,0,,,,,,KirbySpecial,,,0,http://meleeframedata.com/,https://i.fightcore.gg/melee/moves/kirby/samusspecial.gif,https://i.fightcore.gg/beta/kirby/samusspecial.webm,,False,1061
+Forward throw,fthrow,,,,61,,,,0,0,Throw,,,0,http://meleeframedata.com/,,,,False,1062
+Back throw,bthrow,,,,49,,,,0,0,Throw,,,0,http://meleeframedata.com/,,,,False,1063
+Up throw,uthrow,,,,79,,,,0,0,Throw,,,0,http://meleeframedata.com/,,,,False,1064
+Down throw,dthrow,,,,87,,,,10,56,Throw,,,0,http://meleeframedata.com/,,,,False,1065
+Bowser Special,bowserspecial,,,,0,,,,,,KirbySpecial,,,0,http://meleeframedata.com/,https://i.fightcore.gg/melee/moves/kirby/bowserspecial.gif,https://i.fightcore.gg/beta/kirby/bowserspecial.webm,,False,1093
+Pummel,pummel,,,,0,,,,,,Throw,,,0,http://meleeframedata.com/,,,,False,1114
+Edge attack,edge,,,,0,,,,,,EdgeAttack,,,0,http://meleeframedata.com/,,,,False,1115
+Yoshi Special,yoshispecial,,,,0,,,,,,KirbySpecial,,,0,http://meleeframedata.com/,https://i.fightcore.gg/melee/moves/kirby/yoshispecial.gif,https://i.fightcore.gg/beta/kirby/yoshispecial.webm,,False,1159
+Mr. Game & Watch Special,mrgameandwatchspecial,,,,0,,,,,,KirbySpecial,,,0,http://meleeframedata.com/,https://i.fightcore.gg/melee/moves/kirby/mrgameandwatchspecial.gif,https://i.fightcore.gg/beta/kirby/mrgameandwatchspecial.webm,,False,1160
+Swallow,neutralb,,,,79,,,,17,60,Special,damage is based off character weight. Information on each ability kirby can obtain is listed here: https://smashboards.com/threads/kirby-hitboxes-and-frame-data.322531/,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/kirby/neutralb.gif,https://i.fightcore.gg/beta/kirby/neutralb.webm,https://i.fightcore.gg/png/kirby/neutralb.png,False,1161
+Dashattack,dattack,,,,63,60,,,9,43,Grounded,IASA frame is not visualized within animation due to a bug in the game.,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/kirby/dattack.gif,https://i.fightcore.gg/beta/kirby/dattack.webm,https://i.fightcore.gg/png/kirby/dattack.png,False,1163
+Forward Tilt,ftilt,,,,32,28,,,5,8,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/kirby/ftilt.gif,https://i.fightcore.gg/beta/kirby/ftilt.webm,https://i.fightcore.gg/png/kirby/ftilt.png,False,1164
+Up Tilt,utilt,,,,23,,,,4,7,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/kirby/utilt.gif,https://i.fightcore.gg/beta/kirby/utilt.webm,https://i.fightcore.gg/png/kirby/utilt.png,False,1165
+Down Tilt,dtilt,,,,29,,,,4,7,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/kirby/dtilt.gif,https://i.fightcore.gg/beta/kirby/dtilt.webm,https://i.fightcore.gg/png/kirby/dtilt.png,False,1166
+Forward Smash,fsmash,,,,49,,,,13,21,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/kirby/fsmash.gif,https://i.fightcore.gg/beta/kirby/fsmash.webm,https://i.fightcore.gg/png/kirby/fsmash.png,False,1167
+Up Smash,usmash,,,,49,,,,13,23,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/kirby/usmash.gif,https://i.fightcore.gg/beta/kirby/usmash.webm,https://i.fightcore.gg/png/kirby/usmash.png,False,1168
+Down Smash,dsmash,,,,55,50,,,7,22,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/kirby/dsmash.gif,https://i.fightcore.gg/beta/kirby/dsmash.webm,https://i.fightcore.gg/png/kirby/dsmash.png,False,1169
+Neutral Air,nair,15,7,,79,50,10,37,10,34,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/kirby/nair.gif,https://i.fightcore.gg/beta/kirby/nair.webm,https://i.fightcore.gg/png/kirby/nair.png,False,1170
+Forward Air,fair,20,10,,49,40,10,37,10,26,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/kirby/fair.gif,https://i.fightcore.gg/beta/kirby/fair.webm,https://i.fightcore.gg/png/kirby/fair.png,False,1171
+Back Air,bair,15,7,,43,36,6,27,6,20,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/kirby/bair.gif,https://i.fightcore.gg/beta/kirby/bair.webm,https://i.fightcore.gg/png/kirby/bair.png,False,1172
+Up Air,uair,15,7,,39,36,11,16,11,13,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/kirby/uair.gif,https://i.fightcore.gg/beta/kirby/uair.webm,https://i.fightcore.gg/png/kirby/uair.png,False,1173
+Down Air,dair,20,10,,59,55,18,47,18,34,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/kirby/dair.gif,https://i.fightcore.gg/beta/kirby/dair.webm,https://i.fightcore.gg/png/kirby/dair.png,False,1174
+unknown_air,unknown_air,,,,0,,,,,,Air,,,0,http://meleeframedata.com/,,,,False,1175
+Mewtwo Special,mewtwospecial,,,,0,,,,,,KirbySpecial,,,0,http://meleeframedata.com/,https://i.fightcore.gg/melee/moves/kirby/mewtwospecial.gif,https://i.fightcore.gg/beta/kirby/mewtwospecial.webm,,False,1176
+Roy Special,royspecial,,,,0,,,,,,KirbySpecial,,,0,http://meleeframedata.com/,https://i.fightcore.gg/melee/moves/kirby/royspecial.gif,https://i.fightcore.gg/beta/kirby/royspecial.webm,,False,1178
+Jigglypuff Special,jigglypuffspecial,,,,0,,,,,,KirbySpecial,,,0,http://meleeframedata.com/,https://i.fightcore.gg/melee/moves/kirby/jigglypuffspecial.gif,https://i.fightcore.gg/beta/kirby/jigglypuffspecial.webm,,False,1179
+Sheik Special,sheikspecial,,,,0,,,,,,KirbySpecial,,,0,http://meleeframedata.com/,https://i.fightcore.gg/melee/moves/kirby/sheikspecial.gif,https://i.fightcore.gg/beta/kirby/sheikspecial.webm,,False,1184
+Ice Climbers Special,iceclimbersspecial,,,,0,,,,,,KirbySpecial,,,0,http://meleeframedata.com/,https://i.fightcore.gg/melee/moves/kirby/iceclimbersspecial.gif,https://i.fightcore.gg/beta/kirby/iceclimbersspecial.webm,,False,1185
+Young Link Special,younglinkspecial,,,,0,,,,,,KirbySpecial,,,0,http://meleeframedata.com/,https://i.fightcore.gg/melee/moves/kirby/younglinkspecial.gif,https://i.fightcore.gg/beta/kirby/younglinkspecial.webm,,False,1186
+Dr Mario Special,drmariospecial,,,,0,,,,,,KirbySpecial,,,0,http://meleeframedata.com/,https://i.fightcore.gg/melee/moves/kirby/drmariospecial.gif,https://i.fightcore.gg/beta/kirby/drmariospecial.webm,,False,1187
+Falco Special,falcospecial,,,,0,,,,,,KirbySpecial,,,0,http://meleeframedata.com/,https://i.fightcore.gg/melee/moves/kirby/falcospecial.gif,https://i.fightcore.gg/beta/kirby/falcospecial.webm,,False,1188
+Fox Special,foxspecial,,,,0,,,,,,KirbySpecial,,,0,http://meleeframedata.com/,https://i.fightcore.gg/melee/moves/kirby/foxspecial.gif,https://i.fightcore.gg/beta/kirby/foxspecial.webm,,False,1189
+Hammer Hit,sideb,,,,59,,,,22,28,Special,weak hit has 9 frames shieldstun,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/kirby/sideb.gif,https://i.fightcore.gg/beta/kirby/sideb.webm,https://i.fightcore.gg/png/kirby/sideb.png,False,1190
+Final Cutter,upb,,,,34,,,,2,26,Special,"info descirbes the landing hitbox/lag. rising hit comes out frame 23, hits 23-24, 47-49, and 54-56m with 8%, 1%, 6% respectivley.",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/kirby/upb.gif,https://i.fightcore.gg/beta/kirby/upb.webm,https://i.fightcore.gg/png/kirby/upb.png,False,1191
+Stone,downb,,,,78,,,,30,47,Special,can be stone anywhere from 17 to 150 frames. gretting out of stone has 31 frames of lag.,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/kirby/downb.gif,https://i.fightcore.gg/beta/kirby/downb.webm,,False,1192
+Captain Falcon Special,captainfalconspecial,,,,0,,,,,,KirbySpecial,,,0,http://meleeframedata.com/,https://i.fightcore.gg/melee/moves/kirby/captainfalconspecial.gif,https://i.fightcore.gg/beta/kirby/captainfalconspecial.webm,,False,1193
+Ganondorf Special,ganondorfspecial,,,,0,,,,,,KirbySpecial,,,0,http://meleeframedata.com/,,,,False,1194
+Donkey Kong Special,donkeykongspecial,,,,0,,,,,,KirbySpecial,,,0,http://meleeframedata.com/,https://i.fightcore.gg/melee/moves/kirby/donkeykongspecial.gif,https://i.fightcore.gg/beta/kirby/donkeykongspecial.webm,,False,1195
+Zelda Special,zeldaspecial,,,,0,,,,,,KirbySpecial,,,0,http://meleeframedata.com/,https://i.fightcore.gg/melee/moves/kirby/zeldaspecial.gif,https://i.fightcore.gg/beta/kirby/zeldaspecial.webm,,False,1196
+Marth Special,marthspecial,,,,0,,,,,,KirbySpecial,,,0,http://meleeframedata.com/,https://i.fightcore.gg/melee/moves/kirby/marthspecial.gif,https://i.fightcore.gg/beta/kirby/marthspecial.webm,,False,1197
+Roll forwards,rollforward,,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/kirby/rollforward.gif,https://i.fightcore.gg/beta/kirby/rollforward.webm,https://i.fightcore.gg/png/kirby/rollforward.png,False,1395
+Roll backwards,rollbackwards,,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/kirby/rollbackwards.gif,https://i.fightcore.gg/beta/kirby/rollbackwards.webm,https://i.fightcore.gg/png/kirby/rollbackwards.png,False,1396
+Spotdodge,spotdodge,,,,22,,,,2,15,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/kirby/spotdodge.gif,https://i.fightcore.gg/beta/kirby/spotdodge.webm,https://i.fightcore.gg/png/kirby/spotdodge.png,False,1398
+Airdodge,airdodge,,,,49,,,,0,,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/kirby/airdodge.gif,https://i.fightcore.gg/beta/kirby/airdodge.webm,https://i.fightcore.gg/png/kirby/airdodge.png,False,1424
+Jab 1,jab1,,,,17,16,,,3,4,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/kirby/jab1.gif,https://i.fightcore.gg/beta/kirby/jab1.webm,https://i.fightcore.gg/png/kirby/jab1.png,False,1497
+Jab 2,jab2,,,,19,16,,,2,3,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/kirby/jab2.gif,https://i.fightcore.gg/beta/kirby/jab2.webm,https://i.fightcore.gg/png/kirby/jab2.png,False,1498
+Rapid Jabs,rjab,,,,19,,,,2,3,Grounded,final hit end lag = 9 frames,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/kirby/rjab.gif,https://i.fightcore.gg/beta/kirby/rjab.webm,https://i.fightcore.gg/png/kirby/rjab.png,False,1499
+Hammer Spin (Air),asideb,16,,,69,,,,7,46,Special,6 strong hitboxes followed by 6 weak hitboxes,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/kirby/asideb.gif,https://i.fightcore.gg/beta/kirby/asideb.webm,https://i.fightcore.gg/png/kirby/asideb.png,False,1558
+Grab,grab,,,,30,,,,7,8,Throw,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/kirby/grab.gif,https://i.fightcore.gg/beta/kirby/grab.webm,https://i.fightcore.gg/png/kirby/grab.png,False,1589
+Dashgrab,dashgrab,,,,40,,,,11,12,Throw,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/kirby/dashgrab.gif,https://i.fightcore.gg/beta/kirby/dashgrab.webm,https://i.fightcore.gg/png/kirby/dashgrab.png,False,1590
+Tech-Roll Forward,ftechroll,,,,40,,,,,,Tech,"Horizontal Movement At: 10
 Distance: 12.4 ft
-Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1751
-Tech-Roll Backward,btechroll,,,40,,,,,,Unknown,"Horizontal Movement At: 10
+Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,https://i.fightcore.gg/beta/kirby/ftechroll.gif,https://i.fightcore.gg/beta/kirby/ftechroll.webm,https://i.fightcore.gg/png/kirby/ftechroll.png,False,1751
+Tech-Roll Backward,btechroll,,,,40,,,,,,Tech,"Horizontal Movement At: 10
 Distance: 14.4 ft
-Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1752
-Getup-Attack (Back),bgetup,,,49,,,,,,Unknown,"Hit: 19-20 (Behind), 24-25 (Front)
-Invincible: 1-15 (Probably a programming error on this animation and should have been 25)",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1753
-Getup-Attack (Stomach),fgetup,,,49,,,,,,Unknown,"Hit: 20-21 (Behind), 24 (Front), 26-27 (Front)
-Invincible: 1-27",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1754
-Getup-Roll Forward (Back),fgetuprollback,,,35,,,,,,Unknown,"Horizontal Movement At: 15
+Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,https://i.fightcore.gg/beta/kirby/btechroll.gif,https://i.fightcore.gg/beta/kirby/btechroll.webm,https://i.fightcore.gg/png/kirby/btechroll.png,False,1752
+Getup-Attack (Back),bgetup,,,,49,,,,,,Tech,"Hit: 19-20 (Behind), 24-25 (Front)
+Invincible: 1-15 (Probably a programming error on this animation and should have been 25)",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1753
+Getup-Attack (Stomach),fgetup,,,,49,,,,,,Tech,"Hit: 20-21 (Behind), 24 (Front), 26-27 (Front)
+Invincible: 1-27",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1754
+Getup-Roll Forward (Back),fgetuprollback,,,,35,,,,,,Tech,"Horizontal Movement At: 15
 Distance: 9 ft
-Invincible: 1-18",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1755
-Getup-Roll Forward (Stomach),fgetuprollstomach,,,35,,,,,,Unknown,"Horizontal Movement At: 17 (You'd see him spinning forwards at 13)
+Invincible: 1-18",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1755
+Getup-Roll Forward (Stomach),fgetuprollstomach,,,,35,,,,,,Tech,"Horizontal Movement At: 17 (You'd see him spinning forwards at 13)
 Distance: 8.8 ft
-Invincible: 1-23",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1756
-Getup-Roll Backward (Back),bgetuprollback,,,35,,,,,,Unknown,"Horizontal Movement At: 12
+Invincible: 1-23",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1756
+Getup-Roll Backward (Back),bgetuprollback,,,,35,,,,,,Tech,"Horizontal Movement At: 12
 Distance: 8.8 ft
-Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1757
-Getup-Roll Backward (Stomach),bgetuprollstomach,,,35,,,,,,Unknown,"Horizontal Movement At: 18 (You'd see him spinning backwards at 11)
+Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1757
+Getup-Roll Backward (Stomach),bgetuprollstomach,,,,35,,,,,,Tech,"Horizontal Movement At: 18 (You'd see him spinning backwards at 11)
 Distance: 9.4 ft
-Invincible: 1-28 (If the roll takes you to an edge you will slip off unless an attack is timed on that exact frame)",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1758
-Tech-Neutral,neutraltech,,,26,,,,,,Unknown,Invincible: 1-20,,0,http://meleeframedata.com/,1887
-Tech-Wall,walltech,,,31,6,,,,,Unknown,"Invincible: 1-14
-Input an upwards direction anywhere on 1-4 for walljump tech on 6)",,0,http://meleeframedata.com/,1913
-Tech-Wall Jump,walltechjump,,,40,1,,,,,Unknown,,,0,http://meleeframedata.com/,1939
+Invincible: 1-28 (If the roll takes you to an edge you will slip off unless an attack is timed on that exact frame)",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1758
+Tech-Neutral,neutraltech,,,,26,,,,,,Tech,Invincible: 1-20,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/kirby/neutraltech.gif,https://i.fightcore.gg/beta/kirby/neutraltech.webm,https://i.fightcore.gg/png/kirby/neutraltech.png,False,1887
+Tech-Wall,walltech,,,,31,6,,,,,Tech,"Invincible: 1-14
+Input an upwards direction anywhere on 1-4 for walljump tech on 6)",,0,http://meleeframedata.com/,,,,False,1913
+Tech-Wall Jump,walltechjump,,,,40,1,,,,,Tech,,,0,http://meleeframedata.com/,,,,False,1939
+Final Cutter (Air),aupb,,,,34,,,,2,26,Special,"info descirbes the landing hitbox/lag. rising hit comes out frame 23, hits 23-24, 47-49, and 54-56m with 8%, 1%, 6% respectivley.",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/kirby/aupb.gif,https://i.fightcore.gg/beta/kirby/aupb.webm,https://i.fightcore.gg/png/kirby/aupb.png,True,2024
+Stone (Air),adownb,,,,78,,,,30,47,Special,can be stone anywhere from 17 to 150 frames. gretting out of stone has 31 frames of lag.,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/kirby/adownb.gif,https://i.fightcore.gg/beta/kirby/adownb.webm,https://i.fightcore.gg/png/kirby/adownb.png,True,2025
+Forward Tilt (Up),uaft,,,,32,28,,,5,8,Tilt,,,0,,https://i.fightcore.gg/beta/kirby/uaft.gif,https://i.fightcore.gg/beta/kirby/uaft.webm,https://i.fightcore.gg/png/kirby/uaft.png,False,2039
+Forward Tilt (Down),daft,,,,32,28,,,5,8,Tilt,,,0,,https://i.fightcore.gg/beta/kirby/daft.gif,https://i.fightcore.gg/beta/kirby/daft.webm,https://i.fightcore.gg/png/kirby/daft.png,False,2045
+Swallow (air),aneutralb,,,,79,,,,17,60,Special,damage is based off character weight. Information on each ability kirby can obtain is listed here: https://smashboards.com/threads/kirby-hitboxes-and-frame-data.322531/,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/kirby/aneutralb.gif,https://i.fightcore.gg/beta/kirby/aneutralb.webm,https://i.fightcore.gg/png/kirby/aneutralb.png,True,2051

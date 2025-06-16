@@ -1,68 +1,71 @@
-Name,NormalizedName,LandLag,LCanceledLandLag,TotalFrames,IASA,AutoCancelBefore,AutoCancelAfter,Start,End,Type,Notes,Percent,CharacterId,Source,Id
-Dashattack,dattack,,,57,40,,,12,15,Grounded,weak hit has 4 frames shield stun,,0,http://meleeframedata.com/,908
-Forward Tilt,ftilt,,,40,40,,,9,13,Tilt,,,0,http://meleeframedata.com/,909
-Up Tilt,utilt,,,45,40,,,7,13,Tilt,can also do 8% or 9% damage. can only do 6% damage frames 10-13,,0,http://meleeframedata.com/,910
-Down Tilt,dtilt,,,57,20,,,8,10,Tilt,can also do 10% damage. weak hit has 4 frames shield stun,,0,http://meleeframedata.com/,911
-Forward Smash,fsmash,,,57,54,,,12,14,Grounded,weak hit has 7 frames shield stun,,0,http://meleeframedata.com/,912
-Up Smash,usmash,,,62,46,,,15,26,Grounded,"5 weak hitboxes 2 frames each, ending in final strong hitbox frames 25-26",,0,http://meleeframedata.com/,913
-Down Smash,dsmash,,,74,72,,,6,26,Grounded,"front hit frames 6-8, can do 21% or 14% with 8 frames shield stun. back hit frames 24-26, can do 16% or 8% with 9 or 5 frames shieldstun",,0,http://meleeframedata.com/,914
-Neutral Air,nair,20,10,57,50,7,31,7,20,Air,"weak hit frames 7-8 with 3 frames shield stun, strong hit frames 17-20 and can also do 6% damage",,0,http://meleeframedata.com/,915
-Forward Air,fair,20,10,38,35,1,29,5,7,Air,,,0,http://meleeframedata.com/,916
-Back Air,bair,24,12,45,43,1,33,8,10,Air,,,0,http://meleeframedata.com/,917
-Up Air,uair,18,9,52,49,5,29,5,10,Air,,,0,http://meleeframedata.com/,918
-Down Air,dair,32,16,68,64,7,54,7,10,Air,,,0,http://meleeframedata.com/,919
-Edge attack,edge,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,921
-Pummel,pummel,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,922
-Forward throw,fthrow,,,31,,,,0,0,Throw,,,0,http://meleeframedata.com/,923
-Back throw,bthrow,,,44,,,,0,0,Throw,,,0,http://meleeframedata.com/,924
-Counter,downb,,,59,,,,8,20,Special,"this counter is damage based, no info for max/min damage. frame data refers to counter trigger",,0,http://meleeframedata.com/,927
-unknown,unknown,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,928
-Flare Blade,neutralb,,,45,,,,16,21,Special,"charge time between 11-211 frames, hit frames 5-10 from release of charge",,0,http://meleeframedata.com/,944
-Double Edged Dance,sideb,,,29,,,,6,8,Special,Window for the next move: 8-26,,0,http://meleeframedata.com/,945
-Blazer,upb,30,,48,,,,9,21,Special,"can grab ledge as soon as frame 32. ",,0,http://meleeframedata.com/,946
-Up throw,uthrow,,,44,,,,0,0,Throw,,,0,http://meleeframedata.com/,1031
-Down throw,dthrow,,,42,,,,0,0,Throw,,,0,http://meleeframedata.com/,1366
-Roll backwards,rollbackwards,,,35,,,,4,23,Dodge,,,0,http://meleeframedata.com/,1415
-Roll forwards,rollforward,,,35,,,,4,19,Dodge,,,0,http://meleeframedata.com/,1416
-Spotdodge,spotdodge,,,27,,,,2,18,Dodge,,,0,http://meleeframedata.com/,1417
-Airdodge,airdodge,,,49,,,,0,,Dodge,,,0,http://meleeframedata.com/,1418
-Jab 1,jab1,,,31,26,,,4,7,Grounded,,,0,http://meleeframedata.com/,1519
-Grab,grab,,,30,,,,7,8,Unknown,,,0,http://meleeframedata.com/,1607
-Dashgrab,dashgrab,,,40,,,,10,11,Unknown,,,0,http://meleeframedata.com/,1608
-Tech-Roll Forward,ftechroll,,,40,,,,,,Unknown,"Horizontal Movement At: 9
+Name,NormalizedName,LandLag,LCanceledLandLag,LandingFallSpecialLag,TotalFrames,IASA,AutoCancelBefore,AutoCancelAfter,Start,End,Type,Notes,Percent,CharacterId,Source,GifUrl,WebmUrl,PngUrl,IsInterpolated,Id
+Dashattack,dattack,,,,57,40,,,12,15,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/roy/dattack.gif,https://i.fightcore.gg/beta/roy/dattack.webm,https://i.fightcore.gg/png/roy/dattack.png,False,908
+Forward Tilt,ftilt,,,,40,40,,,9,13,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/roy/ftilt.gif,https://i.fightcore.gg/beta/roy/ftilt.webm,https://i.fightcore.gg/png/roy/ftilt.png,False,909
+Up Tilt,utilt,,,,45,40,,,7,13,Tilt,can also do 8% or 9% damage. can only do 6% damage frames 10-13,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/roy/utilt.gif,https://i.fightcore.gg/beta/roy/utilt.webm,https://i.fightcore.gg/png/roy/utilt.png,False,910
+Down Tilt,dtilt,,,,57,20,,,8,10,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/roy/dtilt.gif,https://i.fightcore.gg/beta/roy/dtilt.webm,https://i.fightcore.gg/png/roy/dtilt.png,False,911
+Forward Smash,fsmash,,,,57,54,,,12,14,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/roy/fsmash.gif,https://i.fightcore.gg/beta/roy/fsmash.webm,https://i.fightcore.gg/png/roy/fsmash.png,False,912
+Up Smash,usmash,,,,62,46,,,15,24,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/roy/usmash.gif,https://i.fightcore.gg/beta/roy/usmash.webm,https://i.fightcore.gg/png/roy/usmash.png,False,913
+Down Smash,dsmash,,,,74,72,,,6,25,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/roy/dsmash.gif,https://i.fightcore.gg/beta/roy/dsmash.webm,https://i.fightcore.gg/png/roy/dsmash.png,False,914
+Neutral Air,nair,20,10,,57,50,7,31,7,20,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/roy/nair.gif,https://i.fightcore.gg/beta/roy/nair.webm,https://i.fightcore.gg/png/roy/nair.png,False,915
+Forward Air,fair,20,10,,38,35,1,29,5,7,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/roy/fair.gif,https://i.fightcore.gg/beta/roy/fair.webm,https://i.fightcore.gg/png/roy/fair.png,False,916
+Back Air,bair,24,12,,45,43,1,33,8,10,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/roy/bair.gif,https://i.fightcore.gg/beta/roy/bair.webm,https://i.fightcore.gg/png/roy/bair.png,False,917
+Up Air,uair,18,9,,52,49,5,29,5,10,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/roy/uair.gif,https://i.fightcore.gg/beta/roy/uair.webm,https://i.fightcore.gg/png/roy/uair.png,False,918
+Down Air,dair,32,16,,68,64,7,54,7,10,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/roy/dair.gif,https://i.fightcore.gg/beta/roy/dair.webm,https://i.fightcore.gg/png/roy/dair.png,False,919
+Edge attack,edge,,,,0,,,,,,EdgeAttack,,,0,http://meleeframedata.com/,,,,False,921
+Pummel,pummel,,,,0,,,,,,Throw,,,0,http://meleeframedata.com/,,,,False,922
+Forward throw,fthrow,,,,31,,,,0,0,Throw,,,0,http://meleeframedata.com/,,,,False,923
+Back throw,bthrow,,,,44,,,,0,0,Throw,,,0,http://meleeframedata.com/,,,,False,924
+Counter,downb,,,,59,,,,8,20,Special,"this counter is damage based, no info for max/min damage. frame data refers to counter trigger",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/roy/downb.gif,https://i.fightcore.gg/beta/roy/downb.webm,https://i.fightcore.gg/png/roy/downb.png,False,927
+unknown,unknown,,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,,,,False,928
+Flare Blade,neutralb,,,,45,,,,16,21,Special,"charge time between 11-211 frames, hit frames 5-10 from release of charge",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/roy/neutralb.gif,https://i.fightcore.gg/beta/roy/neutralb.webm,,False,944
+Double Edged Dance,sideb,,,,29,,,,6,8,Special,Window for the next move: 8-26,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/roy/sideb.gif,https://i.fightcore.gg/beta/roy/sideb.webm,https://i.fightcore.gg/png/roy/sideb.png,False,945
+Blazer,upb,30,,,48,,,,9,21,Special,"can grab ledge as soon as frame 32. ",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/roy/upb.gif,https://i.fightcore.gg/beta/roy/upb.webm,https://i.fightcore.gg/png/roy/upb.png,False,946
+Up throw,uthrow,,,,44,,,,0,0,Throw,,,0,http://meleeframedata.com/,,,,False,1031
+Down throw,dthrow,,,,42,,,,0,0,Throw,,,0,http://meleeframedata.com/,,,,False,1366
+Roll backwards,rollbackwards,,,,35,,,,4,23,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/roy/rollbackwards.gif,https://i.fightcore.gg/beta/roy/rollbackwards.webm,https://i.fightcore.gg/png/roy/rollbackwards.png,False,1415
+Roll forwards,rollforward,,,,35,,,,4,19,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/roy/rollforward.gif,https://i.fightcore.gg/beta/roy/rollforward.webm,https://i.fightcore.gg/png/roy/rollforward.png,False,1416
+Spotdodge,spotdodge,,,,27,,,,2,18,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/roy/spotdodge.gif,https://i.fightcore.gg/beta/roy/spotdodge.webm,https://i.fightcore.gg/png/roy/spotdodge.png,False,1417
+Airdodge,airdodge,,,,49,,,,0,,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/roy/airdodge.gif,https://i.fightcore.gg/beta/roy/airdodge.webm,https://i.fightcore.gg/png/roy/airdodge.png,False,1418
+Jab 1,jab1,,,,31,26,,,4,7,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/roy/jab1.gif,https://i.fightcore.gg/beta/roy/jab1.webm,https://i.fightcore.gg/png/roy/jab1.png,False,1519
+Grab,grab,,,,30,,,,7,8,Throw,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/roy/grab.gif,https://i.fightcore.gg/beta/roy/grab.webm,https://i.fightcore.gg/png/roy/grab.png,False,1607
+Dashgrab,dashgrab,,,,40,,,,10,11,Throw,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/roy/dashgrab.gif,https://i.fightcore.gg/beta/roy/dashgrab.webm,https://i.fightcore.gg/png/roy/dashgrab.png,False,1608
+Tech-Roll Forward,ftechroll,,,,40,,,,,,Tech,"Horizontal Movement At: 9
 Distance: 14.2 ft
-Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1831
-Tech-Roll Backward,btechroll,,,40,,,,,,Unknown,"Horizontal Movement At: 8
+Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,https://i.fightcore.gg/beta/roy/ftechroll.gif,https://i.fightcore.gg/beta/roy/ftechroll.webm,https://i.fightcore.gg/png/roy/ftechroll.png,False,1831
+Tech-Roll Backward,btechroll,,,,40,,,,,,Tech,"Horizontal Movement At: 8
 Distance: 14.4 ft
-Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1832
-Getup-Attack (Back),bgetup,,,49,,,,,,Unknown,"Hit: 20-23 (Behind), 30-31 (Front)
-Invincible: 1-31",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1833
-Getup-Attack (Stomach),fgetup,,,49,,,,,,Unknown,"Hit: 22-23 (Front), 27-28 (Behind)
-Invincible: 1-28",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1834
-Getup-Roll Forward (Back),fgetuprollback,,,35,,,,,,Unknown,"Horizontal Movement At: 5
+Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,https://i.fightcore.gg/beta/roy/btechroll.gif,https://i.fightcore.gg/beta/roy/btechroll.webm,https://i.fightcore.gg/png/roy/btechroll.png,False,1832
+Getup-Attack (Back),bgetup,,,,49,,,,,,Tech,"Hit: 20-23 (Behind), 30-31 (Front)
+Invincible: 1-31",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1833
+Getup-Attack (Stomach),fgetup,,,,49,,,,,,Tech,"Hit: 22-23 (Front), 27-28 (Behind)
+Invincible: 1-28",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1834
+Getup-Roll Forward (Back),fgetuprollback,,,,35,,,,,,Tech,"Horizontal Movement At: 5
 Distance: 11.4 ft
-Invincible: 6-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1835
-Getup-Roll Forward (Stomach),fgetuprollstomach,,,35,,,,,,Unknown,"Horizontal Movement At: 6
+Invincible: 6-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1835
+Getup-Roll Forward (Stomach),fgetuprollstomach,,,,35,,,,,,Tech,"Horizontal Movement At: 6
 Distance: 10.6 ft
-Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1836
-Getup-Roll Backward (Back),bgetuprollback,,,35,,,,,,Unknown,"Horizontal Movement At: 5
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1836
+Getup-Roll Backward (Back),bgetuprollback,,,,35,,,,,,Tech,"Horizontal Movement At: 5
 Distance: 9.4 ft
-Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1837
-Getup-Roll Backward (Stomach),bgetuprollstomach,,,35,,,,,,Unknown,"Horizontal Movement At: 13
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1837
+Getup-Roll Backward (Stomach),bgetuprollstomach,,,,35,,,,,,Tech,"Horizontal Movement At: 13
 Distance: 10.6 ft
-Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1838
-Tech-Neutral,neutraltech,,,26,,,,,,Unknown,Invincible: 1-20,,0,http://meleeframedata.com/,1880
-Tech-Wall,walltech,,,31,6,,,,,Unknown,"Invincible: 1-14
-Input an upwards direction anywhere on 1-4 for walljump tech on 6)",,0,http://meleeframedata.com/,1906
-Tech-Wall Jump,walltechjump,,,40,1,,,,,Unknown,,,0,http://meleeframedata.com/,1932
-Double Edged Dance (2 Forward/Neutral/Down),sideb2,,,40,,,,14,16,Special,Window for the next move: 8-26,,0,https://smashboards.com/threads/roy-hitboxes-and-frame-data.286427/,1971
-"Double Edged Dance (2, Up)",sideb2up,,,40,,,,12,15,Special,Window for the next move: 17-32,,0,https://smashboards.com/threads/roy-hitboxes-and-frame-data.286427/,1972
-"Double Edged Dance (3, Forward/Neutral)",sideb3,,,46,,,,11,14,Special,"Window for the next move: 16-37
-",,0,https://smashboards.com/threads/roy-hitboxes-and-frame-data.286427/,1973
-"Double Edged Dance (3, Up)",sideb3up,,,46,,,,13,17,Special,Window for the next move: 18-37,,0,https://smashboards.com/threads/roy-hitboxes-and-frame-data.286427/,1974
-"Double Edged Dance (3, Down)",sideb3down,,,46,,,,,,Special,"Hit: 16, 18, 20, 22
-Window for the next move: 23-35",,0,https://smashboards.com/threads/roy-hitboxes-and-frame-data.286427/,1976
-"Double Edged Dance (4, Forward/Neutral)",sideb4,,,50,,,,23,26,Special,,,0,https://smashboards.com/threads/roy-hitboxes-and-frame-data.286427/,1977
-"Double Edged Dance (4, Up)",sideb4up,,,50,,,,20,25,Special,,,0,https://smashboards.com/threads/roy-hitboxes-and-frame-data.286427/,1978
-"Double Edged Dance (4, Down)",sideb4down,,,50,,,,,,Special,"Hit: 13-15, 19-21, 25-27, 31-33
-37-38",,0,https://smashboards.com/threads/roy-hitboxes-and-frame-data.286427/,1979
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1838
+Tech-Neutral,neutraltech,,,,26,,,,,,Tech,Invincible: 1-20,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/roy/neutraltech.gif,https://i.fightcore.gg/beta/roy/neutraltech.webm,https://i.fightcore.gg/png/roy/neutraltech.png,False,1880
+Tech-Wall,walltech,,,,31,6,,,,,Tech,"Invincible: 1-14
+Input an upwards direction anywhere on 1-4 for walljump tech on 6)",,0,http://meleeframedata.com/,,,,False,1906
+Tech-Wall Jump,walltechjump,,,,40,1,,,,,Tech,,,0,http://meleeframedata.com/,,,,False,1932
+Double Edged Dance (2 Forward/Neutral/Down),sideb2,,,,40,,,,14,16,Special,Window for the next move: 8-26,,0,https://smashboards.com/threads/roy-hitboxes-and-frame-data.286427/,https://i.fightcore.gg/beta/roy/sideb2.gif,https://i.fightcore.gg/beta/roy/sideb2.webm,https://i.fightcore.gg/png/roy/sideb2.png,False,1971
+"Double Edged Dance (2, Up)",sideb2up,,,,40,,,,12,15,Special,Window for the next move: 17-32,,0,https://smashboards.com/threads/roy-hitboxes-and-frame-data.286427/,https://i.fightcore.gg/beta/roy/sideb2up.gif,https://i.fightcore.gg/beta/roy/sideb2up.webm,https://i.fightcore.gg/png/roy/sideb2up.png,False,1972
+"Double Edged Dance (3, Forward/Neutral)",sideb3,,,,46,,,,11,14,Special,"Window for the next move: 16-37
+",,0,https://smashboards.com/threads/roy-hitboxes-and-frame-data.286427/,https://i.fightcore.gg/beta/roy/sideb3.gif,https://i.fightcore.gg/beta/roy/sideb3.webm,https://i.fightcore.gg/png/roy/sideb3.png,False,1973
+"Double Edged Dance (3, Up)",sideb3up,,,,46,,,,13,17,Special,Window for the next move: 18-37,,0,https://smashboards.com/threads/roy-hitboxes-and-frame-data.286427/,https://i.fightcore.gg/beta/roy/sideb3up.gif,https://i.fightcore.gg/beta/roy/sideb3up.webm,https://i.fightcore.gg/png/roy/sideb3up.png,False,1974
+"Double Edged Dance (3, Down)",sideb3down,,,,46,,,,,,Special,"Hit: 16, 18, 20, 22
+Window for the next move: 23-35",,0,https://smashboards.com/threads/roy-hitboxes-and-frame-data.286427/,https://i.fightcore.gg/beta/roy/sideb3down.gif,https://i.fightcore.gg/beta/roy/sideb3down.webm,https://i.fightcore.gg/png/roy/sideb3down.png,False,1976
+"Double Edged Dance (4, Forward/Neutral)",sideb4,,,,50,,,,23,26,Special,,,0,https://smashboards.com/threads/roy-hitboxes-and-frame-data.286427/,https://i.fightcore.gg/beta/roy/sideb4.gif,https://i.fightcore.gg/beta/roy/sideb4.webm,https://i.fightcore.gg/png/roy/sideb4.png,False,1977
+"Double Edged Dance (4, Up)",sideb4up,,,,50,,,,20,25,Special,,,0,https://smashboards.com/threads/roy-hitboxes-and-frame-data.286427/,https://i.fightcore.gg/beta/roy/sideb4up.gif,https://i.fightcore.gg/beta/roy/sideb4up.webm,https://i.fightcore.gg/png/roy/sideb4up.png,False,1978
+"Double Edged Dance (4, Down)",sideb4down,,,,50,,,,,,Special,"Hit: 13-15, 19-21, 25-27, 31-33
+37-38",,0,https://smashboards.com/threads/roy-hitboxes-and-frame-data.286427/,https://i.fightcore.gg/beta/roy/sideb4down.gif,https://i.fightcore.gg/beta/roy/sideb4down.webm,https://i.fightcore.gg/png/roy/sideb4down.png,False,1979
+Counter (Air),adownb,,,,59,,,,8,20,Special,"this counter is damage based, no info for max/min damage. frame data refers to counter trigger",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/roy/adownb.gif,https://i.fightcore.gg/beta/roy/adownb.webm,https://i.fightcore.gg/png/roy/adownb.png,True,2012
+Double Edged Dance (Air),asideb,,,,29,,,,6,8,Special,Window for the next move: 8-26,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/roy/asideb.gif,https://i.fightcore.gg/beta/roy/asideb.webm,https://i.fightcore.gg/png/roy/asideb.png,True,2013
+Blazer (Air),aupb,30,,,48,,,,9,21,Special,"can grab ledge as soon as frame 32. ",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/roy/aupb.gif,https://i.fightcore.gg/beta/roy/aupb.webm,https://i.fightcore.gg/png/roy/aupb.png,True,2014

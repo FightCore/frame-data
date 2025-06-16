@@ -1,12 +1,12 @@
-Name,NormalizedName,LandLag,LCanceledLandLag,TotalFrames,IASA,AutoCancelBefore,AutoCancelAfter,Start,End,Type,Notes,Percent,CharacterId,Source,Id
-Jab 1,jab1,,,30,,,,11,12,Tilt,,,0,https://fightcore.gg/,1957
-Forward Tilt,ftilt,,,37,,,,12,14,Tilt,,,0,https://fightcore.gg/,1958
-Up Tilt,utilt,,,43,,,,10,24,Tilt,,,0,https://fightcore.gg/,1959
-Down Tilt,dtilt,,,32,,,,5,7,Tilt,,,0,https://fightcore.gg/,1960
-Up Air,uair,30,15,0,,,,16,17,Unknown,,,0,https://fightcore.gg/,1961
-Forward Air,fair,30,15,0,,,,8,11,Unknown,,,0,https://fightcore.gg/,1962
-Down Air,dair,30,15,0,,,,14,17,Unknown,,,0,https://fightcore.gg/,1963
-Neutral Air,nair,30,15,0,,,,6,27,Unknown,Hitboxes at 6-7 10-11 14-15 18-19 22-23 26-27,,0,https://fightcore.gg/,1964
-Up Smash,usmash,,,56,49,,,10,29,Unknown,Hitboxes at 10-15 26-29,,0,https://fightcore.gg/,1965
-Forward Smash,fsmash,,,40,40,,,16,16,Unknown,,,0,https://fightcore.gg/,1966
-Down Smash,dsmash,,,40,34,,,4,16,Unknown,Hitboxes at 4-7 13-16,,0,https://fightcore.gg/,1967
+Name,NormalizedName,LandLag,LCanceledLandLag,LandingFallSpecialLag,TotalFrames,IASA,AutoCancelBefore,AutoCancelAfter,Start,End,Type,Notes,Percent,CharacterId,Source,GifUrl,WebmUrl,PngUrl,IsInterpolated,Id
+Jab 1,jab1,,,,30,,,,11,12,Tilt,,,0,https://fightcore.gg/,https://i.fightcore.gg/melee/moves/fwireframe/jab1.gif,https://i.fightcore.gg/melee/moves/fwireframe/jab1.webm,,False,1957
+Forward Tilt,ftilt,,,,37,,,,12,14,Tilt,,,0,https://fightcore.gg/,https://i.fightcore.gg/melee/moves/fwireframe/ftilt.gif,https://i.fightcore.gg/melee/moves/fwireframe/ftilt.webm,,False,1958
+Up Tilt,utilt,,,,43,,,,10,24,Tilt,,,0,https://fightcore.gg/,https://i.fightcore.gg/melee/moves/fwireframe/utilt.gif,https://i.fightcore.gg/melee/moves/fwireframe/utilt.webm,,False,1959
+Down Tilt,dtilt,,,,32,,,,5,7,Tilt,,,0,https://fightcore.gg/,https://i.fightcore.gg/melee/moves/fwireframe/dtilt.gif,https://i.fightcore.gg/melee/moves/fwireframe/dtilt.webm,,False,1960
+Up Air,uair,30,15,,0,,,,16,17,Air,,,0,https://fightcore.gg/,https://i.fightcore.gg/melee/moves/fwireframe/uair.gif,https://i.fightcore.gg/melee/moves/fwireframe/uair.webm,,False,1961
+Forward Air,fair,30,15,,0,,,,8,11,Air,,,0,https://fightcore.gg/,https://i.fightcore.gg/melee/moves/fwireframe/fair.gif,https://i.fightcore.gg/melee/moves/fwireframe/fair.webm,,False,1962
+Down Air,dair,30,15,,0,,,,14,17,Air,,,0,https://fightcore.gg/,https://i.fightcore.gg/melee/moves/fwireframe/dair.gif,https://i.fightcore.gg/melee/moves/fwireframe/dair.webm,,False,1963
+Neutral Air,nair,30,15,,0,,,,6,27,Air,,,0,https://fightcore.gg/,https://i.fightcore.gg/melee/moves/fwireframe/nair.gif,https://i.fightcore.gg/melee/moves/fwireframe/nair.webm,,False,1964
+Up Smash,usmash,,,,56,49,,,10,29,Grounded,,,0,https://fightcore.gg/,https://i.fightcore.gg/melee/moves/fwireframe/usmash.gif,https://i.fightcore.gg/melee/moves/fwireframe/usmash.webm,,False,1965
+Forward Smash,fsmash,,,,40,40,,,16,16,Grounded,,,0,https://fightcore.gg/,https://i.fightcore.gg/melee/moves/fwireframe/fsmash.gif,https://i.fightcore.gg/melee/moves/fwireframe/fsmash.webm,,False,1966
+Down Smash,dsmash,,,,40,34,,,4,16,Grounded,,,0,https://fightcore.gg/,https://i.fightcore.gg/melee/moves/fwireframe/dsmash.gif,https://i.fightcore.gg/melee/moves/fwireframe/dsmash.webm,,False,1967

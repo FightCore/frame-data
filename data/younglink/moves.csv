@@ -1,63 +1,65 @@
-Name,NormalizedName,LandLag,LCanceledLandLag,TotalFrames,IASA,AutoCancelBefore,AutoCancelAfter,Start,End,Type,Notes,Percent,CharacterId,Source,Id
-Tether,zair,4,,60,,,,9,18,Air,,,0,http://meleeframedata.com/,1075
-Fire Bow,neutralb,,,38,,,,13,43,Special,"arrow lasts 30 frames minimum (if it doesnrt hit ground), 13 rames startup and 25 frames endlag upon release",,0,http://meleeframedata.com/,1076
-Boomerang,sideb,,,45,,,,27,168,Special,20 frames to catch the boomerang.,,0,http://meleeframedata.com/,1077
-Bomb,downb,,,0,,,,16,40,Special,"bomb pulled out on frame 16. able to start throwing on frame 40. bomb has multipule hitboxes, unknown how much each does (damage listed assumes all hits land)",,0,http://meleeframedata.com/,1078
-Dashattack,dattack,,,0,,,,,,Grounded,,,0,http://meleeframedata.com/,1080
-Forward Tilt,ftilt,,,33,,,,11,13,Tilt,,,0,http://meleeframedata.com/,1081
-Up Tilt,utilt,,,29,,,,9,15,Tilt,,,0,http://meleeframedata.com/,1082
-Down Tilt,dtilt,,,39,32,,,14,16,Tilt,,,0,http://meleeframedata.com/,1083
-Forward Smash,fsmash,,,49,,,,15,17,Grounded,,,0,http://meleeframedata.com/,1084
-Up Smash,usmash,,,60,52,,,11,44,Grounded,"4 hits, first hit frames 11-14 and does 3% and 3 frames shield stun. second hit frames 26-28 and does 2% damage and 2 frames shield stun. third hit frames 40-42 can do 7 or 8% damage and 5 frames shield stun. last hit frames 43-44 and can do 8 or 9% damage and 5 or 6 frames shield stun",,0,http://meleeframedata.com/,1085
-Down Smash,dsmash,,,23,42,,,9,11,Grounded,"front hit frames 9-11, does 13% or 7% damage. back hit frames 21-23, does 12% or 6% damage",,0,http://meleeframedata.com/,1086
-Neutral Air,nair,15,7,39,36,4,31,4,27,Air,weak hit frames 6-27,,0,http://meleeframedata.com/,1087
-Forward Air,fair,15,7,55,47,1,46,14,33,Air,"first hit frames 14-16, does 12%, 11%, or 9% damage. Second hit frames 17-33, does 8%, 7%, or 5% damage with 5 frames shield stun",,0,http://meleeframedata.com/,1088
-Back Air,bair,15,7,39,30,1,28,6,23,Air,,,0,http://meleeframedata.com/,1089
-Up Air,uair,30,15,69,,5,55,5,49,Air,,,0,http://meleeframedata.com/,1090
-Down Air,dair,50,25,89,80,13,64,13,64,Air,meteor hitbox frames 16-64,,0,http://meleeframedata.com/,1091
-Spin Attack,upb,,,80,,,,8,42,Special,"x amount of 1% hitboxes followed by 3% hitbox ",,0,http://meleeframedata.com/,1092
-unknown,unknown,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1094
-Edge attack,edge,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1198
-Pummel,pummel,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1199
-Forward throw,fthrow,,,39,,,,12,15,Throw,,,0,http://meleeframedata.com/,1200
-Back throw,bthrow,,,39,,,,11,15,Throw,,,0,http://meleeframedata.com/,1306
-Up throw,uthrow,,,49,,,,26,26,Throw,,,0,http://meleeframedata.com/,1307
-Down throw,dthrow,,,49,,,,22,23,Throw,,,0,http://meleeframedata.com/,1308
-Roll forwards,rollforward,,,38,,,,4,20,Dodge,,,0,http://meleeframedata.com/,1379
-Roll backwards,rollbackwards,,,38,,,,4,20,Dodge,,,0,http://meleeframedata.com/,1380
-Spotdodge,spotdodge,,,22,,,,2,15,Dodge,,,0,http://meleeframedata.com/,1381
-Airdodge,airdodge,,,49,,,,0,,Dodge,,,0,http://meleeframedata.com/,1382
-Jab 1,jab1,,,23,20,,,6,8,Grounded,,,0,http://meleeframedata.com/,1527
-Jab 2,jab2,,,21,17,,,6,7,Grounded,,,0,http://meleeframedata.com/,1528
-Jab 3,jab3,,,49,32,,,6,10,Grounded,,,0,http://meleeframedata.com/,1529
-Rapid Jabs,rjab,,,34,,,,2,3,Grounded,rapid jab has an additional 7 frames of startup and 10 fames of endlag,,0,http://meleeframedata.com/,1530
-Spin Attack (Air),aupb,,,80,,,,8,50,Special,"x amount of 1% hitboxes followed by 3% hitbox ",,0,http://meleeframedata.com/,1569
-Grab,grab,,,85,,,,11,14,Unknown,"Close grab is frame 11-13, hook is frame 11-14.",,0,http://meleeframedata.com/,1615
-Dashgrab,dashgrab,,,95,,,,14,17,Unknown,"Close grab is frame 14-15, hook is frame 14-17.",,0,http://meleeframedata.com/,1616
-Tech-Roll Forward,ftechroll,,,40,,,,,,Unknown,"Horizontal Movement At: 11
+Name,NormalizedName,LandLag,LCanceledLandLag,LandingFallSpecialLag,TotalFrames,IASA,AutoCancelBefore,AutoCancelAfter,Start,End,Type,Notes,Percent,CharacterId,Source,GifUrl,WebmUrl,PngUrl,IsInterpolated,Id
+Tether,zair,30,,,60,,,,11,15,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/younglink/zair.gif,https://i.fightcore.gg/beta/younglink/zair.webm,https://i.fightcore.gg/png/younglink/zair.png,False,1075
+Fire Bow,neutralb,,,,38,,,,14,46,Special,"Arrow lasts 55 frames minimum (if it does not hit ground), 13 frames startup and 25 frames endlag upon release",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/younglink/neutralb.gif,https://i.fightcore.gg/beta/younglink/neutralb.webm,,False,1076
+Boomerang,sideb,,,,45,,,,27,167,Special,20 frames to catch the boomerang.,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/younglink/sideb.gif,https://i.fightcore.gg/beta/younglink/sideb.webm,https://i.fightcore.gg/png/younglink/sideb.png,False,1077
+Bomb,downb,,,,0,,,,16,40,Special,"bomb pulled out on frame 16. able to start throwing on frame 40. bomb has multipule hitboxes, unknown how much each does (damage listed assumes all hits land)",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/younglink/downb.gif,https://i.fightcore.gg/beta/younglink/downb.webm,https://i.fightcore.gg/png/younglink/downb.png,False,1078
+Dashattack,dattack,,,,53,40,,,7,12,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/younglink/dattack.gif,https://i.fightcore.gg/beta/younglink/dattack.webm,https://i.fightcore.gg/png/younglink/dattack.png,False,1080
+Forward Tilt,ftilt,,,,33,,,,11,13,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/younglink/ftilt.gif,https://i.fightcore.gg/beta/younglink/ftilt.webm,https://i.fightcore.gg/png/younglink/ftilt.png,False,1081
+Up Tilt,utilt,,,,29,,,,9,15,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/younglink/utilt.gif,https://i.fightcore.gg/beta/younglink/utilt.webm,https://i.fightcore.gg/png/younglink/utilt.png,False,1082
+Down Tilt,dtilt,,,,39,32,,,14,16,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/younglink/dtilt.gif,https://i.fightcore.gg/beta/younglink/dtilt.webm,https://i.fightcore.gg/png/younglink/dtilt.png,False,1083
+Forward Smash,fsmash,,,,49,,,,15,17,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/younglink/fsmash.gif,https://i.fightcore.gg/beta/younglink/fsmash.webm,https://i.fightcore.gg/png/younglink/fsmash.png,False,1084
+Up Smash,usmash,,,,60,52,,,11,44,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/younglink/usmash.gif,https://i.fightcore.gg/beta/younglink/usmash.webm,https://i.fightcore.gg/png/younglink/usmash.png,False,1085
+Down Smash,dsmash,,,,23,42,,,9,11,Grounded,"front hit frames 9-11, does 13% or 7% damage. back hit frames 21-23, does 12% or 6% damage",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/younglink/dsmash.gif,https://i.fightcore.gg/beta/younglink/dsmash.webm,https://i.fightcore.gg/png/younglink/dsmash.png,False,1086
+Neutral Air,nair,15,7,,39,36,4,31,4,27,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/younglink/nair.gif,https://i.fightcore.gg/beta/younglink/nair.webm,https://i.fightcore.gg/png/younglink/nair.png,False,1087
+Forward Air,fair,15,7,,55,47,1,46,14,33,Air,"first hit frames 14-16, does 12%, 11%, or 9% damage. Second hit frames 17-33, does 8%, 7%, or 5% damage with 5 frames shield stun",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/younglink/fair.gif,https://i.fightcore.gg/beta/younglink/fair.webm,https://i.fightcore.gg/png/younglink/fair.png,False,1088
+Back Air,bair,15,7,,39,30,1,28,6,23,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/younglink/bair.gif,https://i.fightcore.gg/beta/younglink/bair.webm,https://i.fightcore.gg/png/younglink/bair.png,False,1089
+Up Air,uair,30,15,,69,,5,55,5,49,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/younglink/uair.gif,https://i.fightcore.gg/beta/younglink/uair.webm,https://i.fightcore.gg/png/younglink/uair.png,False,1090
+Down Air,dair,50,25,,89,80,13,64,13,64,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/younglink/dair.gif,https://i.fightcore.gg/beta/younglink/dair.webm,https://i.fightcore.gg/png/younglink/dair.png,False,1091
+Spin Attack,upb,,,,79,,,,8,44,Special,"Hits 8-43 loop for 1% damage, final hit on frame 44 for 3% damage",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/younglink/upb.gif,https://i.fightcore.gg/beta/younglink/upb.webm,https://i.fightcore.gg/png/younglink/upb.png,False,1092
+unknown,unknown,,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,,,,False,1094
+Edge attack,edge,,,,0,,,,,,EdgeAttack,,,0,http://meleeframedata.com/,,,,False,1198
+Pummel,pummel,,,,0,,,,,,Throw,,,0,http://meleeframedata.com/,,,,False,1199
+Forward throw,fthrow,,,,39,,,,12,15,Throw,,,0,http://meleeframedata.com/,,,,False,1200
+Back throw,bthrow,,,,39,,,,11,15,Throw,,,0,http://meleeframedata.com/,,,,False,1306
+Up throw,uthrow,,,,49,,,,26,26,Throw,,,0,http://meleeframedata.com/,,,,False,1307
+Down throw,dthrow,,,,49,,,,22,23,Throw,,,0,http://meleeframedata.com/,,,,False,1308
+Roll forwards,rollforward,,,,38,,,,4,20,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/younglink/rollforward.gif,https://i.fightcore.gg/beta/younglink/rollforward.webm,https://i.fightcore.gg/png/younglink/rollforward.png,False,1379
+Roll backwards,rollbackwards,,,,38,,,,4,20,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/younglink/rollbackwards.gif,https://i.fightcore.gg/beta/younglink/rollbackwards.webm,https://i.fightcore.gg/png/younglink/rollbackwards.png,False,1380
+Spotdodge,spotdodge,,,,22,,,,2,15,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/younglink/spotdodge.gif,https://i.fightcore.gg/beta/younglink/spotdodge.webm,https://i.fightcore.gg/png/younglink/spotdodge.png,False,1381
+Airdodge,airdodge,,,,49,,,,4,29,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/younglink/airdodge.gif,https://i.fightcore.gg/beta/younglink/airdodge.webm,https://i.fightcore.gg/png/younglink/airdodge.png,False,1382
+Jab 1,jab1,,,,23,20,,,6,8,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/younglink/jab1.gif,https://i.fightcore.gg/beta/younglink/jab1.webm,https://i.fightcore.gg/png/younglink/jab1.png,False,1527
+Jab 2,jab2,,,,22,18,,,7,8,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/younglink/jab2.gif,https://i.fightcore.gg/beta/younglink/jab2.webm,https://i.fightcore.gg/png/younglink/jab2.png,False,1528
+Jab 3,jab3,,,,50,33,,,7,10,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/younglink/jab3.gif,https://i.fightcore.gg/beta/younglink/jab3.webm,https://i.fightcore.gg/png/younglink/jab3.png,False,1529
+Rapid Jabs,rjab,,,,35,,,,3,32,Grounded,Separate 7 frame startup animation,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/younglink/rjab.gif,https://i.fightcore.gg/beta/younglink/rjab.webm,https://i.fightcore.gg/png/younglink/rjab.png,False,1530
+Spin Attack (Air),aupb,,,,80,,,,8,50,Special,"x amount of 1% hitboxes followed by 3% hitbox ",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/younglink/aupb.gif,https://i.fightcore.gg/beta/younglink/aupb.webm,https://i.fightcore.gg/png/younglink/aupb.png,False,1569
+Grab,grab,,,,85,,,,11,14,Throw,"Close grab is frame 11-13, hook is frame 11-14.",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/younglink/grab.gif,https://i.fightcore.gg/beta/younglink/grab.webm,https://i.fightcore.gg/png/younglink/grab.png,False,1615
+Dashgrab,dashgrab,,,,95,,,,14,17,Throw,"Close grab is frame 14-15, hook is frame 14-17.",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/younglink/dashgrab.gif,https://i.fightcore.gg/beta/younglink/dashgrab.webm,https://i.fightcore.gg/png/younglink/dashgrab.png,False,1616
+Tech-Roll Forward,ftechroll,,,,40,,,,,,Tech,"Horizontal Movement At: 11
 Distance: 12.8 ft
-Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1863
-Tech-Roll Backward,btechroll,,,40,,,,,,Unknown,"Horizontal Movement At: 9
+Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,https://i.fightcore.gg/beta/younglink/ftechroll.gif,https://i.fightcore.gg/beta/younglink/ftechroll.webm,https://i.fightcore.gg/png/younglink/ftechroll.png,False,1863
+Tech-Roll Backward,btechroll,,,,40,,,,,,Tech,"Horizontal Movement At: 9
 Distance: 12.8 ft
-Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1864
-Getup-Attack (Back),bgetup,,,49,,,,,,Unknown,"Hit: 19-20 (Front), 28-29 (Behind)
-Invincible: 1-29",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1865
-Getup-Attack (Stomach),fgetup,,,49,,,,,,Unknown,"Hit: 15-16 (Behind), 24-26 (Front)
-Invincible: 1-26",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1866
-Getup-Roll Forward (Back),fgetuprollback,,,35,,,,,,Unknown,"Horizontal Movement At: 11
+Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,https://i.fightcore.gg/beta/younglink/btechroll.gif,https://i.fightcore.gg/beta/younglink/btechroll.webm,https://i.fightcore.gg/png/younglink/btechroll.png,False,1864
+Getup-Attack (Back),bgetup,,,,49,,,,,,Tech,"Hit: 19-20 (Front), 28-29 (Behind)
+Invincible: 1-29",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1865
+Getup-Attack (Stomach),fgetup,,,,49,,,,,,Tech,"Hit: 15-16 (Behind), 24-26 (Front)
+Invincible: 1-26",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1866
+Getup-Roll Forward (Back),fgetuprollback,,,,35,,,,,,Tech,"Horizontal Movement At: 11
 Distance: 11 ft
-Invincible: 1-24",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1867
-Getup-Roll Forward (Stomach),fgetuprollstomach,,,35,,,,,,Unknown,"Horizontal Movement At: 8
+Invincible: 1-24",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1867
+Getup-Roll Forward (Stomach),fgetuprollstomach,,,,35,,,,,,Tech,"Horizontal Movement At: 8
 Distance: 11 ft
-Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1868
-Getup-Roll Backward (Back),bgetuprollback,,,35,,,,,,Unknown,"Horizontal Movement At: 11
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1868
+Getup-Roll Backward (Back),bgetuprollback,,,,35,,,,,,Tech,"Horizontal Movement At: 11
 Distance: 11.4 ft
-Invincible: 1-31",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1869
-Getup-Roll Backward (Stomach),bgetuprollstomach,,,35,,,,,,Unknown,"Horizontal Movement At: 12
+Invincible: 1-31",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1869
+Getup-Roll Backward (Stomach),bgetuprollstomach,,,,35,,,,,,Tech,"Horizontal Movement At: 12
 Distance: 11.2 ft
-Invincible: 1-25",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1870
-Tech-Neutral,neutraltech,,,26,,,,,,Unknown,Invincible: 1-20,,0,http://meleeframedata.com/,1903
-Tech-Wall,walltech,,,31,6,,,,,Unknown,"Invincible: 1-14
-Input an upwards direction anywhere on 1-4 for walljump tech on 6)",,0,http://meleeframedata.com/,1929
-Tech-Wall Jump,walltechjump,,,40,1,,,,,Unknown,,,0,http://meleeframedata.com/,1955
-Forward Smash 2,fsmash2,,,40,,,,10,13,Grounded,,,0,https://smashboards.com/threads/young-link-hitboxes-and-frame-data.301753/,1969
+Invincible: 1-25",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1870
+Tech-Neutral,neutraltech,,,,26,,,,,,Tech,Invincible: 1-20,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/younglink/neutraltech.gif,https://i.fightcore.gg/beta/younglink/neutraltech.webm,https://i.fightcore.gg/png/younglink/neutraltech.png,False,1903
+Tech-Wall,walltech,,,,31,6,,,,,Tech,"Invincible: 1-14
+Input an upwards direction anywhere on 1-4 for walljump tech on 6)",,0,http://meleeframedata.com/,,,,False,1929
+Tech-Wall Jump,walltechjump,,,,40,1,,,,,Tech,,,0,http://meleeframedata.com/,,,,False,1955
+Forward Smash 2,fsmash2,,,,40,,,,10,13,Grounded,,,0,https://smashboards.com/threads/young-link-hitboxes-and-frame-data.301753/,https://i.fightcore.gg/beta/younglink/fsmash2.gif,https://i.fightcore.gg/beta/younglink/fsmash2.webm,https://i.fightcore.gg/png/younglink/fsmash2.png,False,1969
+Boomerang (Air),asideb,,,,45,,,,27,167,Special,20 frames to catch the boomerang.,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/younglink/asideb.gif,https://i.fightcore.gg/beta/younglink/asideb.webm,https://i.fightcore.gg/png/younglink/asideb.png,True,2021
+Bomb (Air),adownb,,,,0,,,,16,40,Special,"bomb pulled out on frame 16. able to start throwing on frame 40. bomb has multipule hitboxes, unknown how much each does (damage listed assumes all hits land)",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/younglink/adownb.gif,https://i.fightcore.gg/beta/younglink/adownb.webm,https://i.fightcore.gg/png/younglink/adownb.png,True,2022

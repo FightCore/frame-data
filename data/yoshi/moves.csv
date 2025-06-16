@@ -1,62 +1,63 @@
-Name,NormalizedName,LandLag,LCanceledLandLag,TotalFrames,IASA,AutoCancelBefore,AutoCancelAfter,Start,End,Type,Notes,Percent,CharacterId,Source,Id
-Edge attack,edge,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,888
-Pummel,pummel,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,889
-Egg Lay,neutralb,,,39,,,,17,21,Special,damage in egg is cut in half,,0,http://meleeframedata.com/,890
-Forward throw,fthrow,,,39,,,,0,0,Throw,,,0,http://meleeframedata.com/,891
-Back throw,bthrow,,,43,,,,0,0,Throw,,,0,http://meleeframedata.com/,892
-Up throw,uthrow,,,43,,,,0,0,Throw,,,0,http://meleeframedata.com/,893
-Down throw,dthrow,,,43,,,,0,0,Throw,,,0,http://meleeframedata.com/,894
-Down Air,dair,26,13,59,,16,59,18,46,Air,15 hitboxes every other frame doing 4% damage each,,0,http://meleeframedata.com/,905
-Up Air,uair,19,9,39,39,5,32,5,6,Air,,,0,http://meleeframedata.com/,948
-Forward Air,fair,21,10,49,44,4,35,19,21,Air,,,0,http://meleeframedata.com/,949
-Back Air,bair,15,7,39,38,10,32,10,30,Air,"4 total hits, frames 10-12, 16-18, 23-25, 28-30. Do 7%, 6%, 5%, 4% damage respectively ",,0,http://meleeframedata.com/,989
-unknown,unknown,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,996
-Side special,sideb,,,0,,,,,,Special,,,0,http://meleeframedata.com/,997
-Yoshi Bomb,downb,,,76,,,,27,52,Special,"active frame 27-landing, plus 16 more frames of weak (star) hitboxes. 24 frames endlag upon landing",,0,http://meleeframedata.com/,998
-Egg Throw,upb,,,54,,,,18,74,Special,can grab edge after projectile is throw. egg explosion hitbox lasts 3 frames,,0,http://meleeframedata.com/,999
-Dashattack,dattack,,,43,42,,,10,23,Grounded,,,0,http://meleeframedata.com/,1001
-Forward Tilt,ftilt,,,29,,,,6,8,Tilt,,,0,http://meleeframedata.com/,1002
-Up Tilt,utilt,,,29,,,,8,12,Tilt,,,0,http://meleeframedata.com/,1003
-Down Tilt,dtilt,,,23,,,,8,10,Tilt,,,0,http://meleeframedata.com/,1004
-Forward Smash,fsmash,,,47,44,,,14,16,Grounded,,,0,http://meleeframedata.com/,1005
-Up Smash,usmash,,,43,40,,,11,15,Grounded,,,0,http://meleeframedata.com/,1006
-Down Smash,dsmash,,,49,,,,6,22,Grounded,"strong (front) hit frames 6-8, weak hit frames 21-22",,0,http://meleeframedata.com/,1007
-Neutral Air,nair,15,7,47,45,3,35,3,33,Air,weak hit frames 7-33,,0,http://meleeframedata.com/,1008
-Roll backwards,rollbackwards,,,37,,,,4,19,Dodge,,,0,http://meleeframedata.com/,1427
-Spotdodge,spotdodge,,,22,,,,2,15,Dodge,,,0,http://meleeframedata.com/,1428
-Airdodge,airdodge,,,49,,,,0,,Dodge,,,0,http://meleeframedata.com/,1429
-Roll forwards,rollforward,,,37,,,,4,19,Dodge,,,0,http://meleeframedata.com/,1437
-Jab 1,jab1,,,17,,,,3,5,Grounded,,,0,http://meleeframedata.com/,1525
-Jab 2,jab2,,,19,,,,3,5,Grounded,,,0,http://meleeframedata.com/,1526
-Yoshi Bomb (Air),adownb,,,0,,,,19,0,Special,"active frame 19-landing, plus 16 more frames of weak (star) hitboxes. 24 frames endlag upon landing",,0,http://meleeframedata.com/,1568
-Grab,grab,,,79,,,,18,23,Unknown,,,0,http://meleeframedata.com/,1613
-Dashgrab,dashgrab,,,70,,,,11,16,Unknown,,,0,http://meleeframedata.com/,1614
-Forward Tilt (Up),uaft,,,29,,,,6,8,Tilt,,,0,http://meleeframedata.com/,1648
-Forward Tilt (Down),daft,,,29,,,,6,8,Tilt,,,0,http://meleeframedata.com/,1649
-Side special (Air),asideb,,,0,,,,,,Special,,,0,http://meleeframedata.com/,1659
-Tech-Roll Forward,ftechroll,,,40,,,,,,Unknown,"Horizontal Movement At: 10
+Name,NormalizedName,LandLag,LCanceledLandLag,LandingFallSpecialLag,TotalFrames,IASA,AutoCancelBefore,AutoCancelAfter,Start,End,Type,Notes,Percent,CharacterId,Source,GifUrl,WebmUrl,PngUrl,IsInterpolated,Id
+Edge attack,edge,,,,0,,,,,,EdgeAttack,,,0,http://meleeframedata.com/,,,,False,888
+Pummel,pummel,,,,0,,,,,,Throw,,,0,http://meleeframedata.com/,,,,False,889
+Egg Lay,neutralb,,,,39,,,,17,21,Special,damage in egg is cut in half,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/yoshi/neutralb.gif,https://i.fightcore.gg/beta/yoshi/neutralb.webm,https://i.fightcore.gg/png/yoshi/neutralb.png,False,890
+Forward throw,fthrow,,,,39,,,,0,0,Throw,,,0,http://meleeframedata.com/,,,,False,891
+Back throw,bthrow,,,,43,,,,0,0,Throw,,,0,http://meleeframedata.com/,,,,False,892
+Up throw,uthrow,,,,43,,,,0,0,Throw,,,0,http://meleeframedata.com/,,,,False,893
+Down throw,dthrow,,,,43,,,,0,0,Throw,,,0,http://meleeframedata.com/,,,,False,894
+Down Air,dair,26,13,,59,53,16,49,18,44,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/yoshi/dair.gif,https://i.fightcore.gg/beta/yoshi/dair.webm,https://i.fightcore.gg/png/yoshi/dair.png,False,905
+Up Air,uair,19,9,,39,39,5,32,5,6,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/yoshi/uair.gif,https://i.fightcore.gg/beta/yoshi/uair.webm,https://i.fightcore.gg/png/yoshi/uair.png,False,948
+Forward Air,fair,21,10,,49,44,4,35,19,21,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/yoshi/fair.gif,https://i.fightcore.gg/beta/yoshi/fair.webm,https://i.fightcore.gg/png/yoshi/fair.png,False,949
+Back Air,bair,15,7,,39,38,10,32,10,30,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/yoshi/bair.gif,https://i.fightcore.gg/beta/yoshi/bair.webm,https://i.fightcore.gg/png/yoshi/bair.png,False,989
+unknown,unknown,,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,,,,False,996
+Side special,sideb,,,,0,,,,,,Special,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/yoshi/sideb.gif,https://i.fightcore.gg/beta/yoshi/sideb.webm,https://i.fightcore.gg/png/yoshi/sideb.png,False,997
+Yoshi Bomb,downb,,,,76,,,,27,52,Special,"active frame 27-landing, plus 16 more frames of weak (star) hitboxes. 24 frames endlag upon landing",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/yoshi/downb.gif,https://i.fightcore.gg/beta/yoshi/downb.webm,https://i.fightcore.gg/png/yoshi/downb.png,False,998
+Egg Throw,upb,,,,54,,,,18,74,Special,can grab edge after projectile is throw. egg explosion hitbox lasts 3 frames,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/yoshi/upb.gif,https://i.fightcore.gg/beta/yoshi/upb.webm,https://i.fightcore.gg/png/yoshi/upb.png,False,999
+Dashattack,dattack,,,,43,42,,,10,23,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/yoshi/dattack.gif,https://i.fightcore.gg/beta/yoshi/dattack.webm,https://i.fightcore.gg/png/yoshi/dattack.png,False,1001
+Forward Tilt,ftilt,,,,29,,,,6,8,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/yoshi/ftilt.gif,https://i.fightcore.gg/beta/yoshi/ftilt.webm,https://i.fightcore.gg/png/yoshi/ftilt.png,False,1002
+Up Tilt,utilt,,,,29,,,,8,12,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/yoshi/utilt.gif,https://i.fightcore.gg/beta/yoshi/utilt.webm,https://i.fightcore.gg/png/yoshi/utilt.png,False,1003
+Down Tilt,dtilt,,,,23,,,,8,10,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/yoshi/dtilt.gif,https://i.fightcore.gg/beta/yoshi/dtilt.webm,https://i.fightcore.gg/png/yoshi/dtilt.png,False,1004
+Forward Smash,fsmash,,,,47,44,,,14,16,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/yoshi/fsmash.gif,https://i.fightcore.gg/beta/yoshi/fsmash.webm,https://i.fightcore.gg/png/yoshi/fsmash.png,False,1005
+Up Smash,usmash,,,,43,40,,,11,15,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/yoshi/usmash.gif,https://i.fightcore.gg/beta/yoshi/usmash.webm,https://i.fightcore.gg/png/yoshi/usmash.png,False,1006
+Down Smash,dsmash,,,,49,,,,6,22,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/yoshi/dsmash.gif,https://i.fightcore.gg/beta/yoshi/dsmash.webm,https://i.fightcore.gg/png/yoshi/dsmash.png,False,1007
+Neutral Air,nair,15,7,,47,45,3,35,3,33,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/yoshi/nair.gif,https://i.fightcore.gg/beta/yoshi/nair.webm,https://i.fightcore.gg/png/yoshi/nair.png,False,1008
+Roll backwards,rollbackwards,,,,37,,,,4,19,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/yoshi/rollbackwards.gif,https://i.fightcore.gg/beta/yoshi/rollbackwards.webm,https://i.fightcore.gg/png/yoshi/rollbackwards.png,False,1427
+Spotdodge,spotdodge,,,,22,,,,2,15,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/yoshi/spotdodge.gif,https://i.fightcore.gg/beta/yoshi/spotdodge.webm,https://i.fightcore.gg/png/yoshi/spotdodge.png,False,1428
+Airdodge,airdodge,,,,49,,,,0,,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/yoshi/airdodge.gif,https://i.fightcore.gg/beta/yoshi/airdodge.webm,https://i.fightcore.gg/png/yoshi/airdodge.png,False,1429
+Roll forwards,rollforward,,,,37,,,,4,19,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/yoshi/rollforward.gif,https://i.fightcore.gg/beta/yoshi/rollforward.webm,https://i.fightcore.gg/png/yoshi/rollforward.png,False,1437
+Jab 1,jab1,,,,17,,,,3,5,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/yoshi/jab1.gif,https://i.fightcore.gg/beta/yoshi/jab1.webm,https://i.fightcore.gg/png/yoshi/jab1.png,False,1525
+Jab 2,jab2,,,,19,,,,3,5,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/yoshi/jab2.gif,https://i.fightcore.gg/beta/yoshi/jab2.webm,https://i.fightcore.gg/png/yoshi/jab2.png,False,1526
+Yoshi Bomb (Air),adownb,,,,0,,,,19,0,Special,"active frame 19-landing, plus 16 more frames of weak (star) hitboxes. 24 frames endlag upon landing",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/yoshi/adownb.gif,https://i.fightcore.gg/beta/yoshi/adownb.webm,https://i.fightcore.gg/png/yoshi/adownb.png,False,1568
+Grab,grab,,,,79,,,,18,23,Throw,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/yoshi/grab.gif,https://i.fightcore.gg/beta/yoshi/grab.webm,https://i.fightcore.gg/png/yoshi/grab.png,False,1613
+Dashgrab,dashgrab,,,,70,,,,11,16,Throw,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/yoshi/dashgrab.gif,https://i.fightcore.gg/beta/yoshi/dashgrab.webm,https://i.fightcore.gg/png/yoshi/dashgrab.png,False,1614
+Forward Tilt (Up),uaft,,,,29,,,,6,8,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/yoshi/uaft.gif,https://i.fightcore.gg/beta/yoshi/uaft.webm,https://i.fightcore.gg/png/yoshi/uaft.png,False,1648
+Forward Tilt (Down),daft,,,,29,,,,6,8,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/yoshi/daft.gif,https://i.fightcore.gg/beta/yoshi/daft.webm,https://i.fightcore.gg/png/yoshi/daft.png,False,1649
+Side special (Air),asideb,,,,0,,,,,,Special,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/yoshi/asideb.gif,https://i.fightcore.gg/beta/yoshi/asideb.webm,https://i.fightcore.gg/png/yoshi/asideb.png,False,1659
+Tech-Roll Forward,ftechroll,,,,40,,,,,,Tech,"Horizontal Movement At: 10
 Distance: 14.6 ft
-Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1855
-Tech-Roll Backward,btechroll,,,40,,,,,,Unknown,"Horizontal Movement At: 12
+Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,https://i.fightcore.gg/beta/yoshi/ftechroll.gif,https://i.fightcore.gg/beta/yoshi/ftechroll.webm,https://i.fightcore.gg/png/yoshi/ftechroll.png,False,1855
+Tech-Roll Backward,btechroll,,,,40,,,,,,Tech,"Horizontal Movement At: 12
 Distance: 14.4 ft
-Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1856
-Getup-Attack (Back),bgetup,,,49,,,,,,Unknown,"Hit: 13-14 (Front), 19-20 (Behind)
-Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1857
-Getup-Attack (Stomach),fgetup,,,49,,,,,,Unknown,"Hit: 14-15 (Front), 25-26 (Behind)
-Invincible: 1-26",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1858
-Getup-Roll Forward (Back),fgetuprollback,,,35,,,,,,Unknown,"Horizontal Movement At: 4
+Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,https://i.fightcore.gg/beta/yoshi/btechroll.gif,https://i.fightcore.gg/beta/yoshi/btechroll.webm,https://i.fightcore.gg/png/yoshi/btechroll.png,False,1856
+Getup-Attack (Back),bgetup,,,,49,,,,,,Tech,"Hit: 13-14 (Front), 19-20 (Behind)
+Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1857
+Getup-Attack (Stomach),fgetup,,,,49,,,,,,Tech,"Hit: 14-15 (Front), 25-26 (Behind)
+Invincible: 1-26",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1858
+Getup-Roll Forward (Back),fgetuprollback,,,,35,,,,,,Tech,"Horizontal Movement At: 4
 Distance: 12.4 ft
-Invincible: 1-19 (If the roll takes you to an edge and you try to move/crouch/jump/shield as it ends you will slip off)",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1859
-Getup-Roll Forward (Stomach),fgetuprollstomach,,,35,,,,,,Unknown,"Horizontal Movement At: 7
+Invincible: 1-19 (If the roll takes you to an edge and you try to move/crouch/jump/shield as it ends you will slip off)",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1859
+Getup-Roll Forward (Stomach),fgetuprollstomach,,,,35,,,,,,Tech,"Horizontal Movement At: 7
 Distance: 12 ft
-Invincible: 1-14",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1860
-Getup-Roll Backward (Back),bgetuprollback,,,35,,,,,,Unknown,"Horizontal Movement At: 5
+Invincible: 1-14",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1860
+Getup-Roll Backward (Back),bgetuprollback,,,,35,,,,,,Tech,"Horizontal Movement At: 5
 Distance: 12.2 ft
-Invincible: 1-24",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1861
-Getup-Roll Backward (Stomach),bgetuprollstomach,,,35,,,,,,Unknown,"Horizontal Movement At: 11
+Invincible: 1-24",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1861
+Getup-Roll Backward (Stomach),bgetuprollstomach,,,,35,,,,,,Tech,"Horizontal Movement At: 11
 Distance: 12.4 ft
-Invincible: 1-29",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1862
-Tech-Neutral,neutraltech,,,26,,,,,,Unknown,Invincible: 1-20,,0,http://meleeframedata.com/,1893
-Tech-Wall,walltech,,,31,6,,,,,Unknown,"Invincible: 1-14
-Input an upwards direction anywhere on 1-4 for walljump tech on 6)",,0,http://meleeframedata.com/,1919
-Tech-Wall Jump,walltechjump,,,40,1,,,,,Unknown,,,0,http://meleeframedata.com/,1945
+Invincible: 1-29",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1862
+Tech-Neutral,neutraltech,,,,26,,,,,,Tech,Invincible: 1-20,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/yoshi/neutraltech.gif,https://i.fightcore.gg/beta/yoshi/neutraltech.webm,https://i.fightcore.gg/png/yoshi/neutraltech.png,False,1893
+Tech-Wall,walltech,,,,31,6,,,,,Tech,"Invincible: 1-14
+Input an upwards direction anywhere on 1-4 for walljump tech on 6)",,0,http://meleeframedata.com/,,,,False,1919
+Tech-Wall Jump,walltechjump,,,,40,1,,,,,Tech,,,0,http://meleeframedata.com/,,,,False,1945
+Egg Throw (Air),aupb,,,,54,,,,18,74,Special,can grab edge after projectile is throw. egg explosion hitbox lasts 3 frames,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/yoshi/aupb.gif,https://i.fightcore.gg/beta/yoshi/aupb.webm,https://i.fightcore.gg/png/yoshi/aupb.png,True,2018

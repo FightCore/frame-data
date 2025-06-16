@@ -1,65 +1,65 @@
-Name,NormalizedName,LandLag,LCanceledLandLag,TotalFrames,IASA,AutoCancelBefore,AutoCancelAfter,Start,End,Type,Notes,Percent,CharacterId,Source,Id
-Falcon Punch,neutralb,,,99,65,,,52,56,Special,,,0,http://meleeframedata.com/,1049
-Raptor Boost,sideb,,,79,,,,15,34,Special,"once side b collides with a player, the punch hitbox starts, active frames 3-7, with 25 frames endlag",,0,http://meleeframedata.com/,1071
-Facon kick,downb,,,64,,,,14,32,Special,"strong hit frames 14-16, weaker hit frames 17-24, weakest hit frames 25-32",,0,http://meleeframedata.com/,1072
-Dashattack,dattack,,,39,38,,,7,16,Grounded,weak hitbox frame 10-16,,0,http://meleeframedata.com/,1074
-Up throw,uthrow,,,43,,,,11,28,Throw,,,0,http://meleeframedata.com/,1095
-Forward Tilt,ftilt,,,29,,,,9,11,Tilt,,,0,http://meleeframedata.com/,1096
-Up Tilt,utilt,,,39,38,,,17,21,Tilt,,,0,http://meleeframedata.com/,1097
-Down Tilt,dtilt,,,35,35,,,10,15,Tilt,,,0,http://meleeframedata.com/,1098
-Forward Smash,fsmash,,,64,60,,,18,21,Grounded,,,0,http://meleeframedata.com/,1099
-Up Smash,usmash,,,54,40,,,21,28,Grounded,"active 21-22 and 27-28, first hit can do 8% or 14%, second hit can do 12%-13%",,0,http://meleeframedata.com/,1100
-Down Smash,dsmash,,,49,45,,,19,32,Grounded,"front (strong) hit is frame 19-22, back (weak) hit is frame 29-32",,0,http://meleeframedata.com/,1101
-Neutral Air,nair,15,7,44,,4,33,7,29,Air,"active frame 7-12 and 20-29, 2nd hit is the strong hit",,0,http://meleeframedata.com/,1102
-Forward Air,fair,19,9,39,36,7,34,14,30,Air,strong hitbox frame 14-16,,0,http://meleeframedata.com/,1103
-Back Air,bair,18,9,35,29,7,20,10,17,Air,weak hit frame 14-17,,0,http://meleeframedata.com/,1104
-Up Air,uair,15,7,33,30,1,21,6,14,Air,"Notes - strong hitbox frame 6-10, move can do anywhere from 6 to 13 damage",,0,http://meleeframedata.com/,1105
-Down Air,dair,24,12,44,38,4,35,16,20,Air,,,0,http://meleeframedata.com/,1106
-Edge attack,edge,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1108
-Pummel,pummel,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1109
-Falcon Dive,upb,,,64,,,,13,33,Special,"can grab ledge 5 frames after active end. if grabbed, hit is active frames 2-6 and hit animation takes a total of 79 frames",,0,http://meleeframedata.com/,1110
-Forward throw,fthrow,,,39,,,,11,17,Throw,,,0,http://meleeframedata.com/,1111
-Back throw,bthrow,,,49,,,,12,19,Throw,,,0,http://meleeframedata.com/,1112
-Down throw,dthrow,,,39,,,,0,0,Throw,,,0,http://meleeframedata.com/,1113
-Roll backwards,rollbackwards,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,1471
-Roll forwards,rollforward,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,1472
-Spotdodge,spotdodge,,,32,,,,3,20,Dodge,,,0,http://meleeframedata.com/,1473
-Airdodge,airdodge,,,49,,,,0,,Dodge,,,0,http://meleeframedata.com/,1474
-Jab 1,jab1,,,21,16,,,3,5,Grounded,,,0,http://meleeframedata.com/,1478
-Jab 2,jab2,,,19,18,,,4,6,Grounded,,,0,http://meleeframedata.com/,1479
-Jab 3,jab3,,,31,22,,,5,11,Grounded,weak hitbox frame 9-11,,0,http://meleeframedata.com/,1480
-Falcon Kick (Air),adownb,45,,57,,,,15,29,Special,"can also do 11% damage. landing lag only occurs if ground hitbox is activated, which is also the weak hitbox",,0,http://meleeframedata.com/,1485
-Falcon Punch (Air),aneutralb,,,99,65,,,52,56,Special,,,0,http://meleeframedata.com/,1540
-Raptor Boost (Air),asideb,20,,79,,,,15,34,Special,"once side b collides with a player, the punch hitbox starts, active frames 3-7, with 45 frames endlag",,0,http://meleeframedata.com/,1541
-Falcon Dive (Air),aupb,,,64,,,,13,33,Special,"can grab ledge 5 frames after active end. if grabbed, hit is active frames 2-6 and hit animation takes a total of 79 frames",,0,http://meleeframedata.com/,1542
-Grab,grab,,,30,,,,7,8,Unknown,,,0,http://meleeframedata.com/,1571
-Dashgrab,dashgrab,,,40,,,,11,12,Unknown,,,0,http://meleeframedata.com/,1572
-Rapid Jabs,rjab,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1624
-Forward Tilt (Up),uaft,,,29,,,,9,11,Tilt,,,0,http://meleeframedata.com/,1628
-Forward Tilt (Down),daft,,,29,,,,9,11,Tilt,,,0,http://meleeframedata.com/,1629
-Tech-Roll Forward,ftechroll,,,40,,,,,,Unknown,"Horizontal Movement At: 11
+Name,NormalizedName,LandLag,LCanceledLandLag,LandingFallSpecialLag,TotalFrames,IASA,AutoCancelBefore,AutoCancelAfter,Start,End,Type,Notes,Percent,CharacterId,Source,GifUrl,WebmUrl,PngUrl,IsInterpolated,Id
+Falcon Punch,neutralb,,,,99,65,,,52,56,Special,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/captainfalcon/neutralb.gif,https://i.fightcore.gg/beta/captainfalcon/neutralb.webm,https://i.fightcore.gg/png/captainfalcon/neutralb.png,False,1049
+Raptor Boost,sideb,,,,79,,,,15,34,Special,"once side b collides with a player, the punch hitbox starts, active frames 3-7, with 25 frames endlag",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/captainfalcon/sideb.gif,https://i.fightcore.gg/beta/captainfalcon/sideb.webm,https://i.fightcore.gg/png/captainfalcon/sideb.png,False,1071
+Facon kick,downb,,,,64,,,,14,32,Special,"strong hit frames 14-16, weaker hit frames 17-24, weakest hit frames 25-32",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/captainfalcon/downb.gif,https://i.fightcore.gg/beta/captainfalcon/downb.webm,https://i.fightcore.gg/png/captainfalcon/downb.png,False,1072
+Dashattack,dattack,,,,39,38,,,7,16,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/captainfalcon/dattack.gif,https://i.fightcore.gg/beta/captainfalcon/dattack.webm,https://i.fightcore.gg/png/captainfalcon/dattack.png,False,1074
+Up throw,uthrow,,,,43,,,,11,28,Throw,,,0,http://meleeframedata.com/,,,,False,1095
+Forward Tilt,ftilt,,,,29,,,,9,11,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/captainfalcon/ftilt.gif,https://i.fightcore.gg/beta/captainfalcon/ftilt.webm,https://i.fightcore.gg/png/captainfalcon/ftilt.png,False,1096
+Up Tilt,utilt,,,,39,38,,,17,21,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/captainfalcon/utilt.gif,https://i.fightcore.gg/beta/captainfalcon/utilt.webm,https://i.fightcore.gg/png/captainfalcon/utilt.png,False,1097
+Down Tilt,dtilt,,,,35,35,,,10,15,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/captainfalcon/dtilt.gif,https://i.fightcore.gg/beta/captainfalcon/dtilt.webm,https://i.fightcore.gg/png/captainfalcon/dtilt.png,False,1098
+Forward Smash,fsmash,,,,64,60,,,18,21,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/captainfalcon/fsmash.gif,https://i.fightcore.gg/beta/captainfalcon/fsmash.webm,https://i.fightcore.gg/png/captainfalcon/fsmash.png,False,1099
+Up Smash,usmash,,,,54,40,,,21,28,Grounded,"active 21-22 and 27-28, first hit can do 8% or 14%, second hit can do 12%-13%",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/captainfalcon/usmash.gif,https://i.fightcore.gg/beta/captainfalcon/usmash.webm,https://i.fightcore.gg/png/captainfalcon/usmash.png,False,1100
+Down Smash,dsmash,,,,49,45,,,19,32,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/captainfalcon/dsmash.gif,https://i.fightcore.gg/beta/captainfalcon/dsmash.webm,https://i.fightcore.gg/png/captainfalcon/dsmash.png,False,1101
+Neutral Air,nair,15,7,,44,,4,33,7,29,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/captainfalcon/nair.gif,https://i.fightcore.gg/beta/captainfalcon/nair.webm,https://i.fightcore.gg/png/captainfalcon/nair.png,False,1102
+Forward Air,fair,19,9,,39,36,7,34,14,30,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/captainfalcon/fair.gif,https://i.fightcore.gg/beta/captainfalcon/fair.webm,https://i.fightcore.gg/png/captainfalcon/fair.png,False,1103
+Back Air,bair,18,9,,35,29,7,20,10,17,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/captainfalcon/bair.gif,https://i.fightcore.gg/beta/captainfalcon/bair.webm,https://i.fightcore.gg/png/captainfalcon/bair.png,False,1104
+Up Air,uair,15,7,,33,30,1,21,6,13,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/captainfalcon/uair.gif,https://i.fightcore.gg/beta/captainfalcon/uair.webm,https://i.fightcore.gg/png/captainfalcon/uair.png,False,1105
+Down Air,dair,24,12,,44,38,4,35,16,20,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/captainfalcon/dair.gif,https://i.fightcore.gg/beta/captainfalcon/dair.webm,https://i.fightcore.gg/png/captainfalcon/dair.png,False,1106
+Edge attack,edge,,,,0,,,,,,EdgeAttack,,,0,http://meleeframedata.com/,,,,False,1108
+Pummel,pummel,,,,0,,,,,,Throw,,,0,http://meleeframedata.com/,,,,False,1109
+Falcon Dive,upb,,,,64,,,,13,33,Special,"can grab ledge 5 frames after active end. if grabbed, hit is active frames 2-6 and hit animation takes a total of 79 frames",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/captainfalcon/upb.gif,https://i.fightcore.gg/beta/captainfalcon/upb.webm,https://i.fightcore.gg/png/captainfalcon/upb.png,False,1110
+Forward throw,fthrow,,,,39,,,,11,17,Throw,,,0,http://meleeframedata.com/,,,,False,1111
+Back throw,bthrow,,,,49,,,,12,19,Throw,,,0,http://meleeframedata.com/,,,,False,1112
+Down throw,dthrow,,,,39,,,,0,0,Throw,,,0,http://meleeframedata.com/,,,,False,1113
+Roll backwards,rollbackwards,,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/captainfalcon/rollbackwards.gif,https://i.fightcore.gg/beta/captainfalcon/rollbackwards.webm,https://i.fightcore.gg/png/captainfalcon/rollbackwards.png,False,1471
+Roll forwards,rollforward,,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/captainfalcon/rollforward.gif,https://i.fightcore.gg/beta/captainfalcon/rollforward.webm,https://i.fightcore.gg/png/captainfalcon/rollforward.png,False,1472
+Spotdodge,spotdodge,,,,32,,,,3,20,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/captainfalcon/spotdodge.gif,https://i.fightcore.gg/beta/captainfalcon/spotdodge.webm,https://i.fightcore.gg/png/captainfalcon/spotdodge.png,False,1473
+Airdodge,airdodge,,,,49,,,,0,,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/captainfalcon/airdodge.gif,https://i.fightcore.gg/beta/captainfalcon/airdodge.webm,https://i.fightcore.gg/png/captainfalcon/airdodge.png,False,1474
+Jab 1,jab1,,,,21,16,,,3,5,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/captainfalcon/jab1.gif,https://i.fightcore.gg/beta/captainfalcon/jab1.webm,https://i.fightcore.gg/png/captainfalcon/jab1.png,False,1478
+Jab 2,jab2,,,,19,18,,,4,6,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/captainfalcon/jab2.gif,https://i.fightcore.gg/beta/captainfalcon/jab2.webm,https://i.fightcore.gg/png/captainfalcon/jab2.png,False,1479
+Jab 3,jab3,,,,31,22,,,5,11,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/captainfalcon/jab3.gif,https://i.fightcore.gg/beta/captainfalcon/jab3.webm,https://i.fightcore.gg/png/captainfalcon/jab3.png,False,1480
+Falcon Kick (Air),adownb,45,,,57,,,,15,29,Special,"can also do 11% damage. landing lag only occurs if ground hitbox is activated, which is also the weak hitbox",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/captainfalcon/adownb.gif,https://i.fightcore.gg/beta/captainfalcon/adownb.webm,https://i.fightcore.gg/png/captainfalcon/adownb.png,False,1485
+Falcon Punch (Air),aneutralb,,,,99,65,,,52,56,Special,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/captainfalcon/aneutralb.gif,https://i.fightcore.gg/beta/captainfalcon/aneutralb.webm,https://i.fightcore.gg/png/captainfalcon/aneutralb.png,False,1540
+Raptor Boost (Air),asideb,20,,,79,,,,15,34,Special,"once side b collides with a player, the punch hitbox starts, active frames 3-7, with 45 frames endlag",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/captainfalcon/asideb.gif,https://i.fightcore.gg/beta/captainfalcon/asideb.webm,https://i.fightcore.gg/png/captainfalcon/asideb.png,False,1541
+Falcon Dive (Air),aupb,,,,64,,,,13,33,Special,"can grab ledge 5 frames after active end. if grabbed, hit is active frames 2-6 and hit animation takes a total of 79 frames",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/captainfalcon/aupb.gif,https://i.fightcore.gg/beta/captainfalcon/aupb.webm,https://i.fightcore.gg/png/captainfalcon/aupb.png,False,1542
+Grab,grab,,,,30,,,,7,8,Throw,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/captainfalcon/grab.gif,https://i.fightcore.gg/beta/captainfalcon/grab.webm,https://i.fightcore.gg/png/captainfalcon/grab.png,False,1571
+Dashgrab,dashgrab,,,,40,,,,11,12,Throw,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/captainfalcon/dashgrab.gif,https://i.fightcore.gg/beta/captainfalcon/dashgrab.webm,https://i.fightcore.gg/png/captainfalcon/dashgrab.png,False,1572
+Rapid Jabs,rjab,,,,0,,,,,,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/captainfalcon/rjab.gif,https://i.fightcore.gg/beta/captainfalcon/rjab.webm,https://i.fightcore.gg/png/captainfalcon/rjab.png,False,1624
+Forward Tilt (Up),uaft,,,,29,,,,9,11,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/captainfalcon/uaft.gif,https://i.fightcore.gg/beta/captainfalcon/uaft.webm,https://i.fightcore.gg/png/captainfalcon/uaft.png,False,1628
+Forward Tilt (Down),daft,,,,29,,,,9,11,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/captainfalcon/daft.gif,https://i.fightcore.gg/beta/captainfalcon/daft.webm,https://i.fightcore.gg/png/captainfalcon/daft.png,False,1629
+Tech-Roll Forward,ftechroll,,,,40,,,,,,Tech,"Horizontal Movement At: 11
 Distance: 16.6 ft
-Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1679
-Tech-Roll Backward,btechroll,,,40,,,,,,Unknown,"Horizontal Movement At: 8
+Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,https://i.fightcore.gg/beta/captainfalcon/ftechroll.gif,https://i.fightcore.gg/beta/captainfalcon/ftechroll.webm,https://i.fightcore.gg/png/captainfalcon/ftechroll.png,False,1679
+Tech-Roll Backward,btechroll,,,,40,,,,,,Tech,"Horizontal Movement At: 8
 Distance: 13.6 ft
-Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1680
-Getup-Attack (Back),bgetup,,,49,,,,,,Unknown,"Hit: 19-20 (Both Sides), 28-29 (Both Sides)
-Invincible: 1-29",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1681
-Getup-Attack (Stomach),fgetup,,,49,,,,,,Unknown,"Hit: 20-21 (Behind), 26-27 (Front)
-Invincible: 1-27",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1682
-Getup-Roll Forward (Back),fgetuprollback,,,35,,,,,,Unknown,"Horizontal Movement At: 5
+Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,https://i.fightcore.gg/beta/captainfalcon/btechroll.gif,https://i.fightcore.gg/beta/captainfalcon/btechroll.webm,https://i.fightcore.gg/png/captainfalcon/btechroll.png,False,1680
+Getup-Attack (Back),bgetup,,,,49,,,,,,Tech,"Hit: 19-20 (Both Sides), 28-29 (Both Sides)
+Invincible: 1-29",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1681
+Getup-Attack (Stomach),fgetup,,,,49,,,,,,Tech,"Hit: 20-21 (Behind), 26-27 (Front)
+Invincible: 1-27",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1682
+Getup-Roll Forward (Back),fgetuprollback,,,,35,,,,,,Tech,"Horizontal Movement At: 5
 Distance: 11 ft
-Invincible: 1-23",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1683
-Getup-Roll Forward (Stomach),fgetuprollstomach,,,35,,,,,,Unknown,"Horizontal Movement At: 10
+Invincible: 1-23",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1683
+Getup-Roll Forward (Stomach),fgetuprollstomach,,,,35,,,,,,Tech,"Horizontal Movement At: 10
 Distance: 11 ft
-Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1684
-Getup-Roll Backward (Back),bgetuprollback,,,35,,,,,,Unknown,"Horizontal Movement At: 5
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1684
+Getup-Roll Backward (Back),bgetuprollback,,,,35,,,,,,Tech,"Horizontal Movement At: 5
 Distance: 11 ft
-Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1685
-Getup-Roll Backward (Stomach),bgetuprollstomach,,,35,,,,,,Unknown,"Horizontal Movement At: 15
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1685
+Getup-Roll Backward (Stomach),bgetuprollstomach,,,,35,,,,,,Tech,"Horizontal Movement At: 15
 Distance: 11 ft
-Invincible: 1-25",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1686
-Tech-Neutral,neutraltech,,,26,,,,,,Unknown,Invincible: 1-20,,0,http://meleeframedata.com/,1879
-Tech-Wall,walltech,,,31,6,,,,,Unknown,"Invincible: 1-14
-Input an upwards direction anywhere on 1-4 for walljump tech on 6)",,0,http://meleeframedata.com/,1905
-Tech-Wall Jump,walltechjump,,,40,1,,,,,Unknown,,,0,http://meleeframedata.com/,1931
+Invincible: 1-25",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1686
+Tech-Neutral,neutraltech,,,,26,,,,,,Tech,Invincible: 1-20,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/captainfalcon/neutraltech.gif,https://i.fightcore.gg/beta/captainfalcon/neutraltech.webm,https://i.fightcore.gg/png/captainfalcon/neutraltech.png,False,1879
+Tech-Wall,walltech,,,,31,6,,,,,Tech,"Invincible: 1-14
+Input an upwards direction anywhere on 1-4 for walljump tech on 6)",,0,http://meleeframedata.com/,,,,False,1905
+Tech-Wall Jump,walltechjump,,,,40,1,,,,,Tech,,,0,http://meleeframedata.com/,,,,False,1931

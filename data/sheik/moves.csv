@@ -1,60 +1,62 @@
-Name,NormalizedName,LandLag,LCanceledLandLag,TotalFrames,IASA,AutoCancelBefore,AutoCancelAfter,Start,End,Type,Notes,Percent,CharacterId,Source,Id
-Chain,sideb,,,75,,,,22,65,Special,"comes out frame 22, fully extended frame 34, can retract as early as frame 44, pull hitbox frames 19-31 with 10 frames endlag",,0,http://meleeframedata.com/,1119
-Needle Storm,neutralb,,,40,,,,4,19,Special,data refers to fully charged needles. 6 needles total,,0,http://meleeframedata.com/,1120
-Vanish,upb,30,,94,,,,36,42,Special,invulnerable frames 18-55. choose direction at frame 35,,0,http://meleeframedata.com/,1121
-Dashattack,dattack,,,37,36,,,6,12,Grounded,weak hit frames 7-12,,0,http://meleeframedata.com/,1123
-Forward Tilt,ftilt,,,29,27,,,5,10,Tilt,,,0,http://meleeframedata.com/,1124
-Up Tilt,utilt,,,33,26,,,5,24,Tilt,"strong hit frames 5-10, weak hit frames 19-24 with 3 frames shield stun",,0,http://meleeframedata.com/,1125
-Down Tilt,dtilt,,,29,28,,,5,8,Tilt,,,0,http://meleeframedata.com/,1126
-Forward Smash,fsmash,,,50,46,,,12,29,Grounded,"weak hit frame 12 with 4 frames shield stun, strong hit frames 27-29",,0,http://meleeframedata.com/,1127
-Up Smash,usmash,,,47,40,,,12,16,Grounded,"strong hit frame 12, weak hit frames 14-16",,0,http://meleeframedata.com/,1128
-Down Smash,dsmash,,,49,46,,,5,24,Grounded,"strong hit frames 5-9, two weak hits frames 16-19 and 22-24",,0,http://meleeframedata.com/,1129
-Neutral Air,nair,16,8,48,42,3,30,3,30,Air,weak hit frames 7-30. strong hit can also do 10% damage,,0,http://meleeframedata.com/,1130
-Forward Air,fair,16,8,33,,5,10,5,7,Air,,,0,http://meleeframedata.com/,1131
-Back Air,bair,16,8,37,,4,24,4,19,Air,"weak hit frames 8-19, can do 10%, 9%, 7%, and 6%. Strong hit can do 8%, 10%, or 14%",,0,http://meleeframedata.com/,1132
-Up Air,uair,24,12,39,37,5,29,5,20,Air,weak hit frames 8-20,,0,http://meleeframedata.com/,1133
-Down Air,dair,20,10,48,,3,48,15,33,Air,,,0,http://meleeframedata.com/,1135
-Pummel,pummel,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1158
-Edge attack,edge,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1177
-Forward throw,fthrow,,,47,,,,20,23,Throw,,,0,http://meleeframedata.com/,1180
-Back throw,bthrow,,,47,,,,15,19,Throw,,,0,http://meleeframedata.com/,1181
-Up throw,uthrow,,,57,,,,19,22,Throw,,,0,http://meleeframedata.com/,1182
-Down throw,dthrow,,,57,,,,31,35,Throw,,,0,http://meleeframedata.com/,1183
-Transform,downb,,,62,,,,27,36,Special,"invulnerable frames 27-36, becomes zelda on frame 37",,0,http://meleeframedata.com/,1372
-Roll forwards,rollforward,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,1387
-Roll backwards,rollbackwards,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,1388
-Spotdodge,spotdodge,,,22,,,,2,15,Dodge,,,0,http://meleeframedata.com/,1389
-Airdodge,airdodge,,,49,,,,0,,Dodge,,,0,http://meleeframedata.com/,1390
-Jab 1,jab1,,,17,16,,,2,3,Grounded,,,0,http://meleeframedata.com/,1522
-Jab 2,jab2,,,17,16,,,2,4,Grounded,,,0,http://meleeframedata.com/,1523
-Rapid Jabs,rjab,,,35,,,,2,33,Grounded,"loop has an additional 6 frames startup and 8 frames endlag. 6 hits in each loop, frames 2-3, 8-9, 14-15, 20-21, 26-27, 32-33",,0,http://meleeframedata.com/,1524
-Needle Storm (Air),aneutralb,,,39,,,,11,26,Special,data refers to fully charged needles. 6 needles total,,0,http://meleeframedata.com/,1567
-Grab,grab,,,30,,,,7,8,Unknown,,,0,http://meleeframedata.com/,1611
-Dashgrab,dashgrab,,,40,,,,8,9,Unknown,,,0,http://meleeframedata.com/,1612
-Tech-Roll Forward,ftechroll,,,40,,,,,,Unknown,"Horizontal Movement At: 10
+Name,NormalizedName,LandLag,LCanceledLandLag,LandingFallSpecialLag,TotalFrames,IASA,AutoCancelBefore,AutoCancelAfter,Start,End,Type,Notes,Percent,CharacterId,Source,GifUrl,WebmUrl,PngUrl,IsInterpolated,Id
+Chain,sideb,,,,75,,,,22,65,Special,"comes out frame 22, fully extended frame 34, can retract as early as frame 44, pull hitbox frames 19-31 with 10 frames endlag",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/sheik/sideb.gif,https://i.fightcore.gg/beta/sheik/sideb.webm,https://i.fightcore.gg/png/sheik/sideb.png,False,1119
+Needle Storm,neutralb,,,,40,,,,4,19,Special,data refers to fully charged needles. 6 needles total,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/sheik/neutralb.gif,https://i.fightcore.gg/beta/sheik/neutralb.webm,https://i.fightcore.gg/png/sheik/neutralb.png,False,1120
+Vanish,upb,30,,,94,,,,36,42,Special,invulnerable frames 18-55. choose direction at frame 35,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/sheik/upb.gif,https://i.fightcore.gg/beta/sheik/upb.webm,https://i.fightcore.gg/png/sheik/upb.png,False,1121
+Dashattack,dattack,,,,37,36,,,6,12,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/sheik/dattack.gif,https://i.fightcore.gg/beta/sheik/dattack.webm,https://i.fightcore.gg/png/sheik/dattack.png,False,1123
+Forward Tilt,ftilt,,,,29,27,,,5,10,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/sheik/ftilt.gif,https://i.fightcore.gg/beta/sheik/ftilt.webm,https://i.fightcore.gg/png/sheik/ftilt.png,False,1124
+Up Tilt,utilt,,,,33,26,,,5,24,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/sheik/utilt.gif,https://i.fightcore.gg/beta/sheik/utilt.webm,https://i.fightcore.gg/png/sheik/utilt.png,False,1125
+Down Tilt,dtilt,,,,29,28,,,5,8,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/sheik/dtilt.gif,https://i.fightcore.gg/beta/sheik/dtilt.webm,https://i.fightcore.gg/png/sheik/dtilt.png,False,1126
+Forward Smash,fsmash,,,,50,46,,,12,29,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/sheik/fsmash.gif,https://i.fightcore.gg/beta/sheik/fsmash.webm,https://i.fightcore.gg/png/sheik/fsmash.png,False,1127
+Up Smash,usmash,,,,47,40,,,12,16,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/sheik/usmash.gif,https://i.fightcore.gg/beta/sheik/usmash.webm,https://i.fightcore.gg/png/sheik/usmash.png,False,1128
+Down Smash,dsmash,,,,49,46,,,5,24,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/sheik/dsmash.gif,https://i.fightcore.gg/beta/sheik/dsmash.webm,https://i.fightcore.gg/png/sheik/dsmash.png,False,1129
+Neutral Air,nair,16,8,,48,42,3,30,3,30,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/sheik/nair.gif,https://i.fightcore.gg/beta/sheik/nair.webm,https://i.fightcore.gg/png/sheik/nair.png,False,1130
+Forward Air,fair,16,8,,33,,5,10,5,7,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/sheik/fair.gif,https://i.fightcore.gg/beta/sheik/fair.webm,https://i.fightcore.gg/png/sheik/fair.png,False,1131
+Back Air,bair,16,8,,37,,4,24,4,19,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/sheik/bair.gif,https://i.fightcore.gg/beta/sheik/bair.webm,https://i.fightcore.gg/png/sheik/bair.png,False,1132
+Up Air,uair,24,12,,39,37,5,29,5,20,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/sheik/uair.gif,https://i.fightcore.gg/beta/sheik/uair.webm,https://i.fightcore.gg/png/sheik/uair.png,False,1133
+Down Air,dair,20,10,,48,,3,48,15,33,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/sheik/dair.gif,https://i.fightcore.gg/beta/sheik/dair.webm,https://i.fightcore.gg/png/sheik/dair.png,False,1135
+Pummel,pummel,,,,0,,,,,,Throw,,,0,http://meleeframedata.com/,,,,False,1158
+Edge attack,edge,,,,0,,,,,,EdgeAttack,,,0,http://meleeframedata.com/,,,,False,1177
+Forward throw,fthrow,,,,47,,,,20,23,Throw,,,0,http://meleeframedata.com/,,,,False,1180
+Back throw,bthrow,,,,47,,,,15,19,Throw,,,0,http://meleeframedata.com/,,,,False,1181
+Up throw,uthrow,,,,57,,,,19,22,Throw,,,0,http://meleeframedata.com/,,,,False,1182
+Down throw,dthrow,,,,57,,,,31,35,Throw,,,0,http://meleeframedata.com/,,,,False,1183
+Transform,downb,,,,62,,,,27,36,Special,"invulnerable frames 27-36, becomes zelda on frame 37",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/sheik/downb.gif,https://i.fightcore.gg/beta/sheik/downb.webm,https://i.fightcore.gg/png/sheik/downb.png,False,1372
+Roll forwards,rollforward,,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/sheik/rollforward.gif,https://i.fightcore.gg/beta/sheik/rollforward.webm,https://i.fightcore.gg/png/sheik/rollforward.png,False,1387
+Roll backwards,rollbackwards,,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/sheik/rollbackwards.gif,https://i.fightcore.gg/beta/sheik/rollbackwards.webm,https://i.fightcore.gg/png/sheik/rollbackwards.png,False,1388
+Spotdodge,spotdodge,,,,22,,,,2,15,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/sheik/spotdodge.gif,https://i.fightcore.gg/beta/sheik/spotdodge.webm,https://i.fightcore.gg/png/sheik/spotdodge.png,False,1389
+Airdodge,airdodge,,,,49,,,,0,,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/sheik/airdodge.gif,https://i.fightcore.gg/beta/sheik/airdodge.webm,https://i.fightcore.gg/png/sheik/airdodge.png,False,1390
+Jab 1,jab1,,,,17,16,,,2,3,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/sheik/jab1.gif,https://i.fightcore.gg/beta/sheik/jab1.webm,https://i.fightcore.gg/png/sheik/jab1.png,False,1522
+Jab 2,jab2,,,,17,16,,,2,4,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/sheik/jab2.gif,https://i.fightcore.gg/beta/sheik/jab2.webm,https://i.fightcore.gg/png/sheik/jab2.png,False,1523
+Rapid Jabs,rjab,,,,35,,,,2,33,Grounded,"loop has an additional 6 frames startup and 8 frames endlag. 6 hits in each loop, frames 2-3, 8-9, 14-15, 20-21, 26-27, 32-33",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/sheik/rjab.gif,https://i.fightcore.gg/beta/sheik/rjab.webm,https://i.fightcore.gg/png/sheik/rjab.png,False,1524
+Needle Storm (Air),aneutralb,,,,39,,,,11,26,Special,data refers to fully charged needles. 6 needles total,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/sheik/aneutralb.gif,https://i.fightcore.gg/beta/sheik/aneutralb.webm,https://i.fightcore.gg/png/sheik/aneutralb.png,False,1567
+Grab,grab,,,,30,,,,3,34,Throw,Loop has an additional 6 frames startup and 8 frames endlag,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/sheik/grab.gif,https://i.fightcore.gg/beta/sheik/grab.webm,https://i.fightcore.gg/png/sheik/grab.png,False,1611
+Dashgrab,dashgrab,,,,40,,,,8,9,Throw,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/sheik/dashgrab.gif,https://i.fightcore.gg/beta/sheik/dashgrab.webm,https://i.fightcore.gg/png/sheik/dashgrab.png,False,1612
+Tech-Roll Forward,ftechroll,,,,40,,,,,,Tech,"Horizontal Movement At: 10
 Distance: 16.2 ft
-Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1847
-Tech-Roll Backward,btechroll,,,40,,,,,,Unknown,"Horizontal Movement At: 6
+Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,https://i.fightcore.gg/beta/sheik/ftechroll.gif,https://i.fightcore.gg/beta/sheik/ftechroll.webm,https://i.fightcore.gg/png/sheik/ftechroll.png,False,1847
+Tech-Roll Backward,btechroll,,,,40,,,,,,Tech,"Horizontal Movement At: 6
 Distance: 16.2 ft
-Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1848
-Getup-Attack (Back),bgetup,,,49,,,,,,Unknown,"Hit: 17-19 (Front), 24-26 (Behind)
-Invincible: 1-26",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1849
-Getup-Attack (Stomach),fgetup,,,49,,,,,,Unknown,"Hit: 16-17 (Behind), 20-21 (Front)
-Invincible: 1-21",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1850
-Getup-Roll Forward (Back),fgetuprollback,,,35,,,,,,Unknown,"Horizontal Movement At: 10
+Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,https://i.fightcore.gg/beta/sheik/btechroll.gif,https://i.fightcore.gg/beta/sheik/btechroll.webm,https://i.fightcore.gg/png/sheik/btechroll.png,False,1848
+Getup-Attack (Back),bgetup,,,,49,,,,,,Tech,"Hit: 17-19 (Front), 24-26 (Behind)
+Invincible: 1-26",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1849
+Getup-Attack (Stomach),fgetup,,,,49,,,,,,Tech,"Hit: 16-17 (Behind), 20-21 (Front)
+Invincible: 1-21",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1850
+Getup-Roll Forward (Back),fgetuprollback,,,,35,,,,,,Tech,"Horizontal Movement At: 10
 Distance: 11.4 ft
-Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1851
-Getup-Roll Forward (Stomach),fgetuprollstomach,,,35,,,,,,Unknown,"Horizontal Movement At: 7
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1851
+Getup-Roll Forward (Stomach),fgetuprollstomach,,,,35,,,,,,Tech,"Horizontal Movement At: 7
 Distance: 11.4 ft
-Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1852
-Getup-Roll Backward (Back),bgetuprollback,,,35,,,,,,Unknown,"Horizontal Movement At: 11
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1852
+Getup-Roll Backward (Back),bgetuprollback,,,,35,,,,,,Tech,"Horizontal Movement At: 11
 Distance: 11.4 ft
-Invincible: 1-22 (If the roll takes you to an edge you will slip off unless you WALK forward, or if an attack is timed on that exact frame)",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1853
-Getup-Roll Backward (Stomach),bgetuprollstomach,,,35,,,,,,Unknown,"Horizontal Movement At: 4
+Invincible: 1-22 (If the roll takes you to an edge you will slip off unless you WALK forward, or if an attack is timed on that exact frame)",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1853
+Getup-Roll Backward (Stomach),bgetuprollstomach,,,,35,,,,,,Tech,"Horizontal Movement At: 4
 Distance: 11.4 ft
-Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1854
-Tech-Neutral,neutraltech,,,26,,,,,,Unknown,Invincible: 1-20,,0,http://meleeframedata.com/,1897
-Tech-Wall,walltech,,,31,6,,,,,Unknown,"Invincible: 1-14
-Input an upwards direction anywhere on 1-4 for walljump tech on 6)",,0,http://meleeframedata.com/,1923
-Tech-Wall Jump,walltechjump,,,40,1,,,,,Unknown,,,0,http://meleeframedata.com/,1949
-Up B (Air),aupb,30,,94,,,,36,42,Special,Invincible: 18-55 Landfallspeciallag: 4 The frame of choosing direction: 35,,0,https://smashboards.com/threads/sheik-hitboxes-and-frame-data.299984/,1970
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1854
+Tech-Neutral,neutraltech,,,,26,,,,,,Tech,Invincible: 1-20,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/sheik/neutraltech.gif,https://i.fightcore.gg/beta/sheik/neutraltech.webm,https://i.fightcore.gg/png/sheik/neutraltech.png,False,1897
+Tech-Wall,walltech,,,,31,6,,,,,Tech,"Invincible: 1-14
+Input an upwards direction anywhere on 1-4 for walljump tech on 6)",,0,http://meleeframedata.com/,,,,False,1923
+Tech-Wall Jump,walltechjump,,,,40,1,,,,,Tech,,,0,http://meleeframedata.com/,,,,False,1949
+Up B (Air),aupb,30,,,94,,,,36,42,Special,Invincible: 18-55 Landfallspeciallag: 4 The frame of choosing direction: 35,,0,https://smashboards.com/threads/sheik-hitboxes-and-frame-data.299984/,https://i.fightcore.gg/beta/sheik/aupb.gif,https://i.fightcore.gg/beta/sheik/aupb.webm,https://i.fightcore.gg/png/sheik/aupb.png,False,1970
+Chain (Air),asideb,,,,75,,,,22,65,Special,"comes out frame 22, fully extended frame 34, can retract as early as frame 44, pull hitbox frames 19-31 with 10 frames endlag",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/sheik/asideb.gif,https://i.fightcore.gg/beta/sheik/asideb.webm,https://i.fightcore.gg/png/sheik/asideb.png,True,2023
+Transform (Air),adownb,,,,62,,,,27,36,Special,"invulnerable frames 27-36, becomes zelda on frame 37",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/sheik/adownb.gif,https://i.fightcore.gg/beta/sheik/adownb.webm,https://i.fightcore.gg/png/sheik/adownb.png,True,2038

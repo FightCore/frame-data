@@ -1,59 +1,62 @@
-Name,NormalizedName,LandLag,LCanceledLandLag,TotalFrames,IASA,AutoCancelBefore,AutoCancelAfter,Start,End,Type,Notes,Percent,CharacterId,Source,Id
-Down Air,dair,28,14,57,47,6,44,18,21,Air,,,0,http://meleeframedata.com/,803
-Edge attack,edge,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,805
-Pummel,pummel,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,806
-Confusion,sideb,,,55,,,,12,15,Special,reflects frames 12-27,,0,http://meleeframedata.com/,807
-Forward throw,fthrow,,,74,,,,0,0,Throw,,,0,http://meleeframedata.com/,808
-Back throw,bthrow,,,49,,,,0,0,Throw,,,0,http://meleeframedata.com/,809
-Up throw,uthrow,,,69,,,,0,0,Throw,,,0,http://meleeframedata.com/,810
-Down throw,dthrow,,,49,,,,15,24,Throw,,,0,http://meleeframedata.com/,811
-Up Air,uair,20,10,37,35,4,32,9,11,Air,,,0,http://meleeframedata.com/,947
-Back Air,bair,28,14,31,,3,29,12,15,Air,,,0,http://meleeframedata.com/,1032
-Neutral Air,nair,26,13,54,45,5,43,5,42,Air,"9 weak hits (can do 2% or 1% damage) followed by strong hit at frames 41-42. Weak hits last 2 frames each ",,0,http://meleeframedata.com/,1033
-Shadow Ball,neutralb,,,26,,,,17,17,Special,Shadow Ball lasts 69 frames. fully charged takes 100 frames,,0,http://meleeframedata.com/,1250
-Disable,downb,,,41,,,,15,21,Special,,,0,http://meleeframedata.com/,1251
-Dashattack,dattack,,,49,38,,,10,29,Grounded,weak hit frames 15-29,,0,http://meleeframedata.com/,1253
-Forward Tilt,ftilt,,,31,29,,,6,8,Tilt,,,0,http://meleeframedata.com/,1254
-Up Tilt,utilt,,,31,28,,,6,11,Tilt,,,0,http://meleeframedata.com/,1255
-Down Tilt,dtilt,,,29,20,,,5,7,Tilt,,,0,http://meleeframedata.com/,1256
-Forward Smash,fsmash,,,59,52,,,18,19,Grounded,weak hit has 7 frames shield stun,,0,http://meleeframedata.com/,1257
-Up Smash,usmash,,,79,70,,,9,38,Grounded,"6 weak hitboxes lasting 2 frames each with 2 frame breaks inbetwwen, storng hit frames 37-38",,0,http://meleeframedata.com/,1258
-Down Smash,dsmash,,,59,38,,,20,21,Grounded,,,0,http://meleeframedata.com/,1259
-Forward Air,fair,25,12,39,36,1,34,5,7,Air,,,0,http://meleeframedata.com/,1282
-Teleport,upb,,,32,,,,7,17,Special,"no hitbox, active refers to appearing/disapear",,0,http://meleeframedata.com/,1368
-Roll backwards,rollbackwards,,,37,,,,4,20,Dodge,,,0,http://meleeframedata.com/,1419
-Roll forwards,rollforward,,,37,,,,4,22,Dodge,,,0,http://meleeframedata.com/,1420
-Airdodge,airdodge,,,39,,,,0,,Dodge,,,0,http://meleeframedata.com/,1421
-Spotdodge,spotdodge,,,37,,,,2,21,Dodge,,,0,http://meleeframedata.com/,1422
-Jab 1,jab1,,,29,26,,,8,8,Grounded,,,0,http://meleeframedata.com/,1510
-Rapid Jabs,rjab,,,50,,,,7,49,Grounded,"rapid jab takes 7 frames to start, then an addition 7 frames for the first hitbox to come out. Single frame hitbox comes out every 7 frames. After last hitbox there is an additional 13 frame cooldown",,0,http://meleeframedata.com/,1511
-Grab,grab,,,30,,,,7,8,Unknown,,,0,http://meleeframedata.com/,1597
-Dashgrab,dashgrab,,,40,,,,9,10,Unknown,,,0,http://meleeframedata.com/,1598
-Forward Tilt (Up),uaft,,,31,29,,,6,8,Tilt,,,0,http://meleeframedata.com/,1634
-Forward Tilt (Down),daft,,,31,29,,,6,8,Tilt,,,0,http://meleeframedata.com/,1635
-Tech-Roll Forward,ftechroll,,,40,,,,,,Unknown,"Horizontal Movement At: 17
+Name,NormalizedName,LandLag,LCanceledLandLag,LandingFallSpecialLag,TotalFrames,IASA,AutoCancelBefore,AutoCancelAfter,Start,End,Type,Notes,Percent,CharacterId,Source,GifUrl,WebmUrl,PngUrl,IsInterpolated,Id
+Down Air,dair,28,14,,57,47,6,44,18,21,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mewtwo/dair.gif,https://i.fightcore.gg/beta/mewtwo/dair.webm,https://i.fightcore.gg/png/mewtwo/dair.png,False,803
+Edge attack,edge,,,,0,,,,,,EdgeAttack,,,0,http://meleeframedata.com/,,,,False,805
+Pummel,pummel,,,,0,,,,,,Throw,,,0,http://meleeframedata.com/,https://i.fightcore.gg/melee/moves/mewtwo/pummel.gif,https://i.fightcore.gg/beta/mewtwo/pummel.webm,,False,806
+Confusion,sideb,,,,55,,,,12,15,Special,reflects frames 12-27,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mewtwo/sideb.gif,https://i.fightcore.gg/beta/mewtwo/sideb.webm,https://i.fightcore.gg/png/mewtwo/sideb.png,False,807
+Forward throw,fthrow,,,,74,,,,0,0,Throw,,,0,http://meleeframedata.com/,https://i.fightcore.gg/melee/moves/mewtwo/fthrow.gif,https://i.fightcore.gg/beta/mewtwo/fthrow.webm,,False,808
+Back throw,bthrow,,,,49,,,,0,0,Throw,,,0,http://meleeframedata.com/,https://i.fightcore.gg/melee/moves/mewtwo/bthrow.gif,https://i.fightcore.gg/beta/mewtwo/bthrow.webm,,False,809
+Up throw,uthrow,,,,69,,,,0,0,Throw,,,0,http://meleeframedata.com/,https://i.fightcore.gg/melee/moves/mewtwo/uthrow.gif,https://i.fightcore.gg/beta/mewtwo/uthrow.webm,,False,810
+Down throw,dthrow,,,,49,,,,15,24,Throw,,,0,http://meleeframedata.com/,https://i.fightcore.gg/melee/moves/mewtwo/dthrow.gif,https://i.fightcore.gg/beta/mewtwo/dthrow.webm,,False,811
+Up Air,uair,20,10,,37,35,4,32,9,11,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mewtwo/uair.gif,https://i.fightcore.gg/beta/mewtwo/uair.webm,https://i.fightcore.gg/png/mewtwo/uair.png,False,947
+Back Air,bair,28,14,,31,,3,29,12,15,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mewtwo/bair.gif,https://i.fightcore.gg/beta/mewtwo/bair.webm,https://i.fightcore.gg/png/mewtwo/bair.png,False,1032
+Neutral Air,nair,26,13,,54,42,5,36,5,42,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mewtwo/nair.gif,https://i.fightcore.gg/beta/mewtwo/nair.webm,https://i.fightcore.gg/png/mewtwo/nair.png,False,1033
+Shadow Ball,neutralb,,,,26,,,,17,17,Special,Shadow Ball lasts 69 frames. fully charged takes 100 frames,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mewtwo/neutralb.gif,https://i.fightcore.gg/beta/mewtwo/neutralb.webm,,False,1250
+Disable,downb,,,,41,,,,15,21,Special,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mewtwo/downb.gif,https://i.fightcore.gg/beta/mewtwo/downb.webm,https://i.fightcore.gg/png/mewtwo/downb.png,False,1251
+Dashattack,dattack,,,,49,38,,,10,29,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mewtwo/dattack.gif,https://i.fightcore.gg/beta/mewtwo/dattack.webm,https://i.fightcore.gg/png/mewtwo/dattack.png,False,1253
+Forward Tilt,ftilt,,,,31,29,,,6,8,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mewtwo/ftilt.gif,https://i.fightcore.gg/beta/mewtwo/ftilt.webm,https://i.fightcore.gg/png/mewtwo/ftilt.png,False,1254
+Up Tilt,utilt,,,,31,28,,,6,11,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mewtwo/utilt.gif,https://i.fightcore.gg/beta/mewtwo/utilt.webm,https://i.fightcore.gg/png/mewtwo/utilt.png,False,1255
+Down Tilt,dtilt,,,,29,20,,,5,7,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mewtwo/dtilt.gif,https://i.fightcore.gg/beta/mewtwo/dtilt.webm,https://i.fightcore.gg/png/mewtwo/dtilt.png,False,1256
+Forward Smash,fsmash,,,,59,52,,,18,19,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mewtwo/fsmash.gif,https://i.fightcore.gg/beta/mewtwo/fsmash.webm,https://i.fightcore.gg/png/mewtwo/fsmash.png,False,1257
+Up Smash,usmash,,,,79,70,,,9,34,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mewtwo/usmash.gif,https://i.fightcore.gg/beta/mewtwo/usmash.webm,https://i.fightcore.gg/png/mewtwo/usmash.png,False,1258
+Down Smash,dsmash,,,,59,38,,,20,21,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mewtwo/dsmash.gif,https://i.fightcore.gg/beta/mewtwo/dsmash.webm,https://i.fightcore.gg/png/mewtwo/dsmash.png,False,1259
+Forward Air,fair,25,12,,39,36,1,34,5,7,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mewtwo/fair.gif,https://i.fightcore.gg/beta/mewtwo/fair.webm,https://i.fightcore.gg/png/mewtwo/fair.png,False,1282
+Teleport,upb,,,,32,,,,7,17,Special,"no hitbox, active refers to appearing/disapear",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mewtwo/upb.gif,https://i.fightcore.gg/beta/mewtwo/upb.webm,https://i.fightcore.gg/png/mewtwo/upb.png,False,1368
+Roll backwards,rollbackwards,,,,37,,,,4,20,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mewtwo/rollbackwards.gif,https://i.fightcore.gg/beta/mewtwo/rollbackwards.webm,https://i.fightcore.gg/png/mewtwo/rollbackwards.png,False,1419
+Roll forwards,rollforward,,,,37,,,,4,22,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mewtwo/rollforward.gif,https://i.fightcore.gg/beta/mewtwo/rollforward.webm,https://i.fightcore.gg/png/mewtwo/rollforward.png,False,1420
+Airdodge,airdodge,,,,39,,,,0,,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mewtwo/airdodge.gif,https://i.fightcore.gg/beta/mewtwo/airdodge.webm,https://i.fightcore.gg/png/mewtwo/airdodge.png,False,1421
+Spotdodge,spotdodge,,,,37,,,,2,21,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mewtwo/spotdodge.gif,https://i.fightcore.gg/beta/mewtwo/spotdodge.webm,https://i.fightcore.gg/png/mewtwo/spotdodge.png,False,1422
+Jab 1,jab1,,,,29,26,,,8,8,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mewtwo/jab1.gif,https://i.fightcore.gg/beta/mewtwo/jab1.webm,https://i.fightcore.gg/png/mewtwo/jab1.png,False,1510
+Rapid Jabs,rjab,,,,50,,,,7,48,Grounded,After last hitbox there is an additional 13 frame cooldown,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mewtwo/rjab.gif,https://i.fightcore.gg/beta/mewtwo/rjab.webm,https://i.fightcore.gg/png/mewtwo/rjab.png,False,1511
+Grab,grab,,,,30,,,,7,8,Throw,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mewtwo/grab.gif,https://i.fightcore.gg/beta/mewtwo/grab.webm,https://i.fightcore.gg/png/mewtwo/grab.png,False,1597
+Dashgrab,dashgrab,,,,40,,,,9,10,Throw,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mewtwo/dashgrab.gif,https://i.fightcore.gg/beta/mewtwo/dashgrab.webm,https://i.fightcore.gg/png/mewtwo/dashgrab.png,False,1598
+Forward Tilt (Up),uaft,,,,31,29,,,6,8,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mewtwo/uaft.gif,https://i.fightcore.gg/beta/mewtwo/uaft.webm,https://i.fightcore.gg/png/mewtwo/uaft.png,False,1634
+Forward Tilt (Down),daft,,,,31,29,,,6,8,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mewtwo/daft.gif,https://i.fightcore.gg/beta/mewtwo/daft.webm,https://i.fightcore.gg/png/mewtwo/daft.png,False,1635
+Tech-Roll Forward,ftechroll,,,,40,,,,,,Tech,"Horizontal Movement At: 17
 Distance: 13.6 ft
-Invincible: 1-20 (If the roll takes you to an edge and you try to move/crouch/jump/shield as it ends you will slip off)",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1791
-Tech-Roll Backward,btechroll,,,40,,,,,,Unknown,"Horizontal Movement At: 17
+Invincible: 1-20 (If the roll takes you to an edge and you try to move/crouch/jump/shield as it ends you will slip off)",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,https://i.fightcore.gg/beta/mewtwo/ftechroll.gif,https://i.fightcore.gg/beta/mewtwo/ftechroll.webm,https://i.fightcore.gg/png/mewtwo/ftechroll.png,False,1791
+Tech-Roll Backward,btechroll,,,,40,,,,,,Tech,"Horizontal Movement At: 17
 Distance: 13.4 ft
-Invincible: 1-20 (If the roll takes you to an edge you will slip off unless you WALK forward, or if an attack is timed on that exact frame)",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1792
-Getup-Attack (Back),bgetup,,,49,,,,,,Unknown,"Hit: 18-31 (Both Sides)
-Invincible: 1-31",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1793
-Getup-Attack (Stomach),fgetup,,,49,,,,,,Unknown,"Hit: 20-35 (Both Sides)
-Invincible: 1-35",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1794
-Getup-Roll Forward (Back),fgetuprollback,,,35,,,,,,Unknown,"Horizontal Movement At: 4
+Invincible: 1-20 (If the roll takes you to an edge you will slip off unless you WALK forward, or if an attack is timed on that exact frame)",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,https://i.fightcore.gg/beta/mewtwo/btechroll.gif,https://i.fightcore.gg/beta/mewtwo/btechroll.webm,https://i.fightcore.gg/png/mewtwo/btechroll.png,False,1792
+Getup-Attack (Back),bgetup,,,,49,,,,,,Tech,"Hit: 18-31 (Both Sides)
+Invincible: 1-31",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1793
+Getup-Attack (Stomach),fgetup,,,,49,,,,,,Tech,"Hit: 20-35 (Both Sides)
+Invincible: 1-35",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1794
+Getup-Roll Forward (Back),fgetuprollback,,,,35,,,,,,Tech,"Horizontal Movement At: 4
 Distance: 11.4 ft
-Invincible: 1-21 (If the roll takes you to an edge and you try to move/crouch/jump/shield as it ends you will slip off)",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1795
-Getup-Roll Forward (Stomach),fgetuprollstomach,,,35,,,,,,Unknown,"Horizontal Movement At: 4
+Invincible: 1-21 (If the roll takes you to an edge and you try to move/crouch/jump/shield as it ends you will slip off)",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1795
+Getup-Roll Forward (Stomach),fgetuprollstomach,,,,35,,,,,,Tech,"Horizontal Movement At: 4
 Distance: 11.4 ft
-Invincible: 1-19 (If the roll takes you to an edge and you try to move/crouch/jump/shield as it ends you will slip off)",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1796
-Getup-Roll Backward (Back),bgetuprollback,,,35,,,,,,Unknown,"Horizontal Movement At: 4
+Invincible: 1-19 (If the roll takes you to an edge and you try to move/crouch/jump/shield as it ends you will slip off)",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1796
+Getup-Roll Backward (Back),bgetuprollback,,,,35,,,,,,Tech,"Horizontal Movement At: 4
 Distance: 11.4 ft
-Invincible: 1-22 (If the roll takes you to an edge you will slip off unless you WALK forward, or if an attack is timed on that exact frame)",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1797
-Getup-Roll Backward (Stomach),bgetuprollstomach,,,35,,,,,,Unknown,"Horizontal Movement At: 4
+Invincible: 1-22 (If the roll takes you to an edge you will slip off unless you WALK forward, or if an attack is timed on that exact frame)",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1797
+Getup-Roll Backward (Stomach),bgetuprollstomach,,,,35,,,,,,Tech,"Horizontal Movement At: 4
 Distance: 11.4 ft
-Invincible: 1-24 (If the roll takes you to an edge you will slip off unless you WALK forward, or if an attack is timed on that exact frame)",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1798
-Tech-Neutral,neutraltech,,,26,,,,,,Unknown,Invincible: 1-20,,0,http://meleeframedata.com/,1884
-Tech-Wall,walltech,,,31,6,,,,,Unknown,"Invincible: 1-14
-Input an upwards direction anywhere on 1-4 for walljump tech on 6)",,0,http://meleeframedata.com/,1910
-Tech-Wall Jump,walltechjump,,,40,1,,,,,Unknown,,,0,http://meleeframedata.com/,1936
+Invincible: 1-24 (If the roll takes you to an edge you will slip off unless you WALK forward, or if an attack is timed on that exact frame)",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1798
+Tech-Neutral,neutraltech,,,,26,,,,,,Tech,Invincible: 1-20,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mewtwo/neutraltech.gif,https://i.fightcore.gg/beta/mewtwo/neutraltech.webm,https://i.fightcore.gg/png/mewtwo/neutraltech.png,False,1884
+Tech-Wall,walltech,,,,31,6,,,,,Tech,"Invincible: 1-14
+Input an upwards direction anywhere on 1-4 for walljump tech on 6)",,0,http://meleeframedata.com/,,,,False,1910
+Tech-Wall Jump,walltechjump,,,,40,1,,,,,Tech,,,0,http://meleeframedata.com/,,,,False,1936
+Confusion (Air),asideb,,,,55,,,,12,15,Special,reflects frames 12-27,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mewtwo/asideb.gif,https://i.fightcore.gg/beta/mewtwo/asideb.webm,https://i.fightcore.gg/png/mewtwo/asideb.png,True,2004
+Disable (Air),adownb,,,,41,,,,15,21,Special,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mewtwo/adownb.gif,https://i.fightcore.gg/beta/mewtwo/adownb.webm,https://i.fightcore.gg/png/mewtwo/adownb.png,True,2026
+Teleport (Air),aupb,,,,32,,,,7,17,Special,"no hitbox, active refers to appearing/disapear",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mewtwo/aupb.gif,https://i.fightcore.gg/beta/mewtwo/aupb.webm,https://i.fightcore.gg/png/mewtwo/aupb.png,True,2034

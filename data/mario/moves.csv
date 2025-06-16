@@ -1,63 +1,64 @@
-Name,NormalizedName,LandLag,LCanceledLandLag,TotalFrames,IASA,AutoCancelBefore,AutoCancelAfter,Start,End,Type,Notes,Percent,CharacterId,Source,Id
-unknown,unknown,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,796
-Cape,sideb,,,35,,,,12,14,Special,reflects frames 6-33,,0,http://meleeframedata.com/,797
-Super Jump Punch,upb,,,37,,,,3,24,Special,"12 hitboxes, first 5% damage, then ten 1% damage, then a final 3% damage hitbox.",,0,http://meleeframedata.com/,798
-Mario Tornado,downb,,,79,,,,8,39,Special,"9 hitboxes, first does 2%, next seven do 1%, last one is the strong hit",,0,http://meleeframedata.com/,800
-Fireball,neutralb,,,43,,,,14,89,Special,fireball lasts 75 frames,,0,http://meleeframedata.com/,822
-Dashattack,dattack,,,48,38,,,6,25,Grounded,weak hit frames 10-25,,0,http://meleeframedata.com/,823
-Down throw,dthrow,,,39,,,,0,0,Throw,,,0,http://meleeframedata.com/,844
-Down Air,dair,23,11,38,38,6,35,10,32,Air,"8 hits each dealing 2% damage (frames 10-11, 13-14, 16-17, 19-20, 22-23, 25-26, 28-29, 31-32)",,0,http://meleeframedata.com/,845
-Forward Tilt,ftilt,,,32,,,,5,7,Tilt,,,0,http://meleeframedata.com/,846
-Up Tilt,utilt,,,30,30,,,4,12,Tilt,,,0,http://meleeframedata.com/,847
-Down Tilt,dtilt,,,34,,,,5,8,Tilt,,,0,http://meleeframedata.com/,848
-Forward Smash,fsmash,,,41,,,,12,16,Grounded,"weak hit can also do 10% damage, has 6 frames shield stun",,0,http://meleeframedata.com/,849
-Up Smash,usmash,,,39,,,,9,11,Grounded,,,0,http://meleeframedata.com/,850
-Down Smash,dsmash,,,37,,,,5,14,Grounded,"front (strong) hit frames 5-6, weak (back) hit frame 14 with 7 frames shield stun, can also do 10% damage",,0,http://meleeframedata.com/,851
-Neutral Air,nair,16,8,45,,3,35,3,32,Air,weak hit frames 7-32 with 5 frames shield stun,,0,http://meleeframedata.com/,852
-Forward Air,fair,21,10,74,60,3,42,18,22,Air,,,0,http://meleeframedata.com/,853
-Back Air,bair,15,7,28,,6,18,6,17,Air,weak hit frames 9-17,,0,http://meleeframedata.com/,854
-Up Air,uair,15,7,33,30,2,15,4,9,Air,,,0,http://meleeframedata.com/,855
-Edge attack,edge,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,857
-Pummel,pummel,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,858
-Forward throw,fthrow,,,27,,,,0,0,Throw,,,0,http://meleeframedata.com/,859
-Back throw,bthrow,,,66,,,,0,0,Throw,,,0,http://meleeframedata.com/,860
-Up throw,uthrow,,,39,,,,0,0,Throw,,,0,http://meleeframedata.com/,861
-Roll forwards,rollforward,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,1434
-Roll backwards,rollbackwards,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,1435
-Spotdodge,spotdodge,,,22,,,,2,15,Dodge,,,0,http://meleeframedata.com/,1436
-Airdodge,airdodge,,,48,,,,0,,Dodge,,,0,http://meleeframedata.com/,1438
-Jab 1,jab1,,,15,,,,2,3,Grounded,,,0,http://meleeframedata.com/,1507
-Jab 2,jab2,,,17,,,,2,3,Grounded,,,0,http://meleeframedata.com/,1508
-Jab 3,jab3,,,21,,,,4,8,Grounded,,,0,http://meleeframedata.com/,1509
-Grab,grab,,,30,,,,7,8,Unknown,,,0,http://meleeframedata.com/,1595
-Dashgrab,dashgrab,,,40,,,,11,12,Unknown,,,0,http://meleeframedata.com/,1596
-Forward Tilt (Up),uaft,,,32,,,,5,7,Tilt,,,0,http://meleeframedata.com/,1642
-Forward Tilt (Down),daft,,,32,,,,5,7,Tilt,,,0,http://meleeframedata.com/,1643
-Cape (Air),asideb,,,35,,,,12,14,Special,reflects frames 6-33,,0,http://meleeframedata.com/,1655
-Mario Tornado (Air),adownb,,,79,,,,8,39,Special,"9 hitboxes, first does 2%, next seven do 1%, last one is the strong hit",,0,http://meleeframedata.com/,1656
-Tech-Roll Forward,ftechroll,,,40,,,,,,Unknown,"Horizontal Movement At: 9
+Name,NormalizedName,LandLag,LCanceledLandLag,LandingFallSpecialLag,TotalFrames,IASA,AutoCancelBefore,AutoCancelAfter,Start,End,Type,Notes,Percent,CharacterId,Source,GifUrl,WebmUrl,PngUrl,IsInterpolated,Id
+unknown,unknown,,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,,,,False,796
+Cape,sideb,,,,35,,,,12,14,Special,reflects frames 6-33,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mario/sideb.gif,https://i.fightcore.gg/beta/mario/sideb.webm,https://i.fightcore.gg/png/mario/sideb.png,False,797
+Super Jump Punch,upb,,,,37,,,,3,24,Special,"12 hitboxes, first 5% damage, then ten 1% damage, then a final 3% damage hitbox.",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mario/upb.gif,https://i.fightcore.gg/beta/mario/upb.webm,https://i.fightcore.gg/png/mario/upb.png,False,798
+Mario Tornado,downb,,,,79,,,,8,39,Special,"9 hitboxes, first does 2%, next seven do 1%, last one is the strong hit",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mario/downb.gif,https://i.fightcore.gg/beta/mario/downb.webm,https://i.fightcore.gg/png/mario/downb.png,False,800
+Fireball,neutralb,,,,43,,,,14,89,Special,fireball lasts 75 frames,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mario/neutralb.gif,https://i.fightcore.gg/beta/mario/neutralb.webm,https://i.fightcore.gg/png/mario/neutralb.png,False,822
+Dashattack,dattack,,,,48,38,,,6,25,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mario/dattack.gif,https://i.fightcore.gg/beta/mario/dattack.webm,https://i.fightcore.gg/png/mario/dattack.png,False,823
+Down throw,dthrow,,,,39,,,,0,0,Throw,,,0,http://meleeframedata.com/,,,,False,844
+Down Air,dair,23,11,,38,38,6,32,10,29,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mario/dair.gif,https://i.fightcore.gg/beta/mario/dair.webm,https://i.fightcore.gg/png/mario/dair.png,False,845
+Forward Tilt,ftilt,,,,32,,,,5,7,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mario/ftilt.gif,https://i.fightcore.gg/beta/mario/ftilt.webm,https://i.fightcore.gg/png/mario/ftilt.png,False,846
+Up Tilt,utilt,,,,30,30,,,4,12,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mario/utilt.gif,https://i.fightcore.gg/beta/mario/utilt.webm,https://i.fightcore.gg/png/mario/utilt.png,False,847
+Down Tilt,dtilt,,,,34,,,,5,8,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mario/dtilt.gif,https://i.fightcore.gg/beta/mario/dtilt.webm,https://i.fightcore.gg/png/mario/dtilt.png,False,848
+Forward Smash,fsmash,,,,41,,,,12,16,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mario/fsmash.gif,https://i.fightcore.gg/beta/mario/fsmash.webm,https://i.fightcore.gg/png/mario/fsmash.png,False,849
+Up Smash,usmash,,,,39,,,,9,11,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mario/usmash.gif,https://i.fightcore.gg/beta/mario/usmash.webm,https://i.fightcore.gg/png/mario/usmash.png,False,850
+Down Smash,dsmash,,,,37,,,,5,14,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mario/dsmash.gif,https://i.fightcore.gg/beta/mario/dsmash.webm,https://i.fightcore.gg/png/mario/dsmash.png,False,851
+Neutral Air,nair,16,8,,45,,3,35,3,32,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mario/nair.gif,https://i.fightcore.gg/beta/mario/nair.webm,https://i.fightcore.gg/png/mario/nair.png,False,852
+Forward Air,fair,21,10,,74,60,3,42,18,22,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mario/fair.gif,https://i.fightcore.gg/beta/mario/fair.webm,https://i.fightcore.gg/png/mario/fair.png,False,853
+Back Air,bair,15,7,,28,,6,18,6,17,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mario/bair.gif,https://i.fightcore.gg/beta/mario/bair.webm,https://i.fightcore.gg/png/mario/bair.png,False,854
+Up Air,uair,15,7,,33,30,2,15,4,9,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mario/uair.gif,https://i.fightcore.gg/beta/mario/uair.webm,https://i.fightcore.gg/png/mario/uair.png,False,855
+Edge attack,edge,,,,0,,,,,,EdgeAttack,,,0,http://meleeframedata.com/,,,,False,857
+Pummel,pummel,,,,0,,,,,,Throw,,,0,http://meleeframedata.com/,,,,False,858
+Forward throw,fthrow,,,,27,,,,0,0,Throw,,,0,http://meleeframedata.com/,,,,False,859
+Back throw,bthrow,,,,66,,,,0,0,Throw,,,0,http://meleeframedata.com/,,,,False,860
+Up throw,uthrow,,,,39,,,,0,0,Throw,,,0,http://meleeframedata.com/,,,,False,861
+Roll forwards,rollforward,,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mario/rollforward.gif,https://i.fightcore.gg/beta/mario/rollforward.webm,https://i.fightcore.gg/png/mario/rollforward.png,False,1434
+Roll backwards,rollbackwards,,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mario/rollbackwards.gif,https://i.fightcore.gg/beta/mario/rollbackwards.webm,https://i.fightcore.gg/png/mario/rollbackwards.png,False,1435
+Spotdodge,spotdodge,,,,22,,,,2,15,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mario/spotdodge.gif,https://i.fightcore.gg/beta/mario/spotdodge.webm,https://i.fightcore.gg/png/mario/spotdodge.png,False,1436
+Airdodge,airdodge,,,,48,,,,0,,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mario/airdodge.gif,https://i.fightcore.gg/beta/mario/airdodge.webm,https://i.fightcore.gg/png/mario/airdodge.png,False,1438
+Jab 1,jab1,,,,15,,,,2,3,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mario/jab1.gif,https://i.fightcore.gg/beta/mario/jab1.webm,https://i.fightcore.gg/png/mario/jab1.png,False,1507
+Jab 2,jab2,,,,17,,,,2,3,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mario/jab2.gif,https://i.fightcore.gg/beta/mario/jab2.webm,https://i.fightcore.gg/png/mario/jab2.png,False,1508
+Jab 3,jab3,,,,21,,,,4,8,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mario/jab3.gif,https://i.fightcore.gg/beta/mario/jab3.webm,https://i.fightcore.gg/png/mario/jab3.png,False,1509
+Grab,grab,,,,30,,,,7,8,Throw,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mario/grab.gif,https://i.fightcore.gg/beta/mario/grab.webm,https://i.fightcore.gg/png/mario/grab.png,False,1595
+Dashgrab,dashgrab,,,,40,,,,11,12,Throw,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mario/dashgrab.gif,https://i.fightcore.gg/beta/mario/dashgrab.webm,https://i.fightcore.gg/png/mario/dashgrab.png,False,1596
+Forward Tilt (Up),uaft,,,,32,,,,5,7,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mario/uaft.gif,https://i.fightcore.gg/beta/mario/uaft.webm,https://i.fightcore.gg/png/mario/uaft.png,False,1642
+Forward Tilt (Down),daft,,,,32,,,,5,7,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mario/daft.gif,https://i.fightcore.gg/beta/mario/daft.webm,https://i.fightcore.gg/png/mario/daft.png,False,1643
+Cape (Air),asideb,,,,35,,,,12,14,Special,reflects frames 6-33,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mario/asideb.gif,https://i.fightcore.gg/beta/mario/asideb.webm,https://i.fightcore.gg/png/mario/asideb.png,False,1655
+Mario Tornado (Air),adownb,,,,79,,,,8,39,Special,"9 hitboxes, first does 2%, next seven do 1%, last one is the strong hit",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mario/adownb.gif,https://i.fightcore.gg/beta/mario/adownb.webm,https://i.fightcore.gg/png/mario/adownb.png,False,1656
+Tech-Roll Forward,ftechroll,,,,40,,,,,,Tech,"Horizontal Movement At: 9
 Distance: 14.6 ft
-Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1775
-Tech-Roll Backward,btechroll,,,40,,,,,,Unknown,"Horizontal Movement At: 10
+Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,https://i.fightcore.gg/beta/mario/ftechroll.gif,https://i.fightcore.gg/beta/mario/ftechroll.webm,https://i.fightcore.gg/png/mario/ftechroll.png,False,1775
+Tech-Roll Backward,btechroll,,,,40,,,,,,Tech,"Horizontal Movement At: 10
 Distance: 14.6 ft
-Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1776
-Getup-Attack (Back),bgetup,,,49,,,,,,Unknown,"Hit: 20-21 (Behind), 24-25 (Front)
-Invincible: 1-25",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1777
-Getup-Attack (Stomach),fgetup,,,49,,,,,,Unknown,"Hit: 19-20 (Behind), 25-26 (Front)
-Invincible: 1-26",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1778
-Getup-Roll Forward (Back),fgetuprollback,,,35,,,,,,Unknown,"Horizontal Movement At: 6
+Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,https://i.fightcore.gg/beta/mario/btechroll.gif,https://i.fightcore.gg/beta/mario/btechroll.webm,https://i.fightcore.gg/png/mario/btechroll.png,False,1776
+Getup-Attack (Back),bgetup,,,,49,,,,,,Tech,"Hit: 20-21 (Behind), 24-25 (Front)
+Invincible: 1-25",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1777
+Getup-Attack (Stomach),fgetup,,,,49,,,,,,Tech,"Hit: 19-20 (Behind), 25-26 (Front)
+Invincible: 1-26",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1778
+Getup-Roll Forward (Back),fgetuprollback,,,,35,,,,,,Tech,"Horizontal Movement At: 6
 Distance: 12.6 ft
-Invincible: 1-21",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1779
-Getup-Roll Forward (Stomach),fgetuprollstomach,,,35,,,,,,Unknown,"Horizontal Movement At: 6
+Invincible: 1-21",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1779
+Getup-Roll Forward (Stomach),fgetuprollstomach,,,,35,,,,,,Tech,"Horizontal Movement At: 6
 Distance: 12.4 ft
-Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1780
-Getup-Roll Backward (Back),bgetuprollback,,,35,,,,,,Unknown,"Horizontal Movement At: 12
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1780
+Getup-Roll Backward (Back),bgetuprollback,,,,35,,,,,,Tech,"Horizontal Movement At: 12
 Distance: 12.4 ft
-Invincible: 1-22",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1781
-Getup-Roll Backward (Stomach),bgetuprollstomach,,,35,,,,,,Unknown,"Horizontal Movement At: 11
+Invincible: 1-22",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1781
+Getup-Roll Backward (Stomach),bgetuprollstomach,,,,35,,,,,,Tech,"Horizontal Movement At: 11
 Distance: 12.4 ft
-Invincible: 1-24",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1782
-Tech-Neutral,neutraltech,,,26,,,,,,Unknown,Invincible: 1-20,,0,http://meleeframedata.com/,1890
-Tech-Wall,walltech,,,31,6,,,,,Unknown,"Invincible: 1-14
-Input an upwards direction anywhere on 1-4 for walljump tech on 6)",,0,http://meleeframedata.com/,1916
-Tech-Wall Jump,walltechjump,,,40,1,,,,,Unknown,,,0,http://meleeframedata.com/,1942
+Invincible: 1-24",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1782
+Tech-Neutral,neutraltech,,,,26,,,,,,Tech,Invincible: 1-20,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mario/neutraltech.gif,https://i.fightcore.gg/beta/mario/neutraltech.webm,https://i.fightcore.gg/png/mario/neutraltech.png,False,1890
+Tech-Wall,walltech,,,,31,6,,,,,Tech,"Invincible: 1-14
+Input an upwards direction anywhere on 1-4 for walljump tech on 6)",,0,http://meleeframedata.com/,,,,False,1916
+Tech-Wall Jump,walltechjump,,,,40,1,,,,,Tech,,,0,http://meleeframedata.com/,,,,False,1942
+Super Jump Punch (Air),aupb,,,,37,,,,3,24,Special,"12 hitboxes, first 5% damage, then ten 1% damage, then a final 3% damage hitbox.",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/mario/aupb.gif,https://i.fightcore.gg/beta/mario/aupb.webm,https://i.fightcore.gg/png/mario/aupb.png,True,2003

@@ -1,59 +1,62 @@
-Name,NormalizedName,LandLag,LCanceledLandLag,TotalFrames,IASA,AutoCancelBefore,AutoCancelAfter,Start,End,Type,Notes,Percent,CharacterId,Source,Id
-Up Smash,usmash,,,43,41,,,9,11,Grounded,,,0,http://meleeframedata.com/,740
-Down Smash,dsmash,,,54,,,,7,13,Grounded,,,0,http://meleeframedata.com/,741
-Neutral Air,nair,12,6,39,,3,34,3,28,Air,weak hit frames 11-28,,0,http://meleeframedata.com/,742
-Forward Air,fair,15,7,39,,10,37,10,28,Air,"5 hits do 2% each, frames 10-12, 14-16, 18-20, 22-24, 26-28",,0,http://meleeframedata.com/,743
-Back Air,bair,18,9,59,,4,49,4,37,Air,,,0,http://meleeframedata.com/,744
-Up Air,uair,18,9,27,,4,17,4,9,Air,,,0,http://meleeframedata.com/,745
-Down Air,dair,26,13,57,48,1,38,14,26,Air,,,0,http://meleeframedata.com/,746
-Edge attack,edge,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,748
-Pummel,pummel,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,749
-Forward throw,fthrow,,,43,,,,10,29,Throw,,,0,http://meleeframedata.com/,750
-Back throw,bthrow,,,49,,,,0,0,Throw,,,0,http://meleeframedata.com/,751
-Up throw,uthrow,,,43,,,,14,19,Throw,,,0,http://meleeframedata.com/,752
-Down throw,dthrow,,,47,,,,12,19,Throw,,,0,http://meleeframedata.com/,753
-Forward Smash,fsmash,,,49,,,,16,36,Grounded,6 weak hits lasting 3 frames each and one final hit lasting 3 frames (34-36),,0,http://meleeframedata.com/,757
-Down Tilt,dtilt,,,21,19,,,7,9,Tilt,,,0,http://meleeframedata.com/,759
-Forward Tilt,ftilt,,,29,,,,5,14,Tilt,"angled up does one more %, angled down does one less",,0,http://meleeframedata.com/,760
-Skull Bash,sideb,30,,70,,,,5,40,Special,data refers to lunge. charging takes anywhere between 14-161 frames. 34 frames of endlag on hit. damage increases based on charge and travel distance,,0,http://meleeframedata.com/,773
-Thunder,downb,,,109,,,,20,49,Special,"data refers to pichu standiung still and being hit. thunder will last frames 20-84, will hit pichuj at 40 (and stop) if standing still, 53 if falling. when hit, hitbox lasts frames 1-9 with 60 frames endlag",,0,http://meleeframedata.com/,774
-Thunder Jolt,neutralb,,,57,,,,18,117,Special,,,0,http://meleeframedata.com/,775
-Dashattack,dattack,,,49,,,,5,16,Grounded,,,0,http://meleeframedata.com/,777
-Up Tilt,utilt,,,23,,,,7,14,Tilt,,,0,http://meleeframedata.com/,778
-Agility,upb,12,,158,,,,13,71,Special,"13 frames to aim first jump, that jump lasts a total of 71 frames. 29 frames to aim 2nd jump, that jump lasts a total of 87 frames",,0,http://meleeframedata.com/,1370
-Roll forwards,rollforward,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,1375
-Roll backwards,rollbackwards,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,1376
-Spotdodge,spotdodge,,,22,,,,2,15,Dodge,,,0,http://meleeframedata.com/,1377
-Airdodge,airdodge,,,49,,,,0,,Dodge,,,0,http://meleeframedata.com/,1378
-Jab 1,jab1,,,21,,,,2,3,Grounded,,,0,http://meleeframedata.com/,1517
-Thunder Jolt (Air),aneutralb,,,57,,,,18,117,Special,,,0,http://meleeframedata.com/,1563
-Grab,grab,,,30,,,,7,8,Unknown,,,0,http://meleeframedata.com/,1603
-Dashgrab,dashgrab,,,40,,,,11,12,Unknown,,,0,http://meleeframedata.com/,1604
-Forward Tilt (Up),uaft,,,29,,,,5,14,Tilt,,,0,http://meleeframedata.com/,1630
-Forward Tilt (Down),daft,,,29,,,,5,14,Tilt,,,0,http://meleeframedata.com/,1631
-Tech-Roll Forward,ftechroll,,,40,,,,,,Unknown,"Horizontal Movement At: 12
+Name,NormalizedName,LandLag,LCanceledLandLag,LandingFallSpecialLag,TotalFrames,IASA,AutoCancelBefore,AutoCancelAfter,Start,End,Type,Notes,Percent,CharacterId,Source,GifUrl,WebmUrl,PngUrl,IsInterpolated,Id
+Up Smash,usmash,,,,43,41,,,9,11,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/pichu/usmash.gif,https://i.fightcore.gg/beta/pichu/usmash.webm,https://i.fightcore.gg/png/pichu/usmash.png,False,740
+Down Smash,dsmash,,,,54,,,,7,13,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/pichu/dsmash.gif,https://i.fightcore.gg/beta/pichu/dsmash.webm,https://i.fightcore.gg/png/pichu/dsmash.png,False,741
+Neutral Air,nair,12,6,,39,,3,34,3,28,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/pichu/nair.gif,https://i.fightcore.gg/beta/pichu/nair.webm,https://i.fightcore.gg/png/pichu/nair.png,False,742
+Forward Air,fair,15,7,,39,,10,33,10,24,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/pichu/fair.gif,https://i.fightcore.gg/beta/pichu/fair.webm,https://i.fightcore.gg/png/pichu/fair.png,False,743
+Back Air,bair,18,9,,59,,4,49,4,37,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/pichu/bair.gif,https://i.fightcore.gg/beta/pichu/bair.webm,https://i.fightcore.gg/png/pichu/bair.png,False,744
+Up Air,uair,18,9,,27,,4,17,4,9,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/pichu/uair.gif,https://i.fightcore.gg/beta/pichu/uair.webm,https://i.fightcore.gg/png/pichu/uair.png,False,745
+Down Air,dair,26,13,,57,48,1,38,14,26,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/pichu/dair.gif,https://i.fightcore.gg/beta/pichu/dair.webm,https://i.fightcore.gg/png/pichu/dair.png,False,746
+Edge attack,edge,,,,0,,,,,,EdgeAttack,,,0,http://meleeframedata.com/,,,,False,748
+Pummel,pummel,,,,0,,,,,,Throw,,,0,http://meleeframedata.com/,,,,False,749
+Forward throw,fthrow,,,,43,,,,10,29,Throw,,,0,http://meleeframedata.com/,,,,False,750
+Back throw,bthrow,,,,49,,,,0,0,Throw,,,0,http://meleeframedata.com/,,,,False,751
+Up throw,uthrow,,,,43,,,,14,19,Throw,,,0,http://meleeframedata.com/,,,,False,752
+Down throw,dthrow,,,,47,,,,12,19,Throw,,,0,http://meleeframedata.com/,,,,False,753
+Forward Smash,fsmash,,,,49,,,,16,33,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/pichu/fsmash.gif,https://i.fightcore.gg/beta/pichu/fsmash.webm,https://i.fightcore.gg/png/pichu/fsmash.png,False,757
+Down Tilt,dtilt,,,,21,19,,,7,9,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/pichu/dtilt.gif,https://i.fightcore.gg/beta/pichu/dtilt.webm,https://i.fightcore.gg/png/pichu/dtilt.png,False,759
+Forward Tilt,ftilt,,,,29,,,,5,14,Tilt,"angled up does one more %, angled down does one less",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/pichu/ftilt.gif,https://i.fightcore.gg/beta/pichu/ftilt.webm,https://i.fightcore.gg/png/pichu/ftilt.png,False,760
+Skull Bash,sideb,30,,,70,,,,5,40,Special,data refers to lunge. charging takes anywhere between 14-161 frames. 34 frames of endlag on hit. damage increases based on charge and travel distance,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/pichu/sideb.gif,https://i.fightcore.gg/beta/pichu/sideb.webm,,False,773
+Thunder,downb,,,,109,,,,20,49,Special,"data refers to pichu standiung still and being hit. thunder will last frames 20-84, will hit pichuj at 40 (and stop) if standing still, 53 if falling. when hit, hitbox lasts frames 1-9 with 60 frames endlag",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/pichu/downb.gif,https://i.fightcore.gg/beta/pichu/downb.webm,https://i.fightcore.gg/png/pichu/downb.png,False,774
+Thunder Jolt,neutralb,,,,57,,,,18,117,Special,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/pichu/neutralb.gif,https://i.fightcore.gg/beta/pichu/neutralb.webm,https://i.fightcore.gg/png/pichu/neutralb.png,False,775
+Dashattack,dattack,,,,49,,,,5,16,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/pichu/dattack.gif,https://i.fightcore.gg/beta/pichu/dattack.webm,https://i.fightcore.gg/png/pichu/dattack.png,False,777
+Up Tilt,utilt,,,,23,,,,7,14,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/pichu/utilt.gif,https://i.fightcore.gg/beta/pichu/utilt.webm,https://i.fightcore.gg/png/pichu/utilt.png,False,778
+Agility,upb,12,,,158,,,,13,71,Special,"13 frames to aim first jump, that jump lasts a total of 71 frames. 29 frames to aim 2nd jump, that jump lasts a total of 87 frames",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/pichu/upb.gif,https://i.fightcore.gg/beta/pichu/upb.webm,https://i.fightcore.gg/png/pichu/upb.png,False,1370
+Roll forwards,rollforward,,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/pichu/rollforward.gif,https://i.fightcore.gg/beta/pichu/rollforward.webm,https://i.fightcore.gg/png/pichu/rollforward.png,False,1375
+Roll backwards,rollbackwards,,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/pichu/rollbackwards.gif,https://i.fightcore.gg/beta/pichu/rollbackwards.webm,https://i.fightcore.gg/png/pichu/rollbackwards.png,False,1376
+Spotdodge,spotdodge,,,,22,,,,2,15,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/pichu/spotdodge.gif,https://i.fightcore.gg/beta/pichu/spotdodge.webm,https://i.fightcore.gg/png/pichu/spotdodge.png,False,1377
+Airdodge,airdodge,,,,49,,,,0,,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/pichu/airdodge.gif,https://i.fightcore.gg/beta/pichu/airdodge.webm,https://i.fightcore.gg/png/pichu/airdodge.png,False,1378
+Jab 1,jab1,,,,21,,,,2,3,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/pichu/jab1.gif,https://i.fightcore.gg/beta/pichu/jab1.webm,https://i.fightcore.gg/png/pichu/jab1.png,False,1517
+Thunder Jolt (Air),aneutralb,,,,57,,,,18,117,Special,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/pichu/aneutralb.gif,https://i.fightcore.gg/beta/pichu/aneutralb.webm,https://i.fightcore.gg/png/pichu/aneutralb.png,False,1563
+Grab,grab,,,,30,,,,7,8,Throw,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/pichu/grab.gif,https://i.fightcore.gg/beta/pichu/grab.webm,https://i.fightcore.gg/png/pichu/grab.png,False,1603
+Dashgrab,dashgrab,,,,40,,,,11,12,Throw,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/pichu/dashgrab.gif,https://i.fightcore.gg/beta/pichu/dashgrab.webm,https://i.fightcore.gg/png/pichu/dashgrab.png,False,1604
+Forward Tilt (Up),uaft,,,,29,,,,5,14,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/pichu/uaft.gif,https://i.fightcore.gg/beta/pichu/uaft.webm,https://i.fightcore.gg/png/pichu/uaft.png,False,1630
+Forward Tilt (Down),daft,,,,29,,,,5,14,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/pichu/daft.gif,https://i.fightcore.gg/beta/pichu/daft.webm,https://i.fightcore.gg/png/pichu/daft.png,False,1631
+Tech-Roll Forward,ftechroll,,,,40,,,,,,Tech,"Horizontal Movement At: 12
 Distance: 8.4 ft
-Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1815
-Tech-Roll Backward,btechroll,,,40,,,,,,Unknown,"Horizontal Movement At: 10
+Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,https://i.fightcore.gg/beta/pichu/ftechroll.gif,https://i.fightcore.gg/beta/pichu/ftechroll.webm,https://i.fightcore.gg/png/pichu/ftechroll.png,False,1815
+Tech-Roll Backward,btechroll,,,,40,,,,,,Tech,"Horizontal Movement At: 10
 Distance: 8.4 ft
-Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1816
-Getup-Attack (Back),bgetup,,,49,,,,,,Unknown,"Hit: 13-14 (Behind), 18-19 (Front)
-Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1817
-Getup-Attack (Stomach),fgetup,,,50,,,,,,Unknown,"Hit: 17-18 (Front), 23-24 (Behind)
-Invincible: 1-24",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1818
-Getup-Roll Forward (Back),fgetuprollback,,,35,,,,,,Unknown,"Horizontal Movement At: 6
+Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,https://i.fightcore.gg/beta/pichu/btechroll.gif,https://i.fightcore.gg/beta/pichu/btechroll.webm,https://i.fightcore.gg/png/pichu/btechroll.png,False,1816
+Getup-Attack (Back),bgetup,,,,49,,,,,,Tech,"Hit: 13-14 (Behind), 18-19 (Front)
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1817
+Getup-Attack (Stomach),fgetup,,,,50,,,,,,Tech,"Hit: 17-18 (Front), 23-24 (Behind)
+Invincible: 1-24",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1818
+Getup-Roll Forward (Back),fgetuprollback,,,,35,,,,,,Tech,"Horizontal Movement At: 6
 Distance: 6.2 ft
-Invincible: 1-14",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1819
-Getup-Roll Forward (Stomach),fgetuprollstomach,,,36,,,,,,Unknown,"Horizontal Movement At: 6
+Invincible: 1-14",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1819
+Getup-Roll Forward (Stomach),fgetuprollstomach,,,,36,,,,,,Tech,"Horizontal Movement At: 6
 Distance: 4.6 ft
-Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1820
-Getup-Roll Backward (Back),bgetuprollback,,,35,,,,,,Unknown,"Horizontal Movement At: 6
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1820
+Getup-Roll Backward (Back),bgetuprollback,,,,35,,,,,,Tech,"Horizontal Movement At: 6
 Distance: 6 ft
-Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1821
-Getup-Roll Backward (Stomach),bgetuprollstomach,,,35,,,,,,Unknown,"Horizontal Movement At: 6
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1821
+Getup-Roll Backward (Stomach),bgetuprollstomach,,,,35,,,,,,Tech,"Horizontal Movement At: 6
 Distance: 4.2 ft
-Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1822
-Tech-Neutral,neutraltech,,,26,,,,,,Unknown,Invincible: 1-24,,0,http://meleeframedata.com/,1881
-Tech-Wall,walltech,,,31,6,,,,,Unknown,"Invincible: 1-14
-Input an upwards direction anywhere on 1-4 for walljump tech on 6)",,0,http://meleeframedata.com/,1907
-Tech-Wall Jump,walltechjump,,,40,1,,,,,Unknown,,,0,http://meleeframedata.com/,1933
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1822
+Tech-Neutral,neutraltech,,,,26,,,,,,Tech,Invincible: 1-24,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/pichu/neutraltech.gif,https://i.fightcore.gg/beta/pichu/neutraltech.webm,https://i.fightcore.gg/png/pichu/neutraltech.png,False,1881
+Tech-Wall,walltech,,,,31,6,,,,,Tech,"Invincible: 1-14
+Input an upwards direction anywhere on 1-4 for walljump tech on 6)",,0,http://meleeframedata.com/,,,,False,1907
+Tech-Wall Jump,walltechjump,,,,40,1,,,,,Tech,,,0,http://meleeframedata.com/,,,,False,1933
+Skull Bash (Air),asideb,30,,,70,,,,5,40,Special,data refers to lunge. charging takes anywhere between 14-161 frames. 34 frames of endlag on hit. damage increases based on charge and travel distance,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/pichu/asideb.gif,https://i.fightcore.gg/beta/pichu/asideb.webm,,True,2001
+Thunder (Air),adownb,,,,109,,,,20,49,Special,"data refers to pichu standiung still and being hit. thunder will last frames 20-84, will hit pichuj at 40 (and stop) if standing still, 53 if falling. when hit, hitbox lasts frames 1-9 with 60 frames endlag",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/pichu/adownb.gif,https://i.fightcore.gg/beta/pichu/adownb.webm,https://i.fightcore.gg/png/pichu/adownb.png,True,2002
+Agility (Air),aupb,12,,,158,,,,13,71,Special,"13 frames to aim first jump, that jump lasts a total of 71 frames. 29 frames to aim 2nd jump, that jump lasts a total of 87 frames",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/pichu/aupb.gif,https://i.fightcore.gg/beta/pichu/aupb.webm,https://i.fightcore.gg/png/pichu/aupb.png,True,2036

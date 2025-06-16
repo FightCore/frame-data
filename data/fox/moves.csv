@@ -1,66 +1,70 @@
-Name,NormalizedName,LandLag,LCanceledLandLag,TotalFrames,IASA,AutoCancelBefore,AutoCancelAfter,Start,End,Type,Notes,Percent,CharacterId,Source,Id
-Up throw,uthrow,,,38,,,,18,24,Throw,,,0,http://meleeframedata.com/,1221
-Dashattack,dattack,,,39,36,,,4,17,Grounded,strong hitbox frame 4-7,,0,http://meleeframedata.com/,1222
-Forward Tilt,ftilt,,,26,,,,5,8,Tilt,all angles have the same stats,,0,http://meleeframedata.com/,1223
-Up Tilt,utilt,,,23,23,,,5,11,Tilt,,,0,http://meleeframedata.com/,1224
-Down Tilt,dtilt,,,29,28,,,7,9,Tilt,,,0,http://meleeframedata.com/,1225
-Forward Smash,fsmash,,,39,,,,12,22,Grounded,weak hitbox frame 17-22,,0,http://meleeframedata.com/,1226
-Up Smash,usmash,,,41,,,,7,17,Grounded,strong hitbox frame 7-9,,0,http://meleeframedata.com/,1227
-Down Smash,dsmash,,,49,46,,,6,10,Grounded,,,0,http://meleeframedata.com/,1228
-Neutral Air,nair,15,7,49,42,4,36,4,31,Air,strong hitbox frame 4-7,,0,http://meleeframedata.com/,1229
-Forward Air,fair,22,11,59,53,6,48,6,45,Air,"5 hits, 2 frames each, with average 7 frames between them. % damage in descending order",,0,http://meleeframedata.com/,1230
-Back Air,bair,20,10,39,38,4,22,4,19,Air,strong hit frame 4-7,,0,http://meleeframedata.com/,1231
-Up Air,uair,18,9,39,,8,25,8,14,Air,strong hit frame 11-14,,0,http://meleeframedata.com/,1232
-Down Air,dair,18,9,49,,5,33,5,27,Air,"active 1 frame at a time with 2 frame breaks, 8 hits total",,0,http://meleeframedata.com/,1233
-Edge attack,edge,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1235
-Pummel,pummel,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1236
-Forward throw,fthrow,,,33,,,,10,10,Throw,,,0,http://meleeframedata.com/,1237
-Back throw,bthrow,,,38,,,,15,21,Throw,,,0,http://meleeframedata.com/,1238
-Down throw,dthrow,,,43,,,,23,31,Throw,,,0,http://meleeframedata.com/,1239
-Fox Illusion,sideb,,,63,,,,22,25,Special,"shorten frames: 20-21 for shortest, 22 for middle, 23 for longest. can grab edge frame 29",,0,http://meleeframedata.com/,1283
-Reflector,downb,,,3,,,,1,1,Special,"able to be jump cancelled frames 4-21. reflects frames 4 to release+1. when landed, fox is in 5 frames of hitlag. normally has 19 frames endlag",,0,http://meleeframedata.com/,1284
-Blaster,neutralb,,,36,,,,10,44,Special,repeating shots come out every 10 frames. lasers last 34 frames,,0,http://meleeframedata.com/,1324
-Fire Fox,upb,6,,92,,,,20,72,Special,"7 hits frames 20-32 of 2% each, then strong hit frames 43-72. direction based on aim at frame 42. can grab edge before moving as early as frame 16. can grab edge after moving once hitbox is inactive. 3 frames LFS lag",,0,http://meleeframedata.com/,1343
-Roll backwards,rollbackwards,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,1459
-Roll forwards,rollforward,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,1460
-Spotdodge,spotdodge,,,22,,,,2,15,Dodge,,,0,http://meleeframedata.com/,1461
-Airdodge,airdodge,,,49,,,,0,,Dodge,,,0,http://meleeframedata.com/,1462
-Jab 1,jab1,,,17,16,,,2,3,Grounded,,,0,http://meleeframedata.com/,1481
-Jab 2,jab2,,,19,18,,,2,3,Grounded,,,0,http://meleeframedata.com/,1482
-Blaster (Air),aneutralb,0,,36,,,,10,44,Special,auto cancel upons landing,,0,http://meleeframedata.com/,1553
-Fox Illusion (Air),asideb,20,,63,,,,22,25,Special,"shorten frames: 20-21 for shortest, 22 for middle, 23 for longest. can grab edge frame 29",,0,http://meleeframedata.com/,1554
-Grab,grab,,,30,,,,7,8,Unknown,,,0,http://meleeframedata.com/,1573
-Dashgrab,dashgrab,,,40,,,,12,13,Unknown,,,0,http://meleeframedata.com/,1574
-Rapid Jabs,rjab,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,1625
-Tech-Roll Forward,ftechroll,,,40,,,,,,Unknown,"Horizontal Movement At: 9
+Name,NormalizedName,LandLag,LCanceledLandLag,LandingFallSpecialLag,TotalFrames,IASA,AutoCancelBefore,AutoCancelAfter,Start,End,Type,Notes,Percent,CharacterId,Source,GifUrl,WebmUrl,PngUrl,IsInterpolated,Id
+Up throw,uthrow,,,,38,,,,18,24,Throw,,,0,http://meleeframedata.com/,,,,False,1221
+Dashattack,dattack,,,,39,36,,,4,17,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/fox/dattack.gif,https://i.fightcore.gg/beta/fox/dattack.webm,https://i.fightcore.gg/png/fox/dattack.png,False,1222
+Forward Tilt,ftilt,,,,26,,,,5,8,Tilt,all angles have the same stats,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/fox/ftilt.gif,https://i.fightcore.gg/beta/fox/ftilt.webm,https://i.fightcore.gg/png/fox/ftilt.png,False,1223
+Up Tilt,utilt,,,,23,23,,,5,11,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/fox/utilt.gif,https://i.fightcore.gg/beta/fox/utilt.webm,https://i.fightcore.gg/png/fox/utilt.png,False,1224
+Down Tilt,dtilt,,,,29,28,,,7,9,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/fox/dtilt.gif,https://i.fightcore.gg/beta/fox/dtilt.webm,https://i.fightcore.gg/png/fox/dtilt.png,False,1225
+Forward Smash,fsmash,,,,39,,,,12,22,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/fox/fsmash.gif,https://i.fightcore.gg/beta/fox/fsmash.webm,https://i.fightcore.gg/png/fox/fsmash.png,False,1226
+Up Smash,usmash,,,,41,,,,7,17,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/fox/usmash.gif,https://i.fightcore.gg/beta/fox/usmash.webm,https://i.fightcore.gg/png/fox/usmash.png,False,1227
+Down Smash,dsmash,,,,49,46,,,6,10,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/fox/dsmash.gif,https://i.fightcore.gg/beta/fox/dsmash.webm,https://i.fightcore.gg/png/fox/dsmash.png,False,1228
+Neutral Air,nair,15,7,,49,42,4,36,4,31,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/fox/nair.gif,https://i.fightcore.gg/beta/fox/nair.webm,https://i.fightcore.gg/png/fox/nair.png,False,1229
+Forward Air,fair,22,11,,59,53,6,48,6,45,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/fox/fair.gif,https://i.fightcore.gg/beta/fox/fair.webm,https://i.fightcore.gg/png/fox/fair.png,False,1230
+Back Air,bair,20,10,,39,38,4,22,4,19,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/fox/bair.gif,https://i.fightcore.gg/beta/fox/bair.webm,https://i.fightcore.gg/png/fox/bair.png,False,1231
+Up Air,uair,18,9,,39,,8,25,8,14,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/fox/uair.gif,https://i.fightcore.gg/beta/fox/uair.webm,https://i.fightcore.gg/png/fox/uair.png,False,1232
+Down Air,dair,18,9,,49,,5,33,5,27,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/fox/dair.gif,https://i.fightcore.gg/beta/fox/dair.webm,https://i.fightcore.gg/png/fox/dair.png,False,1233
+Edge attack,edge,,,,0,,,,,,EdgeAttack,,,0,http://meleeframedata.com/,,,,False,1235
+Pummel,pummel,,,,0,,,,,,Throw,,,0,http://meleeframedata.com/,,,,False,1236
+Forward throw,fthrow,,,,33,,,,10,10,Throw,,,0,http://meleeframedata.com/,,,,False,1237
+Back throw,bthrow,,,,38,,,,15,21,Throw,,,0,http://meleeframedata.com/,,,,False,1238
+Down throw,dthrow,,,,43,,,,23,31,Throw,,,0,http://meleeframedata.com/,,,,False,1239
+Fox Illusion,sideb,,,,63,,,,22,25,Special,"shorten frames: 20-21 for shortest, 22 for middle, 23 for longest. can grab edge frame 29",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/fox/sideb.gif,https://i.fightcore.gg/beta/fox/sideb.webm,https://i.fightcore.gg/png/fox/sideb.png,False,1283
+Reflector,downb,,,,3,,,,1,1,Special,"able to be jump cancelled frames 4-21. reflects frames 4 to release+1. when landed, fox is in 5 frames of hitlag. normally has 19 frames endlag",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/fox/downb.gif,https://i.fightcore.gg/beta/fox/downb.webm,https://i.fightcore.gg/png/fox/downb.png,False,1284
+Blaster,neutralb,,,,36,,,,10,44,Special,repeating shots come out every 10 frames. lasers last 34 frames,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/fox/neutralb.gif,https://i.fightcore.gg/beta/fox/neutralb.webm,https://i.fightcore.gg/png/fox/neutralb.png,False,1324
+Fire Fox,upb,6,,,92,,,,20,72,Special,"7 hits frames 20-32 of 2% each, then strong hit frames 43-72. direction based on aim at frame 42. can grab edge before moving as early as frame 16. can grab edge after moving once hitbox is inactive. 3 frames LFS lag",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/fox/upb.gif,https://i.fightcore.gg/beta/fox/upb.webm,https://i.fightcore.gg/png/fox/upb.png,False,1343
+Roll backwards,rollbackwards,,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/fox/rollbackwards.gif,https://i.fightcore.gg/beta/fox/rollbackwards.webm,https://i.fightcore.gg/png/fox/rollbackwards.png,False,1459
+Roll forwards,rollforward,,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/fox/rollforward.gif,https://i.fightcore.gg/beta/fox/rollforward.webm,https://i.fightcore.gg/png/fox/rollforward.png,False,1460
+Spotdodge,spotdodge,,,,22,,,,2,15,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/fox/spotdodge.gif,https://i.fightcore.gg/beta/fox/spotdodge.webm,https://i.fightcore.gg/png/fox/spotdodge.png,False,1461
+Airdodge,airdodge,,,,49,,,,0,,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/fox/airdodge.gif,https://i.fightcore.gg/beta/fox/airdodge.webm,https://i.fightcore.gg/png/fox/airdodge.png,False,1462
+Jab 1,jab1,,,,17,16,,,2,3,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/fox/jab1.gif,https://i.fightcore.gg/beta/fox/jab1.webm,https://i.fightcore.gg/png/fox/jab1.png,False,1481
+Jab 2,jab2,,,,19,18,,,2,3,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/fox/jab2.gif,https://i.fightcore.gg/beta/fox/jab2.webm,https://i.fightcore.gg/png/fox/jab2.png,False,1482
+Blaster (Air),aneutralb,0,,,36,,,,10,44,Special,auto cancel upons landing,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/fox/aneutralb.gif,https://i.fightcore.gg/beta/fox/aneutralb.webm,https://i.fightcore.gg/png/fox/aneutralb.png,False,1553
+Fox Illusion (Air),asideb,20,,,63,,,,22,25,Special,"shorten frames: 20-21 for shortest, 22 for middle, 23 for longest. can grab edge frame 29",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/fox/asideb.gif,https://i.fightcore.gg/beta/fox/asideb.webm,https://i.fightcore.gg/png/fox/asideb.png,False,1554
+Grab,grab,,,,30,,,,7,8,Throw,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/fox/grab.gif,https://i.fightcore.gg/beta/fox/grab.webm,https://i.fightcore.gg/png/fox/grab.png,False,1573
+Dashgrab,dashgrab,,,,40,,,,12,13,Throw,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/fox/dashgrab.gif,https://i.fightcore.gg/beta/fox/dashgrab.webm,https://i.fightcore.gg/png/fox/dashgrab.png,False,1574
+Rapid Jabs,rjab,,,,0,,,,,,Grounded,,,0,http://meleeframedata.com/,beta/fox/rjab.gif,https://i.fightcore.gg/beta/fox/rjab.webm,https://i.fightcore.gg/png/fox/rjab.png,False,1625
+Tech-Roll Forward,ftechroll,,,,40,,,,,,Tech,"Horizontal Movement At: 9
 Distance: 12.6 ft
-Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1711
-Tech-Roll Backward,btechroll,,,40,,,,,,Unknown,"Horizontal Movement At: 6
+Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,https://i.fightcore.gg/beta/fox/ftechroll.gif,https://i.fightcore.gg/beta/fox/ftechroll.webm,https://i.fightcore.gg/png/fox/ftechroll.png,False,1711
+Tech-Roll Backward,btechroll,,,,40,,,,,,Tech,"Horizontal Movement At: 6
 Distance: 12.6 ft
-Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1712
-Getup-Attack (Back),bgetup,,,49,,,,,,Unknown,"Hit: 17-19 (Front), 24-26 (Behind)
-Invincible: 1-26",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1713
-Getup-Attack (Stomach),fgetup,,,49,,,,,,Unknown,"Hit: 19-20 (Behind), 25-26 (Front)
-Invincible: 1-26",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1714
-Getup-Roll Forward (Back),fgetuprollback,,,35,,,,,,Unknown,"Horizontal Movement At: 6
+Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,https://i.fightcore.gg/beta/fox/btechroll.gif,https://i.fightcore.gg/beta/fox/btechroll.webm,https://i.fightcore.gg/png/fox/btechroll.png,False,1712
+Getup-Attack (Back),bgetup,,,,49,,,,,,Tech,"Hit: 17-19 (Front), 24-26 (Behind)
+Invincible: 1-26",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1713
+Getup-Attack (Stomach),fgetup,,,,49,,,,,,Tech,"Hit: 19-20 (Behind), 25-26 (Front)
+Invincible: 1-26",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1714
+Getup-Roll Forward (Back),fgetuprollback,,,,35,,,,,,Tech,"Horizontal Movement At: 6
 Distance: 11 ft
-Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1715
-Getup-Roll Forward (Stomach),fgetuprollstomach,,,35,,,,,,Unknown,"Horizontal Movement At: 8
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1715
+Getup-Roll Forward (Stomach),fgetuprollstomach,,,,35,,,,,,Tech,"Horizontal Movement At: 8
 Distance: 11 ft
-Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1716
-Getup-Roll Backward (Back),bgetuprollback,,,35,,,,,,Unknown,"Horizontal Movement At: 12
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1716
+Getup-Roll Backward (Back),bgetuprollback,,,,35,,,,,,Tech,"Horizontal Movement At: 12
 Distance: 11.2 ft
-Invincible: 12-29 (Not a typo. If the roll takes you to an edge you will slip off unless an attack is timed on that exact frame)",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1717
-Getup-Roll Backward (Stomach),bgetuprollstomach,,,35,,,,,,Unknown,"Horizontal Movement At: 5
+Invincible: 12-29 (Not a typo. If the roll takes you to an edge you will slip off unless an attack is timed on that exact frame)",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1717
+Getup-Roll Backward (Stomach),bgetuprollstomach,,,,35,,,,,,Tech,"Horizontal Movement At: 5
 Distance: 11 ft
-Invincible: 1-24",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1718
-Tech-Neutral,neutraltech,,,26,,,,,,Unknown,Invincible: 1-20,,0,http://meleeframedata.com/,1901
-Tech-Wall,walltech,,,31,6,,,,,Unknown,"Invincible: 1-14
-Input an upwards direction anywhere on 1-4 for walljump tech on 6)",,0,http://meleeframedata.com/,1927
-Tech-Wall Jump,walltechjump,,,40,1,,,,,Unknown,,,0,http://meleeframedata.com/,1953
-Jump,jump,,,0,,,,,,Unknown,"Jump squad: 3 frames
+Invincible: 1-24",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1718
+Tech-Neutral,neutraltech,,,,26,,,,,,Tech,Invincible: 1-20,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/fox/neutraltech.gif,https://i.fightcore.gg/beta/fox/neutraltech.webm,https://i.fightcore.gg/png/fox/neutraltech.png,False,1901
+Tech-Wall,walltech,,,,31,6,,,,,Tech,"Invincible: 1-14
+Input an upwards direction anywhere on 1-4 for walljump tech on 6)",,0,http://meleeframedata.com/,,,,False,1927
+Tech-Wall Jump,walltechjump,,,,40,1,,,,,Tech,,,0,http://meleeframedata.com/,,,,False,1953
+Jump,jump,,,,0,,,,,,Unknown,"Jump squad: 3 frames
 Can wall jump: true
 Jump force: 3.68
 Jump height: 27.62875
 Short hop jump force: 2.1
-Short hop jump height: 8.565706522",,0,https://www.ssbwiki.com/Jump#Super_Smash_Bros._Melee_2,1994
+Short hop jump height: 8.565706522",,0,https://www.ssbwiki.com/Jump#Super_Smash_Bros._Melee_2,,,,False,1994
+Reflector (Air),adownb,,,,3,,,,1,1,Special,"able to be jump cancelled frames 4-21. reflects frames 4 to release+1. when landed, fox is in 5 frames of hitlag. normally has 19 frames endlag",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/fox/adownb.gif,https://i.fightcore.gg/beta/fox/adownb.webm,https://i.fightcore.gg/png/fox/adownb.png,True,2029
+Fire Fox (Air),aupb,6,,,92,,,,20,72,Special,"7 hits frames 20-32 of 2% each, then strong hit frames 43-72. direction based on aim at frame 42. can grab edge before moving as early as frame 16. can grab edge after moving once hitbox is inactive. 3 frames LFS lag",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/fox/aupb.gif,https://i.fightcore.gg/beta/fox/aupb.webm,https://i.fightcore.gg/png/fox/aupb.png,True,2031
+Forward Tilt (Up),uaft,,,,26,,,,5,8,Tilt,,,0,,https://i.fightcore.gg/beta/fox/uaft.gif,https://i.fightcore.gg/beta/fox/uaft.webm,https://i.fightcore.gg/png/fox/uaft.png,False,2042
+Forward Tilt (Down),daft,,,,26,,,,5,8,Tilt,,,0,,https://i.fightcore.gg/beta/fox/daft.gif,https://i.fightcore.gg/beta/fox/daft.webm,https://i.fightcore.gg/png/fox/daft.png,False,2048

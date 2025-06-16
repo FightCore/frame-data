@@ -1,60 +1,61 @@
-Name,NormalizedName,LandLag,LCanceledLandLag,TotalFrames,IASA,AutoCancelBefore,AutoCancelAfter,Start,End,Type,Notes,Percent,CharacterId,Source,Id
-Warlock Punch,neutralb,,,119,117,,,70,72,Special,,,0,http://meleeframedata.com/,878
-Gerudo Dragon,sideb,,,79,,,,15,34,Special,"once side b collides with a player, the punch hitbox starts, active frames 3-7, with 25 frames endlag",,0,http://meleeframedata.com/,879
-Dark Dive,upb,30,,64,,,,13,33,Special,"direction determined at frame 13. grabs edges as early as frame 45. if hits, 4 hits of 1% followed by a strong hit of 13% frames 3-25. ",,0,http://meleeframedata.com/,880
-Wizard's Foot,downb,,,77,,,,14,34,Special,,,0,http://meleeframedata.com/,881
-Dashattack,dattack,,,39,38,,,7,16,Grounded,weak hit frames 10-16 with 6 frames shield stun,,0,http://meleeframedata.com/,884
-Forward Tilt,ftilt,,,29,,,,9,11,Tilt,,,0,http://meleeframedata.com/,906
-Down Tilt,dtilt,,,35,35,,,10,12,Tilt,,,0,http://meleeframedata.com/,907
-Up Tilt,utilt,,,114,113,,,81,83,Tilt,,,0,http://meleeframedata.com/,926
-Forward Smash,fsmash,,,66,60,,,20,24,Grounded,,,0,http://meleeframedata.com/,929
-Up Smash,usmash,,,54,40,,,21,29,Grounded,"strong hit frames 21-23, weak hit frames 26-29",,0,http://meleeframedata.com/,930
-Down Smash,dsmash,,,49,47,,,19,32,Grounded,"strong hit frames 29-32, weak hit frames 19-22 with 5 frames shieldstun",,0,http://meleeframedata.com/,931
-Neutral Air,nair,25,12,44,,4,25,7,21,Air,"hitboxes frames 7-8, 20-21",,0,http://meleeframedata.com/,932
-Forward Air,fair,25,12,44,35,7,33,14,19,Air,,,0,http://meleeframedata.com/,933
-Back Air,bair,25,12,35,29,7,18,10,15,Air,,,0,http://meleeframedata.com/,934
-Up Air,uair,25,12,33,30,1,21,6,16,Air,"hitboxes frames 6-10, 11-13, 14-16, hits can do damage between 6-13%, getting weaker over time",,0,http://meleeframedata.com/,935
-Down Air,dair,35,17,44,38,4,35,16,20,Air,,,0,http://meleeframedata.com/,936
-Edge attack,edge,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,938
-Pummel,pummel,,,0,,,,,,Unknown,,,0,http://meleeframedata.com/,939
-Forward throw,fthrow,,,39,,,,11,17,Throw,,,0,http://meleeframedata.com/,940
-Back throw,bthrow,,,49,,,,12,19,Throw,,,0,http://meleeframedata.com/,941
-Up throw,uthrow,,,43,,,,11,28,Throw,,,0,http://meleeframedata.com/,942
-Down throw,dthrow,,,39,,,,0,0,Throw,,,0,http://meleeframedata.com/,943
-Roll forwards,rollforward,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,1467
-Roll backwards,rollbackwards,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,1468
-Spotdodge,spotdodge,,,32,,,,2,20,Dodge,,,0,http://meleeframedata.com/,1469
-Airdodge,airdodge,,,49,,,,0,,Dodge,,,0,http://meleeframedata.com/,1470
-Jab 1,jab1,,,21,19,,,3,5,Grounded,,,0,http://meleeframedata.com/,1494
-Gerudo Dragon (Air),asideb,40,,79,,,,15,34,Special,"once side b collides with a player, the punch hitbox starts, active frames 3-7, with 45 frames endlag",,0,http://meleeframedata.com/,1555
-Wizard's Foot (Air),adownb,57,,58,,,,15,29,Special,"weak hit is the landing hit frames 2-3, 57 frames total. ",,0,http://meleeframedata.com/,1556
-Grab,grab,,,30,,,,7,8,Unknown,,,0,http://meleeframedata.com/,1585
-Dashgrab,dashgrab,,,40,,,,11,13,Unknown,,,0,http://meleeframedata.com/,1586
-Forward Tilt (Up),uaft,,,29,,,,9,11,Tilt,,,0,http://meleeframedata.com/,1638
-Forward Tilt (Down),daft,,,29,,,,9,11,Tilt,,,0,http://meleeframedata.com/,1639
-Tech-Roll Forward,ftechroll,,,40,,,,,,Unknown,"Horizontal Movement At: 11
+Name,NormalizedName,LandLag,LCanceledLandLag,LandingFallSpecialLag,TotalFrames,IASA,AutoCancelBefore,AutoCancelAfter,Start,End,Type,Notes,Percent,CharacterId,Source,GifUrl,WebmUrl,PngUrl,IsInterpolated,Id
+Warlock Punch,neutralb,,,,119,117,,,70,72,Special,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/ganondorf/neutralb.gif,https://i.fightcore.gg/beta/ganondorf/neutralb.webm,https://i.fightcore.gg/png/ganondorf/neutralb.png,False,878
+Gerudo Dragon,sideb,,,,79,,,,15,34,Special,"once side b collides with a player, the punch hitbox starts, active frames 3-7, with 25 frames endlag",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/ganondorf/sideb.gif,https://i.fightcore.gg/beta/ganondorf/sideb.webm,https://i.fightcore.gg/png/ganondorf/sideb.png,False,879
+Dark Dive,upb,30,,,64,,,,13,33,Special,"direction determined at frame 13. grabs edges as early as frame 45. if hits, 4 hits of 1% followed by a strong hit of 13% frames 3-25. ",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/ganondorf/upb.gif,https://i.fightcore.gg/beta/ganondorf/upb.webm,https://i.fightcore.gg/png/ganondorf/upb.png,False,880
+Wizard's Foot,downb,,,,77,,,,14,34,Special,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/ganondorf/downb.gif,https://i.fightcore.gg/beta/ganondorf/downb.webm,https://i.fightcore.gg/png/ganondorf/downb.png,False,881
+Dashattack,dattack,,,,39,38,,,7,16,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/ganondorf/dattack.gif,https://i.fightcore.gg/beta/ganondorf/dattack.webm,https://i.fightcore.gg/png/ganondorf/dattack.png,False,884
+Forward Tilt,ftilt,,,,29,,,,9,11,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/ganondorf/ftilt.gif,https://i.fightcore.gg/beta/ganondorf/ftilt.webm,https://i.fightcore.gg/png/ganondorf/ftilt.png,False,906
+Down Tilt,dtilt,,,,35,35,,,10,12,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/ganondorf/dtilt.gif,https://i.fightcore.gg/beta/ganondorf/dtilt.webm,https://i.fightcore.gg/png/ganondorf/dtilt.png,False,907
+Up Tilt,utilt,,,,114,113,,,81,83,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/ganondorf/utilt.gif,https://i.fightcore.gg/beta/ganondorf/utilt.webm,https://i.fightcore.gg/png/ganondorf/utilt.png,False,926
+Forward Smash,fsmash,,,,66,60,,,20,24,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/ganondorf/fsmash.gif,https://i.fightcore.gg/beta/ganondorf/fsmash.webm,https://i.fightcore.gg/png/ganondorf/fsmash.png,False,929
+Up Smash,usmash,,,,54,40,,,21,29,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/ganondorf/usmash.gif,https://i.fightcore.gg/beta/ganondorf/usmash.webm,https://i.fightcore.gg/png/ganondorf/usmash.png,False,930
+Down Smash,dsmash,,,,49,47,,,19,32,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/ganondorf/dsmash.gif,https://i.fightcore.gg/beta/ganondorf/dsmash.webm,https://i.fightcore.gg/png/ganondorf/dsmash.png,False,931
+Neutral Air,nair,25,12,,44,,4,25,7,21,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/ganondorf/nair.gif,https://i.fightcore.gg/beta/ganondorf/nair.webm,https://i.fightcore.gg/png/ganondorf/nair.png,False,932
+Forward Air,fair,25,12,,44,35,7,33,14,19,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/ganondorf/fair.gif,https://i.fightcore.gg/beta/ganondorf/fair.webm,https://i.fightcore.gg/png/ganondorf/fair.png,False,933
+Back Air,bair,25,12,,35,29,7,18,10,15,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/ganondorf/bair.gif,https://i.fightcore.gg/beta/ganondorf/bair.webm,https://i.fightcore.gg/png/ganondorf/bair.png,False,934
+Up Air,uair,25,12,,33,30,1,21,6,16,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/ganondorf/uair.gif,https://i.fightcore.gg/beta/ganondorf/uair.webm,https://i.fightcore.gg/png/ganondorf/uair.png,False,935
+Down Air,dair,35,17,,44,38,4,35,16,20,Air,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/ganondorf/dair.gif,https://i.fightcore.gg/beta/ganondorf/dair.webm,https://i.fightcore.gg/png/ganondorf/dair.png,False,936
+Edge attack,edge,,,,0,,,,,,EdgeAttack,,,0,http://meleeframedata.com/,,,,False,938
+Pummel,pummel,,,,0,,,,,,Throw,,,0,http://meleeframedata.com/,,,,False,939
+Forward throw,fthrow,,,,39,,,,11,17,Throw,,,0,http://meleeframedata.com/,,,,False,940
+Back throw,bthrow,,,,49,,,,12,19,Throw,,,0,http://meleeframedata.com/,,,,False,941
+Up throw,uthrow,,,,43,,,,11,28,Throw,,,0,http://meleeframedata.com/,,,,False,942
+Down throw,dthrow,,,,39,,,,0,0,Throw,,,0,http://meleeframedata.com/,,,,False,943
+Roll forwards,rollforward,,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/ganondorf/rollforward.gif,https://i.fightcore.gg/beta/ganondorf/rollforward.webm,https://i.fightcore.gg/png/ganondorf/rollforward.png,False,1467
+Roll backwards,rollbackwards,,,,31,,,,4,19,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/ganondorf/rollbackwards.gif,https://i.fightcore.gg/beta/ganondorf/rollbackwards.webm,https://i.fightcore.gg/png/ganondorf/rollbackwards.png,False,1468
+Spotdodge,spotdodge,,,,32,,,,2,20,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/ganondorf/spotdodge.gif,https://i.fightcore.gg/beta/ganondorf/spotdodge.webm,https://i.fightcore.gg/png/ganondorf/spotdodge.png,False,1469
+Airdodge,airdodge,,,,49,,,,0,,Dodge,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/ganondorf/airdodge.gif,https://i.fightcore.gg/beta/ganondorf/airdodge.webm,https://i.fightcore.gg/png/ganondorf/airdodge.png,False,1470
+Jab 1,jab1,,,,21,19,,,3,5,Grounded,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/ganondorf/jab1.gif,https://i.fightcore.gg/beta/ganondorf/jab1.webm,https://i.fightcore.gg/png/ganondorf/jab1.png,False,1494
+Gerudo Dragon (Air),asideb,40,,,79,,,,15,34,Special,"once side b collides with a player, the punch hitbox starts, active frames 3-7, with 45 frames endlag",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/ganondorf/asideb.gif,https://i.fightcore.gg/beta/ganondorf/asideb.webm,https://i.fightcore.gg/png/ganondorf/asideb.png,False,1555
+Wizard's Foot (Air),adownb,57,,,58,,,,15,29,Special,"weak hit is the landing hit frames 2-3, 57 frames total. ",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/ganondorf/adownb.gif,https://i.fightcore.gg/beta/ganondorf/adownb.webm,https://i.fightcore.gg/png/ganondorf/adownb.png,False,1556
+Grab,grab,,,,30,,,,7,8,Throw,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/ganondorf/grab.gif,https://i.fightcore.gg/beta/ganondorf/grab.webm,https://i.fightcore.gg/png/ganondorf/grab.png,False,1585
+Dashgrab,dashgrab,,,,40,,,,11,13,Throw,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/ganondorf/dashgrab.gif,https://i.fightcore.gg/beta/ganondorf/dashgrab.webm,https://i.fightcore.gg/png/ganondorf/dashgrab.png,False,1586
+Forward Tilt (Up),uaft,,,,29,,,,9,11,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/ganondorf/uaft.gif,https://i.fightcore.gg/beta/ganondorf/uaft.webm,https://i.fightcore.gg/png/ganondorf/uaft.png,False,1638
+Forward Tilt (Down),daft,,,,29,,,,9,11,Tilt,,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/ganondorf/daft.gif,https://i.fightcore.gg/beta/ganondorf/daft.webm,https://i.fightcore.gg/png/ganondorf/daft.png,False,1639
+Tech-Roll Forward,ftechroll,,,,40,,,,,,Tech,"Horizontal Movement At: 11
 Distance: 18.6 ft
-Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1727
-Tech-Roll Backward,btechroll,,,40,,,,,,Unknown,"Horizontal Movement At: 8
+Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,https://i.fightcore.gg/beta/ganondorf/ftechroll.gif,https://i.fightcore.gg/beta/ganondorf/ftechroll.webm,https://i.fightcore.gg/png/ganondorf/ftechroll.png,False,1727
+Tech-Roll Backward,btechroll,,,,40,,,,,,Tech,"Horizontal Movement At: 8
 Distance: 15.2 ft
-Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1728
-Getup-Attack (Back),bgetup,,,49,,,,,,Unknown,"Hit: 19-20 (Both Sides), 28-29 (Both Sides)
-Invincible: 1-29",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1729
-Getup-Attack (Stomach),fgetup,,,49,,,,,,Unknown,"Hit: 20-21 (Behind), 26-27 (Front)
-Invincible: 1-27",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1730
-Getup-Roll Forward (Back),fgetuprollback,,,35,,,,,,Unknown,"Horizontal Movement At: 5
+Invincible: 1-20",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,https://i.fightcore.gg/beta/ganondorf/btechroll.gif,https://i.fightcore.gg/beta/ganondorf/btechroll.webm,https://i.fightcore.gg/png/ganondorf/btechroll.png,False,1728
+Getup-Attack (Back),bgetup,,,,49,,,,,,Tech,"Hit: 19-20 (Both Sides), 28-29 (Both Sides)
+Invincible: 1-29",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1729
+Getup-Attack (Stomach),fgetup,,,,49,,,,,,Tech,"Hit: 20-21 (Behind), 26-27 (Front)
+Invincible: 1-27",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1730
+Getup-Roll Forward (Back),fgetuprollback,,,,35,,,,,,Tech,"Horizontal Movement At: 5
 Distance: 12.4 ft
-Invincible: 1-23",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1731
-Getup-Roll Forward (Stomach),fgetuprollstomach,,,35,,,,,,Unknown,"Horizontal Movement At: 10
+Invincible: 1-23",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1731
+Getup-Roll Forward (Stomach),fgetuprollstomach,,,,35,,,,,,Tech,"Horizontal Movement At: 10
 Distance: 12.4 ft
-Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1732
-Getup-Roll Backward (Back),bgetuprollback,,,35,,,,,,Unknown,"Horizontal Movement At: 5
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1732
+Getup-Roll Backward (Back),bgetuprollback,,,,35,,,,,,Tech,"Horizontal Movement At: 5
 Distance: 12.2 ft
-Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1733
-Getup-Roll Backward (Stomach),bgetuprollstomach,,,35,,,,,,Unknown,"Horizontal Movement At: 15
+Invincible: 1-19",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1733
+Getup-Roll Backward (Stomach),bgetuprollstomach,,,,35,,,,,,Tech,"Horizontal Movement At: 15
 Distance: 12.4 ft
-Invincible: 1-25",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,1734
-Tech-Neutral,neutraltech,,,26,,,,,,Unknown,Invincible: 1-20,,0,http://meleeframedata.com/,1888
-Tech-Wall,walltech,,,31,6,,,,,Unknown,"Invincible: 1-19
-Input an upwards direction anywhere on 1-4 for walljump tech on 6)",,0,http://meleeframedata.com/,1914
-Tech-Wall Jump,walltechjump,,,40,1,,,,,Unknown,,,0,http://meleeframedata.com/,1940
+Invincible: 1-25",,0,https://smashboards.com/threads/detailed-throws-techs-and-getups-frame-data.206469/,,,,False,1734
+Tech-Neutral,neutraltech,,,,26,,,,,,Tech,Invincible: 1-20,,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/ganondorf/neutraltech.gif,https://i.fightcore.gg/beta/ganondorf/neutraltech.webm,https://i.fightcore.gg/png/ganondorf/neutraltech.png,False,1888
+Tech-Wall,walltech,,,,31,6,,,,,Tech,"Invincible: 1-19
+Input an upwards direction anywhere on 1-4 for walljump tech on 6)",,0,http://meleeframedata.com/,,,,False,1914
+Tech-Wall Jump,walltechjump,,,,40,1,,,,,Tech,,,0,http://meleeframedata.com/,,,,False,1940
+Dark Dive (Air),aupb,30,,,64,,,,13,33,Special,"direction determined at frame 13. grabs edges as early as frame 45. if hits, 4 hits of 1% followed by a strong hit of 13% frames 3-25. ",,0,http://meleeframedata.com/,https://i.fightcore.gg/beta/ganondorf/aupb.gif,https://i.fightcore.gg/beta/ganondorf/aupb.webm,https://i.fightcore.gg/png/ganondorf/aupb.png,True,2008
