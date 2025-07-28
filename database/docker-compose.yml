@@ -1,7 +1,7 @@
 services:
   sql-server:
     image: mcr.microsoft.com/mssql/server:latest
-    container_name: fightcore_sql_server
+    container_name: fightcore_sql_server_legacy
     environment:
       SA_PASSWORD: "yourStrong(!)Password"
       ACCEPT_EULA: "Y"
@@ -9,3 +9,19 @@ services:
       - "1433:1433"
     volumes:
       - './bak:/home/bak'
+
+  db:
+    image: postgres
+    container_name: fightcore_postgres
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    shm_size: 128mb
+    environment:
+      POSTGRES_PASSWORD: localcontainer
+    volumes:
+      - ./db-data:/var/lib/postgresql/data 
+
+volumes:
+  db-data:
+    driver: local
