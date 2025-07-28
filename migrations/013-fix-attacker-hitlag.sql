@@ -1,33 +1,35 @@
-DROP FUNCTION CalculateHitlag;
-GO
-CREATE FUNCTION CalculateHitlag(@hitboxId int, @isDefender bit, @isCrouched bit)
-			RETURNS INT
-			WITH EXECUTE AS CALLER
-			AS
-			BEGIN
-				DECLARE @Hitlag DECIMAL;
-				IF ((SELECT H.Damage FROM [Hitboxes] H WHERE H.Id = @hitboxId) = 0)
-					RETURN 0;
+CREATE OR REPLACE FUNCTION calculate_hitlag(hitbox_id integer, is_defender boolean, is_crouched boolean)
+RETURNS INTEGER AS $$
+DECLARE
+    hitlag NUMERIC;
+    hitbox_damage NUMERIC;
+    hitbox_effect VARCHAR;
+BEGIN
+    SELECT "Damage", "Effect" INTO hitbox_damage, hitbox_effect FROM "Hitboxes" WHERE "Id" = hitbox_id;
 
-				SET @Hitlag = (SELECT ROUND(CAST(H.Damage AS DECIMAL) / 3.0 + 3.0, 0)
-					FROM [Hitboxes] H
-					WHERE H.Id = @hitboxId);
+    IF (hitbox_damage = 0) THEN
+        RETURN 0;
+    END IF;
 
-                IF ((SELECT H.Effect FROM [Hitboxes] H WHERE H.Id = @hitboxId) = 'Electric' AND @isDefender = 1)
-                    SET @Hitlag = ROUND(@Hitlag * 1.5, 0, 1)
+    hitlag := ROUND(hitbox_damage / 3.0 + 3.0);
 
-                IF (@isCrouched = 1)
-                    SET @Hitlag = ROUND(@Hitlag * 0.666667, 0, 1)
+    IF (hitbox_effect = 'Electric' AND is_defender) THEN
+        hitlag := TRUNC(hitlag * 1.5);
+    END IF;
 
-                IF (@Hitlag >= 20)
-                    RETURN 20;
+    IF (is_crouched) THEN
+        hitlag := TRUNC(hitlag * 0.666667);
+    END IF;
 
-                RETURN @Hitlag;
-			END
-GO
+    IF (hitlag >= 20) THEN
+        RETURN 20;
+    END IF;
 
-UPDATE dbo.Hitboxes
-SET HitlagAttacker = dbo.CalculateHitlag(Hitboxes.Id, 0, 0),
-    HitlagDefender = dbo.CalculateHitlag(Hitboxes.Id, 1, 0),
-    HitlagDefenderCrouched = dbo.CalculateHitlag(Hitboxes.Id, 1, 1)
-FROM Hitboxes
+    RETURN hitlag;
+END;
+$$ LANGUAGE plpgsql;
+
+UPDATE "Hitboxes"
+SET "HitlagAttacker" = calculate_hitlag("Id", false, false),
+    "HitlagDefender" = calculate_hitlag("Id", true, false),
+    "HitlagDefenderCrouched" = calculate_hitlag("Id", true, true);

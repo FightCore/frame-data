@@ -1,6 +1,6 @@
-UPDATE Moves
-SET IASA = 52
-FROM Moves
-INNER JOIN dbo.Characters C on Moves.CharacterId = C.Id
-WHERE C.NormalizedName = 'link'
-AND Moves.NormalizedName = 'usmash'
+UPDATE "Moves"
+SET "IASA" = 52
+FROM "Characters" C
+WHERE "Moves"."CharacterId" = C."Id"
+AND C."NormalizedName" = 'link'
+AND "Moves"."NormalizedName" = 'usmash';
