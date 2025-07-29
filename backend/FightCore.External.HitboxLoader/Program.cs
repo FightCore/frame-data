@@ -9,7 +9,7 @@ using Newtonsoft.Json.Linq;
 
 var configuration = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
 var dbContextOptions =
-	new DbContextOptionsBuilder<FrameDataContext>().UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
+	new DbContextOptionsBuilder<FrameDataContext>().UseNpgsql(configuration.GetConnectionString("DefaultConnection"));
 var dbContext = new FrameDataContext(dbContextOptions.Options);
 
 var repository = new CharacterRepository(dbContext);
