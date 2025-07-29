@@ -183,7 +183,7 @@ UPDATE "Hits" SET "Start" = 21, "End" = 22 WHERE "Id" = 2834;
 UPDATE "Hits" SET "Start" = 27, "End" = 28 WHERE "Id" = 2835;
 UPDATE "Hits" SET "Start" = 33, "End" = 34 WHERE "Id" = 2836;
 
-UPDATE "Moves" SET "Start" = 3, "End" = 34, "Notes" = 'Loop has an additional 6 frames startup and 8 frames endlag' WHERE "Id" = 1611;
+UPDATE "Moves" SET "Start" = 3, "End" = 34, "Notes" = 'Loop has an additional 6 frames startup and 8 frames endlag' WHERE "Id" = 1524;
 
 -- Fix Yoshi's down air having a hitbox that does not exist
 DELETE FROM "Hitboxes" WHERE "HitId" = 2887;
