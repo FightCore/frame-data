@@ -245,6 +245,36 @@ VALUES (
         false
     )
 
+INSERT INTO
+    "AlternativeAnimations" (
+        "Description",
+        "GifUrl",
+        "WebmUrl",
+        "PngUrl",
+        "MoveId"
+    )
+VALUES (
+        'All tech animations',
+        'https://i.fightcore.gg/beta/roy/tech_all.gif',
+        'https://i.fightcore.gg/beta/roy/tech_all.webm',
+        'https://i.fightcore.gg/png/roy/tech_all.png',
+        1880
+    ),
+    (
+        'All tech animations',
+        'https://i.fightcore.gg/beta/roy/tech_all.gif',
+        'https://i.fightcore.gg/beta/roy/tech_all.webm',
+        'https://i.fightcore.gg/png/roy/tech_all.png',
+        1831
+    ),
+    (
+        'All tech animations',
+        'https://i.fightcore.gg/beta/roy/tech_all.gif',
+        'https://i.fightcore.gg/beta/roy/tech_all.webm',
+        'https://i.fightcore.gg/png/roy/tech_all.png',
+        1832
+    )
+
 -- Add appropriate sources
 INSERT INTO
     "MoveSource" ("MovesId", "SourcesId")
@@ -287,4 +317,9 @@ INNER JOIN "Characters"
 ON "Characters"."NormalizedName" = 'roy'
 WHERE m."CharacterId" = "Characters"."Id"
 
-INSERT INTO "MoveSource" VALUES (2012, 6), (927, 6), (946, 6), (944, 6)
+INSERT INTO
+    "MoveSource"
+VALUES (2012, 6),
+    (927, 6),
+    (946, 6),
+    (944, 6)
