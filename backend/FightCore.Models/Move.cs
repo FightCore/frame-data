@@ -50,7 +50,7 @@ namespace FightCore.Models
 
         public bool IsInterpolated { get; set; }
 
-        public List<MoveSubaction> MoveSubactions { get; set; }
+        //public List<MoveSubaction> MoveSubactions { get; set; }
 
         public List<Source> Sources { get; set; }
 

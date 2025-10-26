@@ -21,6 +21,6 @@ namespace FightCore.Models
 
         public CharacterMiscInfo CharacterInfo { get; set; }
 
-        public List<Subaction> Subactions { get; set; }
+        //public List<Subaction> Subactions { get; set; }
     }
 }

@@ -59,6 +59,9 @@ namespace FightCore.FrameData
 	        modelBuilder.Entity<ScriptCommand>().UseTptMappingStrategy();
 
             modelBuilder.Entity<AlternativeAnimation>().HasOne(animation => animation.Move).WithMany(move => move.AlternativeAnimations).HasForeignKey(animation => animation.MoveId);
+            modelBuilder.Entity<Move>().HasOne(move => move.Character).WithMany(character => character.Moves).HasForeignKey(move => move.CharacterId);
+            modelBuilder.Entity<Move>().HasMany(move => move.Hits).WithOne().HasForeignKey(hit => hit.MoveId);
+            modelBuilder.Entity<Hit>().HasMany(hit => hit.Hitboxes).WithOne(hitbox => hitbox.Hit).HasForeignKey(hitbox => hitbox.HitId);
         }
     }
 }
