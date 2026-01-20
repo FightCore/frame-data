@@ -2,6 +2,7 @@
 using FightCore.FrameData;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -10,9 +11,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace FightCore.Data.Migrations
 {
     [DbContext(typeof(FrameDataContext))]
-    partial class FrameDataContextModelSnapshot : ModelSnapshot
+    [Migration("20260120141149_PostgresNamingConvention")]
+    partial class PostgresNamingConvention
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

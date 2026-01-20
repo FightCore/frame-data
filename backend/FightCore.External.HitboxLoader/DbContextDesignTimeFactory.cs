@@ -11,7 +11,7 @@ namespace FightCore.External.HitboxLoader
 		{
 			var configuration = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
 			var dbContextOptions =
-				new DbContextOptionsBuilder<FrameDataContext>().UseNpgsql(configuration.GetConnectionString("DefaultConnection"));
+				new DbContextOptionsBuilder<FrameDataContext>().UseNpgsql(configuration.GetConnectionString("DefaultConnection")).UseSnakeCaseNamingConvention();
 
 
 			return new FrameDataContext(dbContextOptions.Options);

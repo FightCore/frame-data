@@ -11,7 +11,7 @@ using FightCore.Models;
 
 var configuration = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
 var dbContextOptions =
-	new DbContextOptionsBuilder<FrameDataContext>().UseNpgsql(configuration.GetConnectionString("DefaultConnection"));
+	new DbContextOptionsBuilder<FrameDataContext>().UseNpgsql(configuration.GetConnectionString("DefaultConnection")).UseSnakeCaseNamingConvention();
 var dbContext = new FrameDataContext(dbContextOptions.Options);
 
 var repository = new CharacterRepository(dbContext);
@@ -45,7 +45,7 @@ foreach (var character in export)
 	{
 		move.Character = null;
 		move.CharacterId = default;
-		move.MoveSubactions = null;
+		//move.MoveSubactions = null;
 
 		return move;
 	});
