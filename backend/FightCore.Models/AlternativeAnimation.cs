@@ -18,5 +18,10 @@ namespace FightCore.Models
 
 		[JsonIgnore]
 		public long MoveId { get; set; }
+		
+		public AnimationCredit Credit { get; set; }
+		
+		[JsonIgnore]
+		public long? CreditId { get; set; }
 	}
 }

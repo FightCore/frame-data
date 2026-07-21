@@ -55,5 +55,9 @@ namespace FightCore.Models
         public List<Source> Sources { get; set; }
 
         public List<AlternativeAnimation> AlternativeAnimations { get; set; }
+        
+        public AnimationCredit AnimationCredit { get; set; }
+        
+        public long? AnimationCreditId { get; set; }
 	}
 }

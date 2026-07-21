@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FightCore.External.HitboxLo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FightCore.GraphQL", "FightCore.GraphQL\FightCore.GraphQL.csproj", "{7C02625C-E3DC-426C-A561-5CF96AF2C7ED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fightcore.MeleeSearchExporter", "Fightcore.MeleeSearchExporter\Fightcore.MeleeSearchExporter.csproj", "{B35F8E93-2783-4A21-8AB4-77D49FE2B551}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -79,6 +81,10 @@ Global
 		{7C02625C-E3DC-426C-A561-5CF96AF2C7ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C02625C-E3DC-426C-A561-5CF96AF2C7ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C02625C-E3DC-426C-A561-5CF96AF2C7ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B35F8E93-2783-4A21-8AB4-77D49FE2B551}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B35F8E93-2783-4A21-8AB4-77D49FE2B551}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B35F8E93-2783-4A21-8AB4-77D49FE2B551}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B35F8E93-2783-4A21-8AB4-77D49FE2B551}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -93,6 +99,7 @@ Global
 		{D08E7AD2-C650-4053-866D-612CE38C323C} = {DE0BEBC8-CE3C-4AD1-94F9-C42F17BC2688}
 		{9A68D1EF-33C6-4AF7-91EB-1782938FA71E} = {E826F2BE-E2F2-4AF3-BC0D-F070E0719588}
 		{7C02625C-E3DC-426C-A561-5CF96AF2C7ED} = {DE0BEBC8-CE3C-4AD1-94F9-C42F17BC2688}
+		{B35F8E93-2783-4A21-8AB4-77D49FE2B551} = {DE0BEBC8-CE3C-4AD1-94F9-C42F17BC2688}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8C766FB9-5F38-458C-B0E2-225D2173CB93}

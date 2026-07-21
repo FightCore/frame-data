@@ -52,6 +52,8 @@ namespace FightCore.FrameData
         public DbSet<Source> Sources { get; set; }
 
         public DbSet<AlternativeAnimation> AlternativeAnimations { get; set; }
+        
+        public DbSet<AnimationCredit> AnimationCredits { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -62,6 +64,8 @@ namespace FightCore.FrameData
             modelBuilder.Entity<Move>().HasOne(move => move.Character).WithMany(character => character.Moves).HasForeignKey(move => move.CharacterId);
             modelBuilder.Entity<Move>().HasMany(move => move.Hits).WithOne().HasForeignKey(hit => hit.MoveId);
             modelBuilder.Entity<Hit>().HasMany(hit => hit.Hitboxes).WithOne(hitbox => hitbox.Hit).HasForeignKey(hitbox => hitbox.HitId);
+            modelBuilder.Entity<AlternativeAnimation>().HasOne(alternativeAnimation => alternativeAnimation.Credit).WithMany().HasForeignKey(alternativeAnimation => alternativeAnimation.CreditId);
+            modelBuilder.Entity<Move>().HasOne(move => move.AnimationCredit).WithMany().HasForeignKey(move => move.AnimationCreditId);
         }
     }
 }
